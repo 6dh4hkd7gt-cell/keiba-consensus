@@ -257,22 +257,20 @@ const elements = {
   siteDetailMeta: document.querySelector("#siteDetailMeta"),
   siteDetailList: document.querySelector("#siteDetailList"),
   siteBackLink: document.querySelector("#siteBackLink"),
-  weightControls: document.querySelector("#weightControls"),
-  resetWeights: document.querySelector("#resetWeights"),
   refreshButton: document.querySelector("#refreshButton")
 };
 
 function loadWeights() {
+  if (window.ConsensusAutoWeights) {
+    return window.ConsensusAutoWeights.loadWeights();
+  }
+
   try {
     const saved = JSON.parse(localStorage.getItem("consensusWeights") || "{}");
     return { ...DEFAULT_WEIGHTS, ...saved };
   } catch {
     return { ...DEFAULT_WEIGHTS };
   }
-}
-
-function saveWeights() {
-  localStorage.setItem("consensusWeights", JSON.stringify(state.weights));
 }
 
 function getRace() {
@@ -714,30 +712,6 @@ function renderSiteDetailPage(race, ranking) {
   syncSitesPageUrl();
 }
 
-function renderWeights() {
-  if (!elements.weightControls) {
-    return;
-  }
-
-  elements.weightControls.innerHTML = Object.keys(DEFAULT_WEIGHTS).map((site) => `
-    <div class="weight-control">
-      <label for="weight-${site}">
-        <span>${site}</span>
-        <strong>${Number(state.weights[site]).toFixed(2)}</strong>
-      </label>
-      <input id="weight-${site}" type="range" min="0.5" max="1.8" step="0.01" value="${state.weights[site]}" data-site="${site}" />
-    </div>
-  `).join("");
-
-  elements.weightControls.querySelectorAll("input").forEach((input) => {
-    input.addEventListener("input", () => {
-      state.weights[input.dataset.site] = Number(input.value);
-      saveWeights();
-      render();
-    });
-  });
-}
-
 function render() {
   const race = getRace();
   const ranking = calculateRanking(race);
@@ -747,7 +721,6 @@ function render() {
   renderHorseDetail(ranking);
   renderRecommendations(ranking);
   renderSiteDetailPage(race, ranking);
-  renderWeights();
 }
 
 document.querySelectorAll(".venue-tabs button").forEach((button) => {
@@ -769,14 +742,6 @@ if (elements.raceSearch) {
 if (elements.sortSelect) {
   elements.sortSelect.addEventListener("change", () => {
     state.sort = elements.sortSelect.value;
-    render();
-  });
-}
-
-if (elements.resetWeights) {
-  elements.resetWeights.addEventListener("click", () => {
-    state.weights = { ...DEFAULT_WEIGHTS };
-    saveWeights();
     render();
   });
 }
@@ -811,4 +776,15 @@ if (elements.refreshButton) {
 }
 
 render();
+async function hydrateAutoWeights() {
+  if (!window.ConsensusAutoWeights) {
+    return;
+  }
+
+  const result = await window.ConsensusAutoWeights.applyLatest();
+  state.weights = { ...DEFAULT_WEIGHTS, ...result.weights };
+  render();
+}
+
+hydrateAutoWeights();
 setInterval(render, 60 * 1000);
