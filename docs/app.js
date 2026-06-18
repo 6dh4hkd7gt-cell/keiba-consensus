@@ -11,7 +11,10 @@ const OPERATING_DAYS = [0, 6];
 const OPERATING_START_MINUTES = 9 * 60;
 const OPERATING_END_MINUTES = 17 * 60;
 const DAY_LABELS = ["日", "月", "火", "水", "木", "金", "土"];
-const DEMO_TIME = new URLSearchParams(window.location.search).get("demoTime");
+const urlParams = new URLSearchParams(window.location.search);
+const DEMO_TIME = urlParams.get("demoTime");
+const INITIAL_RACE_ID = urlParams.get("race");
+const INITIAL_HORSE_NAME = urlParams.get("horse") || "";
 
 const DEFAULT_WEIGHTS = {
   "SPAIA": 1,
@@ -222,8 +225,8 @@ const races = [
 ];
 
 const state = {
-  selectedRaceId: races[0].id,
-  selectedHorseName: "",
+  selectedRaceId: races.some((race) => race.id === INITIAL_RACE_ID) ? INITIAL_RACE_ID : races[0].id,
+  selectedHorseName: INITIAL_HORSE_NAME,
   venue: "all",
   query: "",
   sort: "support",
@@ -247,6 +250,13 @@ const elements = {
   horseNumber: document.querySelector("#horseNumber"),
   horseSummary: document.querySelector("#horseSummary"),
   siteVotes: document.querySelector("#siteVotes"),
+  sitePageLink: document.querySelector("#sitePageLink"),
+  siteDetailLink: document.querySelector("#siteDetailLink"),
+  siteRaceSelect: document.querySelector("#siteRaceSelect"),
+  siteHorseSelect: document.querySelector("#siteHorseSelect"),
+  siteDetailMeta: document.querySelector("#siteDetailMeta"),
+  siteDetailList: document.querySelector("#siteDetailList"),
+  siteBackLink: document.querySelector("#siteBackLink"),
   weightControls: document.querySelector("#weightControls"),
   resetWeights: document.querySelector("#resetWeights"),
   refreshButton: document.querySelector("#refreshButton")
@@ -267,6 +277,29 @@ function saveWeights() {
 
 function getRace() {
   return races.find((race) => race.id === state.selectedRaceId) || races[0];
+}
+
+function buildStateHref(pageName) {
+  const params = new URLSearchParams();
+  params.set("race", state.selectedRaceId);
+
+  if (state.selectedHorseName) {
+    params.set("horse", state.selectedHorseName);
+  }
+
+  if (DEMO_TIME) {
+    params.set("demoTime", DEMO_TIME);
+  }
+
+  return `./${pageName}?${params.toString()}`;
+}
+
+function syncSitesPageUrl() {
+  if (!elements.siteDetailList || !window.history?.replaceState) {
+    return;
+  }
+
+  window.history.replaceState(null, "", buildStateHref("sites.html"));
 }
 
 function getNow() {
@@ -477,6 +510,10 @@ function buildTicketRecommendations(ranking) {
 }
 
 function renderRaceList() {
+  if (!elements.raceList) {
+    return;
+  }
+
   const query = state.query.trim().toLowerCase();
   const filtered = races.filter((race) => {
     const matchesVenue = state.venue === "all" || race.venue === state.venue;
@@ -504,6 +541,10 @@ function renderRaceList() {
 }
 
 function renderStatus(race, ranking) {
+  if (!elements.raceTitle || !elements.updatedAt || !elements.operationStatus || !elements.operationWindow || !elements.siteCount || !elements.missingSites || !elements.averageSupport) {
+    return;
+  }
+
   const siteNames = Object.keys(DEFAULT_WEIGHTS);
   const acquired = siteNames.length - race.missingSites.length;
   const average = ranking.reduce((sum, horse) => sum + horse.support, 0) / ranking.length;
@@ -517,13 +558,22 @@ function renderStatus(race, ranking) {
   elements.siteCount.textContent = `${acquired}/${siteNames.length}`;
   elements.missingSites.textContent = race.missingSites.length ? race.missingSites.join(" / ") : "なし";
   elements.averageSupport.textContent = `${average.toFixed(1)}%`;
-  elements.refreshButton.disabled = !operation.active;
-  elements.refreshButton.title = operation.active ? "取得を更新" : "土日 09:00-17:00のみ取得できます";
-  operationMetric.classList.toggle("is-active", operation.active);
-  operationMetric.classList.toggle("is-paused", !operation.active);
+  if (elements.refreshButton) {
+    elements.refreshButton.disabled = !operation.active;
+    elements.refreshButton.title = operation.active ? "取得を更新" : "土日 09:00-17:00のみ取得できます";
+  }
+
+  if (operationMetric) {
+    operationMetric.classList.toggle("is-active", operation.active);
+    operationMetric.classList.toggle("is-paused", !operation.active);
+  }
 }
 
 function renderRanking(ranking) {
+  if (!elements.rankingRows) {
+    return;
+  }
+
   elements.rankingRows.innerHTML = ranking.map((horse) => {
     const gapClass = horse.gap > 0 ? "positive" : horse.gap < 0 ? "negative" : "neutral";
     const gapText = horse.gap > 0 ? `AI +${horse.gap}` : horse.gap < 0 ? `人気 +${Math.abs(horse.gap)}` : "一致";
@@ -556,6 +606,16 @@ function renderHorseDetail(ranking) {
   const selected = ranking.find((horse) => horse.name === state.selectedHorseName) || ranking[0];
   state.selectedHorseName = selected.name;
 
+  [elements.sitePageLink, elements.siteDetailLink].forEach((link) => {
+    if (link) {
+      link.href = buildStateHref("sites.html");
+    }
+  });
+
+  if (!elements.horseName || !elements.horseNumber || !elements.horseSummary) {
+    return;
+  }
+
   elements.horseName.textContent = selected.name;
   elements.horseNumber.textContent = `${selected.number}番`;
   elements.horseSummary.innerHTML = `
@@ -564,16 +624,18 @@ function renderHorseDetail(ranking) {
     <div><span>オッズ</span><strong>${selected.odds.toFixed(1)}倍</strong></div>
   `;
 
-  elements.siteVotes.innerHTML = Object.entries(selected.predictions).map(([site, prediction]) => `
-    <div class="vote-row">
-      <div>
-        <strong>${site}</strong>
-        <span>重み ${Number(state.weights[site] || 1).toFixed(2)}</span>
+  if (elements.siteVotes) {
+    elements.siteVotes.innerHTML = Object.entries(selected.predictions).map(([site, prediction]) => `
+      <div class="vote-row">
+        <div>
+          <strong>${site}</strong>
+          <span>重み ${Number(state.weights[site] || 1).toFixed(2)}</span>
+        </div>
+        <span class="mark-badge">${prediction.mark}</span>
+        <strong>${prediction.index}</strong>
       </div>
-      <span class="mark-badge">${prediction.mark}</span>
-      <strong>${prediction.index}</strong>
-    </div>
-  `).join("");
+    `).join("");
+  }
 }
 
 function renderRecommendations(ranking) {
@@ -602,6 +664,54 @@ function renderRecommendations(ranking) {
       </div>
     </section>
   `).join("");
+}
+
+function renderSiteDetailPage(race, ranking) {
+  if (!elements.siteDetailList) {
+    return;
+  }
+
+  const selected = ranking.find((horse) => horse.name === state.selectedHorseName) || ranking[0];
+  state.selectedHorseName = selected.name;
+
+  if (elements.siteRaceSelect) {
+    elements.siteRaceSelect.innerHTML = races.map((raceOption) => `
+      <option value="${raceOption.id}">${raceOption.venueName} ${raceOption.number} ${raceOption.name}</option>
+    `).join("");
+    elements.siteRaceSelect.value = state.selectedRaceId;
+  }
+
+  if (elements.siteHorseSelect) {
+    elements.siteHorseSelect.innerHTML = ranking.map((horse) => `
+      <option value="${horse.name}">${horse.number}. ${horse.name}</option>
+    `).join("");
+    elements.siteHorseSelect.value = selected.name;
+  }
+
+  if (elements.siteDetailMeta) {
+    elements.siteDetailMeta.innerHTML = `
+      <div><span>レース</span><strong>${race.venueName} ${race.number}</strong></div>
+      <div><span>AI支持率</span><strong>${selected.support.toFixed(1)}%</strong></div>
+      <div><span>オッズ</span><strong>${selected.odds.toFixed(1)}倍</strong></div>
+    `;
+  }
+
+  elements.siteDetailList.innerHTML = Object.entries(selected.predictions).map(([site, prediction]) => `
+    <div class="vote-row">
+      <div>
+        <strong>${site}</strong>
+        <span>重み ${Number(state.weights[site] || 1).toFixed(2)}</span>
+      </div>
+      <span class="mark-badge">${prediction.mark}</span>
+      <strong>${prediction.index}</strong>
+    </div>
+  `).join("");
+
+  if (elements.siteBackLink) {
+    elements.siteBackLink.href = buildStateHref("phone.html");
+  }
+
+  syncSitesPageUrl();
 }
 
 function renderWeights() {
@@ -636,6 +746,7 @@ function render() {
   renderRanking(ranking);
   renderHorseDetail(ranking);
   renderRecommendations(ranking);
+  renderSiteDetailPage(race, ranking);
   renderWeights();
 }
 
@@ -648,15 +759,19 @@ document.querySelectorAll(".venue-tabs button").forEach((button) => {
   });
 });
 
-elements.raceSearch.addEventListener("input", () => {
-  state.query = elements.raceSearch.value;
-  renderRaceList();
-});
+if (elements.raceSearch) {
+  elements.raceSearch.addEventListener("input", () => {
+    state.query = elements.raceSearch.value;
+    renderRaceList();
+  });
+}
 
-elements.sortSelect.addEventListener("change", () => {
-  state.sort = elements.sortSelect.value;
-  render();
-});
+if (elements.sortSelect) {
+  elements.sortSelect.addEventListener("change", () => {
+    state.sort = elements.sortSelect.value;
+    render();
+  });
+}
 
 if (elements.resetWeights) {
   elements.resetWeights.addEventListener("click", () => {
@@ -666,17 +781,34 @@ if (elements.resetWeights) {
   });
 }
 
-elements.refreshButton.addEventListener("click", () => {
-  if (!getOperatingStatus().active) {
+if (elements.siteRaceSelect) {
+  elements.siteRaceSelect.addEventListener("change", () => {
+    state.selectedRaceId = elements.siteRaceSelect.value;
+    state.selectedHorseName = "";
     render();
-    return;
-  }
+  });
+}
 
-  const race = getRace();
-  const now = getNow();
-  race.updatedAt = now.toLocaleTimeString("ja-JP", { hour12: false });
-  render();
-});
+if (elements.siteHorseSelect) {
+  elements.siteHorseSelect.addEventListener("change", () => {
+    state.selectedHorseName = elements.siteHorseSelect.value;
+    render();
+  });
+}
+
+if (elements.refreshButton) {
+  elements.refreshButton.addEventListener("click", () => {
+    if (!getOperatingStatus().active) {
+      render();
+      return;
+    }
+
+    const race = getRace();
+    const now = getNow();
+    race.updatedAt = now.toLocaleTimeString("ja-JP", { hour12: false });
+    render();
+  });
+}
 
 render();
 setInterval(render, 60 * 1000);
