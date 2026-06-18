@@ -12,9 +12,13 @@ const DEFAULT_WEIGHTS = {
 };
 
 const weightControls = document.querySelector("#weightControls");
-const resetWeights = document.querySelector("#resetWeights");
+const autoWeightSummary = document.querySelector("#autoWeightSummary");
 
 function loadWeights() {
+  if (window.ConsensusAutoWeights) {
+    return window.ConsensusAutoWeights.loadWeights();
+  }
+
   try {
     const saved = JSON.parse(localStorage.getItem("consensusWeights") || "{}");
     return { ...DEFAULT_WEIGHTS, ...saved };
@@ -23,35 +27,95 @@ function loadWeights() {
   }
 }
 
-function saveWeights(weights) {
-  localStorage.setItem("consensusWeights", JSON.stringify(weights));
+function formatSigned(value) {
+  if (!Number.isFinite(value) || value === 0) {
+    return "+0.00";
+  }
+
+  return `${value > 0 ? "+" : ""}${value.toFixed(2)}`;
+}
+
+function formatDate(value) {
+  if (!value) {
+    return "--";
+  }
+
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+
+  return date.toLocaleString("ja-JP", {
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false
+  });
+}
+
+function renderAutoWeightSummary() {
+  if (!autoWeightSummary) {
+    return;
+  }
+
+  const audit = window.ConsensusAutoWeights?.loadAudit();
+  if (!audit?.rows?.length) {
+    autoWeightSummary.innerHTML = `
+      <div>
+        <span>自動調整</span>
+        <strong>待機中</strong>
+      </div>
+      <div>
+        <span>対象週</span>
+        <strong>--</strong>
+      </div>
+      <div>
+        <span>反映</span>
+        <strong>--</strong>
+      </div>
+    `;
+    return;
+  }
+
+  const largestMove = [...audit.rows].sort((a, b) => Math.abs(b.delta) - Math.abs(a.delta))[0];
+  autoWeightSummary.innerHTML = `
+    <div>
+      <span>対象週</span>
+      <strong>${audit.weekOf || "--"}</strong>
+    </div>
+    <div>
+      <span>更新</span>
+      <strong>${formatDate(audit.generatedAt)}</strong>
+    </div>
+    <div>
+      <span>最大変化</span>
+      <strong>${largestMove.site} ${formatSigned(largestMove.delta)}</strong>
+    </div>
+  `;
 }
 
 function renderWeights() {
   const weights = loadWeights();
+  renderAutoWeightSummary();
 
   weightControls.innerHTML = Object.keys(DEFAULT_WEIGHTS).map((site) => `
-    <div class="weight-control">
-      <label for="weight-${site}">
+    <div class="weight-control weight-readout">
+      <div class="weight-line">
         <span>${site}</span>
         <strong>${Number(weights[site]).toFixed(2)}</strong>
-      </label>
-      <input id="weight-${site}" type="range" min="0.5" max="1.8" step="0.01" value="${weights[site]}" data-site="${site}" />
+      </div>
+      <small>週次成績から自動反映</small>
     </div>
   `).join("");
-
-  weightControls.querySelectorAll("input").forEach((input) => {
-    input.addEventListener("input", () => {
-      weights[input.dataset.site] = Number(input.value);
-      saveWeights(weights);
-      renderWeights();
-    });
-  });
 }
 
-resetWeights.addEventListener("click", () => {
-  saveWeights({ ...DEFAULT_WEIGHTS });
-  renderWeights();
-});
+async function initWeightsPage() {
+  if (window.ConsensusAutoWeights) {
+    await window.ConsensusAutoWeights.applyLatest();
+  }
 
-renderWeights();
+  renderWeights();
+}
+
+initWeightsPage();
