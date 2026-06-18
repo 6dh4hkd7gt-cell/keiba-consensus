@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>AI競馬コンセンサス</title>
-    <link rel="stylesheet" href="./phone.css?v=recommendations-1" />
+    <link rel="stylesheet" href="./phone.css?v=layout-sites-1" />
   </head>
   <body>
     <div class="app-shell">
@@ -53,6 +53,7 @@
             <h2 id="raceTitle">読み込み中</h2>
           </div>
           <div class="topbar-actions">
+            <a id="sitePageLink" class="text-button nav-link" href="./sites.html">サイト</a>
             <a class="text-button nav-link" href="./weights.html">重み</a>
             <button id="refreshButton" class="icon-button" type="button" aria-label="取得を更新">
               <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -64,30 +65,6 @@
             </button>
           </div>
         </header>
-
-        <section class="status-grid" aria-label="取得状況">
-          <div class="metric">
-            <span>最終更新</span>
-            <strong id="updatedAt">--:--:--</strong>
-          </div>
-          <div class="metric">
-            <span>稼働状態</span>
-            <strong id="operationStatus">判定中</strong>
-            <small id="operationWindow">土日 09:00-17:00</small>
-          </div>
-          <div class="metric">
-            <span>取得サイト</span>
-            <strong id="siteCount">0/0</strong>
-          </div>
-          <div class="metric">
-            <span>未取得</span>
-            <strong id="missingSites">なし</strong>
-          </div>
-          <div class="metric">
-            <span>平均支持率</span>
-            <strong id="averageSupport">0.0%</strong>
-          </div>
-        </section>
 
         <section class="content-grid">
           <div class="ranking-panel">
@@ -128,7 +105,9 @@
               <span id="horseNumber" class="number-badge">--</span>
             </div>
             <div id="horseSummary" class="horse-summary"></div>
-            <div class="site-votes" id="siteVotes"></div>
+            <div class="detail-actions">
+              <a id="siteDetailLink" class="text-button nav-link" href="./sites.html">サイト別評価</a>
+            </div>
           </aside>
         </section>
 
@@ -140,6 +119,30 @@
             </div>
           </div>
           <div id="recommendationGroups" class="recommendation-grid"></div>
+        </section>
+
+        <section class="status-grid" aria-label="取得状況">
+          <div class="metric">
+            <span>最終更新</span>
+            <strong id="updatedAt">--:--:--</strong>
+          </div>
+          <div class="metric">
+            <span>稼働状態</span>
+            <strong id="operationStatus">判定中</strong>
+            <small id="operationWindow">土日 09:00-17:00</small>
+          </div>
+          <div class="metric">
+            <span>取得サイト</span>
+            <strong id="siteCount">0/0</strong>
+          </div>
+          <div class="metric">
+            <span>未取得</span>
+            <strong id="missingSites">なし</strong>
+          </div>
+          <div class="metric">
+            <span>平均支持率</span>
+            <strong id="averageSupport">0.0%</strong>
+          </div>
         </section>
       </main>
     </div>
