@@ -200,6 +200,26 @@ button {
   font-weight: 800;
 }
 
+.race-empty {
+  display: grid;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: 14px;
+}
+
+.race-empty strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.race-empty span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .workspace {
   padding: 26px;
   overflow: hidden;
