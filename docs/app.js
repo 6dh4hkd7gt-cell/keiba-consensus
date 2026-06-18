@@ -36,6 +36,7 @@ const races = [
     venueName: "東京",
     number: "11R",
     name: "青嵐ステークス",
+    date: "2026-06-20",
     startAt: "15:45",
     updatedAt: "15:40:03",
     missingSites: ["Uma Cloud"],
@@ -108,6 +109,7 @@ const races = [
     venueName: "京都",
     number: "10R",
     name: "朱雀特別",
+    date: "2026-06-20",
     startAt: "15:10",
     updatedAt: "15:05:08",
     missingSites: [],
@@ -172,6 +174,7 @@ const races = [
     venueName: "函館",
     number: "12R",
     name: "湯川温泉特別",
+    date: "2026-06-20",
     startAt: "16:05",
     updatedAt: "16:00:14",
     missingSites: ["netkeiba AI", "競馬ラボ"],
@@ -228,6 +231,7 @@ const races = [
     venueName: "札幌",
     number: "11R",
     name: "大通公園ステークス",
+    date: "2026-06-20",
     startAt: "15:25",
     updatedAt: "15:20:12",
     missingSites: ["Prediction One"],
@@ -244,6 +248,7 @@ const races = [
     venueName: "中山",
     number: "11R",
     name: "船橋ステークス",
+    date: "2026-06-20",
     startAt: "15:40",
     updatedAt: "15:35:22",
     missingSites: [],
@@ -260,6 +265,7 @@ const races = [
     venueName: "中京",
     number: "10R",
     name: "熱田特別",
+    date: "2026-06-20",
     startAt: "15:00",
     updatedAt: "14:55:31",
     missingSites: ["Race AI"],
@@ -276,6 +282,7 @@ const races = [
     venueName: "阪神",
     number: "11R",
     name: "六甲ステークス",
+    date: "2026-06-20",
     startAt: "15:35",
     updatedAt: "15:30:44",
     missingSites: ["Deep Keiba"],
@@ -292,6 +299,7 @@ const races = [
     venueName: "小倉",
     number: "12R",
     name: "企救丘特別",
+    date: "2026-06-20",
     startAt: "16:10",
     updatedAt: "16:05:17",
     missingSites: ["競馬ラボ"],
@@ -308,6 +316,7 @@ const races = [
     venueName: "福島",
     number: "11R",
     name: "吾妻小富士ステークス",
+    date: "2026-06-20",
     startAt: "15:20",
     updatedAt: "15:15:02",
     missingSites: ["Uma Cloud"],
@@ -324,6 +333,7 @@ const races = [
     venueName: "新潟",
     number: "11R",
     name: "越後ステークス",
+    date: "2026-06-20",
     startAt: "15:30",
     updatedAt: "15:25:39",
     missingSites: ["netkeiba AI"],
@@ -386,7 +396,8 @@ function loadWeights() {
 }
 
 function getRace() {
-  return races.find((race) => race.id === state.selectedRaceId) || races[0];
+  const todaysRaces = getTodaysRaces();
+  return todaysRaces.find((race) => race.id === state.selectedRaceId) || todaysRaces[0] || null;
 }
 
 function buildStateHref(pageName) {
@@ -420,6 +431,22 @@ function getNow() {
   const normalizedDemoTime = DEMO_TIME.trim().replace(/ (\d{2}:\d{2})$/, "+$1");
   const demoDate = new Date(normalizedDemoTime);
   return Number.isNaN(demoDate.getTime()) ? new Date() : demoDate;
+}
+
+function formatDateKey(date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function getTodayKey() {
+  return formatDateKey(getNow());
+}
+
+function getTodaysRaces() {
+  const todayKey = getTodayKey();
+  return races.filter((race) => race.date === todayKey);
 }
 
 function getMinutes(date) {
@@ -625,11 +652,21 @@ function renderRaceList() {
   }
 
   const query = state.query.trim().toLowerCase();
-  const filtered = races.filter((race) => {
+  const filtered = getTodaysRaces().filter((race) => {
     const matchesVenue = state.venue === "all" || race.venue === state.venue;
     const matchesQuery = `${race.venueName} ${race.number} ${race.name}`.toLowerCase().includes(query);
     return matchesVenue && matchesQuery;
   });
+
+  if (!filtered.length) {
+    elements.raceList.innerHTML = `
+      <div class="empty-state race-empty">
+        <strong>本日のJRA開催はありません</strong>
+        <span>開催日のレースだけ表示します</span>
+      </div>
+    `;
+    return;
+  }
 
   elements.raceList.innerHTML = filtered.map((race) => `
     <button class="race-card ${race.id === state.selectedRaceId ? "active" : ""}" data-race-id="${race.id}" type="button">
@@ -676,6 +713,41 @@ function renderStatus(race, ranking) {
   if (operationMetric) {
     operationMetric.classList.toggle("is-active", operation.active);
     operationMetric.classList.toggle("is-paused", !operation.active);
+  }
+}
+
+function renderNoRaceState() {
+  renderRaceList();
+
+  if (elements.raceTitle) {
+    elements.raceTitle.textContent = "本日のJRA開催はありません";
+  }
+
+  if (elements.updatedAt) elements.updatedAt.textContent = "--:--:--";
+  if (elements.operationStatus) elements.operationStatus.textContent = "停止中";
+  if (elements.operationWindow) elements.operationWindow.textContent = "開催日のみ表示";
+  if (elements.siteCount) elements.siteCount.textContent = "0/10";
+  if (elements.missingSites) elements.missingSites.textContent = "なし";
+  if (elements.averageSupport) elements.averageSupport.textContent = "0.0%";
+  if (elements.rankingRows) elements.rankingRows.innerHTML = "";
+  if (elements.recommendationGroups) elements.recommendationGroups.innerHTML = "";
+  if (elements.horseName) elements.horseName.textContent = "レースなし";
+  if (elements.horseNumber) elements.horseNumber.textContent = "--";
+  if (elements.horseSummary) {
+    elements.horseSummary.innerHTML = `
+      <div><span>対象日</span><strong>${getTodayKey()}</strong></div>
+      <div><span>開催</span><strong>0場</strong></div>
+      <div><span>表示</span><strong>当日のみ</strong></div>
+    `;
+  }
+  if (elements.siteVotes) elements.siteVotes.innerHTML = "";
+  if (elements.siteDetailMeta) elements.siteDetailMeta.innerHTML = "";
+  if (elements.siteDetailList) elements.siteDetailList.innerHTML = "";
+  if (elements.siteRaceSelect) elements.siteRaceSelect.innerHTML = "";
+  if (elements.siteHorseSelect) elements.siteHorseSelect.innerHTML = "";
+  if (elements.refreshButton) {
+    elements.refreshButton.disabled = true;
+    elements.refreshButton.title = "本日のJRA開催はありません";
   }
 }
 
@@ -785,7 +857,7 @@ function renderSiteDetailPage(race, ranking) {
   state.selectedHorseName = selected.name;
 
   if (elements.siteRaceSelect) {
-    elements.siteRaceSelect.innerHTML = races.map((raceOption) => `
+    elements.siteRaceSelect.innerHTML = getTodaysRaces().map((raceOption) => `
       <option value="${raceOption.id}">${raceOption.venueName} ${raceOption.number} ${raceOption.name}</option>
     `).join("");
     elements.siteRaceSelect.value = state.selectedRaceId;
@@ -826,6 +898,16 @@ function renderSiteDetailPage(race, ranking) {
 
 function render() {
   const race = getRace();
+  if (!race) {
+    renderNoRaceState();
+    return;
+  }
+
+  if (state.selectedRaceId !== race.id) {
+    state.selectedRaceId = race.id;
+    state.selectedHorseName = "";
+  }
+
   const ranking = calculateRanking(race);
   renderRaceList();
   renderStatus(race, ranking);
