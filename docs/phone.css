@@ -241,7 +241,7 @@ button {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
-  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .metric,
@@ -438,6 +438,15 @@ tr:last-child td {
   gap: 8px;
 }
 
+.detail-actions {
+  display: grid;
+  gap: 8px;
+}
+
+.detail-actions .text-button {
+  width: 100%;
+}
+
 .vote-row {
   display: grid;
   grid-template-columns: 1fr auto auto;
@@ -568,6 +577,52 @@ tr:last-child td {
   padding: 20px;
 }
 
+.site-selector-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.site-selector-grid label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.site-selector-grid select {
+  max-width: none;
+  width: 100%;
+}
+
+.site-detail-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.site-detail-meta div {
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 10px;
+}
+
+.site-detail-meta span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.site-detail-meta strong {
+  display: block;
+  overflow-wrap: anywhere;
+  font-size: 18px;
+}
+
 .weight-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -626,10 +681,6 @@ tr:last-child td {
     flex-direction: column;
   }
 
-  .workspace {
-    order: -1;
-  }
-
   .sidebar,
   .workspace {
     padding: 10px;
@@ -637,7 +688,9 @@ tr:last-child td {
 
   .race-list,
   .weight-grid,
-  .horse-summary {
+  .horse-summary,
+  .site-selector-grid,
+  .site-detail-meta {
     grid-template-columns: 1fr;
   }
 
@@ -682,7 +735,7 @@ tr:last-child td {
   .status-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 6px;
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .metric {
