@@ -1,0 +1,17 @@
+{
+  "weekOf": "2026-06-15",
+  "generatedAt": "2026-06-18T18:30:00+09:00",
+  "source": "weekly-auto",
+  "sites": [
+    { "site": "SPAIA", "hitRate": 31.8, "roi": 112, "topMatch": 46.4 },
+    { "site": "netkeiba AI", "hitRate": 28.4, "roi": 104, "topMatch": 42.1 },
+    { "site": "AI指数", "hitRate": 34.2, "roi": 118, "topMatch": 49.6 },
+    { "site": "競馬ラボ", "hitRate": 24.7, "roi": 91, "topMatch": 37.8 },
+    { "site": "無料競馬AI", "hitRate": 29.1, "roi": 108, "topMatch": 43.5 },
+    { "site": "Uma Cloud", "hitRate": 20.5, "roi": 84, "topMatch": 34.2 },
+    { "site": "SIVA", "hitRate": 32.6, "roi": 121, "topMatch": 47.9 },
+    { "site": "Deep Keiba", "hitRate": 27.3, "roi": 99, "topMatch": 41.2 },
+    { "site": "Race AI", "hitRate": 23.9, "roi": 88, "topMatch": 36.1 },
+    { "site": "Prediction One", "hitRate": 30.4, "roi": 110, "topMatch": 44.8 }
+  ]
+}
