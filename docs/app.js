@@ -411,10 +411,6 @@ function isValidRaceData(data) {
 }
 
 async function loadPublishedRaceData() {
-  if (DEMO_TIME) {
-    return false;
-  }
-
   try {
     const response = await fetch(`./data/jra-races.json?v=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) {
