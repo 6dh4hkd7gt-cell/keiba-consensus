@@ -30,41 +30,22 @@ const DEFAULT_WEIGHTS = {
 };
 
 const VENUES = {
-  obihiro: { venueName: "帯広", horsePrefix: "トカチ", missingSites: ["SPAT4分析"] },
-  monbetsu: { venueName: "門別", horsePrefix: "ホッカイ", missingSites: ["netkeiba地方"] },
-  morioka: { venueName: "盛岡", horsePrefix: "ミチノク", missingSites: [] },
-  mizusawa: { venueName: "水沢", horsePrefix: "オウシュウ", missingSites: ["Prediction One"] },
-  urawa: { venueName: "浦和", horsePrefix: "ウラワ", missingSites: [] },
-  funabashi: { venueName: "船橋", horsePrefix: "フナバシ", missingSites: ["Uma Cloud"] },
-  ooi: { venueName: "大井", horsePrefix: "トゥインクル", missingSites: ["Prediction One"] },
-  kawasaki: { venueName: "川崎", horsePrefix: "カワサキ", missingSites: ["競馬ブック地方"] },
-  kanazawa: { venueName: "金沢", horsePrefix: "ハクサン", missingSites: ["SPAT4分析"] },
-  kasamatsu: { venueName: "笠松", horsePrefix: "カサマツ", missingSites: [] },
-  nagoya: { venueName: "名古屋", horsePrefix: "メイコウ", missingSites: ["Race AI"] },
-  sonoda: { venueName: "園田", horsePrefix: "ソノダ", missingSites: ["Race AI"] },
-  himeji: { venueName: "姫路", horsePrefix: "ヒメジ", missingSites: ["オッズパークAI"] },
-  kochi: { venueName: "高知", horsePrefix: "トサ", missingSites: ["Uma Cloud"] },
-  saga: { venueName: "佐賀", horsePrefix: "サガ", missingSites: ["地方競馬予想AI"] }
+  obihiro: { venueName: "帯広", missingSites: ["SPAT4分析"] },
+  monbetsu: { venueName: "門別", missingSites: ["netkeiba地方"] },
+  morioka: { venueName: "盛岡", missingSites: [] },
+  mizusawa: { venueName: "水沢", missingSites: ["Prediction One"] },
+  urawa: { venueName: "浦和", missingSites: [] },
+  funabashi: { venueName: "船橋", missingSites: ["Uma Cloud"] },
+  ooi: { venueName: "大井", missingSites: ["Prediction One"] },
+  kawasaki: { venueName: "川崎", missingSites: ["競馬ブック地方"] },
+  kanazawa: { venueName: "金沢", missingSites: ["SPAT4分析"] },
+  kasamatsu: { venueName: "笠松", missingSites: [] },
+  nagoya: { venueName: "名古屋", missingSites: ["Race AI"] },
+  sonoda: { venueName: "園田", missingSites: ["Race AI"] },
+  himeji: { venueName: "姫路", missingSites: ["オッズパークAI"] },
+  kochi: { venueName: "高知", missingSites: ["Uma Cloud"] },
+  saga: { venueName: "佐賀", missingSites: ["地方競馬予想AI"] }
 };
-
-const HORSE_NAME_PARTS = [
-  "スター",
-  "ブレイブ",
-  "クイーン",
-  "クラウン",
-  "スピード",
-  "リベルタ",
-  "ノーブル",
-  "アロー",
-  "ミライ",
-  "グラン",
-  "フラッグ",
-  "シャイン",
-  "レガーロ",
-  "フォルテ",
-  "セレーノ",
-  "リンク"
-];
 
 const HORSE_NUMBERS = [1, 3, 6, 9, 12];
 
@@ -86,10 +67,23 @@ function hashText(text) {
   return [...text].reduce((total, char, index) => total + char.charCodeAt(0) * (index + 3), 0);
 }
 
-function buildRaceFromSchedule(date, venue, startAt, raceIndex) {
+function buildRaceFromSchedule(date, venue, startAt, raceIndex, raceData = {}) {
   const venueInfo = VENUES[venue];
   const number = `${raceIndex + 1}R`;
-  const raceSeed = hashText(`${date}-${venue}-${number}-${startAt}`);
+  const officialHorses = Array.isArray(raceData.horses) ? raceData.horses : [];
+  const horses = officialHorses.length
+    ? officialHorses.map((horse, horseIndex) => ({
+        number: Number(horse.number) || horseIndex + 1,
+        name: horse.name,
+        odds: Number(horse.odds) || 99.9,
+        predictions: {}
+      }))
+    : HORSE_NUMBERS.map((numberValue) => ({
+        number: numberValue,
+        name: `${numberValue}番 公式出馬表未取得`,
+        odds: 99.9,
+        predictions: {}
+      }));
 
   return {
     id: `${date}-${venue}-${number.toLowerCase()}`,
@@ -101,17 +95,7 @@ function buildRaceFromSchedule(date, venue, startAt, raceIndex) {
     startAt,
     updatedAt: subtractMinutes(startAt, 10),
     missingSites: venueInfo.missingSites,
-    horses: HORSE_NUMBERS.map((numberValue, horseIndex) => {
-      const firstPart = HORSE_NAME_PARTS[(raceSeed + raceIndex + horseIndex * 3) % HORSE_NAME_PARTS.length];
-      const secondPart = HORSE_NAME_PARTS[(raceSeed + raceIndex * 5 + horseIndex * 7 + 4) % HORSE_NAME_PARTS.length];
-      const oddsBase = [3.4, 6.8, 10.9, 4.7, 18.2][horseIndex];
-      return {
-        number: numberValue,
-        name: `${venueInfo.horsePrefix}${firstPart}${secondPart}`,
-        odds: oddsBase + ((raceSeed + horseIndex * 11) % 9) * 0.2,
-        predictions: {}
-      };
-    })
+    horses
   };
 }
 
@@ -251,7 +235,7 @@ async function loadDailyRaceSchedule() {
     .filter((race) => race && VENUES[race.venue] && /^\d{1,2}:\d{2}$/.test(race.startAt || ""))
     .map((race, index) => {
       const raceNumber = Number(race.number) || index + 1;
-      return buildRaceFromSchedule(payload.date, race.venue, race.startAt, raceNumber - 1);
+      return buildRaceFromSchedule(payload.date, race.venue, race.startAt, raceNumber - 1, race);
     });
 }
 
