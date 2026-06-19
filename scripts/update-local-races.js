@@ -439,7 +439,8 @@ function parseUmaXPredictions(html, raceHorses) {
 function parseKeibaZeroPredictions(html) {
   const predictions = new Map();
   const sourceLines = htmlToLines(html);
-  const pairLine = sourceLines.find((line) => line.includes("本紙予想") && line.includes("馬連")) || "";
+  const pairStart = sourceLines.findIndex((line) => line.includes("本紙予想") || line.includes("本誌予想"));
+  const pairLine = pairStart >= 0 ? sourceLines.slice(pairStart, pairStart + 4).join(" ") : "";
   const pairScores = new Map();
 
   for (const pair of pairLine.matchAll(/\b(\d{1,2})-(\d{1,2})\b/g)) {
@@ -449,7 +450,10 @@ function parseKeibaZeroPredictions(html) {
     pairScores.set(second, (pairScores.get(second) || 0) + 12);
   }
 
-  const lines = sourceLines.slice(sourceLines.findIndex((line) => line.includes("枠番") && line.includes("馬番")));
+  const tableStart = sourceLines.findIndex((line, index) => (
+    (line.includes("枠番") && (line.includes("馬番") || sourceLines.slice(index, index + 4).some((nextLine) => nextLine.includes("馬番"))))
+  ));
+  const lines = tableStart >= 0 ? sourceLines.slice(tableStart) : sourceLines;
   for (const line of lines) {
     const match = line.match(/^\d+\s+(\d{1,2})\s+[牡牝セ]\s+\d+\s+\S+\s+\S+\s+(.+?)\s+.+?\s+(\d+)\s+(\d+)\s+(?:\d+週|[一二三四五六七八九十]+週|連闘|中\d+週)/);
     if (!match) {
@@ -464,12 +468,59 @@ function parseKeibaZeroPredictions(html) {
     const paperScore = scoreFromIndex(45 + pairScore);
     const indexPrediction = scoreFromIndex(indexScore);
 
-    if (paperScore) {
+    if (pairScore > 0 && paperScore) {
       mergePrediction(predictions, horseNumber, "競馬新聞ゼロ本紙", paperScore);
     }
     if (indexPrediction) {
       mergePrediction(predictions, horseNumber, "競馬新聞ゼロ指数", indexPrediction);
     }
+  }
+
+  const rowStartPattern = /^(\d{1,2})\s+(\d{1,2})\s+[牡牝セ]\s+\d+\b/;
+  for (let index = 0; index < lines.length; index += 1) {
+    const inlineRow = lines[index].match(rowStartPattern);
+    const splitRow = /^\d{1,2}$/.test(lines[index] || "")
+      && /^\d{1,2}$/.test(lines[index + 1] || "")
+      && /^[牡牝セ]\s+\d+\b/.test(lines[index + 2] || "");
+    const horseNumber = inlineRow
+      ? Number(inlineRow[2])
+      : splitRow
+        ? Number(lines[index + 1])
+        : null;
+
+    if (!horseNumber || predictions.has(horseNumber)) {
+      continue;
+    }
+
+    const nextRowIndex = lines.findIndex((candidate, offset) => (
+      offset > index
+      && (rowStartPattern.test(candidate) || (
+        /^\d{1,2}$/.test(candidate)
+        && /^\d{1,2}$/.test(lines[offset + 1] || "")
+        && /^[牡牝セ]\s+\d+\b/.test(lines[offset + 2] || "")
+      ))
+    ));
+    const searchEnd = nextRowIndex > index ? nextRowIndex : Math.min(lines.length, index + 28);
+    const indexLine = lines.slice(index + 1, searchEnd)
+      .find((candidate) => {
+        const values = candidate.match(/^(\d{1,3})\s+(\d{1,3})$/);
+        if (!values) {
+          return false;
+        }
+
+        return Number(values[1]) <= 100 && Number(values[2]) <= 100;
+      });
+
+    if (!indexLine) {
+      continue;
+    }
+
+    const [, maxIndex, averageIndex] = indexLine.match(/^(\d{1,3})\s+(\d{1,3})$/);
+    const pairScore = Math.min(35, pairScores.get(horseNumber) || 0);
+    if (pairScore > 0) {
+      mergePrediction(predictions, horseNumber, "競馬新聞ゼロ本紙", scoreFromIndex(45 + pairScore));
+    }
+    mergePrediction(predictions, horseNumber, "競馬新聞ゼロ指数", scoreFromIndex(Math.round((Number(maxIndex) + Number(averageIndex)) / 2)));
   }
 
   return predictions;
