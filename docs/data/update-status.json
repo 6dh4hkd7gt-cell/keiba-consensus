@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-06-20T15:35:00+09:00",
+  "targetDate": "2026-06-20",
+  "updateLeadMinutes": 10,
+  "source": "seed-fallback",
+  "raceCount": 10,
+  "readyRaceIds": [
+    "tokyo-11",
+    "nakayama-11",
+    "hanshin-11"
+  ]
+}
