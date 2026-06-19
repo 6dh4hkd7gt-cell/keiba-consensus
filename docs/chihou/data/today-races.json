@@ -3,7 +3,32 @@
   "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/TodayRaceInfoTop",
   "generatedAt": "2026-06-19T02:56:00.000Z",
   "races": [
-    { "venue": "kawasaki", "number": 1, "startAt": "15:00" },
+    {
+      "venue": "kawasaki",
+      "number": 1,
+      "startAt": "15:00",
+      "missingSites": [
+        "netkeiba地方",
+        "オッズパーク",
+        "SPAT4",
+        "競馬ブック地方",
+        "競馬エース",
+        "勝馬",
+        "ケイシュウNEWS",
+        "通信社",
+        "競馬カナザワ"
+      ],
+      "horses": [
+        { "number": 1, "name": "ラップサイディング", "odds": 5.4, "predictions": { "楽天みんなの予想": { "mark": "▲", "index": 73, "raw": { "◎": 39, "○": 43, "▲": 37, "△": 36 } } } },
+        { "number": 2, "name": "ララヴィテス", "odds": 12.6, "predictions": { "楽天みんなの予想": { "mark": "▲", "index": 74, "raw": { "◎": 30, "○": 72, "▲": 47, "△": 30 } } } },
+        { "number": 3, "name": "セッテベロ", "odds": 97.8, "predictions": { "楽天みんなの予想": { "mark": "▲", "index": 69, "raw": { "◎": 5, "○": 3, "▲": 7, "△": 7 } } } },
+        { "number": 4, "name": "ゴーゴールイス", "odds": 22.5, "predictions": { "楽天みんなの予想": { "mark": "▲", "index": 68, "raw": { "◎": 5, "○": 35, "▲": 37, "△": 21 } } } },
+        { "number": 5, "name": "シイズダイヤモンド", "odds": 23.2, "predictions": { "楽天みんなの予想": { "mark": "△", "index": 64, "raw": { "◎": 10, "○": 27, "▲": 27, "△": 45 } } } },
+        { "number": 6, "name": "クロムブレイズ", "odds": 35.3, "predictions": { "楽天みんなの予想": { "mark": "▲", "index": 67, "raw": { "◎": 6, "○": 9, "▲": 18, "△": 13 } } } },
+        { "number": 7, "name": "フルミネビアンコ", "odds": 10.8, "predictions": { "楽天みんなの予想": { "mark": "△", "index": 62, "raw": { "◎": 11, "○": 16, "▲": 27, "△": 49 } } } },
+        { "number": 8, "name": "ベリルキャッツアイ", "odds": 1.3, "predictions": { "楽天みんなの予想": { "mark": "◎", "index": 86, "raw": { "◎": 120, "○": 21, "▲": 26, "△": 25 } } } }
+      ]
+    },
     { "venue": "kawasaki", "number": 2, "startAt": "15:30" },
     { "venue": "kawasaki", "number": 3, "startAt": "16:00" },
     { "venue": "kawasaki", "number": 4, "startAt": "16:30" },
@@ -95,7 +120,33 @@
         { "number": 9, "name": "サンライズテソロ", "odds": 101.6, "predictions": { "楽天みんなの予想": { "mark": "▲", "index": 73, "raw": { "◎": 2, "○": 0, "▲": 0, "△": 2 } } } }
       ]
     },
-    { "venue": "nagoya", "number": 5, "startAt": "14:35" },
+    {
+      "venue": "nagoya",
+      "number": 5,
+      "startAt": "14:35",
+      "missingSites": [
+        "netkeiba地方",
+        "オッズパーク",
+        "SPAT4",
+        "競馬ブック地方",
+        "競馬エース",
+        "勝馬",
+        "ケイシュウNEWS",
+        "通信社",
+        "競馬カナザワ"
+      ],
+      "horses": [
+        { "number": 1, "name": "オーセンティアン", "odds": 25.3, "predictions": { "楽天みんなの予想": { "mark": "▲", "index": 65, "raw": { "◎": 10, "○": 7, "▲": 14, "△": 22 } } } },
+        { "number": 2, "name": "セイウンピカイチ", "odds": 6.3, "predictions": { "楽天みんなの予想": { "mark": "○", "index": 82, "raw": { "◎": 86, "○": 59, "▲": 26, "△": 25 } } } },
+        { "number": 3, "name": "タマモサイジョ", "odds": 1.5, "predictions": { "楽天みんなの予想": { "mark": "○", "index": 83, "raw": { "◎": 82, "○": 64, "▲": 38, "△": 16 } } } },
+        { "number": 4, "name": "カフジジャワ", "odds": 273.5, "predictions": { "楽天みんなの予想": { "mark": "▲", "index": 66, "raw": { "◎": 1, "○": 5, "▲": 1, "△": 5 } } } },
+        { "number": 5, "name": "ミートザターゲット", "odds": 22.0, "predictions": { "楽天みんなの予想": { "mark": "△", "index": 61, "raw": { "◎": 7, "○": 12, "▲": 23, "△": 39 } } } },
+        { "number": 6, "name": "ハンクスター", "odds": 4.5, "predictions": { "楽天みんなの予想": { "mark": "▲", "index": 71, "raw": { "◎": 27, "○": 37, "▲": 78, "△": 26 } } } },
+        { "number": 7, "name": "アーキハッカー", "odds": 45.0, "predictions": { "楽天みんなの予想": { "mark": "△", "index": 58, "raw": { "◎": 2, "○": 10, "▲": 14, "△": 31 } } } },
+        { "number": 8, "name": "オマタセシマシタ", "odds": 102.8, "predictions": { "楽天みんなの予想": { "mark": "▲", "index": 65, "raw": { "◎": 5, "○": 13, "▲": 8, "△": 19 } } } },
+        { "number": 9, "name": "オニクダイスキマン", "odds": 8.4, "predictions": { "楽天みんなの予想": { "mark": "△", "index": 62, "raw": { "◎": 7, "○": 20, "▲": 25, "△": 44 } } } }
+      ]
+    },
     { "venue": "nagoya", "number": 6, "startAt": "15:10" },
     { "venue": "nagoya", "number": 7, "startAt": "15:40" },
     { "venue": "nagoya", "number": 8, "startAt": "16:10" },
