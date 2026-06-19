@@ -287,9 +287,20 @@ function getOperatingStatus(now = getNow()) {
 function buildFallbackPrediction(site, horse, race) {
   const siteIndex = Object.keys(DEFAULT_WEIGHTS).indexOf(site);
   const seed = hashText(`${race.id}-${race.startAt}-${horse.name}-${site}`) + horse.number * 11 + siteIndex * 7;
-  const mark = MARK_SEQUENCE[seed % MARK_SEQUENCE.length];
+  const oddsOrder = [...race.horses].sort((a, b) => a.odds - b.odds);
+  const oddsRank = oddsOrder.findIndex((entry) => entry.name === horse.name) + 1;
+  const marketMarkPool = oddsRank <= 2
+    ? ["◎", "○", "▲"]
+    : oddsRank <= 4
+      ? ["○", "▲", "△"]
+      : oddsRank <= 6
+        ? ["▲", "△", "☆"]
+        : ["△", "☆"];
+  const longshotMarkPool = horse.odds >= 80 ? ["△", "☆", "☆"] : marketMarkPool;
+  const mark = longshotMarkPool[seed % longshotMarkPool.length];
   const baseScore = MARK_SCORES[mark] || 50;
-  const index = Math.max(55, Math.min(96, baseScore - 6 + (seed % 15)));
+  const marketPenalty = Math.min(28, Math.max(0, Math.log10(Math.max(1, horse.odds)) * 12 - 8));
+  const index = Math.max(35, Math.min(96, baseScore - 4 + (seed % 12) - marketPenalty));
 
   return { mark, index };
 }
@@ -324,18 +335,27 @@ function calculateRanking(race) {
     }, 0);
     const support = totalWeight ? weightedScore / totalWeight : 0;
     const favorites = entries.filter(([, prediction]) => prediction.mark === "◎").length;
+    const marketPenalty = horse.odds >= 80
+      ? 24
+      : horse.odds >= 50
+        ? 16
+        : horse.odds >= 25
+          ? 8
+          : 0;
+    const rankingSupport = Math.max(0, support - marketPenalty);
 
     return {
       ...horse,
       predictions,
       support,
+      rankingSupport,
       favorites,
       oddsRank: oddsRanks[horse.name],
       voteCount: entries.length
     };
   });
 
-  const ranked = rows.sort((a, b) => b.support - a.support);
+  const ranked = rows.sort((a, b) => b.rankingSupport - a.rankingSupport);
   ranked.forEach((horse, index) => {
     horse.aiRank = index + 1;
     horse.gap = horse.oddsRank - horse.aiRank;
@@ -395,12 +415,13 @@ function estimateTicketOdds(horses, type) {
 
 function scoreTicket(horses, type) {
   const positionWeights = type === "umaren" || type === "sanrenpuku" ? [1, 1, 1] : [1, 0.86, 0.72];
-  const weightedSupport = horses.reduce((total, horse, index) => total + horse.support * positionWeights[index], 0);
+  const weightedSupport = horses.reduce((total, horse, index) => total + horse.rankingSupport * positionWeights[index], 0);
   const supportBase = weightedSupport / horses.reduce((total, _, index) => total + positionWeights[index], 0);
   const estimatedOdds = estimateTicketOdds(horses, type);
-  const valueBoost = Math.log10(estimatedOdds + 1) * 7;
+  const valueBoost = Math.log10(Math.min(120, estimatedOdds) + 1) * 3;
+  const longshotPenalty = horses.reduce((total, horse) => total + (horse.odds >= 80 ? 10 : horse.odds >= 50 ? 6 : 0), 0);
 
-  return supportBase + valueBoost;
+  return supportBase + valueBoost - longshotPenalty;
 }
 
 function formatTicket(horses, separator) {
