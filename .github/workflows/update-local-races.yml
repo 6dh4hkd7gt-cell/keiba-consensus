@@ -1,0 +1,32 @@
+name: Update local racing schedule
+
+on:
+  schedule:
+    - cron: "15 21 * * *"
+    - cron: "*/5 1-11 * * *"
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-local-races:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch today's local racing schedule
+        run: node scripts/update-local-races.js
+
+      - name: Commit schedule update
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update local racing schedule
+          file_pattern: docs/chihou/data/today-races.json
