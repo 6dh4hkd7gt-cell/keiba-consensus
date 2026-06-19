@@ -937,6 +937,7 @@ async function fetchNankanOddsLinks(date, venues) {
 
   const html = await fetchHtml("https://www.nankankeiba.com/", "https://www.nankankeiba.com/");
   const dateDigits = date.replaceAll("-", "");
+  const baseCodeByVenue = new Map();
   for (const match of html.matchAll(/href="([^"]*\/odds\/(\d{18})\.do[^"]*)"/g)) {
     const href = decodeEntities(match[1]);
     const raceCode = match[2];
@@ -950,7 +951,17 @@ async function fetchNankanOddsLinks(date, venues) {
       continue;
     }
 
+    baseCodeByVenue.set(venue, raceCode.slice(0, 14));
     linksByRace.set(`${venue}-${raceNumber}`, href.startsWith("http") ? href : `https://www.nankankeiba.com${href}`);
+  }
+
+  for (const [venue, baseCode] of baseCodeByVenue.entries()) {
+    for (let raceNumber = 1; raceNumber <= 12; raceNumber += 1) {
+      const key = `${venue}-${raceNumber}`;
+      if (!linksByRace.has(key)) {
+        linksByRace.set(key, `https://www.nankankeiba.com/odds/${baseCode}${String(raceNumber).padStart(2, "0")}01.do`);
+      }
+    }
   }
 
   return linksByRace;
