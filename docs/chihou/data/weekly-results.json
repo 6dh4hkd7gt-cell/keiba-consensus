@@ -1,0 +1,12 @@
+{
+  "weekOf": "2026-06-15",
+  "generatedAt": "2026-06-18T18:30:00+09:00",
+  "source": "local-keiba-weekly-auto",
+  "sites": [
+    { "site": "楽天みんなの予想", "hitRate": 30.6, "roi": 111, "topMatch": 45.2 },
+    { "site": "AiBA無料AI", "hitRate": 27.8, "roi": 102, "topMatch": 41.7 },
+    { "site": "ウマークス順位", "hitRate": 33.4, "roi": 119, "topMatch": 48.9 },
+    { "site": "競馬新聞ゼロ本紙", "hitRate": 25.6, "roi": 94, "topMatch": 38.5 },
+    { "site": "競馬新聞ゼロ指数", "hitRate": 29.7, "roi": 107, "topMatch": 43.6 }
+  ]
+}
