@@ -16,6 +16,7 @@ const DEMO_TIME = urlParams.get("demoTime");
 const INITIAL_RACE_ID = urlParams.get("race");
 const INITIAL_HORSE_NAME = urlParams.get("horse") || "";
 const PUBLIC_DATA_BASE = "https://6dh4hkd7gt-cell.github.io/keiba-consensus/chihou";
+const MIN_CONSENSUS_SITES = 5;
 
 const DEFAULT_WEIGHTS = {
   "楽天みんなの予想": 1,
@@ -316,6 +317,10 @@ function getPredictionsForHorse(race, horse) {
   }, {});
 }
 
+function getAcquiredSites(ranking) {
+  return new Set(ranking.flatMap((horse) => Object.keys(horse.predictions || {})));
+}
+
 function getPredictionCount(prediction) {
   if (!prediction?.raw || typeof prediction.raw !== "object") {
     return 0;
@@ -536,7 +541,7 @@ function renderStatus(race, ranking) {
   }
 
   const siteNames = Object.keys(DEFAULT_WEIGHTS);
-  const acquiredSites = new Set(ranking.flatMap((horse) => Object.keys(horse.predictions || {})));
+  const acquiredSites = getAcquiredSites(ranking);
   const acquired = acquiredSites.size;
   const scoredRanking = ranking.filter((horse) => horse.voteCount > 0);
   const average = scoredRanking.length ? scoredRanking.reduce((sum, horse) => sum + horse.support, 0) / scoredRanking.length : 0;
@@ -548,7 +553,11 @@ function renderStatus(race, ranking) {
   elements.operationStatus.textContent = operation.label;
   elements.operationWindow.textContent = operation.detail;
   elements.siteCount.textContent = `${acquired}/${siteNames.length}`;
-  elements.missingSites.textContent = acquired ? (race.missingSites.length ? race.missingSites.join(" / ") : "なし") : "予想印未取得";
+  elements.missingSites.textContent = acquired
+    ? acquired < MIN_CONSENSUS_SITES
+      ? `参考不足 ${acquired}/${MIN_CONSENSUS_SITES}`
+      : (race.missingSites.length ? race.missingSites.join(" / ") : "なし")
+    : "予想印未取得";
   elements.averageSupport.textContent = `${average.toFixed(1)}%`;
   if (elements.refreshButton) {
     elements.refreshButton.disabled = !operation.active;
@@ -635,6 +644,8 @@ function renderRanking(ranking) {
 function renderHorseDetail(ranking) {
   const selected = ranking.find((horse) => horse.name === state.selectedHorseName) || ranking[0];
   state.selectedHorseName = selected.name;
+  const acquired = getAcquiredSites(ranking).size;
+  const supportLabel = acquired >= MIN_CONSENSUS_SITES ? "AI支持率" : "参考スコア";
 
   [elements.sitePageLink, elements.siteDetailLink].forEach((link) => {
     if (link) {
@@ -649,7 +660,7 @@ function renderHorseDetail(ranking) {
   elements.horseName.textContent = selected.name;
   elements.horseNumber.textContent = `${selected.number}番`;
   elements.horseSummary.innerHTML = `
-    <div><span>AI支持率</span><strong>${selected.voteCount ? `${selected.support.toFixed(1)}%` : "未取得"}</strong></div>
+    <div><span>${supportLabel}</span><strong>${selected.voteCount ? `${selected.support.toFixed(1)}%` : "未取得"}</strong></div>
     <div><span>本命数</span><strong>${selected.voteCount ? selected.favorites : "-"}</strong></div>
     <div><span>オッズ</span><strong>${selected.odds.toFixed(1)}倍</strong></div>
   `;
@@ -679,13 +690,15 @@ function renderRecommendations(ranking) {
     return;
   }
 
-  if (!ranking.some((horse) => horse.voteCount > 0)) {
+  const acquired = getAcquiredSites(ranking).size;
+
+  if (!ranking.some((horse) => horse.voteCount > 0) || acquired < MIN_CONSENSUS_SITES) {
     elements.recommendationGroups.innerHTML = `
       <section class="recommendation-card">
-        <h4>推奨未取得</h4>
+        <h4>${acquired ? "参考不足" : "推奨未取得"}</h4>
         <div class="empty-state">
-          <strong>予想サイトの実印が未取得です</strong>
-          <span>仮の印では買い目推奨を出しません</span>
+          <strong>${acquired ? `${acquired}/10サイト取得。5サイト未満です` : "予想サイトの実印が未取得です"}</strong>
+          <span>${acquired ? "コンセンサスとしては扱わず、買い目推奨は出しません" : "仮の印では買い目推奨を出しません"}</span>
         </div>
       </section>
     `;
@@ -722,6 +735,8 @@ function renderSiteDetailPage(race, ranking) {
 
   const selected = ranking.find((horse) => horse.name === state.selectedHorseName) || ranking[0];
   state.selectedHorseName = selected.name;
+  const acquired = getAcquiredSites(ranking).size;
+  const supportLabel = acquired >= MIN_CONSENSUS_SITES ? "AI支持率" : "参考スコア";
 
   if (elements.siteRaceSelect) {
     elements.siteRaceSelect.innerHTML = getTodaysRaces().map((raceOption) => `
@@ -740,7 +755,7 @@ function renderSiteDetailPage(race, ranking) {
   if (elements.siteDetailMeta) {
     elements.siteDetailMeta.innerHTML = `
       <div><span>レース</span><strong>${race.venueName} ${race.number}</strong></div>
-      <div><span>AI支持率</span><strong>${selected.voteCount ? `${selected.support.toFixed(1)}%` : "未取得"}</strong></div>
+      <div><span>${supportLabel}</span><strong>${selected.voteCount ? `${selected.support.toFixed(1)}%` : "未取得"}</strong></div>
       <div><span>オッズ</span><strong>${selected.odds.toFixed(1)}倍</strong></div>
     `;
   }
