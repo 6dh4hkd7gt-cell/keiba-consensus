@@ -2,21 +2,820 @@
   "generatedAt": "2026-06-20T15:35:00+09:00",
   "targetDate": "2026-06-20",
   "updateLeadMinutes": 10,
-  "source": "seed-fallback",
-  "raceCount": 10,
+  "source": "site-scrape",
+  "raceSource": "keibalab-race-list",
+  "raceCount": 36,
   "readyRaceIds": [
-    "tokyo-11",
-    "nakayama-11",
-    "hanshin-11"
+    "tokyo-11"
   ],
-  "configuredSiteCount": 0,
-  "fetchedSiteCount": 0,
-  "matchedSiteCount": 0,
-  "fetchedRaceCount": 0,
-  "matchedRaceCount": 0,
+  "configuredSiteCount": 1,
+  "fetchedSiteCount": 1,
+  "matchedSiteCount": 1,
+  "fetchedRaceCount": 36,
+  "matchedRaceCount": 36,
   "siteSources": [
     {
       "site": "SPAIA",
+      "raceId": "tokyo-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "tokyo-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "tokyo-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "tokyo-1",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "tokyo-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "tokyo-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "tokyo-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "tokyo-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "tokyo-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "tokyo-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "tokyo-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "tokyo-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "tokyo-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "tokyo-2",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "tokyo-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "tokyo-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "tokyo-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "tokyo-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "tokyo-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "tokyo-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "tokyo-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "tokyo-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "tokyo-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "tokyo-3",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "tokyo-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "tokyo-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "tokyo-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "tokyo-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "tokyo-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "tokyo-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "tokyo-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "tokyo-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "tokyo-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "tokyo-4",
+      "configured": true,
+      "fetched": true,
+      "matched": 11,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "tokyo-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "tokyo-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "tokyo-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "tokyo-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "tokyo-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "tokyo-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "tokyo-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "tokyo-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "tokyo-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "tokyo-5",
+      "configured": true,
+      "fetched": true,
+      "matched": 10,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "tokyo-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "tokyo-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "tokyo-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "tokyo-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "tokyo-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "tokyo-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "tokyo-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "tokyo-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "tokyo-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "tokyo-6",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "tokyo-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "tokyo-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "tokyo-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "tokyo-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "tokyo-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "tokyo-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "tokyo-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "tokyo-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "tokyo-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "tokyo-7",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "tokyo-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "tokyo-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "tokyo-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "tokyo-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "tokyo-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "tokyo-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "tokyo-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "tokyo-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "tokyo-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "tokyo-8",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "tokyo-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "tokyo-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "tokyo-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "tokyo-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "tokyo-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "tokyo-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "tokyo-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "tokyo-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "tokyo-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "tokyo-9",
+      "configured": true,
+      "fetched": true,
+      "matched": 10,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "tokyo-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "tokyo-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "tokyo-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "tokyo-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "tokyo-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "tokyo-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "tokyo-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "tokyo-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "tokyo-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "tokyo-10",
+      "configured": true,
+      "fetched": true,
+      "matched": 14,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "tokyo-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "tokyo-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "tokyo-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "tokyo-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "tokyo-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "tokyo-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
       "raceId": "tokyo-11",
       "configured": false,
       "fetched": false,
@@ -42,10 +841,10 @@
     {
       "site": "競馬ラボ",
       "raceId": "tokyo-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
+      "configured": true,
+      "fetched": true,
+      "matched": 15,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -97,7 +896,7 @@
     },
     {
       "site": "SPAIA",
-      "raceId": "kyoto-10",
+      "raceId": "tokyo-12",
       "configured": false,
       "fetched": false,
       "matched": 0,
@@ -105,7 +904,7 @@
     },
     {
       "site": "netkeiba AI",
-      "raceId": "kyoto-10",
+      "raceId": "tokyo-12",
       "configured": false,
       "fetched": false,
       "matched": 0,
@@ -113,7 +912,7 @@
     },
     {
       "site": "AI指数",
-      "raceId": "kyoto-10",
+      "raceId": "tokyo-12",
       "configured": false,
       "fetched": false,
       "matched": 0,
@@ -121,15 +920,15 @@
     },
     {
       "site": "競馬ラボ",
-      "raceId": "kyoto-10",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
+      "raceId": "tokyo-12",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
-      "raceId": "kyoto-10",
+      "raceId": "tokyo-12",
       "configured": false,
       "fetched": false,
       "matched": 0,
@@ -137,7 +936,7 @@
     },
     {
       "site": "Uma Cloud",
-      "raceId": "kyoto-10",
+      "raceId": "tokyo-12",
       "configured": false,
       "fetched": false,
       "matched": 0,
@@ -145,7 +944,7 @@
     },
     {
       "site": "SIVA",
-      "raceId": "kyoto-10",
+      "raceId": "tokyo-12",
       "configured": false,
       "fetched": false,
       "matched": 0,
@@ -153,7 +952,7 @@
     },
     {
       "site": "Deep Keiba",
-      "raceId": "kyoto-10",
+      "raceId": "tokyo-12",
       "configured": false,
       "fetched": false,
       "matched": 0,
@@ -161,7 +960,7 @@
     },
     {
       "site": "Race AI",
-      "raceId": "kyoto-10",
+      "raceId": "tokyo-12",
       "configured": false,
       "fetched": false,
       "matched": 0,
@@ -169,7 +968,1847 @@
     },
     {
       "site": "Prediction One",
-      "raceId": "kyoto-10",
+      "raceId": "tokyo-12",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hanshin-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hanshin-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-1",
+      "configured": true,
+      "fetched": true,
+      "matched": 9,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hanshin-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hanshin-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hanshin-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hanshin-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hanshin-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hanshin-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-2",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hanshin-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hanshin-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hanshin-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hanshin-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hanshin-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hanshin-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-3",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hanshin-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hanshin-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hanshin-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hanshin-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hanshin-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hanshin-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-4",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hanshin-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hanshin-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hanshin-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hanshin-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hanshin-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hanshin-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-5",
+      "configured": true,
+      "fetched": true,
+      "matched": 9,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hanshin-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hanshin-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hanshin-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hanshin-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hanshin-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hanshin-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-6",
+      "configured": true,
+      "fetched": true,
+      "matched": 18,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hanshin-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hanshin-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hanshin-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hanshin-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hanshin-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hanshin-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-7",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hanshin-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hanshin-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hanshin-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hanshin-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hanshin-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hanshin-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-8",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hanshin-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hanshin-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hanshin-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hanshin-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hanshin-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hanshin-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-9",
+      "configured": true,
+      "fetched": true,
+      "matched": 10,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hanshin-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hanshin-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hanshin-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hanshin-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hanshin-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hanshin-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-10",
+      "configured": true,
+      "fetched": true,
+      "matched": 18,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hanshin-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hanshin-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hanshin-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hanshin-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hanshin-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hanshin-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-11",
+      "configured": true,
+      "fetched": true,
+      "matched": 15,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hanshin-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hanshin-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hanshin-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hanshin-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-12",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hanshin-12",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hanshin-12",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-12",
+      "configured": true,
+      "fetched": true,
+      "matched": 18,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-12",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hanshin-12",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-12",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hanshin-12",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hanshin-12",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hanshin-12",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hakodate-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hakodate-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hakodate-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hakodate-1",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hakodate-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hakodate-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hakodate-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hakodate-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hakodate-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hakodate-1",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hakodate-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hakodate-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hakodate-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hakodate-2",
+      "configured": true,
+      "fetched": true,
+      "matched": 14,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hakodate-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hakodate-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hakodate-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hakodate-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hakodate-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hakodate-2",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hakodate-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hakodate-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hakodate-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hakodate-3",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hakodate-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hakodate-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hakodate-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hakodate-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hakodate-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hakodate-3",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hakodate-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hakodate-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hakodate-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hakodate-4",
+      "configured": true,
+      "fetched": true,
+      "matched": 14,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hakodate-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hakodate-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hakodate-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hakodate-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hakodate-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hakodate-4",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hakodate-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hakodate-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hakodate-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hakodate-5",
+      "configured": true,
+      "fetched": true,
+      "matched": 10,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hakodate-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hakodate-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hakodate-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hakodate-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hakodate-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hakodate-5",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hakodate-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hakodate-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hakodate-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hakodate-6",
+      "configured": true,
+      "fetched": true,
+      "matched": 11,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hakodate-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hakodate-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hakodate-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hakodate-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hakodate-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hakodate-6",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hakodate-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hakodate-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hakodate-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hakodate-7",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hakodate-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hakodate-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hakodate-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hakodate-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hakodate-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hakodate-7",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hakodate-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hakodate-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hakodate-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hakodate-8",
+      "configured": true,
+      "fetched": true,
+      "matched": 12,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hakodate-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hakodate-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hakodate-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hakodate-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hakodate-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hakodate-8",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hakodate-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hakodate-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hakodate-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hakodate-9",
+      "configured": true,
+      "fetched": true,
+      "matched": 12,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hakodate-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hakodate-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hakodate-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hakodate-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hakodate-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hakodate-9",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hakodate-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hakodate-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hakodate-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hakodate-10",
+      "configured": true,
+      "fetched": true,
+      "matched": 8,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hakodate-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hakodate-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hakodate-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hakodate-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hakodate-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hakodate-10",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hakodate-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "netkeiba AI",
+      "raceId": "hakodate-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "AI指数",
+      "raceId": "hakodate-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hakodate-11",
+      "configured": true,
+      "fetched": true,
+      "matched": 16,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hakodate-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Uma Cloud",
+      "raceId": "hakodate-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hakodate-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Deep Keiba",
+      "raceId": "hakodate-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Race AI",
+      "raceId": "hakodate-11",
+      "configured": false,
+      "fetched": false,
+      "matched": 0,
+      "error": "URL未設定"
+    },
+    {
+      "site": "Prediction One",
+      "raceId": "hakodate-11",
       "configured": false,
       "fetched": false,
       "matched": 0,
@@ -202,10 +2841,10 @@
     {
       "site": "競馬ラボ",
       "raceId": "hakodate-12",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
+      "configured": true,
+      "fetched": true,
+      "matched": 11,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -250,566 +2889,6 @@
     {
       "site": "Prediction One",
       "raceId": "hakodate-12",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "sapporo-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "netkeiba AI",
-      "raceId": "sapporo-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "AI指数",
-      "raceId": "sapporo-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "sapporo-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "sapporo-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Uma Cloud",
-      "raceId": "sapporo-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "sapporo-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Deep Keiba",
-      "raceId": "sapporo-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Race AI",
-      "raceId": "sapporo-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Prediction One",
-      "raceId": "sapporo-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "nakayama-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "netkeiba AI",
-      "raceId": "nakayama-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "AI指数",
-      "raceId": "nakayama-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "nakayama-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "nakayama-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Uma Cloud",
-      "raceId": "nakayama-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "nakayama-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Deep Keiba",
-      "raceId": "nakayama-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Race AI",
-      "raceId": "nakayama-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Prediction One",
-      "raceId": "nakayama-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "chukyo-10",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "netkeiba AI",
-      "raceId": "chukyo-10",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "AI指数",
-      "raceId": "chukyo-10",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "chukyo-10",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "chukyo-10",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Uma Cloud",
-      "raceId": "chukyo-10",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "chukyo-10",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Deep Keiba",
-      "raceId": "chukyo-10",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Race AI",
-      "raceId": "chukyo-10",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Prediction One",
-      "raceId": "chukyo-10",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "netkeiba AI",
-      "raceId": "hanshin-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "AI指数",
-      "raceId": "hanshin-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Uma Cloud",
-      "raceId": "hanshin-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Deep Keiba",
-      "raceId": "hanshin-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Race AI",
-      "raceId": "hanshin-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Prediction One",
-      "raceId": "hanshin-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "kokura-12",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "netkeiba AI",
-      "raceId": "kokura-12",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "AI指数",
-      "raceId": "kokura-12",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "kokura-12",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "kokura-12",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Uma Cloud",
-      "raceId": "kokura-12",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "kokura-12",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Deep Keiba",
-      "raceId": "kokura-12",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Race AI",
-      "raceId": "kokura-12",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Prediction One",
-      "raceId": "kokura-12",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "fukushima-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "netkeiba AI",
-      "raceId": "fukushima-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "AI指数",
-      "raceId": "fukushima-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "fukushima-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "fukushima-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Uma Cloud",
-      "raceId": "fukushima-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "fukushima-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Deep Keiba",
-      "raceId": "fukushima-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Race AI",
-      "raceId": "fukushima-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Prediction One",
-      "raceId": "fukushima-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "niigata-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "netkeiba AI",
-      "raceId": "niigata-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "AI指数",
-      "raceId": "niigata-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "niigata-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "niigata-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Uma Cloud",
-      "raceId": "niigata-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "niigata-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Deep Keiba",
-      "raceId": "niigata-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Race AI",
-      "raceId": "niigata-11",
-      "configured": false,
-      "fetched": false,
-      "matched": 0,
-      "error": "URL未設定"
-    },
-    {
-      "site": "Prediction One",
-      "raceId": "niigata-11",
       "configured": false,
       "fetched": false,
       "matched": 0,
