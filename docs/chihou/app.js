@@ -15,6 +15,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const DEMO_TIME = urlParams.get("demoTime");
 const INITIAL_RACE_ID = urlParams.get("race");
 const INITIAL_HORSE_NAME = urlParams.get("horse") || "";
+const PUBLIC_DATA_BASE = "https://6dh4hkd7gt-cell.github.io/keiba-consensus/chihou";
 
 const DEFAULT_WEIGHTS = {
   "楽天みんなの予想": 1,
@@ -215,7 +216,8 @@ function getTodaysRaces() {
 }
 
 async function loadDailyRaceSchedule() {
-  const dataUrl = `./data/today-races.json?date=${encodeURIComponent(getTodayKey())}&v=${Date.now()}`;
+  const dataBase = window.location.protocol === "file:" ? PUBLIC_DATA_BASE : ".";
+  const dataUrl = `${dataBase}/data/today-races.json?date=${encodeURIComponent(getTodayKey())}&v=${Date.now()}`;
   const response = await fetch(dataUrl, { cache: "no-store" });
 
   if (!response.ok) {
@@ -827,30 +829,43 @@ if (elements.siteHorseSelect) {
 }
 
 if (elements.refreshButton) {
-  elements.refreshButton.addEventListener("click", () => {
+  elements.refreshButton.addEventListener("click", async () => {
     if (!getOperatingStatus().active) {
       render();
       return;
     }
-    render();
+    await hydrateDailyRaceSchedule({ preserveSelection: true });
   });
 }
 
 render();
 
-async function hydrateDailyRaceSchedule() {
+async function hydrateDailyRaceSchedule(options = {}) {
   try {
+    if (elements.refreshButton) {
+      elements.refreshButton.disabled = true;
+      elements.refreshButton.classList.add("is-loading");
+    }
+
     const dailyRaces = await loadDailyRaceSchedule();
     races = dailyRaces;
 
     const todaysRaces = getTodaysRaces();
-    state.selectedRaceId = todaysRaces.some((race) => race.id === INITIAL_RACE_ID)
-      ? INITIAL_RACE_ID
+    const requestedRaceId = options.preserveSelection ? state.selectedRaceId : INITIAL_RACE_ID;
+    state.selectedRaceId = todaysRaces.some((race) => race.id === requestedRaceId)
+      ? requestedRaceId
       : todaysRaces[0]?.id;
-    state.selectedHorseName = INITIAL_HORSE_NAME;
+    if (!options.preserveSelection) {
+      state.selectedHorseName = INITIAL_HORSE_NAME;
+    }
     render();
   } catch (error) {
     console.warn("Daily local racing schedule is unavailable. Using fallback schedule.", error);
+  } finally {
+    if (elements.refreshButton) {
+      elements.refreshButton.classList.remove("is-loading");
+    }
+    render();
   }
 }
 
@@ -866,4 +881,4 @@ async function hydrateAutoWeights() {
 
 hydrateDailyRaceSchedule();
 hydrateAutoWeights();
-setInterval(render, 60 * 1000);
+setInterval(() => hydrateDailyRaceSchedule({ preserveSelection: true }), 60 * 1000);
