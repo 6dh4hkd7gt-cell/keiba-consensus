@@ -582,22 +582,54 @@ async function fetchRakutenPredictions(raceId) {
 }
 
 async function fetchHtml(url, referer = SOURCE_URL) {
+  const requestHeaders = {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "accept-language": "ja,en-US;q=0.9,en;q=0.8",
+    "cache-control": "no-cache",
+    "pragma": "no-cache",
+    "referer": referer,
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+  };
   const response = await fetch(url, {
-    headers: {
-      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-      "accept-language": "ja,en-US;q=0.9,en;q=0.8",
-      "cache-control": "no-cache",
-      "pragma": "no-cache",
-      "referer": referer,
-      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-    }
+    headers: requestHeaders
   });
 
   if (!response.ok) {
     throw new Error(`Failed to fetch ${url}: ${response.status}`);
   }
 
+  const cookieHeader = extractCookieHeader(response.headers);
+  if (url.includes("keiba0.com") && cookieHeader) {
+    const retry = await fetch(url, {
+      headers: {
+        ...requestHeaders,
+        "cookie": cookieHeader
+      }
+    });
+
+    if (retry.ok) {
+      return readJapaneseHtml(retry);
+    }
+  }
+
   return readJapaneseHtml(response);
+}
+
+function extractCookieHeader(headers) {
+  const setCookies = typeof headers.getSetCookie === "function"
+    ? headers.getSetCookie()
+    : [];
+  const fallbackCookie = headers.get("set-cookie");
+  const cookies = setCookies.length
+    ? setCookies
+    : fallbackCookie
+      ? fallbackCookie.split(/,(?=\s*[^;,=\s]+=[^;,]+)/)
+      : [];
+
+  return cookies
+    .map((cookie) => cookie.split(";")[0].trim())
+    .filter(Boolean)
+    .join("; ");
 }
 
 async function fetchJson(url, referer = SOURCE_URL) {
