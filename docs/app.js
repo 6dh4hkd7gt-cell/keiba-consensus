@@ -30,7 +30,7 @@ const DEFAULT_WEIGHTS = {
   "Prediction One": 1
 };
 
-const races = [
+let races = [
   {
     id: "tokyo-11",
     venue: "tokyo",
@@ -394,6 +394,49 @@ function loadWeights() {
     return { ...DEFAULT_WEIGHTS, ...saved };
   } catch {
     return { ...DEFAULT_WEIGHTS };
+  }
+}
+
+function isValidRaceData(data) {
+  return data && Array.isArray(data.races) && data.races.every((race) => (
+    race.id &&
+    race.venue &&
+    race.venueName &&
+    race.number &&
+    race.name &&
+    race.date &&
+    race.startAt &&
+    Array.isArray(race.horses)
+  ));
+}
+
+async function loadPublishedRaceData() {
+  if (DEMO_TIME) {
+    return false;
+  }
+
+  try {
+    const response = await fetch(`./data/jra-races.json?v=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) {
+      return false;
+    }
+
+    const data = await response.json();
+    if (!isValidRaceData(data)) {
+      return false;
+    }
+
+    races = data.races.map((race) => ({
+      missingSites: [],
+      ...race,
+      horses: race.horses.map((horse) => ({
+        predictions: {},
+        ...horse
+      }))
+    }));
+    return true;
+  } catch {
+    return false;
   }
 }
 
@@ -1037,7 +1080,12 @@ if (elements.refreshButton) {
   });
 }
 
-render();
+async function initApp() {
+  await loadPublishedRaceData();
+  render();
+}
+
+initApp();
 async function hydrateAutoWeights() {
   if (!window.ConsensusAutoWeights) {
     return;
