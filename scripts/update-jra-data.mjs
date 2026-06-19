@@ -48,6 +48,22 @@ const jraVenueCodes = {
   hanshin: "09",
   kokura: "10"
 };
+const jraVenueByCode = Object.entries(jraVenueCodes).reduce((map, [venue, code]) => {
+  map[code] = venue;
+  return map;
+}, {});
+const jraVenueNames = {
+  sapporo: "札幌",
+  hakodate: "函館",
+  fukushima: "福島",
+  niigata: "新潟",
+  tokyo: "東京",
+  nakayama: "中山",
+  chukyo: "中京",
+  kyoto: "京都",
+  hanshin: "阪神",
+  kokura: "小倉"
+};
 
 function getJstNow() {
   if (process.env.DEMO_TIME) {
@@ -194,6 +210,22 @@ function normalizeOdds(value) {
   return Number.isFinite(number) && number > 0 ? Number(number.toFixed(1)) : undefined;
 }
 
+function decodeHtml(value) {
+  return String(value || "")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#039;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function stripHtml(value) {
+  return decodeHtml(String(value || "").replace(/<[^>]+>/g, " "));
+}
+
 function makeUrl(template, race, targetDate) {
   const compactDate = targetDate.replaceAll("-", "");
   const raceNumber = String(race.number || "").replace(/\D/g, "").padStart(2, "0");
@@ -313,6 +345,116 @@ function stripTags(html) {
     .replace(/&gt;/g, ">")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function parseKeibaLabRaceId(raceId) {
+  const compact = String(raceId || "").replace(/\D/g, "");
+  const match = compact.match(/^(\d{8})(\d{2})(\d{2})$/);
+  if (!match) {
+    return null;
+  }
+
+  const [, dateCompact, venueCode, raceNumber] = match;
+  const venue = jraVenueByCode[venueCode];
+  if (!venue) {
+    return null;
+  }
+
+  return {
+    date: `${dateCompact.slice(0, 4)}-${dateCompact.slice(4, 6)}-${dateCompact.slice(6, 8)}`,
+    venue,
+    venueName: jraVenueNames[venue],
+    number: `${Number(raceNumber)}R`,
+    raceNumber,
+    venueCode,
+    raceId: `${venue}-${Number(raceNumber)}`
+  };
+}
+
+function parseKeibaLabRaceList(html) {
+  const races = [];
+  const rowPattern = /<tr>\s*<td class="raceNum[\s\S]*?href="\/db\/race\/(\d{12})\/">(\d+)R<\/a>[\s\S]*?<span class="std11">(\d{2}:\d{2})<\/span>[\s\S]*?<td><a[^>]*href="\/db\/race\/\1\/"[^>]*>([\s\S]*?)<\/a>[\s\S]*?<\/tr>/g;
+
+  for (const match of html.matchAll(rowPattern)) {
+    const [, keibaLabRaceId, raceNumber, startAt, rawName] = match;
+    const parsed = parseKeibaLabRaceId(keibaLabRaceId);
+    if (!parsed) {
+      continue;
+    }
+
+    races.push({
+      id: parsed.raceId,
+      sourceRaceId: keibaLabRaceId,
+      venue: parsed.venue,
+      venueName: parsed.venueName,
+      number: `${Number(raceNumber)}R`,
+      name: stripHtml(rawName),
+      date: parsed.date,
+      startAt,
+      updatedAt: shiftTime(startAt, -updateLeadMinutes),
+      missingSites: [],
+      horses: []
+    });
+  }
+
+  return races;
+}
+
+function parseKeibaLabHorses(html) {
+  const byNumber = new Map();
+  const selectPattern = /<select class="user_mark" name="([^"]+)"[^>]*data-umano="(\d+)"/g;
+  for (const match of html.matchAll(selectPattern)) {
+    const name = decodeHtml(match[1]);
+    const number = Number(match[2]);
+    if (name && number && !byNumber.has(number)) {
+      byNumber.set(number, {
+        number,
+        name,
+        odds: 0,
+        predictions: {}
+      });
+    }
+  }
+
+  if (!byNumber.size) {
+    const horsePattern = /data-hsnm="([^"]+)"/g;
+    let fallbackNumber = 1;
+    for (const match of html.matchAll(horsePattern)) {
+      const name = decodeHtml(match[1]);
+      if (name && ![...byNumber.values()].some((horse) => horse.name === name)) {
+        byNumber.set(fallbackNumber, {
+          number: fallbackNumber,
+          name,
+          odds: 0,
+          predictions: {}
+        });
+        fallbackNumber += 1;
+      }
+    }
+  }
+
+  return [...byNumber.values()].sort((a, b) => a.number - b.number);
+}
+
+async function loadKeibaLabRaces(targetDate) {
+  const compactDate = targetDate.replaceAll("-", "");
+  const listUrl = `https://www.keibalab.jp/db/race/${compactDate}/`;
+  const { text } = await fetchText(listUrl);
+  const races = parseKeibaLabRaceList(text);
+  if (!races.length) {
+    return null;
+  }
+
+  for (const race of races) {
+    try {
+      const { text: raceHtml } = await fetchText(`https://www.keibalab.jp/db/race/${race.sourceRaceId}/`);
+      race.horses = parseKeibaLabHorses(raceHtml);
+    } catch {
+      race.horses = [];
+    }
+  }
+
+  return races.filter((race) => race.horses.length > 0);
 }
 
 function parseJsonPayload(text) {
@@ -496,7 +638,8 @@ async function main() {
   const targetDate = getNextJraDate(now);
   const appSource = await readFile(appPath, "utf8");
   const externalRaces = await loadExternalRaces();
-  const seedRaces = externalRaces || extractSeedRaces(appSource);
+  const liveRaces = externalRaces ? null : await loadKeibaLabRaces(targetDate);
+  const seedRaces = externalRaces || liveRaces || extractSeedRaces(appSource);
   const races = seedRaces.map((race) => normalizeRace(race, targetDate, now));
   const sourceReports = await applySitePredictions(races, targetDate);
   const readyRaces = races.filter((race) => {
@@ -510,7 +653,8 @@ async function main() {
     generatedAt: nowParts.iso,
     targetDate,
     updateLeadMinutes,
-    source: sourceReports.some((report) => report.fetched && report.matched > 0) ? "site-scrape" : (externalRaces ? "external-json" : "seed-fallback"),
+    source: sourceReports.some((report) => report.fetched && report.matched > 0) ? "site-scrape" : (externalRaces ? "external-json" : (liveRaces ? "keibalab-race-list" : "seed-fallback")),
+    raceSource: externalRaces ? "external-json" : (liveRaces ? "keibalab-race-list" : "seed-fallback"),
     siteSources: sourceReports,
     races
   };
@@ -523,6 +667,7 @@ async function main() {
     targetDate,
     updateLeadMinutes,
     source: payload.source,
+    raceSource: payload.raceSource,
     raceCount: races.length,
     readyRaceIds: readyRaces.map((race) => race.id),
     configuredSiteCount: configuredSiteNames.size,
