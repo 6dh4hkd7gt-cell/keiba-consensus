@@ -2,7 +2,28 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const SOURCE_URL = "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/TodayRaceInfoTop";
+const RAKUTEN_TOP_URL = "https://keiba.rakuten.co.jp/";
 const OUTPUT_PATH = path.join(process.cwd(), "docs", "chihou", "data", "today-races.json");
+const PREDICTION_SOURCES = [
+  "楽天みんなの予想",
+  "netkeiba地方",
+  "オッズパーク",
+  "SPAT4",
+  "競馬ブック地方",
+  "競馬エース",
+  "勝馬",
+  "ケイシュウNEWS",
+  "通信社",
+  "競馬カナザワ"
+];
+const MARK_SCORES = {
+  "◎": 100,
+  "○": 80,
+  "◯": 80,
+  "▲": 65,
+  "△": 45,
+  "☆": 35
+};
 
 const VENUE_CODES = {
   obihiro: "03",
@@ -211,6 +232,115 @@ function parseHorseRows(lines) {
   });
 }
 
+function scorePredictionCounts(counts) {
+  const entries = Object.entries(counts).filter(([, count]) => count > 0);
+  if (!entries.length) {
+    return null;
+  }
+
+  const totalCount = entries.reduce((total, [, count]) => total + count, 0);
+  const weightedScore = entries.reduce((total, [mark, count]) => total + (MARK_SCORES[mark] || 0) * count, 0);
+  const index = Math.round(weightedScore / totalCount);
+  const topMark = index >= 85 ? "◎" : index >= 75 ? "○" : index >= 65 ? "▲" : "△";
+
+  return {
+    mark: topMark,
+    index,
+    raw: counts
+  };
+}
+
+function parseRakutenPredictionSummary(lines) {
+  const predictions = new Map();
+  const start = lines.findIndex((line) => line.includes("馬番") && line.includes("馬名") && line.includes("◎"));
+
+  if (start < 0) {
+    return predictions;
+  }
+
+  for (const line of lines.slice(start + 1)) {
+    if (line.includes("ピンク色") || line.includes("予想一覧を見る") || line.includes("出馬表やオッズ")) {
+      break;
+    }
+
+    const match = line.match(/^(\d{1,2})\s+(.+?)\s+\S+（[^）]+）\s+[-\d.]+ \([^)]+\)\s+(\d+)\s+(\d+)\s+(\d+)\s+(\d+)$/);
+    if (!match) {
+      continue;
+    }
+
+    const score = scorePredictionCounts({
+      "◎": Number(match[3]),
+      "○": Number(match[4]),
+      "▲": Number(match[5]),
+      "△": Number(match[6])
+    });
+
+    if (score) {
+      predictions.set(Number(match[1]), {
+        name: match[2],
+        prediction: score
+      });
+    }
+  }
+
+  return predictions;
+}
+
+async function fetchRakutenRaceIds(date) {
+  const response = await fetch(RAKUTEN_TOP_URL, {
+    headers: {
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "accept-language": "ja,en-US;q=0.9,en;q=0.8",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch Rakuten top: ${response.status}`);
+  }
+
+  const dateDigits = date.replaceAll("-", "");
+  const html = await readJapaneseHtml(response);
+  const raceIds = new Map();
+  for (const match of html.matchAll(/race_card\/list\/RACEID\/(\d{18})/g)) {
+    const raceId = match[1];
+    if (!raceId.startsWith(dateDigits)) {
+      continue;
+    }
+
+    const venue = Object.entries(VENUE_CODES).find(([, code]) => code === raceId.slice(8, 10))?.[0];
+    const raceNumber = Number(raceId.slice(-2));
+    if (venue && raceNumber) {
+      raceIds.set(`${venue}-${raceNumber}`, raceId);
+    }
+  }
+
+  return raceIds;
+}
+
+async function fetchRakutenPredictions(raceId) {
+  const url = `https://keiba.rakuten.co.jp/race_card/list/RACEID/${raceId}/mode/2`;
+  const response = await fetch(url, {
+    headers: {
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "accept-language": "ja,en-US;q=0.9,en;q=0.8",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "referer": RAKUTEN_TOP_URL,
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch Rakuten predictions ${raceId}: ${response.status}`);
+  }
+
+  const html = await readJapaneseHtml(response);
+  return parseRakutenPredictionSummary(htmlToLines(html));
+}
+
 async function fetchRaceHorses(date, race) {
   const url = buildDebaTableUrl(date, race);
   if (!url) {
@@ -238,26 +368,68 @@ async function fetchRaceHorses(date, race) {
 
 async function enrichRaceHorses(date, races, existingRaces) {
   const existingByRace = new Map(existingRaces.map((race) => [buildRaceKey(race), race]));
+  let rakutenRaceIds = new Map();
+  try {
+    rakutenRaceIds = await fetchRakutenRaceIds(date);
+  } catch (error) {
+    console.warn(error.message);
+  }
   const enriched = [];
 
   for (const race of races) {
+    let raceHorses = [];
     try {
       const horses = await fetchRaceHorses(date, race);
       if (horses.length) {
-        enriched.push({ ...race, horses });
-        continue;
+        raceHorses = horses;
       }
     } catch (error) {
       console.warn(error.message);
     }
 
-    const existing = existingByRace.get(buildRaceKey(race));
-    if (existing?.horses?.length) {
-      enriched.push({ ...race, horses: existing.horses });
+    const raceKey = buildRaceKey(race);
+    const existing = existingByRace.get(raceKey);
+    if (!raceHorses.length && existing?.horses?.length) {
+      raceHorses = existing.horses;
+    }
+
+    if (raceHorses.length) {
+      const predictionsByHorseNumber = new Map();
+      const raceId = rakutenRaceIds.get(raceKey);
+      if (raceId) {
+        try {
+          const rakutenPredictions = await fetchRakutenPredictions(raceId);
+          for (const [horseNumber, predictionData] of rakutenPredictions.entries()) {
+            predictionsByHorseNumber.set(horseNumber, {
+              ...(predictionsByHorseNumber.get(horseNumber) || {}),
+              "楽天みんなの予想": predictionData.prediction
+            });
+          }
+        } catch (error) {
+          console.warn(error.message);
+        }
+      }
+
+      const horses = raceHorses.map((horse) => ({
+        ...horse,
+        predictions: {
+          ...(horse.predictions || {}),
+          ...(predictionsByHorseNumber.get(horse.number) || {})
+        }
+      }));
+      const acquiredSites = new Set(horses.flatMap((horse) => Object.keys(horse.predictions || {})));
+      enriched.push({
+        ...race,
+        horses,
+        missingSites: PREDICTION_SOURCES.filter((source) => !acquiredSites.has(source))
+      });
       continue;
     }
 
-    enriched.push(race);
+    enriched.push({
+      ...race,
+      missingSites: PREDICTION_SOURCES
+    });
   }
 
   return enriched;
