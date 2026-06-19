@@ -8,6 +8,8 @@ const PREDICTION_SOURCES = [
   "楽天みんなの予想",
   "AiBA無料AI",
   "ウマークス順位",
+  "オッズパークAI",
+  "公式単勝人気",
   "競馬新聞ゼロ本紙",
   "競馬新聞ゼロ指数"
 ];
@@ -17,7 +19,9 @@ const MARK_SCORES = {
   "◯": 80,
   "▲": 65,
   "△": 45,
-  "☆": 35
+  "☆": 35,
+  "注": 35,
+  "×": 25
 };
 
 const VENUE_CODES = {
@@ -53,6 +57,11 @@ const AIBA_VENUE_CODES = {
   himeji: "51",
   kochi: "54",
   saga: "55"
+};
+
+const ODDSPARK_AI_CODES = {
+  nagoya: "43",
+  sonoda: "51"
 };
 
 const VENUE_ALIASES = {
@@ -436,6 +445,74 @@ function parseUmaXPredictions(html, raceHorses) {
   return predictions;
 }
 
+function normalizeMark(mark) {
+  return mark === "◯" ? "○" : mark;
+}
+
+function parseTableCells(rowHtml) {
+  return [...rowHtml.matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi)]
+    .map((match) => decodeEntities(match[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()));
+}
+
+function parseOddsParkAiPredictions(html) {
+  const racePredictions = new Map();
+  const racePattern = /(\d{1,2})R[\s\S]*?<table class="race-table">([\s\S]*?)<\/table>/gi;
+
+  for (const raceMatch of html.matchAll(racePattern)) {
+    const raceNumber = Number(raceMatch[1]);
+    if (!Number.isFinite(raceNumber)) {
+      continue;
+    }
+
+    const predictions = new Map();
+    for (const rowMatch of raceMatch[2].matchAll(/<tr[\s\S]*?<\/tr>/gi)) {
+      const cells = parseTableCells(rowMatch[0]);
+      const horseNumberText = cells.slice(0, 2).filter((cell) => /^\d{1,2}$/.test(cell)).at(-1);
+      if (cells.length < 7 || !horseNumberText) {
+        continue;
+      }
+
+      const horseNumber = Number(horseNumberText);
+      const counts = cells.slice(-4).reduce((marks, mark) => {
+        const normalized = normalizeMark(mark);
+        if (MARK_SCORES[normalized]) {
+          marks[normalized] = (marks[normalized] || 0) + 1;
+        }
+        return marks;
+      }, {});
+      const prediction = scorePredictionCounts(counts);
+      if (prediction) {
+        predictions.set(horseNumber, prediction);
+      }
+    }
+
+    if (predictions.size) {
+      racePredictions.set(raceNumber, predictions);
+    }
+  }
+
+  return racePredictions;
+}
+
+function buildOfficialOddsPredictions(raceHorses) {
+  const predictions = new Map();
+  const ranked = [...raceHorses]
+    .filter((horse) => Number.isFinite(horse.odds) && horse.odds > 0)
+    .sort((a, b) => a.odds - b.odds);
+
+  ranked.forEach((horse, index) => {
+    predictions.set(horse.number, {
+      ...scoreFromIndex(100 - index * 6),
+      raw: {
+        odds: horse.odds,
+        rank: index + 1
+      }
+    });
+  });
+
+  return predictions;
+}
+
 function parseKeibaZeroPredictions(html) {
   const predictions = new Map();
   const sourceLines = htmlToLines(html);
@@ -764,6 +841,38 @@ async function fetchAibaPredictions(url) {
   return parseAibaPredictions(html);
 }
 
+function buildOddsParkAiUrl(date, venue) {
+  const code = ODDSPARK_AI_CODES[venue];
+  if (!code) {
+    return "";
+  }
+
+  return `https://www.oddspark.com/keiba/yosou/ai/RaceList.do?jo_code=${code}&race_date=${date.replaceAll("-", "")}`;
+}
+
+async function fetchOddsParkAiRacePredictions(date, venues) {
+  const predictionsByRace = new Map();
+
+  for (const venue of venues) {
+    const url = buildOddsParkAiUrl(date, venue);
+    if (!url) {
+      continue;
+    }
+
+    try {
+      const html = await fetchHtml(url, "https://www.oddspark.com/keiba/yosou/");
+      const racePredictions = parseOddsParkAiPredictions(html);
+      for (const [raceNumber, predictions] of racePredictions.entries()) {
+        predictionsByRace.set(`${venue}-${raceNumber}`, predictions);
+      }
+    } catch (error) {
+      console.warn(error.message);
+    }
+  }
+
+  return predictionsByRace;
+}
+
 function buildUmaXUrl(date, race) {
   const code = VENUE_CODES[race.venue];
   if (!code) {
@@ -873,6 +982,7 @@ async function enrichRaceHorses(date, races, existingRaces) {
   const venues = [...new Set(races.map((race) => race.venue))];
   let rakutenRaceIds = new Map();
   let aibaRaceLinks = new Map();
+  let oddsParkAiPredictions = new Map();
   try {
     rakutenRaceIds = await fetchRakutenRaceIds(date);
   } catch (error) {
@@ -880,6 +990,11 @@ async function enrichRaceHorses(date, races, existingRaces) {
   }
   try {
     aibaRaceLinks = await fetchAibaRaceLinks(date, venues);
+  } catch (error) {
+    console.warn(error.message);
+  }
+  try {
+    oddsParkAiPredictions = await fetchOddsParkAiRacePredictions(date, venues);
   } catch (error) {
     console.warn(error.message);
   }
@@ -904,6 +1019,10 @@ async function enrichRaceHorses(date, races, existingRaces) {
 
     if (raceHorses.length) {
       const predictionsByHorseNumber = new Map();
+      const officialOddsPredictions = buildOfficialOddsPredictions(raceHorses);
+      for (const [horseNumber, prediction] of officialOddsPredictions.entries()) {
+        mergePrediction(predictionsByHorseNumber, horseNumber, "公式単勝人気", prediction);
+      }
       const raceId = rakutenRaceIds.get(raceKey);
       if (raceId) {
         try {
@@ -924,6 +1043,12 @@ async function enrichRaceHorses(date, races, existingRaces) {
           }
         } catch (error) {
           console.warn(error.message);
+        }
+      }
+      const oddsParkAiRacePredictions = oddsParkAiPredictions.get(raceKey);
+      if (oddsParkAiRacePredictions) {
+        for (const [horseNumber, prediction] of oddsParkAiRacePredictions.entries()) {
+          mergePrediction(predictionsByHorseNumber, horseNumber, "オッズパークAI", prediction);
         }
       }
       try {
