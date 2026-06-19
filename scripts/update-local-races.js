@@ -583,7 +583,9 @@ async function fetchRakutenPredictions(raceId) {
 
 async function fetchHtml(url, referer = SOURCE_URL) {
   const requestHeaders = {
-    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "accept": url.includes("keiba0.com/nar/excel/")
+      ? "application/vnd.ms-excel,text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+      : "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "accept-language": "ja,en-US;q=0.9,en;q=0.8",
     "cache-control": "no-cache",
     "pragma": "no-cache",
@@ -599,6 +601,7 @@ async function fetchHtml(url, referer = SOURCE_URL) {
   }
 
   const cookieHeader = extractCookieHeader(response.headers);
+  const firstHtml = await readJapaneseHtml(response);
   if (url.includes("keiba0.com") && cookieHeader) {
     const retry = await fetch(url, {
       headers: {
@@ -608,11 +611,12 @@ async function fetchHtml(url, referer = SOURCE_URL) {
     });
 
     if (retry.ok) {
-      return readJapaneseHtml(retry);
+      const retryHtml = await readJapaneseHtml(retry);
+      return selectBestKeibaZeroHtml(firstHtml, retryHtml);
     }
   }
 
-  return readJapaneseHtml(response);
+  return firstHtml;
 }
 
 function extractCookieHeader(headers) {
@@ -630,6 +634,38 @@ function extractCookieHeader(headers) {
     .map((cookie) => cookie.split(";")[0].trim())
     .filter(Boolean)
     .join("; ");
+}
+
+function selectBestKeibaZeroHtml(firstHtml, retryHtml) {
+  const candidates = [firstHtml, retryHtml].filter(Boolean);
+  if (candidates.length < 2) {
+    return candidates[0] || "";
+  }
+
+  return candidates
+    .map((html) => ({ html, score: scoreKeibaZeroHtml(html) }))
+    .sort((a, b) => b.score - a.score)[0].html;
+}
+
+function scoreKeibaZeroHtml(html) {
+  const lines = htmlToLines(html);
+  const predictions = parseKeibaZeroPredictions(html);
+  const sourceCount = new Set(
+    [...predictions.values()].flatMap((sources) => Object.keys(sources || {}))
+  ).size;
+  const horseRows = [...predictions.values()].filter((sources) => sources?.["競馬新聞ゼロ指数"]).length;
+  const paperRows = [...predictions.values()].filter((sources) => sources?.["競馬新聞ゼロ本紙"]).length;
+
+  return (
+    (lines.some((line) => line.includes("本紙予想") || line.includes("本誌予想")) ? 1000 : 0) +
+    (lines.some((line) => line.includes("馬連")) ? 300 : 0) +
+    (lines.some((line) => line.includes("枠番")) ? 100 : 0) +
+    (lines.some((line) => line.includes("馬番")) ? 100 : 0) +
+    paperRows * 40 +
+    horseRows * 20 +
+    sourceCount * 10 +
+    Math.min(lines.length, 300)
+  );
 }
 
 async function fetchJson(url, referer = SOURCE_URL) {
@@ -754,6 +790,31 @@ function buildKeibaZeroUrl(date, race) {
   return `https://keiba0.com/nar/detail/${date.replaceAll("-", "")}/${code}/${String(race.number).padStart(2, "0")}/`;
 }
 
+function buildKeibaZeroExcelUrl(date, race) {
+  const code = VENUE_CODES[race.venue];
+  if (!code) {
+    return "";
+  }
+  return `https://keiba0.com/nar/excel/${date.replaceAll("-", "")}/${code}/${String(race.number).padStart(2, "0")}/`;
+}
+
+function hasPredictionSource(predictions, sourceName) {
+  return [...predictions.values()].some((sources) => Boolean(sources?.[sourceName]));
+}
+
+function mergePredictionMaps(basePredictions, extraPredictions) {
+  const merged = new Map(basePredictions);
+
+  for (const [horseNumber, predictions] of extraPredictions.entries()) {
+    merged.set(horseNumber, {
+      ...(merged.get(horseNumber) || {}),
+      ...predictions
+    });
+  }
+
+  return merged;
+}
+
 async function fetchKeibaZeroPredictions(date, race) {
   const url = buildKeibaZeroUrl(date, race);
   if (!url) {
@@ -761,7 +822,25 @@ async function fetchKeibaZeroPredictions(date, race) {
   }
 
   const html = await fetchHtml(url, "https://keiba0.com/nar/");
-  return parseKeibaZeroPredictions(html);
+  let predictions = parseKeibaZeroPredictions(html);
+  if (hasPredictionSource(predictions, "競馬新聞ゼロ本紙")) {
+    return predictions;
+  }
+
+  const excelUrl = buildKeibaZeroExcelUrl(date, race);
+  if (!excelUrl) {
+    return predictions;
+  }
+
+  try {
+    const excelHtml = await fetchHtml(excelUrl, url);
+    const fallbackPredictions = parseKeibaZeroPredictions(`${excelHtml}\n${html}`);
+    predictions = mergePredictionMaps(predictions, fallbackPredictions);
+  } catch (error) {
+    console.warn(error.message);
+  }
+
+  return predictions;
 }
 
 async function fetchRaceHorses(date, race) {
