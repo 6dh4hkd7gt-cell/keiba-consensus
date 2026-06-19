@@ -26,7 +26,19 @@ jobs:
         run: node scripts/update-local-races.js
 
       - name: Commit schedule update
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: Update local racing schedule
-          file_pattern: docs/chihou/data/today-races.json
+        run: |
+          if git diff --quiet -- docs/chihou/data/today-races.json; then
+            echo "No schedule changes."
+            exit 0
+          fi
+
+          cp docs/chihou/data/today-races.json /tmp/today-races.json
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/today-races.json docs/chihou/data/today-races.json
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/chihou/data/today-races.json
+          git commit -m "Update local racing schedule"
+          git push origin HEAD:main
