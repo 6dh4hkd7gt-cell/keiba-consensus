@@ -7,6 +7,35 @@ const dataDir = path.join(rootDir, "docs", "data");
 const racesPath = path.join(dataDir, "jra-races.json");
 const statusPath = path.join(dataDir, "update-status.json");
 const updateLeadMinutes = 10;
+const defaultSites = [
+  { name: "SPAIA", env: "JRA_SOURCE_SPAIA_URL" },
+  { name: "netkeiba AI", env: "JRA_SOURCE_NETKEIBA_AI_URL" },
+  { name: "AI指数", env: "JRA_SOURCE_AI_INDEX_URL" },
+  { name: "競馬ラボ", env: "JRA_SOURCE_KEIBA_LAB_URL" },
+  { name: "無料競馬AI", env: "JRA_SOURCE_FREE_KEIBA_AI_URL" },
+  { name: "Uma Cloud", env: "JRA_SOURCE_UMA_CLOUD_URL" },
+  { name: "SIVA", env: "JRA_SOURCE_SIVA_URL" },
+  { name: "Deep Keiba", env: "JRA_SOURCE_DEEP_KEIBA_URL" },
+  { name: "Race AI", env: "JRA_SOURCE_RACE_AI_URL" },
+  { name: "Prediction One", env: "JRA_SOURCE_PREDICTION_ONE_URL" }
+];
+const markAliases = new Map([
+  ["◎", "◎"],
+  ["本命", "◎"],
+  ["honmei", "◎"],
+  ["○", "○"],
+  ["対抗", "○"],
+  ["taikou", "○"],
+  ["▲", "▲"],
+  ["単穴", "▲"],
+  ["tanana", "▲"],
+  ["△", "△"],
+  ["連下", "△"],
+  ["renka", "△"],
+  ["☆", "☆"],
+  ["注", "☆"],
+  ["穴", "☆"]
+]);
 
 function getJstNow() {
   if (process.env.DEMO_TIME) {
@@ -122,6 +151,305 @@ function validateRacePayload(payload) {
     ));
 }
 
+function normalizeSiteName(value) {
+  return String(value || "").trim();
+}
+
+function normalizeMark(value) {
+  const text = String(value || "").trim();
+  return markAliases.get(text) || markAliases.get(text.toLowerCase()) || (["◎", "○", "▲", "△", "☆"].includes(text) ? text : "");
+}
+
+function normalizeIndex(value) {
+  if (value === undefined || value === null || value === "") {
+    return undefined;
+  }
+
+  const number = Number(String(value).replace(/[^\d.-]/g, ""));
+  if (!Number.isFinite(number)) {
+    return undefined;
+  }
+
+  return Math.max(0, Math.min(100, Math.round(number)));
+}
+
+function normalizeOdds(value) {
+  if (value === undefined || value === null || value === "") {
+    return undefined;
+  }
+
+  const number = Number(String(value).replace(/[^\d.]/g, ""));
+  return Number.isFinite(number) && number > 0 ? Number(number.toFixed(1)) : undefined;
+}
+
+function makeUrl(template, race, targetDate) {
+  return template
+    .replaceAll("{date}", targetDate)
+    .replaceAll("{raceId}", race.id)
+    .replaceAll("{venue}", race.venue)
+    .replaceAll("{venueName}", encodeURIComponent(race.venueName))
+    .replaceAll("{number}", encodeURIComponent(race.number))
+    .replaceAll("{raceName}", encodeURIComponent(race.name));
+}
+
+function parseSourceUrlMap() {
+  const raw = process.env.JRA_SOURCE_URLS;
+  if (!raw) {
+    return {};
+  }
+
+  try {
+    const parsed = JSON.parse(raw);
+    if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) {
+      return parsed;
+    }
+  } catch {
+    // Fall through to compact "site=url" format.
+  }
+
+  return raw.split(",").reduce((map, pair) => {
+    const index = pair.indexOf("=");
+    if (index > 0) {
+      map[pair.slice(0, index).trim()] = pair.slice(index + 1).trim();
+    }
+    return map;
+  }, {});
+}
+
+function getConfiguredSites() {
+  const urlMap = parseSourceUrlMap();
+  return defaultSites.map((site) => ({
+    ...site,
+    url: process.env[site.env] || urlMap[site.name] || urlMap[site.env] || ""
+  }));
+}
+
+function normalizePredictionEntry(entry) {
+  const horseName = entry.horseName || entry.horse || entry.name || entry.runner || entry.runnerName;
+  const mark = normalizeMark(entry.mark || entry.symbol || entry.pick || entry.prediction);
+  const index = normalizeIndex(entry.index ?? entry.score ?? entry.ai ?? entry.rating ?? entry.point);
+  const odds = normalizeOdds(entry.odds ?? entry.winOdds);
+
+  if (!horseName || (!mark && index === undefined && odds === undefined)) {
+    return null;
+  }
+
+  return {
+    horseName: String(horseName).trim(),
+    prediction: {
+      ...(mark ? { mark } : {}),
+      ...(index !== undefined ? { index } : {}),
+      ...(odds !== undefined ? { odds } : {})
+    }
+  };
+}
+
+function collectPredictionEntries(value, entries = []) {
+  if (!value) {
+    return entries;
+  }
+
+  if (Array.isArray(value)) {
+    value.forEach((item) => collectPredictionEntries(item, entries));
+    return entries;
+  }
+
+  if (typeof value !== "object") {
+    return entries;
+  }
+
+  const entry = normalizePredictionEntry(value);
+  if (entry) {
+    entries.push(entry);
+  }
+
+  Object.entries(value).forEach(([key, child]) => {
+    if (child && typeof child === "object" && !Array.isArray(child)) {
+      const nested = normalizePredictionEntry({ horseName: key, ...child });
+      if (nested) {
+        entries.push(nested);
+      }
+    }
+  });
+
+  ["races", "horses", "runners", "predictions", "entries", "data", "items", "results"].forEach((key) => {
+    if (value[key]) {
+      collectPredictionEntries(value[key], entries);
+    }
+  });
+
+  return entries;
+}
+
+function stripTags(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function parseJsonPayload(text) {
+  const trimmed = text.trim();
+  if (!trimmed || (!trimmed.startsWith("{") && !trimmed.startsWith("["))) {
+    return null;
+  }
+
+  try {
+    return JSON.parse(trimmed);
+  } catch {
+    return null;
+  }
+}
+
+function parseEmbeddedJson(html) {
+  const entries = [];
+  const scriptPattern = /<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
+  for (const match of html.matchAll(scriptPattern)) {
+    const parsed = parseJsonPayload(match[1]);
+    if (parsed) {
+      collectPredictionEntries(parsed, entries);
+    }
+  }
+  return entries;
+}
+
+function parseHtmlPredictions(html, race) {
+  const entries = parseEmbeddedJson(html);
+  const plainText = stripTags(html);
+
+  race.horses.forEach((horse) => {
+    const escapedName = horse.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const snippetPattern = new RegExp(`(.{0,80}${escapedName}.{0,160})`, "u");
+    const snippet = plainText.match(snippetPattern)?.[1] || "";
+    if (!snippet) {
+      return;
+    }
+
+    const mark = normalizeMark(snippet.match(/[◎○▲△☆]|本命|対抗|単穴|連下|注|穴/u)?.[0]);
+    const index = normalizeIndex(snippet.match(/(?:指数|AI|score|rating|point|評価)\\s*[:：]?\\s*(\\d{1,3})/iu)?.[1]);
+    const odds = normalizeOdds(snippet.match(/(\\d+(?:\\.\\d+)?)\\s*倍/u)?.[1]);
+    if (mark || index !== undefined || odds !== undefined) {
+      entries.push({
+        horseName: horse.name,
+        prediction: {
+          ...(mark ? { mark } : {}),
+          ...(index !== undefined ? { index } : {}),
+          ...(odds !== undefined ? { odds } : {})
+        }
+      });
+    }
+  });
+
+  return entries;
+}
+
+function parsePredictions(text, contentType, race) {
+  const json = contentType.includes("json") ? parseJsonPayload(text) : parseJsonPayload(text);
+  if (json) {
+    return collectPredictionEntries(json);
+  }
+
+  return parseHtmlPredictions(text, race);
+}
+
+async function fetchText(url) {
+  const response = await fetch(url, {
+    headers: {
+      "accept": "text/html,application/json;q=0.9,*/*;q=0.8",
+      "user-agent": "keiba-consensus-data-check/1.0"
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+
+  return {
+    text: await response.text(),
+    contentType: response.headers.get("content-type") || ""
+  };
+}
+
+async function fetchSiteRacePredictions(site, race, targetDate) {
+  if (!site.url) {
+    return { site: site.name, configured: false, raceId: race.id, entries: [], error: "URL未設定" };
+  }
+
+  const url = makeUrl(site.url, race, targetDate);
+  try {
+    const { text, contentType } = await fetchText(url);
+    const entries = parsePredictions(text, contentType, race);
+    return { site: site.name, configured: true, raceId: race.id, url, entries };
+  } catch (error) {
+    return { site: site.name, configured: true, raceId: race.id, url, entries: [], error: error.message };
+  }
+}
+
+function mergeSiteEntries(race, siteName, entries) {
+  let matched = 0;
+  race.horses.forEach((horse) => {
+    const entry = entries.find((item) => item.horseName === horse.name || item.horseName.includes(horse.name) || horse.name.includes(item.horseName));
+    if (!entry) {
+      return;
+    }
+
+    if (!horse.predictions) {
+      horse.predictions = {};
+    }
+
+    const prediction = entry.prediction;
+    if (prediction.odds !== undefined) {
+      horse.odds = prediction.odds;
+    }
+
+    if (prediction.mark || prediction.index !== undefined) {
+      horse.predictions[siteName] = {
+        mark: prediction.mark || "△",
+        index: prediction.index ?? 50
+      };
+      matched += 1;
+    }
+  });
+
+  return matched;
+}
+
+async function applySitePredictions(races, targetDate) {
+  const sites = getConfiguredSites();
+  const reports = [];
+
+  for (const race of races) {
+    race.horses.forEach((horse) => {
+      horse.predictions = {};
+    });
+
+    for (const site of sites) {
+      const result = await fetchSiteRacePredictions(site, race, targetDate);
+      const matched = mergeSiteEntries(race, site.name, result.entries);
+      reports.push({
+        site: site.name,
+        raceId: race.id,
+        configured: result.configured,
+        fetched: result.configured && !result.error,
+        matched,
+        error: result.error || ""
+      });
+    }
+
+    race.missingSites = sites
+      .map((site) => site.name)
+      .filter((siteName) => !race.horses.some((horse) => horse.predictions?.[siteName]));
+  }
+
+  return reports;
+}
+
 async function loadExternalRaces() {
   const url = process.env.JRA_RACES_JSON_URL;
   if (!url) {
@@ -149,6 +477,7 @@ async function main() {
   const externalRaces = await loadExternalRaces();
   const seedRaces = externalRaces || extractSeedRaces(appSource);
   const races = seedRaces.map((race) => normalizeRace(race, targetDate, now));
+  const sourceReports = await applySitePredictions(races, targetDate);
   const readyRaces = races.filter((race) => {
     const start = startDateForRace(race);
     if (!start) return false;
@@ -160,9 +489,13 @@ async function main() {
     generatedAt: nowParts.iso,
     targetDate,
     updateLeadMinutes,
-    source: externalRaces ? "external-json" : "seed-fallback",
+    source: sourceReports.some((report) => report.fetched && report.matched > 0) ? "site-scrape" : (externalRaces ? "external-json" : "seed-fallback"),
+    siteSources: sourceReports,
     races
   };
+  const configuredSiteNames = new Set(sourceReports.filter((report) => report.configured).map((report) => report.site));
+  const fetchedSiteNames = new Set(sourceReports.filter((report) => report.fetched).map((report) => report.site));
+  const matchedSiteNames = new Set(sourceReports.filter((report) => report.matched > 0).map((report) => report.site));
 
   const status = {
     generatedAt: nowParts.iso,
@@ -170,7 +503,13 @@ async function main() {
     updateLeadMinutes,
     source: payload.source,
     raceCount: races.length,
-    readyRaceIds: readyRaces.map((race) => race.id)
+    readyRaceIds: readyRaces.map((race) => race.id),
+    configuredSiteCount: configuredSiteNames.size,
+    fetchedSiteCount: fetchedSiteNames.size,
+    matchedSiteCount: matchedSiteNames.size,
+    fetchedRaceCount: sourceReports.filter((report) => report.fetched).length,
+    matchedRaceCount: sourceReports.filter((report) => report.matched > 0).length,
+    siteSources: sourceReports
   };
 
   await mkdir(dataDir, { recursive: true });
