@@ -1,14 +1,9 @@
 const AUTO_WEIGHT_DEFAULTS = {
-  "楽天競馬AI": 1,
-  "netkeiba地方": 1,
-  "NAR指数": 1,
-  "競馬ブック地方": 1,
-  "地方競馬予想AI": 1,
-  "オッズパークAI": 1,
-  "SPAT4分析": 1,
-  "Uma Cloud": 1,
-  "Race AI": 1,
-  "Prediction One": 1
+  "楽天みんなの予想": 1,
+  "AiBA無料AI": 1,
+  "ウマークス順位": 1,
+  "競馬新聞ゼロ本紙": 1,
+  "競馬新聞ゼロ指数": 1
 };
 
 const AUTO_WEIGHT_KEYS = {
