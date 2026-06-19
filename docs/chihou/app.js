@@ -72,7 +72,7 @@ function buildRaceFromSchedule(date, venue, startAt, raceIndex) {
     name: `${venueInfo.venueName}第${raceIndex + 1}競走`,
     date,
     startAt,
-    updatedAt: subtractMinutes(startAt, 5),
+    updatedAt: subtractMinutes(startAt, 10),
     missingSites: venueInfo.missingSites,
     horses: [1, 3, 6, 9, 12].map((numberValue, horseIndex) => ({
       number: numberValue,
@@ -111,7 +111,7 @@ const races = Object.entries(LOCAL_RACE_SCHEDULE_BY_DATE).flatMap(([date, venueS
         name: `${venueInfo.venueName}第${raceIndex + 1}競走`,
         date,
         startAt,
-        updatedAt: subtractMinutes(startAt, 5),
+        updatedAt: subtractMinutes(startAt, 10),
         missingSites: venueInfo.missingSites,
         horses: [1, 3, 6, 9, 12].map((numberValue, horseIndex) => ({
           number: numberValue,
@@ -782,10 +782,6 @@ if (elements.refreshButton) {
       render();
       return;
     }
-
-    const race = getRace();
-    const now = getNow();
-    race.updatedAt = now.toLocaleTimeString("ja-JP", { hour12: false });
     render();
   });
 }
