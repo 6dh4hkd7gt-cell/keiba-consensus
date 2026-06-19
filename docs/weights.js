@@ -1,14 +1,14 @@
 const DEFAULT_WEIGHTS = {
   "SPAIA": 1,
-  "netkeiba AI": 1,
-  "AI指数": 1,
+  "競馬ブック": 1,
   "競馬ラボ": 1,
+  "ウマークス": 1,
+  "ATHENA": 1,
   "無料競馬AI": 1,
-  "Uma Cloud": 1,
+  "AiBA": 1,
+  "日刊AI": 1,
   "SIVA": 1,
-  "Deep Keiba": 1,
-  "Race AI": 1,
-  "Prediction One": 1
+  "ウマニティU指数": 1
 };
 
 const weightControls = document.querySelector("#weightControls");
