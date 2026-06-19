@@ -11,6 +11,7 @@ const OPERATING_DAYS = [0, 6];
 const OPERATING_START_MINUTES = 9 * 60;
 const OPERATING_END_MINUTES = 17 * 60;
 const UPDATE_LEAD_MINUTES = 10;
+const REQUIRED_CONSENSUS_SITE_COUNT = 4;
 const DAY_LABELS = ["日", "月", "火", "水", "木", "金", "土"];
 const urlParams = new URLSearchParams(window.location.search);
 const DEMO_TIME = urlParams.get("demoTime");
@@ -19,15 +20,15 @@ const INITIAL_HORSE_NAME = urlParams.get("horse") || "";
 
 const DEFAULT_WEIGHTS = {
   "SPAIA": 1,
-  "netkeiba AI": 1,
-  "AI指数": 1,
+  "競馬ブック": 1,
   "競馬ラボ": 1,
+  "ウマークス": 1,
+  "ATHENA": 1,
   "無料競馬AI": 1,
-  "Uma Cloud": 1,
+  "AiBA": 1,
+  "日刊AI": 1,
   "SIVA": 1,
-  "Deep Keiba": 1,
-  "Race AI": 1,
-  "Prediction One": 1
+  "ウマニティU指数": 1
 };
 
 let races = [
@@ -621,11 +622,15 @@ function getPredictionsForHorse(race, horse) {
 }
 
 function hasUsablePredictionData(ranking) {
-  return ranking.some((horse) => horse.voteCount > 0);
+  return getConsensusSiteCount(ranking) >= REQUIRED_CONSENSUS_SITE_COUNT;
 }
 
 function hasUsableOddsData(ranking) {
   return ranking.some((horse) => Number(horse.odds) > 0);
+}
+
+function getConsensusSiteCount(ranking) {
+  return new Set(ranking.flatMap((horse) => Object.keys(horse.predictions || {}))).size;
 }
 
 function formatOdds(odds) {
@@ -884,12 +889,13 @@ function renderRanking(ranking) {
   }
 
   if (!hasUsablePredictionData(ranking)) {
+    const acquired = getConsensusSiteCount(ranking);
     elements.rankingRows.innerHTML = `
       <tr>
         <td colspan="6">
           <div class="empty-state">
-            <strong>実AI予想データ未取得</strong>
-            <span>各サイトの取得URLが未設定、または取得できていません。ランキングは表示しません。</span>
+            <strong>4サイト未満のため非表示</strong>
+            <span>${acquired}/${REQUIRED_CONSENSUS_SITE_COUNT}サイトです。4サイト以上の実データが取れた時点でコンセンサスを表示します。</span>
           </div>
         </td>
       </tr>
@@ -927,14 +933,15 @@ function renderRanking(ranking) {
 
 function renderHorseDetail(ranking) {
   if (!hasUsablePredictionData(ranking)) {
+    const acquired = getConsensusSiteCount(ranking);
     state.selectedHorseName = "";
 
-    if (elements.horseName) elements.horseName.textContent = "実データ未取得";
+    if (elements.horseName) elements.horseName.textContent = "4サイト未満";
     if (elements.horseNumber) elements.horseNumber.textContent = "--";
     if (elements.horseSummary) {
       elements.horseSummary.innerHTML = `
         <div><span>AI支持率</span><strong>未取得</strong></div>
-        <div><span>取得サイト</span><strong>0</strong></div>
+        <div><span>取得サイト</span><strong>${acquired}/${REQUIRED_CONSENSUS_SITE_COUNT}</strong></div>
         <div><span>判定</span><strong>使用不可</strong></div>
       `;
     }
@@ -994,7 +1001,7 @@ function renderRecommendations(ranking) {
     elements.recommendationGroups.innerHTML = `
       <div class="empty-state">
         <strong>推奨買い目は表示しません</strong>
-        <span>実AI予想データとオッズが取得できた時だけ表示します。</span>
+        <span>4サイト以上の実AI予想データとオッズが取得できた時だけ表示します。</span>
       </div>
     `;
     return;
@@ -1028,18 +1035,19 @@ function renderSiteDetailPage(race, ranking) {
   }
 
   if (!hasUsablePredictionData(ranking)) {
+    const acquired = getConsensusSiteCount(ranking);
     if (elements.siteDetailMeta) {
       elements.siteDetailMeta.innerHTML = `
         <div><span>レース</span><strong>${race.venueName} ${race.number}</strong></div>
-        <div><span>取得</span><strong>0/10</strong></div>
-        <div><span>状態</span><strong>実データ未取得</strong></div>
+        <div><span>取得</span><strong>${acquired}/${REQUIRED_CONSENSUS_SITE_COUNT}</strong></div>
+        <div><span>状態</span><strong>4サイト未満</strong></div>
       `;
     }
     if (elements.siteDetailList) {
       elements.siteDetailList.innerHTML = `
         <div class="empty-state">
-          <strong>各サイト評価は未取得です</strong>
-          <span>GitHub Secretsに取得URLを設定し、取得に成功したサイトだけ表示します。</span>
+          <strong>各サイト評価は未達です</strong>
+          <span>4サイト以上から馬名に紐づく印・指数を取得できるまで表示しません。</span>
         </div>
       `;
     }
