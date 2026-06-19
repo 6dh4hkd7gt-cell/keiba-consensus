@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI地方競馬コンセンサス</title>
+    <link rel="stylesheet" href="./phone.css?v=chihou-visible-1" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="レース一覧">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img">
+              <path d="M7 31c4.9-9.4 12.6-14.6 23-15.5" />
+              <path d="M15 34c4-5.4 9.8-8.2 17.5-8.5" />
+              <path d="M31 15.5l7-5.5 3 8.2-7.7-1.1z" />
+              <circle cx="17" cy="35" r="3.6" />
+              <circle cx="34" cy="27" r="3.6" />
+            </svg>
+          </div>
+          <div>
+            <p>AI地方競馬</p>
+            <h1>コンセンサス</h1>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="raceSearch">レース検索</label>
+          <div class="input-wrap">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m21 21-4.35-4.35" />
+              <circle cx="11" cy="11" r="7" />
+            </svg>
+            <input id="raceSearch" type="search" placeholder="会場・レース名" />
+          </div>
+        </div>
+
+        <div class="venue-tabs" role="tablist" aria-label="会場フィルター">
+          <button class="active" data-venue="all" type="button">全場</button>
+          <button data-venue="obihiro" type="button">帯広</button>
+          <button data-venue="monbetsu" type="button">門別</button>
+          <button data-venue="morioka" type="button">盛岡</button>
+          <button data-venue="mizusawa" type="button">水沢</button>
+          <button data-venue="urawa" type="button">浦和</button>
+          <button data-venue="funabashi" type="button">船橋</button>
+          <button data-venue="ooi" type="button">大井</button>
+          <button data-venue="kawasaki" type="button">川崎</button>
+          <button data-venue="kanazawa" type="button">金沢</button>
+          <button data-venue="kasamatsu" type="button">笠松</button>
+          <button data-venue="nagoya" type="button">名古屋</button>
+          <button data-venue="sonoda" type="button">園田</button>
+          <button data-venue="himeji" type="button">姫路</button>
+          <button data-venue="kochi" type="button">高知</button>
+          <button data-venue="saga" type="button">佐賀</button>
+        </div>
+
+        <div id="raceList" class="race-list"></div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">地方競馬全レース / 毎日 10:00-21:00 / 発走5分前取得</p>
+            <h2 id="raceTitle">読み込み中</h2>
+          </div>
+          <div class="topbar-actions">
+            <a id="sitePageLink" class="text-button nav-link" href="./sites.html">サイト</a>
+            <a class="text-button nav-link" href="./weights.html">重み</a>
+            <a class="text-button nav-link" href="./weekly.html">成績</a>
+            <button id="refreshButton" class="icon-button" type="button" aria-label="取得を更新">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M21 12a9 9 0 0 1-15.1 6.62" />
+                <path d="M3 12A9 9 0 0 1 18.1 5.38" />
+                <path d="M18 2v4h-4" />
+                <path d="M6 22v-4h4" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <section class="content-grid">
+          <div class="ranking-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Consensus Ranking</p>
+                <h3>AI支持率ランキング</h3>
+              </div>
+              <select id="sortSelect" aria-label="並び替え">
+                <option value="support">支持率順</option>
+                <option value="odds">オッズ順</option>
+                <option value="gap">乖離順</option>
+              </select>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>順位</th>
+                    <th>馬名</th>
+                    <th>AI支持率</th>
+                    <th>本命数</th>
+                    <th>オッズ</th>
+                    <th>人気乖離</th>
+                  </tr>
+                </thead>
+                <tbody id="rankingRows"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <aside class="detail-panel" aria-label="馬詳細">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Horse Detail</p>
+                <h3 id="horseName">馬を選択</h3>
+              </div>
+              <span id="horseNumber" class="number-badge">--</span>
+            </div>
+            <div id="horseSummary" class="horse-summary"></div>
+            <div class="detail-actions">
+              <a id="siteDetailLink" class="text-button nav-link" href="./sites.html">サイト別評価</a>
+            </div>
+          </aside>
+        </section>
+
+        <section class="recommendations-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Suggested Tickets</p>
+              <h3>推奨買い目</h3>
+            </div>
+          </div>
+          <div id="recommendationGroups" class="recommendation-grid"></div>
+        </section>
+
+        <section class="status-grid" aria-label="取得状況">
+          <div class="metric">
+            <span>最終更新</span>
+            <strong id="updatedAt">--:--:--</strong>
+          </div>
+          <div class="metric">
+            <span>稼働状態</span>
+            <strong id="operationStatus">判定中</strong>
+            <small id="operationWindow">毎日 10:00-21:00</small>
+          </div>
+          <div class="metric">
+            <span>取得サイト</span>
+            <strong id="siteCount">0/0</strong>
+          </div>
+          <div class="metric">
+            <span>未取得</span>
+            <strong id="missingSites">なし</strong>
+          </div>
+          <div class="metric">
+            <span>平均支持率</span>
+            <strong id="averageSupport">0.0%</strong>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./auto-weights.js"></script>
+    <script src="./app.js?v=chihou-visible-1"></script>
+  </body>
+</html>
