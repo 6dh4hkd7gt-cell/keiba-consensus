@@ -36,6 +36,18 @@ const markAliases = new Map([
   ["注", "☆"],
   ["穴", "☆"]
 ]);
+const jraVenueCodes = {
+  sapporo: "01",
+  hakodate: "02",
+  fukushima: "03",
+  niigata: "04",
+  tokyo: "05",
+  nakayama: "06",
+  chukyo: "07",
+  kyoto: "08",
+  hanshin: "09",
+  kokura: "10"
+};
 
 function getJstNow() {
   if (process.env.DEMO_TIME) {
@@ -183,8 +195,17 @@ function normalizeOdds(value) {
 }
 
 function makeUrl(template, race, targetDate) {
+  const compactDate = targetDate.replaceAll("-", "");
+  const raceNumber = String(race.number || "").replace(/\D/g, "").padStart(2, "0");
+  const venueCode = jraVenueCodes[race.venue] || "";
+  const jraDateRaceId = venueCode && raceNumber ? `${compactDate}${venueCode}${raceNumber}` : "";
+
   return template
     .replaceAll("{date}", targetDate)
+    .replaceAll("{dateCompact}", compactDate)
+    .replaceAll("{jraDateRaceId}", jraDateRaceId)
+    .replaceAll("{venueCode}", venueCode)
+    .replaceAll("{raceNumber}", raceNumber)
     .replaceAll("{raceId}", race.id)
     .replaceAll("{venue}", race.venue)
     .replaceAll("{venueName}", encodeURIComponent(race.venueName))
