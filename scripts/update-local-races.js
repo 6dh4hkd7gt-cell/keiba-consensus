@@ -6,15 +6,10 @@ const RAKUTEN_TOP_URL = "https://keiba.rakuten.co.jp/";
 const OUTPUT_PATH = path.join(process.cwd(), "docs", "chihou", "data", "today-races.json");
 const PREDICTION_SOURCES = [
   "楽天みんなの予想",
-  "netkeiba地方",
-  "オッズパーク",
-  "SPAT4",
-  "競馬ブック地方",
-  "競馬エース",
-  "勝馬",
-  "ケイシュウNEWS",
-  "通信社",
-  "競馬カナザワ"
+  "AiBA無料AI",
+  "ウマークス順位",
+  "競馬新聞ゼロ本紙",
+  "競馬新聞ゼロ指数"
 ];
 const MARK_SCORES = {
   "◎": 100,
@@ -41,6 +36,23 @@ const VENUE_CODES = {
   himeji: "28",
   kochi: "31",
   saga: "32"
+};
+
+const AIBA_VENUE_CODES = {
+  monbetsu: "30",
+  morioka: "35",
+  mizusawa: "36",
+  urawa: "42",
+  funabashi: "43",
+  ooi: "44",
+  kawasaki: "45",
+  kanazawa: "46",
+  kasamatsu: "47",
+  nagoya: "48",
+  sonoda: "50",
+  himeji: "51",
+  kochi: "54",
+  saga: "55"
 };
 
 const VENUE_ALIASES = {
@@ -250,6 +262,33 @@ function scorePredictionCounts(counts) {
   };
 }
 
+function scoreFromIndex(index) {
+  if (!Number.isFinite(index)) {
+    return null;
+  }
+
+  const normalized = Math.max(1, Math.min(100, Math.round(index)));
+  return {
+    mark: normalized >= 80 ? "◎" : normalized >= 70 ? "○" : normalized >= 60 ? "▲" : normalized >= 45 ? "△" : "☆",
+    index: normalized
+  };
+}
+
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function mergePrediction(map, horseNumber, sourceName, prediction) {
+  if (!prediction) {
+    return;
+  }
+
+  map.set(horseNumber, {
+    ...(map.get(horseNumber) || {}),
+    [sourceName]: prediction
+  });
+}
+
 function parseRakutenPredictionSummary(lines) {
   const predictions = new Map();
   const start = lines.findIndex((line) => line.includes("馬番") && line.includes("馬名") && line.includes("◎"));
@@ -280,6 +319,101 @@ function parseRakutenPredictionSummary(lines) {
         name: match[2],
         prediction: score
       });
+    }
+  }
+
+  return predictions;
+}
+
+function parseAibaPredictions(html) {
+  const predictions = new Map();
+  const tableMatch = html.match(/<table[\s\S]*?<\/table>/i);
+  if (!tableMatch) {
+    return predictions;
+  }
+
+  for (const row of tableMatch[0].matchAll(/<tr[\s\S]*?<\/tr>/gi)) {
+    const cells = [...row[0].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi)]
+      .map((match) => decodeEntities(match[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()));
+    if (cells.length < 4 || !MARK_SCORES[cells[0]]) {
+      continue;
+    }
+
+    const info = cells[1] || "";
+    const numberMatch = info.match(/^(\d{1,2})\s+/);
+    const index = Number(cells[cells.length - 1]);
+    if (!numberMatch || !Number.isFinite(index)) {
+      continue;
+    }
+
+    predictions.set(Number(numberMatch[1]), {
+      mark: cells[0],
+      index: Math.max(1, Math.min(100, Math.round(index)))
+    });
+  }
+
+  return predictions;
+}
+
+function parseUmaXPredictions(html, raceHorses) {
+  const predictions = new Map();
+  const lines = htmlToLines(html);
+  const horseByName = new Map(raceHorses.map((horse) => [horse.name, horse]));
+
+  for (const [horseName, horse] of horseByName.entries()) {
+    const line = lines.find((item) => item.startsWith(`${horseName} `));
+    if (!line) {
+      continue;
+    }
+
+    const rankMatch = line.match(new RegExp(`^${escapeRegExp(horseName)}\\s+[牡牝セ]\\d+\\s+\\S+\\s+(\\d{1,2})\\b`));
+    const rank = Number(rankMatch?.[1]);
+    const scored = Number.isFinite(rank)
+      ? scoreFromIndex(100 - (rank - 1) * 6)
+      : null;
+    if (!scored) {
+      continue;
+    }
+
+    predictions.set(horse.number, scored);
+  }
+
+  return predictions;
+}
+
+function parseKeibaZeroPredictions(html) {
+  const predictions = new Map();
+  const sourceLines = htmlToLines(html);
+  const pairLine = sourceLines.find((line) => line.includes("本紙予想") && line.includes("馬連")) || "";
+  const pairScores = new Map();
+
+  for (const pair of pairLine.matchAll(/\b(\d{1,2})-(\d{1,2})\b/g)) {
+    const first = Number(pair[1]);
+    const second = Number(pair[2]);
+    pairScores.set(first, (pairScores.get(first) || 0) + 18);
+    pairScores.set(second, (pairScores.get(second) || 0) + 12);
+  }
+
+  const lines = sourceLines.slice(sourceLines.findIndex((line) => line.includes("枠番") && line.includes("馬番")));
+  for (const line of lines) {
+    const match = line.match(/^\d+\s+(\d{1,2})\s+[牡牝セ]\s+\d+\s+\S+\s+\S+\s+(.+?)\s+.+?\s+(\d+)\s+(\d+)\s+(?:\d+週|[一二三四五六七八九十]+週|連闘|中\d+週)/);
+    if (!match) {
+      continue;
+    }
+
+    const horseNumber = Number(match[1]);
+    const maxIndex = Number(match[3]);
+    const averageIndex = Number(match[4]);
+    const indexScore = Math.round((maxIndex + averageIndex) / 2);
+    const pairScore = Math.min(35, pairScores.get(horseNumber) || 0);
+    const paperScore = scoreFromIndex(45 + pairScore);
+    const indexPrediction = scoreFromIndex(indexScore);
+
+    if (paperScore) {
+      mergePrediction(predictions, horseNumber, "競馬新聞ゼロ本紙", paperScore);
+    }
+    if (indexPrediction) {
+      mergePrediction(predictions, horseNumber, "競馬新聞ゼロ指数", indexPrediction);
     }
   }
 
@@ -341,6 +475,101 @@ async function fetchRakutenPredictions(raceId) {
   return parseRakutenPredictionSummary(htmlToLines(html));
 }
 
+async function fetchHtml(url, referer = SOURCE_URL) {
+  const response = await fetch(url, {
+    headers: {
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "accept-language": "ja,en-US;q=0.9,en;q=0.8",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "referer": referer,
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch ${url}: ${response.status}`);
+  }
+
+  return readJapaneseHtml(response);
+}
+
+async function fetchAibaRaceLinks(date, venues) {
+  const datePath = date.replaceAll("-", "/");
+  const linksByRace = new Map();
+
+  for (const venue of venues) {
+    const venueCode = AIBA_VENUE_CODES[venue];
+    const venueName = Object.entries(VENUE_ALIASES).find(([, key]) => key === venue)?.[0];
+    if (!venueCode || !venueName) {
+      continue;
+    }
+
+    const categoryUrl = `https://xn--ai-f10fm89h.com/category/race-local/race-local-${venueCode}/`;
+    try {
+      const html = await fetchHtml(categoryUrl, "https://xn--ai-f10fm89h.com/");
+      const anchorPattern = /<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
+      for (const match of html.matchAll(anchorPattern)) {
+        const href = decodeEntities(match[1]);
+        const text = decodeEntities(match[2].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
+        if (!href.includes(`/${datePath}/`)) {
+          continue;
+        }
+
+        const raceMatch = text.match(new RegExp(`${venueName}(\\d{1,2})R`));
+        if (raceMatch) {
+          linksByRace.set(`${venue}-${Number(raceMatch[1])}`, href);
+        }
+      }
+    } catch (error) {
+      console.warn(error.message);
+    }
+  }
+
+  return linksByRace;
+}
+
+async function fetchAibaPredictions(url) {
+  const html = await fetchHtml(url, "https://xn--ai-f10fm89h.com/");
+  return parseAibaPredictions(html);
+}
+
+function buildUmaXUrl(date, race) {
+  const code = VENUE_CODES[race.venue];
+  if (!code) {
+    return "";
+  }
+  return `https://uma-x.jp/nar_result/z${code}${date.replaceAll("-", "")}${String(race.number).padStart(2, "0")}`;
+}
+
+async function fetchUmaXPredictions(date, race, raceHorses) {
+  const url = buildUmaXUrl(date, race);
+  if (!url) {
+    return new Map();
+  }
+
+  const html = await fetchHtml(url, "https://uma-x.jp/nar");
+  return parseUmaXPredictions(html, raceHorses);
+}
+
+function buildKeibaZeroUrl(date, race) {
+  const code = VENUE_CODES[race.venue];
+  if (!code) {
+    return "";
+  }
+  return `https://keiba0.com/nar/detail/${date.replaceAll("-", "")}/${code}/${String(race.number).padStart(2, "0")}/`;
+}
+
+async function fetchKeibaZeroPredictions(date, race) {
+  const url = buildKeibaZeroUrl(date, race);
+  if (!url) {
+    return new Map();
+  }
+
+  const html = await fetchHtml(url, "https://keiba0.com/nar/");
+  return parseKeibaZeroPredictions(html);
+}
+
 async function fetchRaceHorses(date, race) {
   const url = buildDebaTableUrl(date, race);
   if (!url) {
@@ -368,9 +597,16 @@ async function fetchRaceHorses(date, race) {
 
 async function enrichRaceHorses(date, races, existingRaces) {
   const existingByRace = new Map(existingRaces.map((race) => [buildRaceKey(race), race]));
+  const venues = [...new Set(races.map((race) => race.venue))];
   let rakutenRaceIds = new Map();
+  let aibaRaceLinks = new Map();
   try {
     rakutenRaceIds = await fetchRakutenRaceIds(date);
+  } catch (error) {
+    console.warn(error.message);
+  }
+  try {
+    aibaRaceLinks = await fetchAibaRaceLinks(date, venues);
   } catch (error) {
     console.warn(error.message);
   }
@@ -400,14 +636,41 @@ async function enrichRaceHorses(date, races, existingRaces) {
         try {
           const rakutenPredictions = await fetchRakutenPredictions(raceId);
           for (const [horseNumber, predictionData] of rakutenPredictions.entries()) {
-            predictionsByHorseNumber.set(horseNumber, {
-              ...(predictionsByHorseNumber.get(horseNumber) || {}),
-              "楽天みんなの予想": predictionData.prediction
-            });
+            mergePrediction(predictionsByHorseNumber, horseNumber, "楽天みんなの予想", predictionData.prediction);
           }
         } catch (error) {
           console.warn(error.message);
         }
+      }
+      const aibaUrl = aibaRaceLinks.get(raceKey);
+      if (aibaUrl) {
+        try {
+          const aibaPredictions = await fetchAibaPredictions(aibaUrl);
+          for (const [horseNumber, prediction] of aibaPredictions.entries()) {
+            mergePrediction(predictionsByHorseNumber, horseNumber, "AiBA無料AI", prediction);
+          }
+        } catch (error) {
+          console.warn(error.message);
+        }
+      }
+      try {
+        const umaXPredictions = await fetchUmaXPredictions(date, race, raceHorses);
+        for (const [horseNumber, prediction] of umaXPredictions.entries()) {
+          mergePrediction(predictionsByHorseNumber, horseNumber, "ウマークス順位", prediction);
+        }
+      } catch (error) {
+        console.warn(error.message);
+      }
+      try {
+        const keibaZeroPredictions = await fetchKeibaZeroPredictions(date, race);
+        for (const [horseNumber, predictions] of keibaZeroPredictions.entries()) {
+          predictionsByHorseNumber.set(horseNumber, {
+            ...(predictionsByHorseNumber.get(horseNumber) || {}),
+            ...predictions
+          });
+        }
+      } catch (error) {
+        console.warn(error.message);
       }
 
       const horses = raceHorses.map((horse) => ({
