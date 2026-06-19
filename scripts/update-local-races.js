@@ -328,27 +328,61 @@ function parseRakutenPredictionSummary(lines) {
 function parseAibaPredictions(html) {
   const predictions = new Map();
   const tableMatch = html.match(/<table[\s\S]*?<\/table>/i);
-  if (!tableMatch) {
+  if (tableMatch) {
+    for (const row of tableMatch[0].matchAll(/<tr[\s\S]*?<\/tr>/gi)) {
+      const cells = [...row[0].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi)]
+        .map((match) => decodeEntities(match[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()));
+      if (cells.length < 4 || !MARK_SCORES[cells[0]]) {
+        continue;
+      }
+
+      const info = cells[1] || "";
+      const numberMatch = info.match(/^(\d{1,2})\s+/);
+      const index = Number(cells[cells.length - 1]);
+      if (!numberMatch || !Number.isFinite(index)) {
+        continue;
+      }
+
+      predictions.set(Number(numberMatch[1]), {
+        mark: cells[0] === "◯" ? "○" : cells[0],
+        index: Math.max(1, Math.min(100, Math.round(index)))
+      });
+    }
+  }
+
+  if (predictions.size) {
     return predictions;
   }
 
-  for (const row of tableMatch[0].matchAll(/<tr[\s\S]*?<\/tr>/gi)) {
-    const cells = [...row[0].matchAll(/<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi)]
-      .map((match) => decodeEntities(match[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()));
-    if (cells.length < 4 || !MARK_SCORES[cells[0]]) {
+  const lines = htmlToLines(html);
+  for (let index = 0; index < lines.length - 1; index += 1) {
+    const rowMatch = lines[index].match(/^([◎○◯▲△☆])\s+(\d{1,2})\s+(.+)$/);
+    if (!rowMatch) {
       continue;
     }
 
-    const info = cells[1] || "";
-    const numberMatch = info.match(/^(\d{1,2})\s+/);
-    const index = Number(cells[cells.length - 1]);
-    if (!numberMatch || !Number.isFinite(index)) {
+    let indexValue = null;
+    for (const line of lines.slice(index + 1, index + 4)) {
+      if (/^[◎○◯▲△☆注]\s+\d{1,2}\s+/.test(line)) {
+        break;
+      }
+
+      const numbers = [...line.matchAll(/\d+(?:\.\d+)?/g)]
+        .map((match) => Number(match[0]))
+        .filter((value) => Number.isFinite(value) && value >= 1 && value <= 100);
+      if (numbers.length >= 2) {
+        indexValue = numbers.at(-1);
+        break;
+      }
+    }
+
+    if (!Number.isFinite(indexValue)) {
       continue;
     }
 
-    predictions.set(Number(numberMatch[1]), {
-      mark: cells[0],
-      index: Math.max(1, Math.min(100, Math.round(index)))
+    predictions.set(Number(rowMatch[2]), {
+      mark: rowMatch[1] === "◯" ? "○" : rowMatch[1],
+      index: Math.max(1, Math.min(100, Math.round(indexValue)))
     });
   }
 
