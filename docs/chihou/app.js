@@ -239,6 +239,30 @@ function getMinutes(date) {
   return date.getHours() * 60 + date.getMinutes();
 }
 
+function getRaceStartMinutes(race) {
+  const [hours, minutes] = race.startAt.split(":").map(Number);
+  return hours * 60 + minutes;
+}
+
+function getNextRaceIdsByVenue() {
+  const nowMinutes = getMinutes(getNow());
+  const nextByVenue = getTodaysRaces().reduce((map, race) => {
+    const startMinutes = getRaceStartMinutes(race);
+    if (startMinutes < nowMinutes) {
+      return map;
+    }
+
+    const current = map.get(race.venue);
+    if (!current || startMinutes < getRaceStartMinutes(current)) {
+      map.set(race.venue, race);
+    }
+
+    return map;
+  }, new Map());
+
+  return new Set([...nextByVenue.values()].map((race) => race.id));
+}
+
 function isOperatingDay(date) {
   return OPERATING_DAYS.includes(date.getDay());
 }
@@ -445,6 +469,7 @@ function renderRaceList() {
   }
 
   const query = state.query.trim().toLowerCase();
+  const nextRaceIds = getNextRaceIdsByVenue();
   const filtered = getTodaysRaces().filter((race) => {
     const matchesVenue = state.venue === "all" || race.venue === state.venue;
     const matchesQuery = `${race.venueName} ${race.number} ${race.name}`.toLowerCase().includes(query);
@@ -480,12 +505,16 @@ function renderRaceList() {
         <span>${group.races.length}レース</span>
       </div>
       <div class="race-chip-grid">
-        ${group.races.map((race) => `
-          <button class="race-card race-chip ${race.id === state.selectedRaceId ? "active" : ""}" data-race-id="${race.id}" type="button" aria-label="${race.venueName} ${race.number} ${race.name} ${race.startAt}">
+        ${group.races.map((race) => {
+          const isNextRace = nextRaceIds.has(race.id);
+          return `
+          <button class="race-card race-chip ${race.id === state.selectedRaceId ? "active" : ""} ${isNextRace ? "next-race" : ""}" data-race-id="${race.id}" type="button" aria-label="${race.venueName} ${race.number} ${race.name} ${race.startAt}${isNextRace ? " 次レース" : ""}">
             <strong>${race.number}</strong>
             <span>${race.startAt}</span>
+            ${isNextRace ? '<em class="next-race-badge">次</em>' : ""}
           </button>
-        `).join("")}
+        `;
+        }).join("")}
       </div>
     </section>
   `).join("");
