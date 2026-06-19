@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>週次成績 | AI地方競馬コンセンサス</title>
+    <link rel="stylesheet" href="./phone.css?v=chihou-auto-2" />
+  </head>
+  <body>
+    <main class="weights-page weekly-page">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Weekly Performance</p>
+          <h2>週次成績</h2>
+        </div>
+        <div class="topbar-actions">
+          <a class="text-button nav-link" href="./weights.html">重み</a>
+          <a class="text-button nav-link" href="./phone.html">戻る</a>
+        </div>
+      </header>
+
+      <section id="weeklySummary" class="auto-summary" aria-live="polite"></section>
+
+      <section class="weights-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Auto Update</p>
+            <h3>自動調整結果</h3>
+          </div>
+        </div>
+        <div id="weeklyRows" class="weekly-result-list"></div>
+      </section>
+    </main>
+
+    <script src="./auto-weights.js?v=chihou-auto-2"></script>
+    <script src="./weekly.js?v=chihou-auto-2"></script>
+  </body>
+</html>

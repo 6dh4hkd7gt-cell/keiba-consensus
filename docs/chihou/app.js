@@ -47,7 +47,7 @@ const VENUES = {
   saga: { venueName: "佐賀", horsePrefix: "サガ", missingSites: ["地方競馬予想AI"] }
 };
 
-const LOCAL_RACE_SCHEDULE_BY_DATE = {
+const FALLBACK_RACE_SCHEDULE_BY_DATE = {
   "2026-06-19": {
     kawasaki: ["15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:05", "19:40", "20:15", "20:50"],
     nagoya: ["12:15", "12:50", "13:25", "14:00", "14:35", "15:10", "15:40", "16:10", "16:45", "17:15", "17:45", "18:20"],
@@ -61,6 +61,43 @@ function subtractMinutes(time, minutesToSubtract) {
   return date.toLocaleTimeString("ja-JP", { hour12: false });
 }
 
+function buildRaceFromSchedule(date, venue, startAt, raceIndex) {
+  const venueInfo = VENUES[venue];
+  const number = `${raceIndex + 1}R`;
+  return {
+    id: `${date}-${venue}-${number.toLowerCase()}`,
+    venue,
+    venueName: venueInfo.venueName,
+    number,
+    name: `${venueInfo.venueName}第${raceIndex + 1}競走`,
+    date,
+    startAt,
+    updatedAt: subtractMinutes(startAt, 5),
+    missingSites: venueInfo.missingSites,
+    horses: [1, 3, 6, 9, 12].map((numberValue, horseIndex) => ({
+      number: numberValue,
+      name: `${venueInfo.horsePrefix}${["スター", "ブレイブ", "クイーン", "クラウン", "スピード"][horseIndex]}`,
+      odds: [3.4, 6.8, 10.9, 4.7, 18.2][horseIndex] + (raceIndex % 4) * 0.3,
+      predictions: {}
+    }))
+  };
+}
+
+function buildRacesFromSchedule(scheduleByDate) {
+  return Object.entries(scheduleByDate).flatMap(([date, venueSchedules]) => (
+    Object.entries(venueSchedules).flatMap(([venue, startTimes]) => {
+      if (!VENUES[venue]) {
+        return [];
+      }
+
+      return startTimes.map((startAt, raceIndex) => buildRaceFromSchedule(date, venue, startAt, raceIndex));
+    })
+  ));
+}
+
+let races = buildRacesFromSchedule(FALLBACK_RACE_SCHEDULE_BY_DATE);
+
+/*
 const races = Object.entries(LOCAL_RACE_SCHEDULE_BY_DATE).flatMap(([date, venueSchedules]) => (
   Object.entries(venueSchedules).flatMap(([venue, startTimes]) => {
     const venueInfo = VENUES[venue];
@@ -86,6 +123,7 @@ const races = Object.entries(LOCAL_RACE_SCHEDULE_BY_DATE).flatMap(([date, venueS
     });
   })
 ));
+*/
 
 const todaysInitialRaces = getTodaysRaces();
 
@@ -190,6 +228,27 @@ function getTodayKey() {
 function getTodaysRaces() {
   const todayKey = getTodayKey();
   return races.filter((race) => race.date === todayKey);
+}
+
+async function loadDailyRaceSchedule() {
+  const dataUrl = `./data/today-races.json?date=${encodeURIComponent(getTodayKey())}&v=${Date.now()}`;
+  const response = await fetch(dataUrl, { cache: "no-store" });
+
+  if (!response.ok) {
+    throw new Error(`schedule fetch failed: ${response.status}`);
+  }
+
+  const payload = await response.json();
+  if (!payload || payload.date !== getTodayKey() || !Array.isArray(payload.races)) {
+    throw new Error("schedule payload is not for today");
+  }
+
+  return payload.races
+    .filter((race) => race && VENUES[race.venue] && /^\d{1,2}:\d{2}$/.test(race.startAt || ""))
+    .map((race, index) => {
+      const raceNumber = Number(race.number) || index + 1;
+      return buildRaceFromSchedule(payload.date, race.venue, race.startAt, raceNumber - 1);
+    });
 }
 
 function getMinutes(date) {
@@ -411,14 +470,33 @@ function renderRaceList() {
     return;
   }
 
-  elements.raceList.innerHTML = filtered.map((race) => `
-    <button class="race-card ${race.id === state.selectedRaceId ? "active" : ""}" data-race-id="${race.id}" type="button">
-      <span>
-        <strong>${race.venueName} ${race.number}</strong>
-        <span>${race.name}</span>
-      </span>
-      <span class="countdown">${race.startAt}</span>
-    </button>
+  const grouped = filtered.reduce((groups, race) => {
+    if (!groups[race.venue]) {
+      groups[race.venue] = {
+        venueName: race.venueName,
+        races: []
+      };
+    }
+
+    groups[race.venue].races.push(race);
+    return groups;
+  }, {});
+
+  elements.raceList.innerHTML = Object.values(grouped).map((group) => `
+    <section class="race-group">
+      <div class="race-group-heading">
+        <strong>${group.venueName}</strong>
+        <span>${group.races.length}レース</span>
+      </div>
+      <div class="race-chip-grid">
+        ${group.races.map((race) => `
+          <button class="race-card race-chip ${race.id === state.selectedRaceId ? "active" : ""}" data-race-id="${race.id}" type="button" aria-label="${race.venueName} ${race.number} ${race.name} ${race.startAt}">
+            <strong>${race.number}</strong>
+            <span>${race.startAt}</span>
+          </button>
+        `).join("")}
+      </div>
+    </section>
   `).join("");
 
   elements.raceList.querySelectorAll(".race-card").forEach((button) => {
@@ -713,6 +791,23 @@ if (elements.refreshButton) {
 }
 
 render();
+
+async function hydrateDailyRaceSchedule() {
+  try {
+    const dailyRaces = await loadDailyRaceSchedule();
+    races = dailyRaces;
+
+    const todaysRaces = getTodaysRaces();
+    state.selectedRaceId = todaysRaces.some((race) => race.id === INITIAL_RACE_ID)
+      ? INITIAL_RACE_ID
+      : todaysRaces[0]?.id;
+    state.selectedHorseName = INITIAL_HORSE_NAME;
+    render();
+  } catch (error) {
+    console.warn("Daily local racing schedule is unavailable. Using fallback schedule.", error);
+  }
+}
+
 async function hydrateAutoWeights() {
   if (!window.ConsensusAutoWeights) {
     return;
@@ -723,5 +818,6 @@ async function hydrateAutoWeights() {
   render();
 }
 
+hydrateDailyRaceSchedule();
 hydrateAutoWeights();
 setInterval(render, 60 * 1000);

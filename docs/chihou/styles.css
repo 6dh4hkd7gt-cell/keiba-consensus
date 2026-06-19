@@ -158,7 +158,7 @@ button {
 
 .race-list {
   display: grid;
-  gap: 10px;
+  gap: 8px;
 }
 
 .race-card {
@@ -197,63 +197,6 @@ button {
   color: var(--green-dark);
   padding: 4px 8px;
   font-size: 12px;
-  font-weight: 800;
-}
-
-.race-group {
-  display: grid;
-  gap: 8px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: 10px;
-}
-
-.race-group-heading {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-}
-
-.race-group-heading strong {
-  color: var(--ink);
-  font-size: 15px;
-}
-
-.race-group-heading span {
-  border-radius: 999px;
-  background: var(--surface-soft);
-  color: var(--muted);
-  padding: 4px 8px;
-  font-size: 12px;
-  font-weight: 800;
-}
-
-.race-chip-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 6px;
-}
-
-.race-chip {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  align-content: center;
-  gap: 2px;
-  min-height: 46px;
-  padding: 7px 4px;
-  text-align: center;
-}
-
-.race-chip strong {
-  margin: 0;
-  font-size: 13px;
-}
-
-.race-chip span {
-  font-size: 11px;
   font-weight: 800;
 }
 
