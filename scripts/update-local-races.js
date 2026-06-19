@@ -57,20 +57,30 @@ function htmlToLines(html) {
 
 async function readJapaneseHtml(response) {
   const bytes = await response.arrayBuffer();
-  const decoders = ["shift_jis", "euc-jp", "utf-8"];
+  const decoders = ["utf-8", "shift_jis", "euc-jp"];
+  let best = { html: "", score: -Infinity };
 
   for (const encoding of decoders) {
     try {
       const html = new TextDecoder(encoding).decode(bytes);
-      if (html.includes("本日のレース") || html.includes("開催場")) {
-        return html;
+      const venueHits = Object.keys(VENUE_ALIASES).filter((venueName) => html.includes(venueName)).length;
+      const replacementPenalty = (html.match(/\uFFFD/g) || []).length;
+      const score =
+        (html.includes("本日のレース") ? 100 : 0) +
+        (html.includes("TodayRaceInfo") ? 10 : 0) +
+        venueHits * 20 +
+        (html.includes("15:00") ? 5 : 0) -
+        replacementPenalty;
+
+      if (score > best.score) {
+        best = { html, score };
       }
     } catch {
       // Try the next decoder.
     }
   }
 
-  return new TextDecoder("utf-8").decode(bytes);
+  return best.html || new TextDecoder("utf-8").decode(bytes);
 }
 
 function parseRaceRows(lines) {
