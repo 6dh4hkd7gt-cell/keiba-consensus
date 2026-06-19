@@ -353,7 +353,8 @@ button {
 .ranking-panel,
 .detail-panel,
 .weights-panel,
-.recommendations-panel {
+.recommendations-panel,
+.source-audit-panel {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
@@ -402,7 +403,8 @@ button {
 .ranking-panel,
 .detail-panel,
 .weights-panel,
-.recommendations-panel {
+.recommendations-panel,
+.source-audit-panel {
   padding: 18px;
 }
 
@@ -574,8 +576,65 @@ tr:last-child td {
 }
 
 .weights-panel,
-.recommendations-panel {
+.recommendations-panel,
+.source-audit-panel {
   margin-top: 16px;
+}
+
+.source-audit-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.source-audit-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  min-height: 56px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: #fbfcfa;
+}
+
+.source-audit-row strong,
+.source-audit-row span {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.source-audit-row strong {
+  font-size: 13px;
+}
+
+.source-audit-row span {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.source-audit-row em {
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: #eef3f0;
+  color: var(--muted);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.source-audit-row.acquired em {
+  background: #dfeee5;
+  color: var(--green-dark);
+}
+
+.source-audit-row.blocked em {
+  background: #f5e6e4;
+  color: var(--red);
 }
 
 .text-button {
@@ -960,9 +1019,14 @@ tr:last-child td {
   .ranking-panel,
   .detail-panel,
   .weights-panel,
-  .recommendations-panel {
+  .recommendations-panel,
+  .source-audit-panel {
     padding: 10px;
     box-shadow: 0 10px 28px rgba(23, 33, 27, 0.07);
+  }
+
+  .source-audit-list {
+    grid-template-columns: 1fr;
   }
 
   .panel-heading {
