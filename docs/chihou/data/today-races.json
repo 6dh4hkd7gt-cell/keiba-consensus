@@ -1,43 +1,187 @@
 {
   "date": "2026-06-19",
   "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/TodayRaceInfoTop",
-  "generatedAt": "2026-06-19T02:56:00.000Z",
+  "generatedAt": "2026-06-19T03:34:05.721Z",
   "races": [
-    { "venue": "kawasaki", "number": 1, "startAt": "15:00" },
-    { "venue": "kawasaki", "number": 2, "startAt": "15:30" },
-    { "venue": "kawasaki", "number": 3, "startAt": "16:00" },
-    { "venue": "kawasaki", "number": 4, "startAt": "16:30" },
-    { "venue": "kawasaki", "number": 5, "startAt": "17:00" },
-    { "venue": "kawasaki", "number": 6, "startAt": "17:30" },
-    { "venue": "kawasaki", "number": 7, "startAt": "18:00" },
-    { "venue": "kawasaki", "number": 8, "startAt": "18:30" },
-    { "venue": "kawasaki", "number": 9, "startAt": "19:05" },
-    { "venue": "kawasaki", "number": 10, "startAt": "19:40" },
-    { "venue": "kawasaki", "number": 11, "startAt": "20:15" },
-    { "venue": "kawasaki", "number": 12, "startAt": "20:50" },
-    { "venue": "nagoya", "number": 1, "startAt": "12:15" },
-    { "venue": "nagoya", "number": 2, "startAt": "12:50" },
-    { "venue": "nagoya", "number": 3, "startAt": "13:25" },
-    { "venue": "nagoya", "number": 4, "startAt": "14:00" },
-    { "venue": "nagoya", "number": 5, "startAt": "14:35" },
-    { "venue": "nagoya", "number": 6, "startAt": "15:10" },
-    { "venue": "nagoya", "number": 7, "startAt": "15:40" },
-    { "venue": "nagoya", "number": 8, "startAt": "16:10" },
-    { "venue": "nagoya", "number": 9, "startAt": "16:45" },
-    { "venue": "nagoya", "number": 10, "startAt": "17:15" },
-    { "venue": "nagoya", "number": 11, "startAt": "17:45" },
-    { "venue": "nagoya", "number": 12, "startAt": "18:20" },
-    { "venue": "sonoda", "number": 1, "startAt": "14:20" },
-    { "venue": "sonoda", "number": 2, "startAt": "14:50" },
-    { "venue": "sonoda", "number": 3, "startAt": "15:20" },
-    { "venue": "sonoda", "number": 4, "startAt": "15:50" },
-    { "venue": "sonoda", "number": 5, "startAt": "16:25" },
-    { "venue": "sonoda", "number": 6, "startAt": "17:00" },
-    { "venue": "sonoda", "number": 7, "startAt": "17:35" },
-    { "venue": "sonoda", "number": 8, "startAt": "18:10" },
-    { "venue": "sonoda", "number": 9, "startAt": "18:45" },
-    { "venue": "sonoda", "number": 10, "startAt": "19:20" },
-    { "venue": "sonoda", "number": 11, "startAt": "19:55" },
-    { "venue": "sonoda", "number": 12, "startAt": "20:30" }
+    {
+      "venue": "kawasaki",
+      "number": 1,
+      "startAt": "15:00"
+    },
+    {
+      "venue": "kawasaki",
+      "number": 2,
+      "startAt": "15:30"
+    },
+    {
+      "venue": "kawasaki",
+      "number": 3,
+      "startAt": "16:00"
+    },
+    {
+      "venue": "kawasaki",
+      "number": 4,
+      "startAt": "16:30"
+    },
+    {
+      "venue": "kawasaki",
+      "number": 5,
+      "startAt": "17:00"
+    },
+    {
+      "venue": "kawasaki",
+      "number": 6,
+      "startAt": "17:30"
+    },
+    {
+      "venue": "kawasaki",
+      "number": 7,
+      "startAt": "18:00"
+    },
+    {
+      "venue": "kawasaki",
+      "number": 8,
+      "startAt": "18:30"
+    },
+    {
+      "venue": "kawasaki",
+      "number": 9,
+      "startAt": "19:05"
+    },
+    {
+      "venue": "kawasaki",
+      "number": 10,
+      "startAt": "19:40"
+    },
+    {
+      "venue": "kawasaki",
+      "number": 11,
+      "startAt": "20:15"
+    },
+    {
+      "venue": "kawasaki",
+      "number": 12,
+      "startAt": "20:50"
+    },
+    {
+      "venue": "nagoya",
+      "number": 1,
+      "startAt": "12:15"
+    },
+    {
+      "venue": "nagoya",
+      "number": 2,
+      "startAt": "12:50"
+    },
+    {
+      "venue": "nagoya",
+      "number": 3,
+      "startAt": "13:25"
+    },
+    {
+      "venue": "nagoya",
+      "number": 4,
+      "startAt": "14:00"
+    },
+    {
+      "venue": "nagoya",
+      "number": 5,
+      "startAt": "14:35"
+    },
+    {
+      "venue": "nagoya",
+      "number": 6,
+      "startAt": "15:10"
+    },
+    {
+      "venue": "nagoya",
+      "number": 7,
+      "startAt": "15:40"
+    },
+    {
+      "venue": "nagoya",
+      "number": 8,
+      "startAt": "16:10"
+    },
+    {
+      "venue": "nagoya",
+      "number": 9,
+      "startAt": "16:45"
+    },
+    {
+      "venue": "nagoya",
+      "number": 10,
+      "startAt": "17:15"
+    },
+    {
+      "venue": "nagoya",
+      "number": 11,
+      "startAt": "17:45"
+    },
+    {
+      "venue": "nagoya",
+      "number": 12,
+      "startAt": "18:20"
+    },
+    {
+      "venue": "sonoda",
+      "number": 1,
+      "startAt": "14:20"
+    },
+    {
+      "venue": "sonoda",
+      "number": 2,
+      "startAt": "14:50"
+    },
+    {
+      "venue": "sonoda",
+      "number": 3,
+      "startAt": "15:20"
+    },
+    {
+      "venue": "sonoda",
+      "number": 4,
+      "startAt": "15:50"
+    },
+    {
+      "venue": "sonoda",
+      "number": 5,
+      "startAt": "16:25"
+    },
+    {
+      "venue": "sonoda",
+      "number": 6,
+      "startAt": "17:00"
+    },
+    {
+      "venue": "sonoda",
+      "number": 7,
+      "startAt": "17:35"
+    },
+    {
+      "venue": "sonoda",
+      "number": 8,
+      "startAt": "18:10"
+    },
+    {
+      "venue": "sonoda",
+      "number": 9,
+      "startAt": "18:45"
+    },
+    {
+      "venue": "sonoda",
+      "number": 10,
+      "startAt": "19:20"
+    },
+    {
+      "venue": "sonoda",
+      "number": 11,
+      "startAt": "19:55"
+    },
+    {
+      "venue": "sonoda",
+      "number": 12,
+      "startAt": "20:30"
+    }
   ]
 }
