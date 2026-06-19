@@ -132,6 +132,24 @@ async function fetchWithTimeout(url, options = {}) {
   }
 }
 
+async function mapWithConcurrency(items, concurrency, mapper) {
+  const results = new Array(items.length);
+  let nextIndex = 0;
+
+  async function worker() {
+    while (nextIndex < items.length) {
+      const index = nextIndex;
+      nextIndex += 1;
+      results[index] = await mapper(items[index], index);
+    }
+  }
+
+  await Promise.all(
+    Array.from({ length: Math.min(concurrency, items.length) }, () => worker())
+  );
+  return results;
+}
+
 function htmlToLines(html) {
   return decodeEntities(html)
     .replace(/<script[\s\S]*?<\/script>/gi, "")
@@ -1123,9 +1141,7 @@ async function enrichRaceHorses(date, races, existingRaces) {
   } catch (error) {
     console.warn(error.message);
   }
-  const enriched = [];
-
-  for (const race of races) {
+  const enriched = await mapWithConcurrency(races, 6, async (race) => {
     let raceHorses = [];
     try {
       const horses = await fetchRaceHorses(date, race);
@@ -1215,19 +1231,18 @@ async function enrichRaceHorses(date, races, existingRaces) {
         }
       }));
       const acquiredSites = new Set(horses.flatMap((horse) => Object.keys(horse.predictions || {})));
-      enriched.push({
+      return {
         ...race,
         horses,
         missingSites: PREDICTION_SOURCES.filter((source) => !acquiredSites.has(source))
-      });
-      continue;
+      };
     }
 
-    enriched.push({
+    return {
       ...race,
       missingSites: PREDICTION_SOURCES
-    });
-  }
+    };
+  });
 
   return enriched;
 }
