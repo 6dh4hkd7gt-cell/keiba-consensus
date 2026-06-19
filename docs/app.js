@@ -616,8 +616,8 @@ function buildFallbackPrediction(site, horse, race) {
 
 function getPredictionsForHorse(race, horse) {
   return Object.keys(DEFAULT_WEIGHTS).reduce((predictions, site) => {
-    if (!race.missingSites.includes(site)) {
-      predictions[site] = horse.predictions[site] || buildFallbackPrediction(site, horse, race);
+    if (!race.missingSites.includes(site) && horse.predictions[site]) {
+      predictions[site] = horse.predictions[site];
     }
 
     return predictions;
