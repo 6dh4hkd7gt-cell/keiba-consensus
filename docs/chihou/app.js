@@ -47,6 +47,27 @@ const VENUES = {
   saga: { venueName: "佐賀", horsePrefix: "サガ", missingSites: ["地方競馬予想AI"] }
 };
 
+const HORSE_NAME_PARTS = [
+  "スター",
+  "ブレイブ",
+  "クイーン",
+  "クラウン",
+  "スピード",
+  "リベルタ",
+  "ノーブル",
+  "アロー",
+  "ミライ",
+  "グラン",
+  "フラッグ",
+  "シャイン",
+  "レガーロ",
+  "フォルテ",
+  "セレーノ",
+  "リンク"
+];
+
+const HORSE_NUMBERS = [1, 3, 6, 9, 12];
+
 const FALLBACK_RACE_SCHEDULE_BY_DATE = {
   "2026-06-19": {
     kawasaki: ["15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:05", "19:40", "20:15", "20:50"],
@@ -61,9 +82,15 @@ function subtractMinutes(time, minutesToSubtract) {
   return date.toLocaleTimeString("ja-JP", { hour12: false });
 }
 
+function hashText(text) {
+  return [...text].reduce((total, char, index) => total + char.charCodeAt(0) * (index + 3), 0);
+}
+
 function buildRaceFromSchedule(date, venue, startAt, raceIndex) {
   const venueInfo = VENUES[venue];
   const number = `${raceIndex + 1}R`;
+  const raceSeed = hashText(`${date}-${venue}-${number}-${startAt}`);
+
   return {
     id: `${date}-${venue}-${number.toLowerCase()}`,
     venue,
@@ -74,12 +101,17 @@ function buildRaceFromSchedule(date, venue, startAt, raceIndex) {
     startAt,
     updatedAt: subtractMinutes(startAt, 10),
     missingSites: venueInfo.missingSites,
-    horses: [1, 3, 6, 9, 12].map((numberValue, horseIndex) => ({
-      number: numberValue,
-      name: `${venueInfo.horsePrefix}${["スター", "ブレイブ", "クイーン", "クラウン", "スピード"][horseIndex]}`,
-      odds: [3.4, 6.8, 10.9, 4.7, 18.2][horseIndex] + (raceIndex % 4) * 0.3,
-      predictions: {}
-    }))
+    horses: HORSE_NUMBERS.map((numberValue, horseIndex) => {
+      const firstPart = HORSE_NAME_PARTS[(raceSeed + raceIndex + horseIndex * 3) % HORSE_NAME_PARTS.length];
+      const secondPart = HORSE_NAME_PARTS[(raceSeed + raceIndex * 5 + horseIndex * 7 + 4) % HORSE_NAME_PARTS.length];
+      const oddsBase = [3.4, 6.8, 10.9, 4.7, 18.2][horseIndex];
+      return {
+        number: numberValue,
+        name: `${venueInfo.horsePrefix}${firstPart}${secondPart}`,
+        odds: oddsBase + ((raceSeed + horseIndex * 11) % 9) * 0.2,
+        predictions: {}
+      };
+    })
   };
 }
 
@@ -96,34 +128,6 @@ function buildRacesFromSchedule(scheduleByDate) {
 }
 
 let races = buildRacesFromSchedule(FALLBACK_RACE_SCHEDULE_BY_DATE);
-
-/*
-const races = Object.entries(LOCAL_RACE_SCHEDULE_BY_DATE).flatMap(([date, venueSchedules]) => (
-  Object.entries(venueSchedules).flatMap(([venue, startTimes]) => {
-    const venueInfo = VENUES[venue];
-    return startTimes.map((startAt, raceIndex) => {
-      const number = `${raceIndex + 1}R`;
-      return {
-        id: `${date}-${venue}-${number.toLowerCase()}`,
-        venue,
-        venueName: venueInfo.venueName,
-        number,
-        name: `${venueInfo.venueName}第${raceIndex + 1}競走`,
-        date,
-        startAt,
-        updatedAt: subtractMinutes(startAt, 10),
-        missingSites: venueInfo.missingSites,
-        horses: [1, 3, 6, 9, 12].map((numberValue, horseIndex) => ({
-          number: numberValue,
-          name: `${venueInfo.horsePrefix}${["スター", "ブレイブ", "クイーン", "クラウン", "スピード"][horseIndex]}`,
-          odds: [3.4, 6.8, 10.9, 4.7, 18.2][horseIndex] + (raceIndex % 4) * 0.3,
-          predictions: {}
-        }))
-      };
-    });
-  })
-));
-*/
 
 const todaysInitialRaces = getTodaysRaces();
 
@@ -298,7 +302,7 @@ function getOperatingStatus(now = getNow()) {
 
 function buildFallbackPrediction(site, horse, race) {
   const siteIndex = Object.keys(DEFAULT_WEIGHTS).indexOf(site);
-  const seed = horse.number * 11 + siteIndex * 7 + race.id.length;
+  const seed = hashText(`${race.id}-${race.startAt}-${horse.name}-${site}`) + horse.number * 11 + siteIndex * 7;
   const mark = MARK_SEQUENCE[seed % MARK_SEQUENCE.length];
   const baseScore = MARK_SCORES[mark] || 50;
   const index = Math.max(55, Math.min(96, baseScore - 6 + (seed % 15)));
