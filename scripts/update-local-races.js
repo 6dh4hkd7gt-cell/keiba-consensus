@@ -122,10 +122,29 @@ function parseRaceRows(lines) {
   return races;
 }
 
+function loadExistingSchedule(date) {
+  try {
+    const payload = JSON.parse(fs.readFileSync(OUTPUT_PATH, "utf8"));
+    if (payload.date === date && Array.isArray(payload.races) && payload.races.length) {
+      return payload.races;
+    }
+  } catch {
+    // No usable checked-in schedule yet.
+  }
+
+  return [];
+}
+
 async function main() {
+  const today = formatDateKey();
   const response = await fetch(SOURCE_URL, {
     headers: {
-      "user-agent": "keiba-consensus-schedule-updater/1.0"
+      "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "accept-language": "ja,en-US;q=0.9,en;q=0.8",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "referer": "https://www.keiba.go.jp/",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
     }
   });
 
@@ -137,14 +156,18 @@ async function main() {
   const lines = htmlToLines(html);
   const start = lines.findIndex((line) => line.includes("本日のレース"));
   const sourceLines = start >= 0 ? lines.slice(start + 1) : lines;
-  const races = parseRaceRows(sourceLines);
+  let races = parseRaceRows(sourceLines);
 
   if (!races.length) {
-    throw new Error("No local races were parsed from today's NAR schedule.");
+    races = loadExistingSchedule(today);
+  }
+
+  if (!races.length) {
+    throw new Error(`No local races were parsed from today's NAR schedule. Parsed ${lines.length} text lines.`);
   }
 
   const payload = {
-    date: formatDateKey(),
+    date: today,
     source: SOURCE_URL,
     generatedAt: new Date().toISOString(),
     races
