@@ -1,28 +1,177 @@
 <!doctype html>
 <html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>地方競馬 予想サイト集約</title>
-<style>
-:root{color-scheme:light;--ink:#172018;--muted:#607064;--line:#dbe2dc;--green:#23624b;--bg:#f5f6f1;--card:#fff}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif}header{padding:24px 16px 18px;background:#e7ece4;border-bottom:1px solid var(--line)}h1{margin:0;font-size:28px;line-height:1.2}header p{margin:10px 0 0;color:var(--muted);font-size:14px;line-height:1.6}main{width:min(920px,100%);margin:0 auto;padding:14px;display:grid;gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px;box-shadow:0 1px 2px rgba(0,0,0,.04)}h2{margin:0 0 6px;font-size:18px}.meta{margin:0 0 12px;color:var(--muted);font-size:13px;line-height:1.5}.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}a{display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:7px;text-decoration:none;font-weight:700;font-size:14px}.primary{background:var(--green);color:#fff}.secondary{background:#eef3ef;color:#143f31;border:1px solid var(--line)}.note{font-size:12px;color:var(--muted);line-height:1.6}@media(max-width:520px){h1{font-size:24px}.actions{grid-template-columns:1fr}.card{padding:13px}}
-</style>
-</head>
-<body>
-<header><h1>地方競馬 予想サイト集約</h1><p>スマホで各地方競馬の公式情報、予想、出馬表、オッズをすぐ開ける入口です。</p></header>
-<main>
-<section class="card"><h2>NAR 地方競馬情報</h2><p class="meta">本日の開催、出馬表、結果、公式情報。</p><div class="actions"><a class="primary" href="https://www.keiba.go.jp/">公式を開く</a><a class="secondary" href="https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/TodayRaceInfoTop">本日のレース</a></div></section>
-<section class="card"><h2>オッズパーク</h2><p class="meta">地方競馬の予想、オッズ、投票情報。</p><div class="actions"><a class="primary" href="https://www.oddspark.com/keiba/">サイトを開く</a><a class="secondary" href="https://www.oddspark.com/keiba/yosou/">予想を見る</a></div></section>
-<section class="card"><h2>楽天競馬</h2><p class="meta">予想、出馬表、オッズ、地方競馬ニュース。</p><div class="actions"><a class="primary" href="https://keiba.rakuten.co.jp/">サイトを開く</a><a class="secondary" href="https://keiba.rakuten.co.jp/yosou/">予想を見る</a></div></section>
-<section class="card"><h2>SPAT4</h2><p class="meta">南関東を中心に投票・キャンペーン情報を確認。</p><div class="actions"><a class="primary" href="https://spat4special.jp/">特設サイト</a><a class="secondary" href="https://www.spat4.jp/">SPAT4</a></div></section>
-<section class="card"><h2>netkeiba 地方競馬</h2><p class="meta">地方競馬ニュース、データ、予想系コンテンツ。</p><div class="actions"><a class="primary" href="https://nar.netkeiba.com/">地方版を開く</a><a class="secondary" href="https://yoso.netkeiba.com/">予想を見る</a></div></section>
-<section class="card"><h2>南関東4競馬場</h2><p class="meta">大井・川崎・船橋・浦和の出馬表、予想、結果。</p><div class="actions"><a class="primary" href="https://www.nankankeiba.com/">サイトを開く</a><a class="secondary" href="https://www.nankankeiba.com/yoso/">予想を見る</a></div></section>
-<section class="card"><h2>ホッカイドウ競馬</h2><p class="meta">門別開催の出馬表、結果、開催情報。</p><div class="actions"><a class="primary" href="https://www.hokkaidokeiba.net/">サイトを開く</a><a class="secondary" href="https://www.hokkaidokeiba.net/raceinfo/">レース情報</a></div></section>
-<section class="card"><h2>ばんえい十勝</h2><p class="meta">ばんえい競馬の開催、出馬表、結果。</p><div class="actions"><a class="primary" href="https://www.banei-keiba.or.jp/">サイトを開く</a><a class="secondary" href="https://www.banei-keiba.or.jp/race.php">レース情報</a></div></section>
-<section class="card"><h2>岩手競馬</h2><p class="meta">盛岡・水沢の開催、出馬表、結果。</p><div class="actions"><a class="primary" href="https://www.iwatekeiba.or.jp/">サイトを開く</a><a class="secondary" href="https://www.iwatekeiba.or.jp/race">レース情報</a></div></section>
-<section class="card"><h2>高知競馬</h2><p class="meta">高知開催の出馬表、結果、公式情報。</p><div class="actions"><a class="primary" href="https://www.keiba.or.jp/">サイトを開く</a><a class="secondary" href="https://www.keiba.or.jp/racecard/">出馬表</a></div></section>
-<section class="card"><p class="note">投票前に、必ず公式の出馬表・馬場状態・オッズ・締切時刻を確認してください。このページは予想サイトの入口をまとめたものです。</p></section>
-</main>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI地方競馬コンセンサス</title>
+    <link rel="stylesheet" href="./phone.css?v=chihou-auto-13" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="レース一覧">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img">
+              <path d="M7 31c4.9-9.4 12.6-14.6 23-15.5" />
+              <path d="M15 34c4-5.4 9.8-8.2 17.5-8.5" />
+              <path d="M31 15.5l7-5.5 3 8.2-7.7-1.1z" />
+              <circle cx="17" cy="35" r="3.6" />
+              <circle cx="34" cy="27" r="3.6" />
+            </svg>
+          </div>
+          <div>
+            <p>AI地方競馬</p>
+            <h1>コンセンサス</h1>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="raceSearch">レース検索</label>
+          <div class="input-wrap">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m21 21-4.35-4.35" />
+              <circle cx="11" cy="11" r="7" />
+            </svg>
+            <input id="raceSearch" type="search" placeholder="会場・レース名" />
+          </div>
+        </div>
+
+        <div class="venue-tabs" role="tablist" aria-label="会場フィルター">
+          <button class="active" data-venue="all" type="button">全場</button>
+          <button data-venue="obihiro" type="button">帯広</button>
+          <button data-venue="monbetsu" type="button">門別</button>
+          <button data-venue="morioka" type="button">盛岡</button>
+          <button data-venue="mizusawa" type="button">水沢</button>
+          <button data-venue="urawa" type="button">浦和</button>
+          <button data-venue="funabashi" type="button">船橋</button>
+          <button data-venue="ooi" type="button">大井</button>
+          <button data-venue="kawasaki" type="button">川崎</button>
+          <button data-venue="kanazawa" type="button">金沢</button>
+          <button data-venue="kasamatsu" type="button">笠松</button>
+          <button data-venue="nagoya" type="button">名古屋</button>
+          <button data-venue="sonoda" type="button">園田</button>
+          <button data-venue="himeji" type="button">姫路</button>
+          <button data-venue="kochi" type="button">高知</button>
+          <button data-venue="saga" type="button">佐賀</button>
+        </div>
+
+        <div id="raceList" class="race-list"></div>
+      </aside>
+
+      <main class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">地方競馬全レース / 毎日自動更新 / 10分前取得</p>
+            <h2 id="raceTitle">読み込み中</h2>
+          </div>
+          <div class="topbar-actions">
+            <a class="text-button nav-link" href="./phone.html">スマホ版</a>
+            <a id="sitePageLink" class="text-button nav-link" href="./sites.html">ソース</a>
+            <a class="text-button nav-link" href="./weights.html">重み</a>
+            <a class="text-button nav-link" href="./weekly.html">成績</a>
+            <button id="refreshButton" class="icon-button" type="button" aria-label="取得を更新">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M21 12a9 9 0 0 1-15.1 6.62" />
+                <path d="M3 12A9 9 0 0 1 18.1 5.38" />
+                <path d="M18 2v4h-4" />
+                <path d="M6 22v-4h4" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <section class="content-grid">
+          <div class="ranking-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Consensus Ranking</p>
+                <h3>AI支持率ランキング</h3>
+              </div>
+              <select id="sortSelect" aria-label="並び替え">
+                <option value="support">支持率順</option>
+                <option value="odds">オッズ順</option>
+                <option value="gap">乖離順</option>
+              </select>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>順位</th>
+                    <th>馬名</th>
+                    <th>AI支持率</th>
+                    <th>本命数</th>
+                    <th>オッズ</th>
+                    <th>人気乖離</th>
+                  </tr>
+                </thead>
+                <tbody id="rankingRows"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <aside class="detail-panel" aria-label="馬詳細">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Horse Detail</p>
+                <h3 id="horseName">馬を選択</h3>
+              </div>
+              <span id="horseNumber" class="number-badge">--</span>
+            </div>
+            <div id="horseSummary" class="horse-summary"></div>
+            <div class="detail-actions">
+              <a id="siteDetailLink" class="text-button nav-link" href="./sites.html">ソース別評価</a>
+            </div>
+          </aside>
+        </section>
+
+        <section class="recommendations-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Suggested Tickets</p>
+              <h3>推奨買い目</h3>
+            </div>
+          </div>
+          <div id="recommendationGroups" class="recommendation-grid"></div>
+        </section>
+
+        <section class="status-grid" aria-label="取得状況">
+          <div class="metric">
+            <span>最終更新</span>
+            <strong id="updatedAt">--:--:--</strong>
+          </div>
+          <div class="metric">
+            <span>稼働状態</span>
+            <strong id="operationStatus">判定中</strong>
+            <small id="operationWindow">毎日 10:00-21:00</small>
+          </div>
+          <div class="metric">
+            <span>取得ソース</span>
+            <strong id="siteCount">0/0</strong>
+          </div>
+          <div class="metric">
+            <span>未取得</span>
+            <strong id="missingSites">なし</strong>
+          </div>
+          <div class="metric">
+            <span>平均支持率</span>
+            <strong id="averageSupport">0.0%</strong>
+          </div>
+        </section>
+
+        <section class="source-audit-panel" aria-label="取得元確認">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Source Check</p>
+              <h3>取得元の実確認</h3>
+            </div>
+          </div>
+          <div id="sourceAudit" class="source-audit-list"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./auto-weights.js?v=chihou-auto-13"></script>
+    <script src="./app.js?v=chihou-auto-13"></script>
+  </body>
 </html>
