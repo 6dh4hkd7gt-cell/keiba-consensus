@@ -356,23 +356,44 @@ function parseAibaPredictions(html) {
 
   const lines = htmlToLines(html);
   for (let index = 0; index < lines.length - 1; index += 1) {
-    const rowMatch = lines[index].match(/^([◎○◯▲△☆])\s+(\d{1,2})\s+(.+)$/);
-    if (!rowMatch) {
+    const inlineMatch = lines[index].match(/^([◎○◯▲△☆])\s+(\d{1,2})\s+(.+)$/);
+    const splitMark = MARK_SCORES[lines[index]] ? lines[index] : "";
+    const splitNumber = Number(lines[index + 1]);
+    const splitName = lines[index + 2] || "";
+    const row = inlineMatch
+      ? {
+          mark: inlineMatch[1],
+          number: Number(inlineMatch[2]),
+          name: inlineMatch[3],
+          indexStart: index + 1
+        }
+      : splitMark && Number.isFinite(splitNumber) && splitName
+        ? {
+            mark: splitMark,
+            number: splitNumber,
+            name: splitName,
+            indexStart: index + 3
+          }
+        : null;
+
+    if (!row) {
       continue;
     }
 
     let indexValue = null;
-    for (const line of lines.slice(index + 1, index + 4)) {
+    for (const line of lines.slice(row.indexStart, row.indexStart + 6)) {
       if (/^[◎○◯▲△☆注]\s+\d{1,2}\s+/.test(line)) {
+        break;
+      }
+      if (/^[◎○◯▲△☆注]$/.test(line)) {
         break;
       }
 
       const numbers = [...line.matchAll(/\d+(?:\.\d+)?/g)]
         .map((match) => Number(match[0]))
         .filter((value) => Number.isFinite(value) && value >= 1 && value <= 100);
-      if (numbers.length >= 2) {
+      if (numbers.length) {
         indexValue = numbers.at(-1);
-        break;
       }
     }
 
@@ -380,8 +401,8 @@ function parseAibaPredictions(html) {
       continue;
     }
 
-    predictions.set(Number(rowMatch[2]), {
-      mark: rowMatch[1] === "◯" ? "○" : rowMatch[1],
+    predictions.set(row.number, {
+      mark: row.mark === "◯" ? "○" : row.mark,
       index: Math.max(1, Math.min(100, Math.round(indexValue)))
     });
   }
