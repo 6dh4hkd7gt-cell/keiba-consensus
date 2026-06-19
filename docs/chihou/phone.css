@@ -237,6 +237,7 @@ button {
 }
 
 .race-chip {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -255,6 +256,28 @@ button {
 .race-chip span {
   font-size: 11px;
   font-weight: 800;
+}
+
+.race-chip.next-race {
+  border-color: var(--gold);
+  background: #fffaf0;
+  box-shadow: 0 0 0 2px rgba(184, 137, 47, 0.16);
+}
+
+.next-race-badge {
+  position: absolute;
+  top: -7px;
+  right: -5px;
+  min-width: 24px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #ffffff;
+  padding: 3px 6px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: 0 6px 14px rgba(184, 137, 47, 0.24);
 }
 
 .race-empty {
