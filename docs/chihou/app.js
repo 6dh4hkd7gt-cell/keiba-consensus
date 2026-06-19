@@ -29,44 +29,68 @@ const DEFAULT_WEIGHTS = {
   "Prediction One": 1
 };
 
-const localVenueRaces = [
-  { venue: "obihiro", venueName: "帯広", number: "11R", name: "ばんえい十勝特別", startAt: "20:05", updatedAt: "20:00:11", missingSites: ["SPAT4分析"], horsePrefix: "トカチ" },
-  { venue: "monbetsu", venueName: "門別", number: "12R", name: "グランシャリオナイター特別", startAt: "20:40", updatedAt: "20:35:14", missingSites: ["netkeiba地方"], horsePrefix: "ホッカイ" },
-  { venue: "morioka", venueName: "盛岡", number: "10R", name: "オーロパーク賞", startAt: "17:05", updatedAt: "17:00:09", missingSites: [], horsePrefix: "ミチノク" },
-  { venue: "mizusawa", venueName: "水沢", number: "11R", name: "奥州スプリント", startAt: "18:10", updatedAt: "18:05:22", missingSites: ["Prediction One"], horsePrefix: "オウシュウ" },
-  { venue: "urawa", venueName: "浦和", number: "10R", name: "紫陽花特別", startAt: "17:10", updatedAt: "17:05:08", missingSites: [], horsePrefix: "ウラワ" },
-  { venue: "funabashi", venueName: "船橋", number: "11R", name: "ベイサイドカップ", startAt: "20:05", updatedAt: "20:00:30", missingSites: ["Uma Cloud"], horsePrefix: "フナバシ" },
-  { venue: "ooi", venueName: "大井", number: "11R", name: "トゥインクルナイト賞", startAt: "20:10", updatedAt: "20:05:03", missingSites: ["Prediction One"], horsePrefix: "トゥインクル" },
-  { venue: "kawasaki", venueName: "川崎", number: "10R", name: "スパーキングナイター特別", startAt: "19:40", updatedAt: "19:35:18", missingSites: ["競馬ブック地方"], horsePrefix: "カワサキ" },
-  { venue: "kanazawa", venueName: "金沢", number: "11R", name: "百万石スプリント", startAt: "18:05", updatedAt: "18:00:12", missingSites: ["SPAT4分析"], horsePrefix: "ハクサン" },
-  { venue: "kasamatsu", venueName: "笠松", number: "10R", name: "木曽川特別", startAt: "16:35", updatedAt: "16:30:45", missingSites: [], horsePrefix: "カサマツ" },
-  { venue: "nagoya", venueName: "名古屋", number: "12R", name: "名港盃トライアル", startAt: "18:30", updatedAt: "18:25:27", missingSites: ["Race AI"], horsePrefix: "メイコウ" },
-  { venue: "sonoda", venueName: "園田", number: "10R", name: "初夏特別", startAt: "16:15", updatedAt: "16:10:31", missingSites: ["Race AI"], horsePrefix: "ソノダ" },
-  { venue: "himeji", venueName: "姫路", number: "11R", name: "白鷺賞ステップ", startAt: "16:55", updatedAt: "16:50:06", missingSites: ["オッズパークAI"], horsePrefix: "ヒメジ" },
-  { venue: "kochi", venueName: "高知", number: "9R", name: "夜さ恋ナイター特別", startAt: "19:45", updatedAt: "19:40:44", missingSites: ["Uma Cloud"], horsePrefix: "トサ" },
-  { venue: "saga", venueName: "佐賀", number: "10R", name: "九州ダービー栄城賞トライアル", startAt: "19:20", updatedAt: "19:15:52", missingSites: ["地方競馬予想AI"], horsePrefix: "サガ" }
-];
+const VENUES = {
+  obihiro: { venueName: "帯広", horsePrefix: "トカチ", missingSites: ["SPAT4分析"] },
+  monbetsu: { venueName: "門別", horsePrefix: "ホッカイ", missingSites: ["netkeiba地方"] },
+  morioka: { venueName: "盛岡", horsePrefix: "ミチノク", missingSites: [] },
+  mizusawa: { venueName: "水沢", horsePrefix: "オウシュウ", missingSites: ["Prediction One"] },
+  urawa: { venueName: "浦和", horsePrefix: "ウラワ", missingSites: [] },
+  funabashi: { venueName: "船橋", horsePrefix: "フナバシ", missingSites: ["Uma Cloud"] },
+  ooi: { venueName: "大井", horsePrefix: "トゥインクル", missingSites: ["Prediction One"] },
+  kawasaki: { venueName: "川崎", horsePrefix: "カワサキ", missingSites: ["競馬ブック地方"] },
+  kanazawa: { venueName: "金沢", horsePrefix: "ハクサン", missingSites: ["SPAT4分析"] },
+  kasamatsu: { venueName: "笠松", horsePrefix: "カサマツ", missingSites: [] },
+  nagoya: { venueName: "名古屋", horsePrefix: "メイコウ", missingSites: ["Race AI"] },
+  sonoda: { venueName: "園田", horsePrefix: "ソノダ", missingSites: ["Race AI"] },
+  himeji: { venueName: "姫路", horsePrefix: "ヒメジ", missingSites: ["オッズパークAI"] },
+  kochi: { venueName: "高知", horsePrefix: "トサ", missingSites: ["Uma Cloud"] },
+  saga: { venueName: "佐賀", horsePrefix: "サガ", missingSites: ["地方競馬予想AI"] }
+};
 
-const races = localVenueRaces.map((race, raceIndex) => ({
-  id: `${race.venue}-${race.number.toLowerCase()}`,
-  venue: race.venue,
-  venueName: race.venueName,
-  number: race.number,
-  name: race.name,
-  date: "2026-06-18",
-  startAt: race.startAt,
-  updatedAt: race.updatedAt,
-  missingSites: race.missingSites,
-  horses: [1, 3, 6, 9, 12].map((number, horseIndex) => ({
-    number,
-    name: `${race.horsePrefix}${["スター", "ブレイブ", "クイーン", "クラウン", "スピード"][horseIndex]}`,
-    odds: [3.4, 6.8, 10.9, 4.7, 18.2][horseIndex] + (raceIndex % 4) * 0.3,
-    predictions: {}
-  }))
-}));
+const LOCAL_RACE_SCHEDULE_BY_DATE = {
+  "2026-06-19": {
+    kawasaki: ["15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:05", "19:40", "20:15", "20:50"],
+    nagoya: ["12:15", "12:50", "13:25", "14:00", "14:35", "15:10", "15:40", "16:10", "16:45", "17:15", "17:45", "18:20"],
+    sonoda: ["14:20", "14:50", "15:20", "15:50", "16:25", "17:00", "17:35", "18:10", "18:45", "19:20", "19:55", "20:30"]
+  }
+};
+
+function subtractMinutes(time, minutesToSubtract) {
+  const [hours, minutes] = time.split(":").map(Number);
+  const date = new Date(2026, 0, 1, hours, minutes - minutesToSubtract, 0);
+  return date.toLocaleTimeString("ja-JP", { hour12: false });
+}
+
+const races = Object.entries(LOCAL_RACE_SCHEDULE_BY_DATE).flatMap(([date, venueSchedules]) => (
+  Object.entries(venueSchedules).flatMap(([venue, startTimes]) => {
+    const venueInfo = VENUES[venue];
+    return startTimes.map((startAt, raceIndex) => {
+      const number = `${raceIndex + 1}R`;
+      return {
+        id: `${date}-${venue}-${number.toLowerCase()}`,
+        venue,
+        venueName: venueInfo.venueName,
+        number,
+        name: `${venueInfo.venueName}第${raceIndex + 1}競走`,
+        date,
+        startAt,
+        updatedAt: subtractMinutes(startAt, 5),
+        missingSites: venueInfo.missingSites,
+        horses: [1, 3, 6, 9, 12].map((numberValue, horseIndex) => ({
+          number: numberValue,
+          name: `${venueInfo.horsePrefix}${["スター", "ブレイブ", "クイーン", "クラウン", "スピード"][horseIndex]}`,
+          odds: [3.4, 6.8, 10.9, 4.7, 18.2][horseIndex] + (raceIndex % 4) * 0.3,
+          predictions: {}
+        }))
+      };
+    });
+  })
+));
+
+const todaysInitialRaces = getTodaysRaces();
 
 const state = {
-  selectedRaceId: races.some((race) => race.id === INITIAL_RACE_ID) ? INITIAL_RACE_ID : races[0].id,
+  selectedRaceId: todaysInitialRaces.some((race) => race.id === INITIAL_RACE_ID) ? INITIAL_RACE_ID : todaysInitialRaces[0]?.id,
   selectedHorseName: INITIAL_HORSE_NAME,
   venue: "all",
   query: "",
@@ -164,7 +188,8 @@ function getTodayKey() {
 }
 
 function getTodaysRaces() {
-  return races;
+  const todayKey = getTodayKey();
+  return races.filter((race) => race.date === todayKey);
 }
 
 function getMinutes(date) {
