@@ -549,6 +549,25 @@ async function fetchHtml(url, referer = SOURCE_URL) {
   return readJapaneseHtml(response);
 }
 
+async function fetchJson(url, referer = SOURCE_URL) {
+  const response = await fetch(url, {
+    headers: {
+      "accept": "application/json,text/plain,*/*",
+      "accept-language": "ja,en-US;q=0.9,en;q=0.8",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "referer": referer,
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch ${url}: ${response.status}`);
+  }
+
+  return response.json();
+}
+
 async function fetchAibaRaceLinks(date, venues) {
   const datePath = date.replaceAll("-", "/");
   const linksByRace = new Map();
@@ -562,7 +581,44 @@ async function fetchAibaRaceLinks(date, venues) {
 
     const categoryUrl = `https://xn--ai-f10fm89h.com/category/race-local/race-local-${venueCode}/`;
     try {
-      const html = await fetchHtml(categoryUrl, "https://xn--ai-f10fm89h.com/");
+      const response = await fetch(categoryUrl, {
+        headers: {
+          "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+          "accept-language": "ja,en-US;q=0.9,en;q=0.8",
+          "cache-control": "no-cache",
+          "pragma": "no-cache",
+          "referer": "https://xn--ai-f10fm89h.com/",
+          "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error(`Failed to fetch ${categoryUrl}: ${response.status}`);
+      }
+
+      const linkHeader = response.headers.get("link") || "";
+      const categoryId = linkHeader.match(/\/wp-json\/wp\/v2\/categories\/(\d+)/)?.[1];
+      if (categoryId) {
+        try {
+          const postsUrl = `https://xn--ai-f10fm89h.com/wp-json/wp/v2/posts?categories=${categoryId}&per_page=50&_fields=link,title,date`;
+          const posts = await fetchJson(postsUrl, categoryUrl);
+          for (const post of posts) {
+            if (!String(post.date || "").startsWith(date)) {
+              continue;
+            }
+
+            const title = decodeEntities(String(post.title?.rendered || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
+            const raceMatch = title.match(new RegExp(`${venueName}(\\d{1,2})R`));
+            if (raceMatch && post.link) {
+              linksByRace.set(`${venue}-${Number(raceMatch[1])}`, post.link);
+            }
+          }
+        } catch (error) {
+          console.warn(error.message);
+        }
+      }
+
+      const html = await readJapaneseHtml(response);
       const anchorPattern = /<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi;
       for (const match of html.matchAll(anchorPattern)) {
         const href = decodeEntities(match[1]);
