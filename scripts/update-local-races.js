@@ -392,7 +392,7 @@ function parseAibaPredictions(html) {
       }
 
       const info = cells[1] || "";
-      const numberMatch = info.match(/^(\d{1,2})\s+/);
+      const numberMatch = info.match(/^(\d{1,2})(?:\s+|$)/);
       const index = Number(cells[cells.length - 1]);
       if (!numberMatch || !Number.isFinite(index)) {
         continue;
