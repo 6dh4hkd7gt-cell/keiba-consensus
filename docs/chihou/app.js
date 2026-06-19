@@ -63,10 +63,6 @@ function subtractMinutes(time, minutesToSubtract) {
   return date.toLocaleTimeString("ja-JP", { hour12: false });
 }
 
-function hashText(text) {
-  return [...text].reduce((total, char, index) => total + char.charCodeAt(0) * (index + 3), 0);
-}
-
 function buildRaceFromSchedule(date, venue, startAt, raceIndex, raceData = {}) {
   const venueInfo = VENUES[venue];
   const number = `${raceIndex + 1}R`;
@@ -284,31 +280,10 @@ function getOperatingStatus(now = getNow()) {
   };
 }
 
-function buildFallbackPrediction(site, horse, race) {
-  const siteIndex = Object.keys(DEFAULT_WEIGHTS).indexOf(site);
-  const seed = hashText(`${race.id}-${race.startAt}-${horse.name}-${site}`) + horse.number * 11 + siteIndex * 7;
-  const oddsOrder = [...race.horses].sort((a, b) => a.odds - b.odds);
-  const oddsRank = oddsOrder.findIndex((entry) => entry.name === horse.name) + 1;
-  const marketMarkPool = oddsRank <= 2
-    ? ["◎", "○", "▲"]
-    : oddsRank <= 4
-      ? ["○", "▲", "△"]
-      : oddsRank <= 6
-        ? ["▲", "△", "☆"]
-        : ["△", "☆"];
-  const longshotMarkPool = horse.odds >= 80 ? ["△", "☆", "☆"] : marketMarkPool;
-  const mark = longshotMarkPool[seed % longshotMarkPool.length];
-  const baseScore = MARK_SCORES[mark] || 50;
-  const marketPenalty = Math.min(28, Math.max(0, Math.log10(Math.max(1, horse.odds)) * 12 - 8));
-  const index = Math.max(35, Math.min(96, baseScore - 4 + (seed % 12) - marketPenalty));
-
-  return { mark, index };
-}
-
 function getPredictionsForHorse(race, horse) {
   return Object.keys(DEFAULT_WEIGHTS).reduce((predictions, site) => {
-    if (!race.missingSites.includes(site)) {
-      predictions[site] = horse.predictions[site] || buildFallbackPrediction(site, horse, race);
+    if (!race.missingSites.includes(site) && horse.predictions?.[site]) {
+      predictions[site] = horse.predictions[site];
     }
 
     return predictions;
@@ -335,27 +310,18 @@ function calculateRanking(race) {
     }, 0);
     const support = totalWeight ? weightedScore / totalWeight : 0;
     const favorites = entries.filter(([, prediction]) => prediction.mark === "◎").length;
-    const marketPenalty = horse.odds >= 80
-      ? 24
-      : horse.odds >= 50
-        ? 16
-        : horse.odds >= 25
-          ? 8
-          : 0;
-    const rankingSupport = Math.max(0, support - marketPenalty);
 
     return {
       ...horse,
       predictions,
       support,
-      rankingSupport,
       favorites,
       oddsRank: oddsRanks[horse.name],
       voteCount: entries.length
     };
   });
 
-  const ranked = rows.sort((a, b) => b.rankingSupport - a.rankingSupport);
+  const ranked = rows.sort((a, b) => b.support - a.support);
   ranked.forEach((horse, index) => {
     horse.aiRank = index + 1;
     horse.gap = horse.oddsRank - horse.aiRank;
@@ -415,13 +381,8 @@ function estimateTicketOdds(horses, type) {
 
 function scoreTicket(horses, type) {
   const positionWeights = type === "umaren" || type === "sanrenpuku" ? [1, 1, 1] : [1, 0.86, 0.72];
-  const weightedSupport = horses.reduce((total, horse, index) => total + horse.rankingSupport * positionWeights[index], 0);
-  const supportBase = weightedSupport / horses.reduce((total, _, index) => total + positionWeights[index], 0);
-  const estimatedOdds = estimateTicketOdds(horses, type);
-  const valueBoost = Math.log10(Math.min(120, estimatedOdds) + 1) * 3;
-  const longshotPenalty = horses.reduce((total, horse) => total + (horse.odds >= 80 ? 10 : horse.odds >= 50 ? 6 : 0), 0);
-
-  return supportBase + valueBoost - longshotPenalty;
+  const weightedSupport = horses.reduce((total, horse, index) => total + horse.support * positionWeights[index], 0);
+  return weightedSupport / horses.reduce((total, _, index) => total + positionWeights[index], 0);
 }
 
 function formatTicket(horses, separator) {
@@ -523,8 +484,10 @@ function renderStatus(race, ranking) {
   }
 
   const siteNames = Object.keys(DEFAULT_WEIGHTS);
-  const acquired = siteNames.length - race.missingSites.length;
-  const average = ranking.reduce((sum, horse) => sum + horse.support, 0) / ranking.length;
+  const acquiredSites = new Set(ranking.flatMap((horse) => Object.keys(horse.predictions || {})));
+  const acquired = acquiredSites.size;
+  const scoredRanking = ranking.filter((horse) => horse.voteCount > 0);
+  const average = scoredRanking.length ? scoredRanking.reduce((sum, horse) => sum + horse.support, 0) / scoredRanking.length : 0;
   const operation = getOperatingStatus();
   const operationMetric = elements.operationStatus.closest(".metric");
 
@@ -533,7 +496,7 @@ function renderStatus(race, ranking) {
   elements.operationStatus.textContent = operation.label;
   elements.operationWindow.textContent = operation.detail;
   elements.siteCount.textContent = `${acquired}/${siteNames.length}`;
-  elements.missingSites.textContent = race.missingSites.length ? race.missingSites.join(" / ") : "なし";
+  elements.missingSites.textContent = acquired ? (race.missingSites.length ? race.missingSites.join(" / ") : "なし") : "予想印未取得";
   elements.averageSupport.textContent = `${average.toFixed(1)}%`;
   if (elements.refreshButton) {
     elements.refreshButton.disabled = !operation.active;
@@ -589,19 +552,22 @@ function renderRanking(ranking) {
   elements.rankingRows.innerHTML = ranking.map((horse) => {
     const gapClass = horse.gap > 0 ? "positive" : horse.gap < 0 ? "negative" : "neutral";
     const gapText = horse.gap > 0 ? `AI +${horse.gap}` : horse.gap < 0 ? `人気 +${Math.abs(horse.gap)}` : "一致";
-    return `
-      <tr>
-        <td>${horse.aiRank}</td>
-        <td><button class="horse-cell" data-horse-name="${horse.name}" type="button">${horse.number}. ${horse.name}</button></td>
-        <td>
+    const supportCell = horse.voteCount
+      ? `
           <div class="support-bar">
             <span class="bar-track"><span class="bar-fill" style="width: ${Math.max(4, horse.support)}%"></span></span>
             <strong>${horse.support.toFixed(1)}%</strong>
           </div>
-        </td>
-        <td>${horse.favorites}</td>
+        `
+      : "<span>印未取得</span>";
+    return `
+      <tr>
+        <td>${horse.voteCount ? horse.aiRank : "-"}</td>
+        <td><button class="horse-cell" data-horse-name="${horse.name}" type="button">${horse.number}. ${horse.name}</button></td>
+        <td>${supportCell}</td>
+        <td>${horse.voteCount ? horse.favorites : "-"}</td>
         <td>${horse.odds.toFixed(1)}倍</td>
-        <td><span class="gap-pill ${gapClass}">${gapText}</span></td>
+        <td><span class="gap-pill ${gapClass}">${horse.voteCount ? gapText : "未取得"}</span></td>
       </tr>
     `;
   }).join("");
@@ -631,13 +597,14 @@ function renderHorseDetail(ranking) {
   elements.horseName.textContent = selected.name;
   elements.horseNumber.textContent = `${selected.number}番`;
   elements.horseSummary.innerHTML = `
-    <div><span>AI支持率</span><strong>${selected.support.toFixed(1)}%</strong></div>
-    <div><span>本命数</span><strong>${selected.favorites}</strong></div>
+    <div><span>AI支持率</span><strong>${selected.voteCount ? `${selected.support.toFixed(1)}%` : "未取得"}</strong></div>
+    <div><span>本命数</span><strong>${selected.voteCount ? selected.favorites : "-"}</strong></div>
     <div><span>オッズ</span><strong>${selected.odds.toFixed(1)}倍</strong></div>
   `;
 
   if (elements.siteVotes) {
-    elements.siteVotes.innerHTML = Object.entries(selected.predictions).map(([site, prediction]) => `
+    const entries = Object.entries(selected.predictions);
+    elements.siteVotes.innerHTML = entries.length ? entries.map(([site, prediction]) => `
       <div class="vote-row">
         <div>
           <strong>${site}</strong>
@@ -646,12 +613,30 @@ function renderHorseDetail(ranking) {
         <span class="mark-badge">${prediction.mark}</span>
         <strong>${prediction.index}</strong>
       </div>
-    `).join("");
+    `).join("") : `
+      <div class="empty-state">
+        <strong>予想印は未取得です</strong>
+        <span>実際のサイト印が取得できるまで支持率は出しません</span>
+      </div>
+    `;
   }
 }
 
 function renderRecommendations(ranking) {
   if (!elements.recommendationGroups) {
+    return;
+  }
+
+  if (!ranking.some((horse) => horse.voteCount > 0)) {
+    elements.recommendationGroups.innerHTML = `
+      <section class="recommendation-card">
+        <h4>推奨未取得</h4>
+        <div class="empty-state">
+          <strong>予想サイトの実印が未取得です</strong>
+          <span>仮の印では買い目推奨を出しません</span>
+        </div>
+      </section>
+    `;
     return;
   }
 
@@ -703,12 +688,13 @@ function renderSiteDetailPage(race, ranking) {
   if (elements.siteDetailMeta) {
     elements.siteDetailMeta.innerHTML = `
       <div><span>レース</span><strong>${race.venueName} ${race.number}</strong></div>
-      <div><span>AI支持率</span><strong>${selected.support.toFixed(1)}%</strong></div>
+      <div><span>AI支持率</span><strong>${selected.voteCount ? `${selected.support.toFixed(1)}%` : "未取得"}</strong></div>
       <div><span>オッズ</span><strong>${selected.odds.toFixed(1)}倍</strong></div>
     `;
   }
 
-  elements.siteDetailList.innerHTML = Object.entries(selected.predictions).map(([site, prediction]) => `
+  const entries = Object.entries(selected.predictions);
+  elements.siteDetailList.innerHTML = entries.length ? entries.map(([site, prediction]) => `
     <div class="vote-row">
       <div>
         <strong>${site}</strong>
@@ -717,7 +703,12 @@ function renderSiteDetailPage(race, ranking) {
       <span class="mark-badge">${prediction.mark}</span>
       <strong>${prediction.index}</strong>
     </div>
-  `).join("");
+  `).join("") : `
+    <div class="empty-state">
+      <strong>予想印は未取得です</strong>
+      <span>実際のサイト印だけを表示します</span>
+    </div>
+  `;
 
   if (elements.siteBackLink) {
     elements.siteBackLink.href = buildStateHref("phone.html");
