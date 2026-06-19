@@ -10,6 +10,7 @@ const MARK_SEQUENCE = ["◎", "○", "▲", "△", "☆"];
 const OPERATING_DAYS = [0, 6];
 const OPERATING_START_MINUTES = 9 * 60;
 const OPERATING_END_MINUTES = 17 * 60;
+const UPDATE_LEAD_MINUTES = 10;
 const DAY_LABELS = ["日", "月", "火", "水", "木", "金", "土"];
 const urlParams = new URLSearchParams(window.location.search);
 const DEMO_TIME = urlParams.get("demoTime");
@@ -38,7 +39,7 @@ const races = [
     name: "青嵐ステークス",
     date: "2026-06-20",
     startAt: "15:45",
-    updatedAt: "15:40:03",
+    updatedAt: "15:35:03",
     missingSites: ["Uma Cloud"],
     horses: [
       {
@@ -111,7 +112,7 @@ const races = [
     name: "朱雀特別",
     date: "2026-06-20",
     startAt: "15:10",
-    updatedAt: "15:05:08",
+    updatedAt: "15:00:08",
     missingSites: [],
     horses: [
       {
@@ -176,7 +177,7 @@ const races = [
     name: "湯川温泉特別",
     date: "2026-06-20",
     startAt: "16:05",
-    updatedAt: "16:00:14",
+    updatedAt: "15:55:14",
     missingSites: ["netkeiba AI", "競馬ラボ"],
     horses: [
       {
@@ -233,7 +234,7 @@ const races = [
     name: "大通公園ステークス",
     date: "2026-06-20",
     startAt: "15:25",
-    updatedAt: "15:20:12",
+    updatedAt: "15:15:12",
     missingSites: ["Prediction One"],
     horses: [
       { number: 1, name: "ポラリスグレイス", odds: 4.2, predictions: {} },
@@ -250,7 +251,7 @@ const races = [
     name: "船橋ステークス",
     date: "2026-06-20",
     startAt: "15:40",
-    updatedAt: "15:35:22",
+    updatedAt: "15:30:22",
     missingSites: [],
     horses: [
       { number: 2, name: "マツリダセレーノ", odds: 3.6, predictions: {} },
@@ -267,7 +268,7 @@ const races = [
     name: "熱田特別",
     date: "2026-06-20",
     startAt: "15:00",
-    updatedAt: "14:55:31",
+    updatedAt: "14:50:31",
     missingSites: ["Race AI"],
     horses: [
       { number: 3, name: "ミッドランドアロー", odds: 5.5, predictions: {} },
@@ -284,7 +285,7 @@ const races = [
     name: "六甲ステークス",
     date: "2026-06-20",
     startAt: "15:35",
-    updatedAt: "15:30:44",
+    updatedAt: "15:25:44",
     missingSites: ["Deep Keiba"],
     horses: [
       { number: 1, name: "ナニワサンダー", odds: 6.1, predictions: {} },
@@ -301,7 +302,7 @@ const races = [
     name: "企救丘特別",
     date: "2026-06-20",
     startAt: "16:10",
-    updatedAt: "16:05:17",
+    updatedAt: "16:00:17",
     missingSites: ["競馬ラボ"],
     horses: [
       { number: 2, name: "メイショウアサギリ", odds: 4.7, predictions: {} },
@@ -318,7 +319,7 @@ const races = [
     name: "吾妻小富士ステークス",
     date: "2026-06-20",
     startAt: "15:20",
-    updatedAt: "15:15:02",
+    updatedAt: "15:10:02",
     missingSites: ["Uma Cloud"],
     horses: [
       { number: 3, name: "アヅマノハヤテ", odds: 7.9, predictions: {} },
@@ -335,7 +336,7 @@ const races = [
     name: "越後ステークス",
     date: "2026-06-20",
     startAt: "15:30",
-    updatedAt: "15:25:39",
+    updatedAt: "15:20:39",
     missingSites: ["netkeiba AI"],
     horses: [
       { number: 1, name: "エチゴブリーズ", odds: 5.9, predictions: {} },
@@ -352,7 +353,8 @@ const state = {
   venue: "all",
   query: "",
   sort: "support",
-  weights: loadWeights()
+  weights: loadWeights(),
+  autoUpdatedRaceIds: new Set()
 };
 
 const elements = {
@@ -447,6 +449,71 @@ function getTodayKey() {
 function getTodaysRaces() {
   const todayKey = getTodayKey();
   return races.filter((race) => race.date === todayKey);
+}
+
+function getRaceStartDate(race) {
+  if (!race?.date || !race?.startAt) {
+    return null;
+  }
+
+  const start = new Date(`${race.date}T${race.startAt}:00+09:00`);
+  return Number.isNaN(start.getTime()) ? null : start;
+}
+
+function getRaceUpdateStatus(race, now = getNow()) {
+  const operation = getOperatingStatus(now);
+  const start = getRaceStartDate(race);
+
+  if (!race || !start) {
+    return {
+      ready: false,
+      label: "待機中",
+      detail: "発走10分前から取得"
+    };
+  }
+
+  if (!operation.active) {
+    return {
+      ready: false,
+      label: "停止中",
+      detail: operation.detail
+    };
+  }
+
+  const minutesUntilStart = Math.ceil((start.getTime() - now.getTime()) / 60000);
+  if (minutesUntilStart > UPDATE_LEAD_MINUTES) {
+    return {
+      ready: false,
+      label: "待機中",
+      detail: `${race.startAt}の10分前から取得`
+    };
+  }
+
+  if (minutesUntilStart < 0) {
+    return {
+      ready: false,
+      label: "発走後",
+      detail: "取得時間を過ぎました"
+    };
+  }
+
+  return {
+    ready: true,
+    label: "取得可",
+    detail: `発走${minutesUntilStart}分前`
+  };
+}
+
+function runTenMinuteAutoUpdates(now = getNow()) {
+  getTodaysRaces().forEach((race) => {
+    const updateStatus = getRaceUpdateStatus(race, now);
+    if (!updateStatus.ready || state.autoUpdatedRaceIds.has(race.id)) {
+      return;
+    }
+
+    race.updatedAt = now.toLocaleTimeString("ja-JP", { hour12: false });
+    state.autoUpdatedRaceIds.add(race.id);
+  });
 }
 
 function getMinutes(date) {
@@ -695,24 +762,24 @@ function renderStatus(race, ranking) {
   const siteNames = Object.keys(DEFAULT_WEIGHTS);
   const acquired = siteNames.length - race.missingSites.length;
   const average = ranking.reduce((sum, horse) => sum + horse.support, 0) / ranking.length;
-  const operation = getOperatingStatus();
+  const updateStatus = getRaceUpdateStatus(race);
   const operationMetric = elements.operationStatus.closest(".metric");
 
   elements.raceTitle.textContent = `${race.venueName} ${race.number} ${race.name}`;
-  elements.updatedAt.textContent = race.updatedAt;
-  elements.operationStatus.textContent = operation.label;
-  elements.operationWindow.textContent = operation.detail;
+  elements.updatedAt.textContent = updateStatus.label === "待機中" ? "未取得" : race.updatedAt;
+  elements.operationStatus.textContent = updateStatus.label;
+  elements.operationWindow.textContent = updateStatus.detail;
   elements.siteCount.textContent = `${acquired}/${siteNames.length}`;
   elements.missingSites.textContent = race.missingSites.length ? race.missingSites.join(" / ") : "なし";
   elements.averageSupport.textContent = `${average.toFixed(1)}%`;
   if (elements.refreshButton) {
-    elements.refreshButton.disabled = !operation.active;
-    elements.refreshButton.title = operation.active ? "取得を更新" : "土日 09:00-17:00のみ取得できます";
+    elements.refreshButton.disabled = !updateStatus.ready;
+    elements.refreshButton.title = updateStatus.ready ? "10分前データを取得" : updateStatus.detail;
   }
 
   if (operationMetric) {
-    operationMetric.classList.toggle("is-active", operation.active);
-    operationMetric.classList.toggle("is-paused", !operation.active);
+    operationMetric.classList.toggle("is-active", updateStatus.ready);
+    operationMetric.classList.toggle("is-paused", !updateStatus.ready);
   }
 }
 
@@ -897,6 +964,7 @@ function renderSiteDetailPage(race, ranking) {
 }
 
 function render() {
+  runTenMinuteAutoUpdates();
   const race = getRace();
   if (!race) {
     renderNoRaceState();
@@ -957,12 +1025,12 @@ if (elements.siteHorseSelect) {
 
 if (elements.refreshButton) {
   elements.refreshButton.addEventListener("click", () => {
-    if (!getOperatingStatus().active) {
+    const race = getRace();
+    if (!getRaceUpdateStatus(race).ready) {
       render();
       return;
     }
 
-    const race = getRace();
     const now = getNow();
     race.updatedAt = now.toLocaleTimeString("ja-JP", { hour12: false });
     render();
