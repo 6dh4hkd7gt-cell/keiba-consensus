@@ -55,6 +55,24 @@ function htmlToLines(html) {
     .filter(Boolean);
 }
 
+async function readJapaneseHtml(response) {
+  const bytes = await response.arrayBuffer();
+  const decoders = ["shift_jis", "euc-jp", "utf-8"];
+
+  for (const encoding of decoders) {
+    try {
+      const html = new TextDecoder(encoding).decode(bytes);
+      if (html.includes("本日のレース") || html.includes("開催場")) {
+        return html;
+      }
+    } catch {
+      // Try the next decoder.
+    }
+  }
+
+  return new TextDecoder("utf-8").decode(bytes);
+}
+
 function parseRaceRows(lines) {
   const races = [];
   let currentVenue = null;
@@ -105,7 +123,7 @@ async function main() {
     throw new Error(`Failed to fetch NAR schedule: ${response.status}`);
   }
 
-  const html = await response.text();
+  const html = await readJapaneseHtml(response);
   const lines = htmlToLines(html);
   const start = lines.findIndex((line) => line.includes("本日のレース"));
   const sourceLines = start >= 0 ? lines.slice(start + 1) : lines;
