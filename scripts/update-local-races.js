@@ -10,6 +10,7 @@ const PREDICTION_SOURCES = [
   "ウマークス順位",
   "オッズパークAI",
   "公式単勝人気",
+  "南関公式単勝人気",
   "競馬新聞ゼロ本紙",
   "競馬新聞ゼロ指数"
 ];
@@ -62,6 +63,13 @@ const AIBA_VENUE_CODES = {
 const ODDSPARK_AI_CODES = {
   nagoya: "43",
   sonoda: "51"
+};
+
+const NANKAN_VENUE_CODES = {
+  urawa: "18",
+  funabashi: "19",
+  ooi: "20",
+  kawasaki: "21"
 };
 
 const VENUE_ALIASES = {
@@ -513,6 +521,52 @@ function buildOfficialOddsPredictions(raceHorses) {
   return predictions;
 }
 
+function scoreOddsRows(oddsRows) {
+  const predictions = new Map();
+  const ranked = [...oddsRows]
+    .filter((row) => Number.isFinite(row.odds) && row.odds > 0)
+    .sort((a, b) => a.odds - b.odds);
+
+  ranked.forEach((row, index) => {
+    predictions.set(row.number, {
+      ...scoreFromIndex(100 - index * 6),
+      raw: {
+        odds: row.odds,
+        rank: index + 1
+      }
+    });
+  });
+
+  return predictions;
+}
+
+function parseNankanOddsPredictions(html) {
+  const winPlaceTable = html.match(/<p class="[^"]*table04__title[^"]*">単勝・複勝<\/p>[\s\S]*?<table[^>]*>([\s\S]*?)<\/table>/i);
+  const tableHtml = winPlaceTable?.[1] || "";
+  const oddsRows = [];
+  for (const rowMatch of tableHtml.matchAll(/<tr[\s\S]*?<\/tr>/gi)) {
+    const cells = parseTableCells(rowMatch[0]);
+    const horseNumberText = cells.slice(0, 2).filter((cell) => /^\d{1,2}$/.test(cell)).at(-1);
+    if (!horseNumberText) {
+      continue;
+    }
+
+    const odds = cells.slice(2)
+      .map((cell) => Number(cell))
+      .find((value) => Number.isFinite(value) && value > 0);
+    if (!Number.isFinite(odds)) {
+      continue;
+    }
+
+    oddsRows.push({
+      number: Number(horseNumberText),
+      odds
+    });
+  }
+
+  return scoreOddsRows(oddsRows);
+}
+
 function parseKeibaZeroPredictions(html) {
   const predictions = new Map();
   const sourceLines = htmlToLines(html);
@@ -873,6 +927,40 @@ async function fetchOddsParkAiRacePredictions(date, venues) {
   return predictionsByRace;
 }
 
+async function fetchNankanOddsLinks(date, venues) {
+  const targetVenueEntries = Object.entries(NANKAN_VENUE_CODES)
+    .filter(([venue]) => venues.includes(venue));
+  const linksByRace = new Map();
+  if (!targetVenueEntries.length) {
+    return linksByRace;
+  }
+
+  const html = await fetchHtml("https://www.nankankeiba.com/", "https://www.nankankeiba.com/");
+  const dateDigits = date.replaceAll("-", "");
+  for (const match of html.matchAll(/href="([^"]*\/odds\/(\d{18})\.do[^"]*)"/g)) {
+    const href = decodeEntities(match[1]);
+    const raceCode = match[2];
+    if (!raceCode.startsWith(dateDigits) || !raceCode.endsWith("01")) {
+      continue;
+    }
+
+    const venue = targetVenueEntries.find(([, code]) => raceCode.slice(8, 10) === code)?.[0];
+    const raceNumber = Number(raceCode.slice(14, 16));
+    if (!venue || !raceNumber) {
+      continue;
+    }
+
+    linksByRace.set(`${venue}-${raceNumber}`, href.startsWith("http") ? href : `https://www.nankankeiba.com${href}`);
+  }
+
+  return linksByRace;
+}
+
+async function fetchNankanOddsPredictions(url) {
+  const html = await fetchHtml(url, "https://www.nankankeiba.com/");
+  return parseNankanOddsPredictions(html);
+}
+
 function buildUmaXUrl(date, race) {
   const code = VENUE_CODES[race.venue];
   if (!code) {
@@ -983,6 +1071,7 @@ async function enrichRaceHorses(date, races, existingRaces) {
   let rakutenRaceIds = new Map();
   let aibaRaceLinks = new Map();
   let oddsParkAiPredictions = new Map();
+  let nankanOddsLinks = new Map();
   try {
     rakutenRaceIds = await fetchRakutenRaceIds(date);
   } catch (error) {
@@ -995,6 +1084,11 @@ async function enrichRaceHorses(date, races, existingRaces) {
   }
   try {
     oddsParkAiPredictions = await fetchOddsParkAiRacePredictions(date, venues);
+  } catch (error) {
+    console.warn(error.message);
+  }
+  try {
+    nankanOddsLinks = await fetchNankanOddsLinks(date, venues);
   } catch (error) {
     console.warn(error.message);
   }
@@ -1022,6 +1116,17 @@ async function enrichRaceHorses(date, races, existingRaces) {
       const officialOddsPredictions = buildOfficialOddsPredictions(raceHorses);
       for (const [horseNumber, prediction] of officialOddsPredictions.entries()) {
         mergePrediction(predictionsByHorseNumber, horseNumber, "公式単勝人気", prediction);
+      }
+      const nankanOddsUrl = nankanOddsLinks.get(raceKey);
+      if (nankanOddsUrl) {
+        try {
+          const nankanOddsPredictions = await fetchNankanOddsPredictions(nankanOddsUrl);
+          for (const [horseNumber, prediction] of nankanOddsPredictions.entries()) {
+            mergePrediction(predictionsByHorseNumber, horseNumber, "南関公式単勝人気", prediction);
+          }
+        } catch (error) {
+          console.warn(error.message);
+        }
       }
       const raceId = rakutenRaceIds.get(raceKey);
       if (raceId) {
