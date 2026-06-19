@@ -628,9 +628,17 @@ function hasUsablePredictionData(ranking) {
   return ranking.some((horse) => horse.voteCount > 0);
 }
 
+function hasUsableOddsData(ranking) {
+  return ranking.some((horse) => Number(horse.odds) > 0);
+}
+
+function formatOdds(odds) {
+  return Number(odds) > 0 ? `${Number(odds).toFixed(1)}倍` : "--";
+}
+
 function calculateRanking(race) {
   const oddsRanks = [...race.horses]
-    .sort((a, b) => a.odds - b.odds)
+    .sort((a, b) => (Number(a.odds) > 0 ? Number(a.odds) : Infinity) - (Number(b.odds) > 0 ? Number(b.odds) : Infinity))
     .reduce((map, horse, index) => {
       map[horse.name] = index + 1;
       return map;
@@ -706,6 +714,10 @@ function permutations(items, size) {
 }
 
 function estimateTicketOdds(horses, type) {
+  if (horses.some((horse) => !(Number(horse.odds) > 0))) {
+    return null;
+  }
+
   const product = horses.reduce((total, horse) => total * horse.odds, 1);
   const divisor = {
     umaren: 2.4,
@@ -722,7 +734,7 @@ function scoreTicket(horses, type) {
   const weightedSupport = horses.reduce((total, horse, index) => total + horse.support * positionWeights[index], 0);
   const supportBase = weightedSupport / horses.reduce((total, _, index) => total + positionWeights[index], 0);
   const estimatedOdds = estimateTicketOdds(horses, type);
-  const valueBoost = Math.log10(estimatedOdds + 1) * 7;
+  const valueBoost = estimatedOdds ? Math.log10(estimatedOdds + 1) * 7 : 0;
 
   return supportBase + valueBoost;
 }
@@ -736,7 +748,7 @@ function formatTicketNames(horses) {
 }
 
 function buildTicketRecommendations(ranking) {
-  if (!hasUsablePredictionData(ranking)) {
+  if (!hasUsablePredictionData(ranking) || !hasUsableOddsData(ranking)) {
     return [];
   }
 
@@ -903,7 +915,7 @@ function renderRanking(ranking) {
           </div>
         </td>
         <td>${horse.favorites}</td>
-        <td>${horse.odds.toFixed(1)}倍</td>
+        <td>${formatOdds(horse.odds)}</td>
         <td><span class="gap-pill ${gapClass}">${gapText}</span></td>
       </tr>
     `;
@@ -959,7 +971,7 @@ function renderHorseDetail(ranking) {
   elements.horseSummary.innerHTML = `
     <div><span>AI支持率</span><strong>${selected.support.toFixed(1)}%</strong></div>
     <div><span>本命数</span><strong>${selected.favorites}</strong></div>
-    <div><span>オッズ</span><strong>${selected.odds.toFixed(1)}倍</strong></div>
+    <div><span>オッズ</span><strong>${formatOdds(selected.odds)}</strong></div>
   `;
 
   if (elements.siteVotes) {
@@ -986,7 +998,7 @@ function renderRecommendations(ranking) {
     elements.recommendationGroups.innerHTML = `
       <div class="empty-state">
         <strong>推奨買い目は表示しません</strong>
-        <span>実AI予想データが取得できた時だけ表示します。</span>
+        <span>実AI予想データとオッズが取得できた時だけ表示します。</span>
       </div>
     `;
     return;
@@ -1004,7 +1016,7 @@ function renderRecommendations(ranking) {
               <small>${ticket.names}</small>
             </div>
             <div class="ticket-meta">
-              <strong>${ticket.estimatedOdds.toFixed(1)}倍</strong>
+              <strong>${ticket.estimatedOdds ? `${ticket.estimatedOdds.toFixed(1)}倍` : "--"}</strong>
               <small>AI ${ticket.score.toFixed(0)}</small>
             </div>
           </div>
