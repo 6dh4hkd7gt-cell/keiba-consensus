@@ -17,34 +17,34 @@ const INITIAL_RACE_ID = urlParams.get("race");
 const INITIAL_HORSE_NAME = urlParams.get("horse") || "";
 
 const DEFAULT_WEIGHTS = {
-  "楽天競馬AI": 1,
+  "楽天みんなの予想": 1,
   "netkeiba地方": 1,
-  "NAR指数": 1,
+  "オッズパーク": 1,
+  "SPAT4": 1,
   "競馬ブック地方": 1,
-  "地方競馬予想AI": 1,
-  "オッズパークAI": 1,
-  "SPAT4分析": 1,
-  "Uma Cloud": 1,
-  "Race AI": 1,
-  "Prediction One": 1
+  "競馬エース": 1,
+  "勝馬": 1,
+  "ケイシュウNEWS": 1,
+  "通信社": 1,
+  "競馬カナザワ": 1
 };
 
 const VENUES = {
-  obihiro: { venueName: "帯広", missingSites: ["SPAT4分析"] },
-  monbetsu: { venueName: "門別", missingSites: ["netkeiba地方"] },
-  morioka: { venueName: "盛岡", missingSites: [] },
-  mizusawa: { venueName: "水沢", missingSites: ["Prediction One"] },
-  urawa: { venueName: "浦和", missingSites: [] },
-  funabashi: { venueName: "船橋", missingSites: ["Uma Cloud"] },
-  ooi: { venueName: "大井", missingSites: ["Prediction One"] },
-  kawasaki: { venueName: "川崎", missingSites: ["競馬ブック地方"] },
-  kanazawa: { venueName: "金沢", missingSites: ["SPAT4分析"] },
-  kasamatsu: { venueName: "笠松", missingSites: [] },
-  nagoya: { venueName: "名古屋", missingSites: ["Race AI"] },
-  sonoda: { venueName: "園田", missingSites: ["Race AI"] },
-  himeji: { venueName: "姫路", missingSites: ["オッズパークAI"] },
-  kochi: { venueName: "高知", missingSites: ["Uma Cloud"] },
-  saga: { venueName: "佐賀", missingSites: ["地方競馬予想AI"] }
+  obihiro: { venueName: "帯広" },
+  monbetsu: { venueName: "門別" },
+  morioka: { venueName: "盛岡" },
+  mizusawa: { venueName: "水沢" },
+  urawa: { venueName: "浦和" },
+  funabashi: { venueName: "船橋" },
+  ooi: { venueName: "大井" },
+  kawasaki: { venueName: "川崎" },
+  kanazawa: { venueName: "金沢" },
+  kasamatsu: { venueName: "笠松" },
+  nagoya: { venueName: "名古屋" },
+  sonoda: { venueName: "園田" },
+  himeji: { venueName: "姫路" },
+  kochi: { venueName: "高知" },
+  saga: { venueName: "佐賀" }
 };
 
 const HORSE_NUMBERS = [1, 3, 6, 9, 12];
@@ -72,7 +72,7 @@ function buildRaceFromSchedule(date, venue, startAt, raceIndex, raceData = {}) {
         number: Number(horse.number) || horseIndex + 1,
         name: horse.name,
         odds: Number(horse.odds) || 99.9,
-        predictions: {}
+        predictions: horse.predictions || {}
       }))
     : HORSE_NUMBERS.map((numberValue) => ({
         number: numberValue,
@@ -90,7 +90,7 @@ function buildRaceFromSchedule(date, venue, startAt, raceIndex, raceData = {}) {
     date,
     startAt,
     updatedAt: subtractMinutes(startAt, 10),
-    missingSites: venueInfo.missingSites,
+    missingSites: Array.isArray(raceData.missingSites) ? raceData.missingSites : Object.keys(DEFAULT_WEIGHTS),
     horses
   };
 }
@@ -290,6 +290,29 @@ function getPredictionsForHorse(race, horse) {
   }, {});
 }
 
+function getPredictionCount(prediction) {
+  if (!prediction?.raw || typeof prediction.raw !== "object") {
+    return 0;
+  }
+
+  return Object.values(prediction.raw).reduce((total, value) => total + Number(value || 0), 0);
+}
+
+function getPredictionIndexScore(prediction) {
+  const markScore = MARK_SCORES[prediction.mark] || 0;
+  const indexScore = Number(prediction.index || 0) || markScore;
+  const rawCount = getPredictionCount(prediction);
+
+  if (!rawCount) {
+    return markScore * 0.7 + indexScore * 0.3;
+  }
+
+  const confidence = Math.min(1, rawCount / 20);
+  const confidenceAdjustedIndex = 45 + (indexScore - 45) * confidence;
+  const confidenceAdjustedMark = 45 + (markScore - 45) * confidence;
+  return confidenceAdjustedMark * 0.4 + confidenceAdjustedIndex * 0.6;
+}
+
 function calculateRanking(race) {
   const oddsRanks = [...race.horses]
     .sort((a, b) => a.odds - b.odds)
@@ -303,9 +326,7 @@ function calculateRanking(race) {
     const entries = Object.entries(predictions);
     const totalWeight = entries.reduce((sum, [site]) => sum + (state.weights[site] || 1), 0);
     const weightedScore = entries.reduce((sum, [site, prediction]) => {
-      const markScore = MARK_SCORES[prediction.mark] || 0;
-      const indexScore = Number(prediction.index || 0);
-      const combined = markScore * 0.7 + indexScore * 0.3;
+      const combined = getPredictionIndexScore(prediction);
       return sum + combined * (state.weights[site] || 1);
     }, 0);
     const support = totalWeight ? weightedScore / totalWeight : 0;
