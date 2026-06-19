@@ -31,6 +31,49 @@ const DEFAULT_WEIGHTS = {
   "競馬カナザワ": 1
 };
 
+const SOURCE_AUDIT = {
+  "楽天みんなの予想": {
+    status: "public",
+    note: "公開投票の◎○▲△数を取得"
+  },
+  "netkeiba地方": {
+    status: "blocked",
+    note: "予想ページが取得不可"
+  },
+  "オッズパーク": {
+    status: "blocked",
+    note: "ログイン画面で停止"
+  },
+  "SPAT4": {
+    status: "blocked",
+    note: "ログイン系サービス"
+  },
+  "競馬ブック地方": {
+    status: "blocked",
+    note: "会員・有料新聞系"
+  },
+  "競馬エース": {
+    status: "blocked",
+    note: "有料新聞系"
+  },
+  "勝馬": {
+    status: "blocked",
+    note: "有料新聞系"
+  },
+  "ケイシュウNEWS": {
+    status: "blocked",
+    note: "有料新聞系"
+  },
+  "通信社": {
+    status: "pending",
+    note: "公開予想URL未確認"
+  },
+  "競馬カナザワ": {
+    status: "pending",
+    note: "公開予想URL未確認"
+  }
+};
+
 const VENUES = {
   obihiro: { venueName: "帯広" },
   monbetsu: { venueName: "門別" },
@@ -146,6 +189,7 @@ const elements = {
   siteDetailMeta: document.querySelector("#siteDetailMeta"),
   siteDetailList: document.querySelector("#siteDetailList"),
   siteBackLink: document.querySelector("#siteBackLink"),
+  sourceAudit: document.querySelector("#sourceAudit"),
   refreshButton: document.querySelector("#refreshButton")
 };
 
@@ -570,6 +614,37 @@ function renderStatus(race, ranking) {
   }
 }
 
+function renderSourceAudit(ranking = []) {
+  if (!elements.sourceAudit) {
+    return;
+  }
+
+  const acquiredSites = getAcquiredSites(ranking);
+  const siteNames = Object.keys(DEFAULT_WEIGHTS);
+  elements.sourceAudit.innerHTML = siteNames.map((site) => {
+    const audit = SOURCE_AUDIT[site] || { status: "pending", note: "確認中" };
+    const isAcquired = acquiredSites.has(site);
+    const status = isAcquired ? "acquired" : audit.status;
+    const label = isAcquired
+      ? "取得済み"
+      : status === "blocked"
+        ? "未取得"
+        : status === "public"
+          ? "対象"
+          : "確認中";
+
+    return `
+      <div class="source-audit-row ${status}">
+        <div>
+          <strong>${site}</strong>
+          <span>${isAcquired ? "このレースで実データあり" : audit.note}</span>
+        </div>
+        <em>${label}</em>
+      </div>
+    `;
+  }).join("");
+}
+
 function renderNoRaceState() {
   renderRaceList();
 
@@ -597,6 +672,7 @@ function renderNoRaceState() {
   if (elements.siteVotes) elements.siteVotes.innerHTML = "";
   if (elements.siteDetailMeta) elements.siteDetailMeta.innerHTML = "";
   if (elements.siteDetailList) elements.siteDetailList.innerHTML = "";
+  if (elements.sourceAudit) elements.sourceAudit.innerHTML = "";
   if (elements.siteRaceSelect) elements.siteRaceSelect.innerHTML = "";
   if (elements.siteHorseSelect) elements.siteHorseSelect.innerHTML = "";
   if (elements.refreshButton) {
@@ -803,6 +879,7 @@ function render() {
   renderHorseDetail(ranking);
   renderRecommendations(ranking);
   renderSiteDetailPage(race, ranking);
+  renderSourceAudit(ranking);
 }
 
 document.querySelectorAll(".venue-tabs button").forEach((button) => {
