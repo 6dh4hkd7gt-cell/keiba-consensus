@@ -4,6 +4,7 @@ const path = require("node:path");
 const SOURCE_URL = "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/TodayRaceInfoTop";
 const RAKUTEN_TOP_URL = "https://keiba.rakuten.co.jp/";
 const OUTPUT_PATH = path.join(process.cwd(), "docs", "chihou", "data", "today-races.json");
+const FETCH_TIMEOUT_MS = 12000;
 const PREDICTION_SOURCES = [
   "楽天みんなの予想",
   "AiBA無料AI",
@@ -110,6 +111,25 @@ function decodeEntities(text) {
     .replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'");
+}
+
+async function fetchWithTimeout(url, options = {}) {
+  const timeoutSignal = AbortSignal.timeout(FETCH_TIMEOUT_MS);
+  const signal = options.signal
+    ? AbortSignal.any([options.signal, timeoutSignal])
+    : timeoutSignal;
+
+  try {
+    return await fetch(url, {
+      ...options,
+      signal
+    });
+  } catch (error) {
+    if (error.name === "TimeoutError" || error.name === "AbortError") {
+      throw new Error(`Timed out fetching ${url}`);
+    }
+    throw error;
+  }
 }
 
 function htmlToLines(html) {
@@ -658,7 +678,7 @@ function parseKeibaZeroPredictions(html) {
 }
 
 async function fetchRakutenRaceIds(date) {
-  const response = await fetch(RAKUTEN_TOP_URL, {
+  const response = await fetchWithTimeout(RAKUTEN_TOP_URL, {
     headers: {
       "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
       "accept-language": "ja,en-US;q=0.9,en;q=0.8",
@@ -693,7 +713,7 @@ async function fetchRakutenRaceIds(date) {
 
 async function fetchRakutenPredictions(raceId) {
   const url = `https://keiba.rakuten.co.jp/race_card/list/RACEID/${raceId}/mode/2`;
-  const response = await fetch(url, {
+  const response = await fetchWithTimeout(url, {
     headers: {
       "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
       "accept-language": "ja,en-US;q=0.9,en;q=0.8",
@@ -723,7 +743,7 @@ async function fetchHtml(url, referer = SOURCE_URL) {
     "referer": referer,
     "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
   };
-  const response = await fetch(url, {
+  const response = await fetchWithTimeout(url, {
     headers: requestHeaders
   });
 
@@ -734,7 +754,7 @@ async function fetchHtml(url, referer = SOURCE_URL) {
   const cookieHeader = extractCookieHeader(response.headers);
   const firstHtml = await readJapaneseHtml(response);
   if (url.includes("keiba0.com") && cookieHeader) {
-    const retry = await fetch(url, {
+    const retry = await fetchWithTimeout(url, {
       headers: {
         ...requestHeaders,
         "cookie": cookieHeader
@@ -800,7 +820,7 @@ function scoreKeibaZeroHtml(html) {
 }
 
 async function fetchJson(url, referer = SOURCE_URL) {
-  const response = await fetch(url, {
+  const response = await fetchWithTimeout(url, {
     headers: {
       "accept": "application/json,text/plain,*/*",
       "accept-language": "ja,en-US;q=0.9,en;q=0.8",
@@ -831,7 +851,7 @@ async function fetchAibaRaceLinks(date, venues) {
 
     const categoryUrl = `https://xn--ai-f10fm89h.com/category/race-local/race-local-${venueCode}/`;
     try {
-      const response = await fetch(categoryUrl, {
+      const response = await fetchWithTimeout(categoryUrl, {
         headers: {
           "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
           "accept-language": "ja,en-US;q=0.9,en;q=0.8",
@@ -1057,7 +1077,7 @@ async function fetchRaceHorses(date, race) {
     return [];
   }
 
-  const response = await fetch(url, {
+  const response = await fetchWithTimeout(url, {
     headers: {
       "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
       "accept-language": "ja,en-US;q=0.9,en;q=0.8",
@@ -1215,7 +1235,7 @@ async function enrichRaceHorses(date, races, existingRaces) {
 async function main() {
   const today = formatDateKey();
   const existingRaces = loadExistingSchedule(today);
-  const response = await fetch(SOURCE_URL, {
+  const response = await fetchWithTimeout(SOURCE_URL, {
     headers: {
       "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
       "accept-language": "ja,en-US;q=0.9,en;q=0.8",
