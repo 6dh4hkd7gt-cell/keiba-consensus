@@ -20,15 +20,10 @@ const MIN_CONSENSUS_SITES = 5;
 
 const DEFAULT_WEIGHTS = {
   "楽天みんなの予想": 1,
-  "netkeiba地方": 1,
-  "オッズパーク": 1,
-  "SPAT4": 1,
-  "競馬ブック地方": 1,
-  "競馬エース": 1,
-  "勝馬": 1,
-  "ケイシュウNEWS": 1,
-  "通信社": 1,
-  "競馬カナザワ": 1
+  "AiBA無料AI": 1,
+  "ウマークス順位": 1,
+  "競馬新聞ゼロ本紙": 1,
+  "競馬新聞ゼロ指数": 1
 };
 
 const SOURCE_AUDIT = {
@@ -36,41 +31,21 @@ const SOURCE_AUDIT = {
     status: "public",
     note: "公開投票の◎○▲△数を取得"
   },
-  "netkeiba地方": {
-    status: "blocked",
-    note: "予想ページが取得不可"
+  "AiBA無料AI": {
+    status: "public",
+    note: "無料AI予測の印と指数を取得"
   },
-  "オッズパーク": {
-    status: "blocked",
-    note: "ログイン画面で停止"
+  "ウマークス順位": {
+    status: "public",
+    note: "無料地方ページの順位を取得"
   },
-  "SPAT4": {
-    status: "blocked",
-    note: "ログイン系サービス"
+  "競馬新聞ゼロ本紙": {
+    status: "public",
+    note: "無料新聞の本紙予想を取得"
   },
-  "競馬ブック地方": {
-    status: "blocked",
-    note: "会員・有料新聞系"
-  },
-  "競馬エース": {
-    status: "blocked",
-    note: "有料新聞系"
-  },
-  "勝馬": {
-    status: "blocked",
-    note: "有料新聞系"
-  },
-  "ケイシュウNEWS": {
-    status: "blocked",
-    note: "有料新聞系"
-  },
-  "通信社": {
-    status: "pending",
-    note: "公開予想URL未確認"
-  },
-  "競馬カナザワ": {
-    status: "pending",
-    note: "公開予想URL未確認"
+  "競馬新聞ゼロ指数": {
+    status: "public",
+    note: "無料新聞の指数を取得"
   }
 };
 
@@ -131,7 +106,7 @@ function buildRaceFromSchedule(date, venue, startAt, raceIndex, raceData = {}) {
     venue,
     venueName: venueInfo.venueName,
     number,
-    name: `${venueInfo.venueName}第${raceIndex + 1}競走`,
+    name: raceData.name || `${venueInfo.venueName}第${raceIndex + 1}競走`,
     date,
     startAt,
     updatedAt: subtractMinutes(startAt, 10),
@@ -655,7 +630,7 @@ function renderNoRaceState() {
   if (elements.updatedAt) elements.updatedAt.textContent = "--:--:--";
   if (elements.operationStatus) elements.operationStatus.textContent = "停止中";
   if (elements.operationWindow) elements.operationWindow.textContent = "開催日のみ表示";
-  if (elements.siteCount) elements.siteCount.textContent = "0/10";
+  if (elements.siteCount) elements.siteCount.textContent = `0/${Object.keys(DEFAULT_WEIGHTS).length}`;
   if (elements.missingSites) elements.missingSites.textContent = "なし";
   if (elements.averageSupport) elements.averageSupport.textContent = "0.0%";
   if (elements.rankingRows) elements.rankingRows.innerHTML = "";
@@ -755,7 +730,7 @@ function renderHorseDetail(ranking) {
     `).join("") : `
       <div class="empty-state">
         <strong>予想印は未取得です</strong>
-        <span>実際のサイト印が取得できるまで支持率は出しません</span>
+        <span>実際の取得ソースが揃うまで支持率は出しません</span>
       </div>
     `;
   }
@@ -773,7 +748,7 @@ function renderRecommendations(ranking) {
       <section class="recommendation-card">
         <h4>${acquired ? "参考不足" : "推奨未取得"}</h4>
         <div class="empty-state">
-          <strong>${acquired ? `${acquired}/10サイト取得。5サイト未満です` : "予想サイトの実印が未取得です"}</strong>
+          <strong>${acquired ? `${acquired}/${Object.keys(DEFAULT_WEIGHTS).length}ソース取得。${MIN_CONSENSUS_SITES}ソース未満です` : "取得ソースの実印が未取得です"}</strong>
           <span>${acquired ? "コンセンサスとしては扱わず、買い目推奨は出しません" : "仮の印では買い目推奨を出しません"}</span>
         </div>
       </section>
@@ -849,7 +824,7 @@ function renderSiteDetailPage(race, ranking) {
   `).join("") : `
     <div class="empty-state">
       <strong>予想印は未取得です</strong>
-      <span>実際のサイト印だけを表示します</span>
+      <span>実際の取得ソースだけを表示します</span>
     </div>
   `;
 
