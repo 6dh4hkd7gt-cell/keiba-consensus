@@ -7,7 +7,7 @@ const dataDir = path.join(rootDir, "docs", "data");
 const racesPath = path.join(dataDir, "jra-races.json");
 const statusPath = path.join(dataDir, "update-status.json");
 const updateLeadMinutes = 10;
-const requiredConsensusSiteCount = 10;
+const requiredConsensusSiteCount = 4;
 const defaultSites = [
   { name: "SPAIA", env: "JRA_SOURCE_SPAIA_URL", builtin: "spaia" },
   { name: "競馬ブック", env: "JRA_SOURCE_KEIBA_BOOK_URL", builtin: "keibabook" },
