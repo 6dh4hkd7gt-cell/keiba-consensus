@@ -29,6 +29,17 @@ jobs:
         run: node scripts/update-jra-data.mjs
         env:
           JRA_RACES_JSON_URL: ${{ secrets.JRA_RACES_JSON_URL }}
+          JRA_SOURCE_URLS: ${{ secrets.JRA_SOURCE_URLS }}
+          JRA_SOURCE_SPAIA_URL: ${{ secrets.JRA_SOURCE_SPAIA_URL }}
+          JRA_SOURCE_NETKEIBA_AI_URL: ${{ secrets.JRA_SOURCE_NETKEIBA_AI_URL }}
+          JRA_SOURCE_AI_INDEX_URL: ${{ secrets.JRA_SOURCE_AI_INDEX_URL }}
+          JRA_SOURCE_KEIBA_LAB_URL: ${{ secrets.JRA_SOURCE_KEIBA_LAB_URL }}
+          JRA_SOURCE_FREE_KEIBA_AI_URL: ${{ secrets.JRA_SOURCE_FREE_KEIBA_AI_URL }}
+          JRA_SOURCE_UMA_CLOUD_URL: ${{ secrets.JRA_SOURCE_UMA_CLOUD_URL }}
+          JRA_SOURCE_SIVA_URL: ${{ secrets.JRA_SOURCE_SIVA_URL }}
+          JRA_SOURCE_DEEP_KEIBA_URL: ${{ secrets.JRA_SOURCE_DEEP_KEIBA_URL }}
+          JRA_SOURCE_RACE_AI_URL: ${{ secrets.JRA_SOURCE_RACE_AI_URL }}
+          JRA_SOURCE_PREDICTION_ONE_URL: ${{ secrets.JRA_SOURCE_PREDICTION_ONE_URL }}
 
       - name: Commit data
         run: |
