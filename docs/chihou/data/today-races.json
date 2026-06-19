@@ -1,187 +1,108 @@
 {
   "date": "2026-06-19",
   "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/TodayRaceInfoTop",
-  "generatedAt": "2026-06-19T03:34:05.721Z",
+  "generatedAt": "2026-06-19T02:56:00.000Z",
   "races": [
-    {
-      "venue": "kawasaki",
-      "number": 1,
-      "startAt": "15:00"
-    },
-    {
-      "venue": "kawasaki",
-      "number": 2,
-      "startAt": "15:30"
-    },
-    {
-      "venue": "kawasaki",
-      "number": 3,
-      "startAt": "16:00"
-    },
-    {
-      "venue": "kawasaki",
-      "number": 4,
-      "startAt": "16:30"
-    },
-    {
-      "venue": "kawasaki",
-      "number": 5,
-      "startAt": "17:00"
-    },
-    {
-      "venue": "kawasaki",
-      "number": 6,
-      "startAt": "17:30"
-    },
-    {
-      "venue": "kawasaki",
-      "number": 7,
-      "startAt": "18:00"
-    },
-    {
-      "venue": "kawasaki",
-      "number": 8,
-      "startAt": "18:30"
-    },
-    {
-      "venue": "kawasaki",
-      "number": 9,
-      "startAt": "19:05"
-    },
-    {
-      "venue": "kawasaki",
-      "number": 10,
-      "startAt": "19:40"
-    },
-    {
-      "venue": "kawasaki",
-      "number": 11,
-      "startAt": "20:15"
-    },
-    {
-      "venue": "kawasaki",
-      "number": 12,
-      "startAt": "20:50"
-    },
+    { "venue": "kawasaki", "number": 1, "startAt": "15:00" },
+    { "venue": "kawasaki", "number": 2, "startAt": "15:30" },
+    { "venue": "kawasaki", "number": 3, "startAt": "16:00" },
+    { "venue": "kawasaki", "number": 4, "startAt": "16:30" },
+    { "venue": "kawasaki", "number": 5, "startAt": "17:00" },
+    { "venue": "kawasaki", "number": 6, "startAt": "17:30" },
+    { "venue": "kawasaki", "number": 7, "startAt": "18:00" },
+    { "venue": "kawasaki", "number": 8, "startAt": "18:30" },
+    { "venue": "kawasaki", "number": 9, "startAt": "19:05" },
+    { "venue": "kawasaki", "number": 10, "startAt": "19:40" },
+    { "venue": "kawasaki", "number": 11, "startAt": "20:15" },
+    { "venue": "kawasaki", "number": 12, "startAt": "20:50" },
     {
       "venue": "nagoya",
       "number": 1,
-      "startAt": "12:15"
+      "startAt": "12:15",
+      "horses": [
+        { "number": 1, "name": "スイングボーイ", "odds": 105.4 },
+        { "number": 2, "name": "ブルースバローズ", "odds": 1.0 },
+        { "number": 3, "name": "ダックリン", "odds": 38.0 },
+        { "number": 4, "name": "オレイニウタイマス", "odds": 9.7 },
+        { "number": 5, "name": "ジャストハンマー", "odds": 195.1 },
+        { "number": 6, "name": "フランキンローズ", "odds": 116.3 },
+        { "number": 7, "name": "キタノプレンティ", "odds": 30.1 },
+        { "number": 8, "name": "モンサンケイティ", "odds": 34.1 },
+        { "number": 9, "name": "トークン", "odds": 55.5 },
+        { "number": 10, "name": "カミーチェ", "odds": 24.6 }
+      ]
     },
     {
       "venue": "nagoya",
       "number": 2,
-      "startAt": "12:50"
+      "startAt": "12:50",
+      "horses": [
+        { "number": 1, "name": "ストラティファイド", "odds": 12.6 },
+        { "number": 2, "name": "メイショウイッシン", "odds": 91.0 },
+        { "number": 3, "name": "トークダウン", "odds": 42.7 },
+        { "number": 4, "name": "ノーブルカグラ", "odds": 11.2 },
+        { "number": 5, "name": "リケアディンブラ", "odds": 3.2 },
+        { "number": 6, "name": "キラークラウン", "odds": 25.8 },
+        { "number": 7, "name": "ブリリアントギフト", "odds": 9.9 },
+        { "number": 8, "name": "ウォーターリッシュ", "odds": 30.1 },
+        { "number": 9, "name": "アルゴフィリオ", "odds": 1.9 },
+        { "number": 10, "name": "カフジキームン", "odds": 52.1 },
+        { "number": 11, "name": "ロジスクリーン", "odds": 21.3 }
+      ]
     },
     {
       "venue": "nagoya",
       "number": 3,
-      "startAt": "13:25"
+      "startAt": "13:25",
+      "horses": [
+        { "number": 1, "name": "ノブノリオウ", "odds": 44.5 },
+        { "number": 2, "name": "ギースバッハ", "odds": 37.7 },
+        { "number": 3, "name": "リックトメンマ", "odds": 15.3 },
+        { "number": 4, "name": "ピークブルーム", "odds": 25.8 },
+        { "number": 5, "name": "ルークピオーネ", "odds": 16.9 },
+        { "number": 6, "name": "アイルフィレール", "odds": 17.5 },
+        { "number": 7, "name": "マイチャージ", "odds": 14.4 },
+        { "number": 8, "name": "ロジアンドモルタル", "odds": 2.8 },
+        { "number": 9, "name": "トップパワー", "odds": 6.5 },
+        { "number": 10, "name": "マルシェ", "odds": 3.5 },
+        { "number": 11, "name": "メイショウオハコ", "odds": 8.3 }
+      ]
     },
     {
       "venue": "nagoya",
       "number": 4,
-      "startAt": "14:00"
+      "startAt": "14:00",
+      "horses": [
+        { "number": 1, "name": "ブリージョドラード", "odds": 20.3 },
+        { "number": 2, "name": "インフォーマント", "odds": 16.9 },
+        { "number": 3, "name": "ミヤイグアス", "odds": 6.7 },
+        { "number": 4, "name": "ニホンピロケイ", "odds": 3.9 },
+        { "number": 5, "name": "フィナルフェリス", "odds": 12.7 },
+        { "number": 6, "name": "ソルトミラクル", "odds": 3.2 },
+        { "number": 7, "name": "ショウナンラフィネ", "odds": 20.3 },
+        { "number": 8, "name": "ウォーオブサウンド", "odds": 3.3 },
+        { "number": 9, "name": "サンライズテソロ", "odds": 101.6 }
+      ]
     },
-    {
-      "venue": "nagoya",
-      "number": 5,
-      "startAt": "14:35"
-    },
-    {
-      "venue": "nagoya",
-      "number": 6,
-      "startAt": "15:10"
-    },
-    {
-      "venue": "nagoya",
-      "number": 7,
-      "startAt": "15:40"
-    },
-    {
-      "venue": "nagoya",
-      "number": 8,
-      "startAt": "16:10"
-    },
-    {
-      "venue": "nagoya",
-      "number": 9,
-      "startAt": "16:45"
-    },
-    {
-      "venue": "nagoya",
-      "number": 10,
-      "startAt": "17:15"
-    },
-    {
-      "venue": "nagoya",
-      "number": 11,
-      "startAt": "17:45"
-    },
-    {
-      "venue": "nagoya",
-      "number": 12,
-      "startAt": "18:20"
-    },
-    {
-      "venue": "sonoda",
-      "number": 1,
-      "startAt": "14:20"
-    },
-    {
-      "venue": "sonoda",
-      "number": 2,
-      "startAt": "14:50"
-    },
-    {
-      "venue": "sonoda",
-      "number": 3,
-      "startAt": "15:20"
-    },
-    {
-      "venue": "sonoda",
-      "number": 4,
-      "startAt": "15:50"
-    },
-    {
-      "venue": "sonoda",
-      "number": 5,
-      "startAt": "16:25"
-    },
-    {
-      "venue": "sonoda",
-      "number": 6,
-      "startAt": "17:00"
-    },
-    {
-      "venue": "sonoda",
-      "number": 7,
-      "startAt": "17:35"
-    },
-    {
-      "venue": "sonoda",
-      "number": 8,
-      "startAt": "18:10"
-    },
-    {
-      "venue": "sonoda",
-      "number": 9,
-      "startAt": "18:45"
-    },
-    {
-      "venue": "sonoda",
-      "number": 10,
-      "startAt": "19:20"
-    },
-    {
-      "venue": "sonoda",
-      "number": 11,
-      "startAt": "19:55"
-    },
-    {
-      "venue": "sonoda",
-      "number": 12,
-      "startAt": "20:30"
-    }
+    { "venue": "nagoya", "number": 5, "startAt": "14:35" },
+    { "venue": "nagoya", "number": 6, "startAt": "15:10" },
+    { "venue": "nagoya", "number": 7, "startAt": "15:40" },
+    { "venue": "nagoya", "number": 8, "startAt": "16:10" },
+    { "venue": "nagoya", "number": 9, "startAt": "16:45" },
+    { "venue": "nagoya", "number": 10, "startAt": "17:15" },
+    { "venue": "nagoya", "number": 11, "startAt": "17:45" },
+    { "venue": "nagoya", "number": 12, "startAt": "18:20" },
+    { "venue": "sonoda", "number": 1, "startAt": "14:20" },
+    { "venue": "sonoda", "number": 2, "startAt": "14:50" },
+    { "venue": "sonoda", "number": 3, "startAt": "15:20" },
+    { "venue": "sonoda", "number": 4, "startAt": "15:50" },
+    { "venue": "sonoda", "number": 5, "startAt": "16:25" },
+    { "venue": "sonoda", "number": 6, "startAt": "17:00" },
+    { "venue": "sonoda", "number": 7, "startAt": "17:35" },
+    { "venue": "sonoda", "number": 8, "startAt": "18:10" },
+    { "venue": "sonoda", "number": 9, "startAt": "18:45" },
+    { "venue": "sonoda", "number": 10, "startAt": "19:20" },
+    { "venue": "sonoda", "number": 11, "startAt": "19:55" },
+    { "venue": "sonoda", "number": 12, "startAt": "20:30" }
   ]
 }
