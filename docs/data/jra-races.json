@@ -1,0 +1,674 @@
+{
+  "generatedAt": "2026-06-20T15:35:00+09:00",
+  "targetDate": "2026-06-20",
+  "updateLeadMinutes": 10,
+  "source": "seed-fallback",
+  "races": [
+    {
+      "id": "tokyo-11",
+      "venue": "tokyo",
+      "venueName": "東京",
+      "number": "11R",
+      "name": "青嵐ステークス",
+      "date": "2026-06-20",
+      "startAt": "15:45",
+      "updatedAt": "15:35:00",
+      "missingSites": [
+        "Uma Cloud"
+      ],
+      "horses": [
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "◎",
+              "index": 91
+            },
+            "netkeiba AI": {
+              "mark": "◎",
+              "index": 88
+            },
+            "AI指数": {
+              "mark": "○",
+              "index": 84
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
+            },
+            "無料競馬AI": {
+              "mark": "◎",
+              "index": 90
+            }
+          },
+          "number": 1,
+          "name": "グランアルタイル",
+          "odds": 3.8
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "○",
+              "index": 84
+            },
+            "netkeiba AI": {
+              "mark": "▲",
+              "index": 79
+            },
+            "AI指数": {
+              "mark": "◎",
+              "index": 89
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
+            },
+            "無料競馬AI": {
+              "mark": "▲",
+              "index": 77
+            }
+          },
+          "number": 4,
+          "name": "ミヤビレゾナンス",
+          "odds": 6.4
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "▲",
+              "index": 76
+            },
+            "netkeiba AI": {
+              "mark": "○",
+              "index": 82
+            },
+            "AI指数": {
+              "mark": "△",
+              "index": 70
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 87
+            },
+            "無料競馬AI": {
+              "mark": "○",
+              "index": 81
+            }
+          },
+          "number": 7,
+          "name": "サトノブリッジ",
+          "odds": 11.2
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "△",
+              "index": 69
+            },
+            "netkeiba AI": {
+              "mark": "△",
+              "index": 71
+            },
+            "AI指数": {
+              "mark": "▲",
+              "index": 75
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 80
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 72
+            }
+          },
+          "number": 9,
+          "name": "エアリーフォルテ",
+          "odds": 4.9
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "☆",
+              "index": 64
+            },
+            "netkeiba AI": {
+              "mark": "△",
+              "index": 68
+            },
+            "AI指数": {
+              "mark": "△",
+              "index": 66
+            },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 62
+            },
+            "無料競馬AI": {
+              "mark": "▲",
+              "index": 74
+            }
+          },
+          "number": 12,
+          "name": "ロードカノープス",
+          "odds": 18.6
+        }
+      ]
+    },
+    {
+      "id": "kyoto-10",
+      "venue": "kyoto",
+      "venueName": "京都",
+      "number": "10R",
+      "name": "朱雀特別",
+      "date": "2026-06-20",
+      "startAt": "15:10",
+      "updatedAt": "15:00:00",
+      "missingSites": [],
+      "horses": [
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "◎",
+              "index": 94
+            },
+            "netkeiba AI": {
+              "mark": "○",
+              "index": 86
+            },
+            "AI指数": {
+              "mark": "◎",
+              "index": 92
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
+            },
+            "無料競馬AI": {
+              "mark": "○",
+              "index": 85
+            },
+            "Uma Cloud": {
+              "mark": "◎",
+              "index": 91
+            }
+          },
+          "number": 2,
+          "name": "カレンミストラル",
+          "odds": 2.9
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "○",
+              "index": 83
+            },
+            "netkeiba AI": {
+              "mark": "▲",
+              "index": 76
+            },
+            "AI指数": {
+              "mark": "○",
+              "index": 84
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
+            },
+            "無料競馬AI": {
+              "mark": "▲",
+              "index": 77
+            },
+            "Uma Cloud": {
+              "mark": "○",
+              "index": 82
+            }
+          },
+          "number": 5,
+          "name": "キョウトノアカリ",
+          "odds": 8.7
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "▲",
+              "index": 77
+            },
+            "netkeiba AI": {
+              "mark": "◎",
+              "index": 89
+            },
+            "AI指数": {
+              "mark": "△",
+              "index": 69
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 70
+            },
+            "Uma Cloud": {
+              "mark": "▲",
+              "index": 76
+            }
+          },
+          "number": 8,
+          "name": "ルミエールパルス",
+          "odds": 12.4
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "△",
+              "index": 70
+            },
+            "netkeiba AI": {
+              "mark": "△",
+              "index": 71
+            },
+            "AI指数": {
+              "mark": "▲",
+              "index": 77
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 68
+            },
+            "無料競馬AI": {
+              "mark": "◎",
+              "index": 88
+            },
+            "Uma Cloud": {
+              "mark": "△",
+              "index": 69
+            }
+          },
+          "number": 11,
+          "name": "ナリタサージュ",
+          "odds": 5.6
+        }
+      ]
+    },
+    {
+      "id": "hakodate-12",
+      "venue": "hakodate",
+      "venueName": "函館",
+      "number": "12R",
+      "name": "湯川温泉特別",
+      "date": "2026-06-20",
+      "startAt": "16:05",
+      "updatedAt": "15:55:00",
+      "missingSites": [
+        "netkeiba AI",
+        "競馬ラボ"
+      ],
+      "horses": [
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "○",
+              "index": 82
+            },
+            "AI指数": {
+              "mark": "◎",
+              "index": 90
+            },
+            "無料競馬AI": {
+              "mark": "▲",
+              "index": 78
+            },
+            "Uma Cloud": {
+              "mark": "○",
+              "index": 83
+            }
+          },
+          "number": 3,
+          "name": "ノースグリッター",
+          "odds": 7.1
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "◎",
+              "index": 88
+            },
+            "AI指数": {
+              "mark": "○",
+              "index": 82
+            },
+            "無料競馬AI": {
+              "mark": "◎",
+              "index": 87
+            },
+            "Uma Cloud": {
+              "mark": "▲",
+              "index": 77
+            }
+          },
+          "number": 6,
+          "name": "ハコダテブリーズ",
+          "odds": 4.4
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "▲",
+              "index": 74
+            },
+            "AI指数": {
+              "mark": "△",
+              "index": 68
+            },
+            "無料競馬AI": {
+              "mark": "○",
+              "index": 82
+            },
+            "Uma Cloud": {
+              "mark": "◎",
+              "index": 86
+            }
+          },
+          "number": 10,
+          "name": "シーサイドリズム",
+          "odds": 15.8
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "△",
+              "index": 70
+            },
+            "AI指数": {
+              "mark": "▲",
+              "index": 75
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 69
+            },
+            "Uma Cloud": {
+              "mark": "△",
+              "index": 67
+            }
+          },
+          "number": 13,
+          "name": "クラウンセレーネ",
+          "odds": 3.5
+        }
+      ]
+    },
+    {
+      "id": "sapporo-11",
+      "venue": "sapporo",
+      "venueName": "札幌",
+      "number": "11R",
+      "name": "大通公園ステークス",
+      "date": "2026-06-20",
+      "startAt": "15:25",
+      "updatedAt": "15:15:00",
+      "missingSites": [
+        "Prediction One"
+      ],
+      "horses": [
+        {
+          "predictions": {},
+          "number": 1,
+          "name": "ポラリスグレイス",
+          "odds": 4.2
+        },
+        {
+          "predictions": {},
+          "number": 5,
+          "name": "エルムクラウン",
+          "odds": 6.8
+        },
+        {
+          "predictions": {},
+          "number": 8,
+          "name": "ライラックノース",
+          "odds": 9.7
+        },
+        {
+          "predictions": {},
+          "number": 12,
+          "name": "サッポロブレイズ",
+          "odds": 13.4
+        }
+      ]
+    },
+    {
+      "id": "nakayama-11",
+      "venue": "nakayama",
+      "venueName": "中山",
+      "number": "11R",
+      "name": "船橋ステークス",
+      "date": "2026-06-20",
+      "startAt": "15:40",
+      "updatedAt": "15:35:00",
+      "missingSites": [],
+      "horses": [
+        {
+          "predictions": {},
+          "number": 2,
+          "name": "マツリダセレーノ",
+          "odds": 3.6
+        },
+        {
+          "predictions": {},
+          "number": 6,
+          "name": "ナカヤマルーチェ",
+          "odds": 7.4
+        },
+        {
+          "predictions": {},
+          "number": 10,
+          "name": "ベイサイドコール",
+          "odds": 11.9
+        },
+        {
+          "predictions": {},
+          "number": 14,
+          "name": "スプリングヴェロス",
+          "odds": 5.2
+        }
+      ]
+    },
+    {
+      "id": "chukyo-10",
+      "venue": "chukyo",
+      "venueName": "中京",
+      "number": "10R",
+      "name": "熱田特別",
+      "date": "2026-06-20",
+      "startAt": "15:00",
+      "updatedAt": "14:50:00",
+      "missingSites": [
+        "Race AI"
+      ],
+      "horses": [
+        {
+          "predictions": {},
+          "number": 3,
+          "name": "ミッドランドアロー",
+          "odds": 5.5
+        },
+        {
+          "predictions": {},
+          "number": 7,
+          "name": "キンシャチライン",
+          "odds": 8.2
+        },
+        {
+          "predictions": {},
+          "number": 9,
+          "name": "トヨアケパルス",
+          "odds": 4.1
+        },
+        {
+          "predictions": {},
+          "number": 13,
+          "name": "オワリノヒカリ",
+          "odds": 16.8
+        }
+      ]
+    },
+    {
+      "id": "hanshin-11",
+      "venue": "hanshin",
+      "venueName": "阪神",
+      "number": "11R",
+      "name": "六甲ステークス",
+      "date": "2026-06-20",
+      "startAt": "15:35",
+      "updatedAt": "15:35:00",
+      "missingSites": [
+        "Deep Keiba"
+      ],
+      "horses": [
+        {
+          "predictions": {},
+          "number": 1,
+          "name": "ナニワサンダー",
+          "odds": 6.1
+        },
+        {
+          "predictions": {},
+          "number": 4,
+          "name": "ロッコウミラージュ",
+          "odds": 3.4
+        },
+        {
+          "predictions": {},
+          "number": 11,
+          "name": "コウベスプラッシュ",
+          "odds": 10.5
+        },
+        {
+          "predictions": {},
+          "number": 15,
+          "name": "アマガサキスター",
+          "odds": 18.2
+        }
+      ]
+    },
+    {
+      "id": "kokura-12",
+      "venue": "kokura",
+      "venueName": "小倉",
+      "number": "12R",
+      "name": "企救丘特別",
+      "date": "2026-06-20",
+      "startAt": "16:10",
+      "updatedAt": "16:00:00",
+      "missingSites": [
+        "競馬ラボ"
+      ],
+      "horses": [
+        {
+          "predictions": {},
+          "number": 2,
+          "name": "メイショウアサギリ",
+          "odds": 4.7
+        },
+        {
+          "predictions": {},
+          "number": 6,
+          "name": "コクラノカゼ",
+          "odds": 9.3
+        },
+        {
+          "predictions": {},
+          "number": 9,
+          "name": "ムラサキリバー",
+          "odds": 12.1
+        },
+        {
+          "predictions": {},
+          "number": 16,
+          "name": "ホウワグランツ",
+          "odds": 5.8
+        }
+      ]
+    },
+    {
+      "id": "fukushima-11",
+      "venue": "fukushima",
+      "venueName": "福島",
+      "number": "11R",
+      "name": "吾妻小富士ステークス",
+      "date": "2026-06-20",
+      "startAt": "15:20",
+      "updatedAt": "15:10:00",
+      "missingSites": [
+        "Uma Cloud"
+      ],
+      "horses": [
+        {
+          "predictions": {},
+          "number": 3,
+          "name": "アヅマノハヤテ",
+          "odds": 7.9
+        },
+        {
+          "predictions": {},
+          "number": 5,
+          "name": "フクシマエール",
+          "odds": 4.5
+        },
+        {
+          "predictions": {},
+          "number": 8,
+          "name": "ミチノククラウン",
+          "odds": 14.6
+        },
+        {
+          "predictions": {},
+          "number": 12,
+          "name": "バンダイサンライズ",
+          "odds": 6.6
+        }
+      ]
+    },
+    {
+      "id": "niigata-11",
+      "venue": "niigata",
+      "venueName": "新潟",
+      "number": "11R",
+      "name": "越後ステークス",
+      "date": "2026-06-20",
+      "startAt": "15:30",
+      "updatedAt": "15:20:00",
+      "missingSites": [
+        "netkeiba AI"
+      ],
+      "horses": [
+        {
+          "predictions": {},
+          "number": 1,
+          "name": "エチゴブリーズ",
+          "odds": 5.9
+        },
+        {
+          "predictions": {},
+          "number": 4,
+          "name": "ササガワミスト",
+          "odds": 8.8
+        },
+        {
+          "predictions": {},
+          "number": 7,
+          "name": "ニイガタノユメ",
+          "odds": 3.9
+        },
+        {
+          "predictions": {},
+          "number": 13,
+          "name": "トキメキロード",
+          "odds": 17.5
+        }
+      ]
+    }
+  ]
+}
