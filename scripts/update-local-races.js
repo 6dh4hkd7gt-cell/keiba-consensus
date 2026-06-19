@@ -4,7 +4,7 @@ const path = require("node:path");
 const SOURCE_URL = "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/TodayRaceInfoTop";
 const RAKUTEN_TOP_URL = "https://keiba.rakuten.co.jp/";
 const OUTPUT_PATH = path.join(process.cwd(), "docs", "chihou", "data", "today-races.json");
-const FETCH_TIMEOUT_MS = 12000;
+const FETCH_TIMEOUT_MS = 4000;
 const PREDICTION_SOURCES = [
   "楽天みんなの予想",
   "AiBA無料AI",
