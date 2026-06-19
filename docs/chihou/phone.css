@@ -337,6 +337,11 @@ button {
   opacity: 0.45;
 }
 
+.icon-button.is-loading {
+  opacity: 0.62;
+  pointer-events: none;
+}
+
 .status-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
