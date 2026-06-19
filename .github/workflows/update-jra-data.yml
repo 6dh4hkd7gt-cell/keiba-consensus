@@ -1,0 +1,42 @@
+name: Update JRA race data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/10 0-8 * * 0,6"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-jra-data
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Update data
+        run: node scripts/update-jra-data.mjs
+        env:
+          JRA_RACES_JSON_URL: ${{ secrets.JRA_RACES_JSON_URL }}
+
+      - name: Commit data
+        run: |
+          if git diff --quiet -- docs/data/jra-races.json docs/data/update-status.json; then
+            echo "No JRA data changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/jra-races.json docs/data/update-status.json
+          git commit -m "Update JRA race data"
+          git push
