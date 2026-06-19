@@ -624,6 +624,10 @@ function getPredictionsForHorse(race, horse) {
   }, {});
 }
 
+function hasUsablePredictionData(ranking) {
+  return ranking.some((horse) => horse.voteCount > 0);
+}
+
 function calculateRanking(race) {
   const oddsRanks = [...race.horses]
     .sort((a, b) => a.odds - b.odds)
@@ -732,6 +736,10 @@ function formatTicketNames(horses) {
 }
 
 function buildTicketRecommendations(ranking) {
+  if (!hasUsablePredictionData(ranking)) {
+    return [];
+  }
+
   const supportOrder = [...ranking].sort((a, b) => b.support - a.support);
   const topHorses = supportOrder.slice(0, 6);
   const ticketTypes = [
@@ -804,7 +812,8 @@ function renderStatus(race, ranking) {
 
   const siteNames = Object.keys(DEFAULT_WEIGHTS);
   const acquired = siteNames.length - race.missingSites.length;
-  const average = ranking.reduce((sum, horse) => sum + horse.support, 0) / ranking.length;
+  const hasData = hasUsablePredictionData(ranking);
+  const average = hasData ? ranking.reduce((sum, horse) => sum + horse.support, 0) / ranking.length : 0;
   const updateStatus = getRaceUpdateStatus(race);
   const operationMetric = elements.operationStatus.closest(".metric");
 
@@ -814,7 +823,7 @@ function renderStatus(race, ranking) {
   elements.operationWindow.textContent = updateStatus.detail;
   elements.siteCount.textContent = `${acquired}/${siteNames.length}`;
   elements.missingSites.textContent = race.missingSites.length ? race.missingSites.join(" / ") : "なし";
-  elements.averageSupport.textContent = `${average.toFixed(1)}%`;
+  elements.averageSupport.textContent = hasData ? `${average.toFixed(1)}%` : "未取得";
   if (elements.refreshButton) {
     elements.refreshButton.disabled = !updateStatus.ready;
     elements.refreshButton.title = updateStatus.ready ? "10分前データを取得" : updateStatus.detail;
@@ -866,6 +875,20 @@ function renderRanking(ranking) {
     return;
   }
 
+  if (!hasUsablePredictionData(ranking)) {
+    elements.rankingRows.innerHTML = `
+      <tr>
+        <td colspan="6">
+          <div class="empty-state">
+            <strong>実AI予想データ未取得</strong>
+            <span>各サイトの取得URLが未設定、または取得できていません。ランキングは表示しません。</span>
+          </div>
+        </td>
+      </tr>
+    `;
+    return;
+  }
+
   elements.rankingRows.innerHTML = ranking.map((horse) => {
     const gapClass = horse.gap > 0 ? "positive" : horse.gap < 0 ? "negative" : "neutral";
     const gapText = horse.gap > 0 ? `AI +${horse.gap}` : horse.gap < 0 ? `人気 +${Math.abs(horse.gap)}` : "一致";
@@ -895,6 +918,29 @@ function renderRanking(ranking) {
 }
 
 function renderHorseDetail(ranking) {
+  if (!hasUsablePredictionData(ranking)) {
+    state.selectedHorseName = "";
+
+    if (elements.horseName) elements.horseName.textContent = "実データ未取得";
+    if (elements.horseNumber) elements.horseNumber.textContent = "--";
+    if (elements.horseSummary) {
+      elements.horseSummary.innerHTML = `
+        <div><span>AI支持率</span><strong>未取得</strong></div>
+        <div><span>取得サイト</span><strong>0</strong></div>
+        <div><span>判定</span><strong>使用不可</strong></div>
+      `;
+    }
+    if (elements.siteVotes) {
+      elements.siteVotes.innerHTML = `
+        <div class="empty-state">
+          <strong>サイト別評価なし</strong>
+          <span>各サイトから取得できた印・指数だけを表示します。</span>
+        </div>
+      `;
+    }
+    return;
+  }
+
   const selected = ranking.find((horse) => horse.name === state.selectedHorseName) || ranking[0];
   state.selectedHorseName = selected.name;
 
@@ -936,6 +982,16 @@ function renderRecommendations(ranking) {
   }
 
   const groups = buildTicketRecommendations(ranking);
+  if (!groups.length) {
+    elements.recommendationGroups.innerHTML = `
+      <div class="empty-state">
+        <strong>推奨買い目は表示しません</strong>
+        <span>実AI予想データが取得できた時だけ表示します。</span>
+      </div>
+    `;
+    return;
+  }
+
   elements.recommendationGroups.innerHTML = groups.map((group) => `
     <section class="recommendation-card">
       <h4>${group.label}</h4>
@@ -960,6 +1016,25 @@ function renderRecommendations(ranking) {
 
 function renderSiteDetailPage(race, ranking) {
   if (!elements.siteDetailList) {
+    return;
+  }
+
+  if (!hasUsablePredictionData(ranking)) {
+    if (elements.siteDetailMeta) {
+      elements.siteDetailMeta.innerHTML = `
+        <div><span>レース</span><strong>${race.venueName} ${race.number}</strong></div>
+        <div><span>取得</span><strong>0/10</strong></div>
+        <div><span>状態</span><strong>実データ未取得</strong></div>
+      `;
+    }
+    if (elements.siteDetailList) {
+      elements.siteDetailList.innerHTML = `
+        <div class="empty-state">
+          <strong>各サイト評価は未取得です</strong>
+          <span>GitHub Secretsに取得URLを設定し、取得に成功したサイトだけ表示します。</span>
+        </div>
+      `;
+    }
     return;
   }
 
