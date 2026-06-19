@@ -1,7 +1,7 @@
 {
   "date": "2026-06-19",
   "source": "https://www.keiba.go.jp/KeibaWeb/TodayRaceInfo/TodayRaceInfoTop",
-  "generatedAt": "2026-06-19T09:45:25.169Z",
+  "generatedAt": "2026-06-19T09:51:07.939Z",
   "races": [
     {
       "venue": "kawasaki",
@@ -1804,7 +1804,6 @@
       "number": 9,
       "startAt": "19:05",
       "missingSites": [
-        "AiBA無料AI",
         "競馬新聞ゼロ本紙"
       ],
       "horses": [
@@ -1833,6 +1832,10 @@
                 "▲": 60,
                 "△": 24
               }
+            },
+            "AiBA無料AI": {
+              "mark": "▲",
+              "index": 64
             }
           }
         },
@@ -1861,6 +1864,10 @@
                 "▲": 15,
                 "△": 8
               }
+            },
+            "AiBA無料AI": {
+              "mark": "○",
+              "index": 65
             }
           }
         },
@@ -2001,6 +2008,10 @@
                 "▲": 9,
                 "△": 15
               }
+            },
+            "AiBA無料AI": {
+              "mark": "△",
+              "index": 60
             }
           }
         },
