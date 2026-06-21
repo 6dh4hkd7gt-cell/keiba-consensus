@@ -1,1045 +1,45 @@
 {
-  "generatedAt": "2026-06-21T20:33:59+09:00",
-  "targetDate": "2026-06-21",
+  "generatedAt": "2026-06-22T00:20:04+09:00",
+  "targetDate": "2026-06-22",
   "updateLeadMinutes": 10,
   "source": "insufficient-site-scrape",
-  "raceSource": "spaia-race-list",
+  "raceSource": "seed-fallback",
   "requiredConsensusSiteCount": 4,
   "consensusReady": false,
-  "raceCount": 36,
+  "raceCount": 10,
   "readyRaceIds": [],
   "configuredSiteCount": 10,
-  "fetchedSiteCount": 7,
-  "matchedSiteCount": 3,
-  "fetchedRaceCount": 217,
-  "matchedRaceCount": 101,
+  "fetchedSiteCount": 1,
+  "matchedSiteCount": 0,
+  "fetchedRaceCount": 10,
+  "matchedRaceCount": 0,
   "siteSources": [
     {
       "site": "SPAIA",
-      "raceId": "tokyo-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 14,
-      "matched": 14,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "tokyo-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 14,
-      "matched": 3,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "tokyo-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "tokyo-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "tokyo-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "tokyo-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 14,
-      "matched": 14,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "tokyo-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "tokyo-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "tokyo-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "tokyo-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "tokyo-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "tokyo-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "tokyo-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "tokyo-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "tokyo-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "tokyo-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "tokyo-2",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "tokyo-2",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "tokyo-2",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "tokyo-2",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "tokyo-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "tokyo-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "tokyo-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "tokyo-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "tokyo-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "tokyo-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "tokyo-3",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "tokyo-3",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "tokyo-3",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "tokyo-3",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "tokyo-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "tokyo-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "tokyo-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "tokyo-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "tokyo-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 10,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "tokyo-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 10,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "tokyo-4",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "tokyo-4",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "tokyo-4",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "tokyo-4",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "tokyo-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "tokyo-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "tokyo-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "tokyo-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "tokyo-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 13,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "tokyo-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 13,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "tokyo-5",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "tokyo-5",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "tokyo-5",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "tokyo-5",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "tokyo-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "tokyo-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "tokyo-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "tokyo-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "tokyo-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "tokyo-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "tokyo-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "tokyo-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "tokyo-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "tokyo-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "tokyo-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "tokyo-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "tokyo-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "tokyo-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "tokyo-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "tokyo-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "tokyo-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "tokyo-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "tokyo-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "tokyo-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "tokyo-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "tokyo-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "tokyo-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "tokyo-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "tokyo-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "tokyo-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "tokyo-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "tokyo-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "tokyo-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "tokyo-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "tokyo-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "tokyo-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "tokyo-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "tokyo-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "tokyo-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "tokyo-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "tokyo-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "tokyo-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "tokyo-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "tokyo-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "tokyo-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "tokyo-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "tokyo-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "tokyo-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "tokyo-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "tokyo-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "tokyo-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "tokyo-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "tokyo-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "tokyo-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
       "raceId": "tokyo-11",
       "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
+      "fetched": false,
+      "horseCount": 5,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 404"
     },
     {
       "site": "競馬ブック",
       "raceId": "tokyo-11",
       "configured": true,
-      "fetched": true,
-      "horseCount": 16,
+      "fetched": false,
+      "horseCount": 5,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "競馬ブック raceId未取得"
     },
     {
       "site": "競馬ラボ",
       "raceId": "tokyo-11",
       "configured": true,
       "fetched": true,
-      "horseCount": 16,
+      "horseCount": 5,
       "matched": 0,
       "complete": false,
       "error": ""
@@ -1048,38 +48,38 @@
       "site": "ウマークス",
       "raceId": "tokyo-11",
       "configured": true,
-      "fetched": true,
-      "horseCount": 16,
+      "fetched": false,
+      "horseCount": 5,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "ウマークス raceId未取得"
     },
     {
       "site": "ATHENA",
       "raceId": "tokyo-11",
       "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
+      "fetched": false,
+      "horseCount": 5,
+      "matched": 0,
+      "complete": false,
+      "error": "ATHENA target article未公開"
     },
     {
       "site": "無料競馬AI",
       "raceId": "tokyo-11",
       "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
+      "fetched": false,
+      "horseCount": 5,
+      "matched": 0,
+      "complete": false,
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
       "raceId": "tokyo-11",
       "configured": true,
       "fetched": false,
-      "horseCount": 16,
+      "horseCount": 5,
       "matched": 0,
       "complete": false,
       "error": "AiBA予測未公開"
@@ -1089,7 +89,7 @@
       "raceId": "tokyo-11",
       "configured": true,
       "fetched": false,
-      "horseCount": 16,
+      "horseCount": 5,
       "matched": 0,
       "complete": false,
       "error": "日刊AI無料公開対象外"
@@ -1099,2417 +99,117 @@
       "raceId": "tokyo-11",
       "configured": true,
       "fetched": false,
-      "horseCount": 16,
+      "horseCount": 5,
       "matched": 0,
       "complete": false,
-      "error": "SIVA予測未公開"
+      "error": "SIVA raceCode未取得"
     },
     {
       "site": "ウマニティU指数",
       "raceId": "tokyo-11",
       "configured": true,
       "fetched": false,
-      "horseCount": 16,
+      "horseCount": 5,
       "matched": 0,
       "complete": false,
       "error": "ウマニティU指数未公開またはログイン範囲"
     },
     {
       "site": "SPAIA",
-      "raceId": "tokyo-12",
+      "raceId": "kyoto-10",
       "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 404"
     },
     {
       "site": "競馬ブック",
-      "raceId": "tokyo-12",
+      "raceId": "kyoto-10",
       "configured": true,
-      "fetched": true,
-      "horseCount": 16,
+      "fetched": false,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "競馬ブック raceId未取得"
     },
     {
       "site": "競馬ラボ",
-      "raceId": "tokyo-12",
+      "raceId": "kyoto-10",
       "configured": true,
       "fetched": true,
-      "horseCount": 16,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
       "error": ""
     },
     {
       "site": "ウマークス",
-      "raceId": "tokyo-12",
+      "raceId": "kyoto-10",
       "configured": true,
-      "fetched": true,
-      "horseCount": 16,
+      "fetched": false,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "ウマークス raceId未取得"
     },
     {
       "site": "ATHENA",
-      "raceId": "tokyo-12",
+      "raceId": "kyoto-10",
       "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ATHENA target article未公開"
     },
     {
       "site": "無料競馬AI",
-      "raceId": "tokyo-12",
+      "raceId": "kyoto-10",
       "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
-      "raceId": "tokyo-12",
+      "raceId": "kyoto-10",
       "configured": true,
       "fetched": false,
-      "horseCount": 16,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
       "error": "AiBA予測未公開"
     },
     {
       "site": "日刊AI",
-      "raceId": "tokyo-12",
+      "raceId": "kyoto-10",
       "configured": true,
       "fetched": false,
-      "horseCount": 16,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
       "error": "日刊AI無料公開対象外"
     },
     {
       "site": "SIVA",
-      "raceId": "tokyo-12",
+      "raceId": "kyoto-10",
       "configured": true,
       "fetched": false,
-      "horseCount": 16,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
-      "error": "SIVA予測未公開"
+      "error": "SIVA raceCode未取得"
     },
     {
       "site": "ウマニティU指数",
-      "raceId": "tokyo-12",
+      "raceId": "kyoto-10",
       "configured": true,
       "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hanshin-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 3,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hanshin-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hanshin-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 14,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hanshin-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hanshin-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hanshin-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hanshin-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hanshin-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hanshin-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hanshin-2",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hanshin-2",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-2",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hanshin-2",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hanshin-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hanshin-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hanshin-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hanshin-3",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hanshin-3",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-3",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hanshin-3",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hanshin-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hanshin-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hanshin-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hanshin-4",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hanshin-4",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-4",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hanshin-4",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hanshin-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hanshin-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hanshin-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 9,
-      "matched": 9,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 9,
-      "matched": 9,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hanshin-5",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hanshin-5",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-5",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hanshin-5",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hanshin-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hanshin-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hanshin-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hanshin-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hanshin-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hanshin-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hanshin-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hanshin-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hanshin-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hanshin-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hanshin-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hanshin-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 8,
-      "matched": 8,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hanshin-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hanshin-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hanshin-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 8,
-      "matched": 8,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 8,
-      "matched": 8,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hanshin-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hanshin-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hanshin-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 7,
-      "matched": 7,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hanshin-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 7,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 7,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hanshin-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 7,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hanshin-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 7,
-      "matched": 7,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 7,
-      "matched": 7,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hanshin-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 7,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hanshin-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 7,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 7,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hanshin-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 7,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hanshin-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hanshin-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hanshin-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hanshin-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hanshin-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hanshin-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-11",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hanshin-11",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-11",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hanshin-11",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hanshin-11",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-11",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hanshin-11",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hanshin-11",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-11",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hanshin-11",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hanshin-12",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 13,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hanshin-12",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hanshin-12",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hanshin-12",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hanshin-12",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 13,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hanshin-12",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 13,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hanshin-12",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hanshin-12",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hanshin-12",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hanshin-12",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hakodate-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hakodate-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 3,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hakodate-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hakodate-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hakodate-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hakodate-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hakodate-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hakodate-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hakodate-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hakodate-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hakodate-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 11,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hakodate-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hakodate-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hakodate-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hakodate-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 11,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hakodate-2",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 10,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hakodate-2",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hakodate-2",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hakodate-2",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hakodate-2",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hakodate-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hakodate-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hakodate-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hakodate-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hakodate-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hakodate-3",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hakodate-3",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hakodate-3",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hakodate-3",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hakodate-3",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hakodate-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hakodate-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hakodate-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hakodate-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hakodate-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hakodate-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hakodate-4",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hakodate-4",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 16,
-      "matched": 8,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hakodate-4",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hakodate-4",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hakodate-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hakodate-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hakodate-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hakodate-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hakodate-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 10,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hakodate-5",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 10,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hakodate-5",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hakodate-5",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hakodate-5",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hakodate-5",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hakodate-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 13,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hakodate-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hakodate-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hakodate-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hakodate-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 13,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hakodate-6",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 13,
-      "matched": 13,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hakodate-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hakodate-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hakodate-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hakodate-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hakodate-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 11,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hakodate-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hakodate-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hakodate-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hakodate-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 11,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hakodate-7",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 11,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hakodate-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hakodate-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hakodate-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hakodate-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hakodate-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hakodate-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hakodate-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hakodate-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hakodate-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hakodate-8",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hakodate-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hakodate-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hakodate-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hakodate-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hakodate-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hakodate-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hakodate-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hakodate-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hakodate-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hakodate-9",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hakodate-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hakodate-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hakodate-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hakodate-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hakodate-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 9,
-      "matched": 9,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hakodate-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hakodate-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hakodate-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hakodate-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 9,
-      "matched": 9,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hakodate-10",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 9,
-      "matched": 9,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hakodate-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hakodate-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hakodate-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hakodate-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマニティU指数未公開またはログイン範囲"
-    },
-    {
-      "site": "SPAIA",
-      "raceId": "hakodate-11",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 15,
-      "matched": 15,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "競馬ブック",
-      "raceId": "hakodate-11",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "競馬ラボ",
-      "raceId": "hakodate-11",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ウマークス",
-      "raceId": "hakodate-11",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "hakodate-11",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 15,
-      "matched": 15,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "hakodate-11",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 15,
-      "matched": 15,
-      "complete": true,
-      "error": ""
-    },
-    {
-      "site": "AiBA",
-      "raceId": "hakodate-11",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "AiBA予測未公開"
-    },
-    {
-      "site": "日刊AI",
-      "raceId": "hakodate-11",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "日刊AI無料公開対象外"
-    },
-    {
-      "site": "SIVA",
-      "raceId": "hakodate-11",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "SIVA予測未公開"
-    },
-    {
-      "site": "ウマニティU指数",
-      "raceId": "hakodate-11",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 15,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
       "error": "ウマニティU指数未公開またはログイン範囲"
@@ -3518,28 +218,28 @@
       "site": "SPAIA",
       "raceId": "hakodate-12",
       "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 10,
-      "complete": true,
-      "error": ""
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 404"
     },
     {
       "site": "競馬ブック",
       "raceId": "hakodate-12",
       "configured": true,
-      "fetched": true,
-      "horseCount": 10,
+      "fetched": false,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "競馬ブック raceId未取得"
     },
     {
       "site": "競馬ラボ",
       "raceId": "hakodate-12",
       "configured": true,
       "fetched": true,
-      "horseCount": 10,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
       "error": ""
@@ -3548,38 +248,38 @@
       "site": "ウマークス",
       "raceId": "hakodate-12",
       "configured": true,
-      "fetched": true,
-      "horseCount": 10,
+      "fetched": false,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "ウマークス raceId未取得"
     },
     {
       "site": "ATHENA",
       "raceId": "hakodate-12",
       "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 10,
-      "complete": true,
-      "error": ""
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ATHENA target article未公開"
     },
     {
       "site": "無料競馬AI",
       "raceId": "hakodate-12",
       "configured": true,
-      "fetched": true,
-      "horseCount": 10,
-      "matched": 10,
-      "complete": true,
-      "error": ""
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
       "raceId": "hakodate-12",
       "configured": true,
       "fetched": false,
-      "horseCount": 10,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
       "error": "AiBA予測未公開"
@@ -3589,7 +289,7 @@
       "raceId": "hakodate-12",
       "configured": true,
       "fetched": false,
-      "horseCount": 10,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
       "error": "日刊AI無料公開対象外"
@@ -3599,17 +299,717 @@
       "raceId": "hakodate-12",
       "configured": true,
       "fetched": false,
-      "horseCount": 10,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
-      "error": "SIVA予測未公開"
+      "error": "SIVA raceCode未取得"
     },
     {
       "site": "ウマニティU指数",
       "raceId": "hakodate-12",
       "configured": true,
       "fetched": false,
-      "horseCount": 10,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマニティU指数未公開またはログイン範囲"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "sapporo-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 404"
+    },
+    {
+      "site": "競馬ブック",
+      "raceId": "sapporo-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "競馬ブック raceId未取得"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "sapporo-11",
+      "configured": true,
+      "fetched": true,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": ""
+    },
+    {
+      "site": "ウマークス",
+      "raceId": "sapporo-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマークス raceId未取得"
+    },
+    {
+      "site": "ATHENA",
+      "raceId": "sapporo-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ATHENA target article未公開"
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "sapporo-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "無料競馬AI raceId未取得"
+    },
+    {
+      "site": "AiBA",
+      "raceId": "sapporo-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "AiBA予測未公開"
+    },
+    {
+      "site": "日刊AI",
+      "raceId": "sapporo-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "日刊AI無料公開対象外"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "sapporo-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "SIVA raceCode未取得"
+    },
+    {
+      "site": "ウマニティU指数",
+      "raceId": "sapporo-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマニティU指数未公開またはログイン範囲"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "nakayama-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 404"
+    },
+    {
+      "site": "競馬ブック",
+      "raceId": "nakayama-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "競馬ブック raceId未取得"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "nakayama-11",
+      "configured": true,
+      "fetched": true,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": ""
+    },
+    {
+      "site": "ウマークス",
+      "raceId": "nakayama-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマークス raceId未取得"
+    },
+    {
+      "site": "ATHENA",
+      "raceId": "nakayama-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ATHENA target article未公開"
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "nakayama-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "無料競馬AI raceId未取得"
+    },
+    {
+      "site": "AiBA",
+      "raceId": "nakayama-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "AiBA予測未公開"
+    },
+    {
+      "site": "日刊AI",
+      "raceId": "nakayama-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "日刊AI無料公開対象外"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "nakayama-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "SIVA raceCode未取得"
+    },
+    {
+      "site": "ウマニティU指数",
+      "raceId": "nakayama-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマニティU指数未公開またはログイン範囲"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "chukyo-10",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 404"
+    },
+    {
+      "site": "競馬ブック",
+      "raceId": "chukyo-10",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "競馬ブック raceId未取得"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "chukyo-10",
+      "configured": true,
+      "fetched": true,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": ""
+    },
+    {
+      "site": "ウマークス",
+      "raceId": "chukyo-10",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマークス raceId未取得"
+    },
+    {
+      "site": "ATHENA",
+      "raceId": "chukyo-10",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ATHENA target article未公開"
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "chukyo-10",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "無料競馬AI raceId未取得"
+    },
+    {
+      "site": "AiBA",
+      "raceId": "chukyo-10",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "AiBA予測未公開"
+    },
+    {
+      "site": "日刊AI",
+      "raceId": "chukyo-10",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "日刊AI無料公開対象外"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "chukyo-10",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "SIVA raceCode未取得"
+    },
+    {
+      "site": "ウマニティU指数",
+      "raceId": "chukyo-10",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマニティU指数未公開またはログイン範囲"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "hanshin-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 404"
+    },
+    {
+      "site": "競馬ブック",
+      "raceId": "hanshin-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "競馬ブック raceId未取得"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "hanshin-11",
+      "configured": true,
+      "fetched": true,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": ""
+    },
+    {
+      "site": "ウマークス",
+      "raceId": "hanshin-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマークス raceId未取得"
+    },
+    {
+      "site": "ATHENA",
+      "raceId": "hanshin-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ATHENA target article未公開"
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "hanshin-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "無料競馬AI raceId未取得"
+    },
+    {
+      "site": "AiBA",
+      "raceId": "hanshin-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "AiBA予測未公開"
+    },
+    {
+      "site": "日刊AI",
+      "raceId": "hanshin-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "日刊AI無料公開対象外"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "hanshin-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "SIVA raceCode未取得"
+    },
+    {
+      "site": "ウマニティU指数",
+      "raceId": "hanshin-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマニティU指数未公開またはログイン範囲"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "kokura-12",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 404"
+    },
+    {
+      "site": "競馬ブック",
+      "raceId": "kokura-12",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "競馬ブック raceId未取得"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "kokura-12",
+      "configured": true,
+      "fetched": true,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": ""
+    },
+    {
+      "site": "ウマークス",
+      "raceId": "kokura-12",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマークス raceId未取得"
+    },
+    {
+      "site": "ATHENA",
+      "raceId": "kokura-12",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ATHENA target article未公開"
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "kokura-12",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "無料競馬AI raceId未取得"
+    },
+    {
+      "site": "AiBA",
+      "raceId": "kokura-12",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "AiBA予測未公開"
+    },
+    {
+      "site": "日刊AI",
+      "raceId": "kokura-12",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "日刊AI無料公開対象外"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "kokura-12",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "SIVA raceCode未取得"
+    },
+    {
+      "site": "ウマニティU指数",
+      "raceId": "kokura-12",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマニティU指数未公開またはログイン範囲"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "fukushima-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 404"
+    },
+    {
+      "site": "競馬ブック",
+      "raceId": "fukushima-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "競馬ブック raceId未取得"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "fukushima-11",
+      "configured": true,
+      "fetched": true,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": ""
+    },
+    {
+      "site": "ウマークス",
+      "raceId": "fukushima-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマークス raceId未取得"
+    },
+    {
+      "site": "ATHENA",
+      "raceId": "fukushima-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ATHENA target article未公開"
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "fukushima-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "無料競馬AI raceId未取得"
+    },
+    {
+      "site": "AiBA",
+      "raceId": "fukushima-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "AiBA予測未公開"
+    },
+    {
+      "site": "日刊AI",
+      "raceId": "fukushima-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "日刊AI無料公開対象外"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "fukushima-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "SIVA raceCode未取得"
+    },
+    {
+      "site": "ウマニティU指数",
+      "raceId": "fukushima-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマニティU指数未公開またはログイン範囲"
+    },
+    {
+      "site": "SPAIA",
+      "raceId": "niigata-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 404"
+    },
+    {
+      "site": "競馬ブック",
+      "raceId": "niigata-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "競馬ブック raceId未取得"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "niigata-11",
+      "configured": true,
+      "fetched": true,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": ""
+    },
+    {
+      "site": "ウマークス",
+      "raceId": "niigata-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ウマークス raceId未取得"
+    },
+    {
+      "site": "ATHENA",
+      "raceId": "niigata-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "ATHENA target article未公開"
+    },
+    {
+      "site": "無料競馬AI",
+      "raceId": "niigata-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "無料競馬AI raceId未取得"
+    },
+    {
+      "site": "AiBA",
+      "raceId": "niigata-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "AiBA予測未公開"
+    },
+    {
+      "site": "日刊AI",
+      "raceId": "niigata-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "日刊AI無料公開対象外"
+    },
+    {
+      "site": "SIVA",
+      "raceId": "niigata-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
+      "matched": 0,
+      "complete": false,
+      "error": "SIVA raceCode未取得"
+    },
+    {
+      "site": "ウマニティU指数",
+      "raceId": "niigata-11",
+      "configured": true,
+      "fetched": false,
+      "horseCount": 4,
       "matched": 0,
       "complete": false,
       "error": "ウマニティU指数未公開またはログイン範囲"
