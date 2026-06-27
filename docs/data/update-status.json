@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T18:33:06+09:00",
+  "generatedAt": "2026-06-27T21:14:36+09:00",
   "targetDate": "2026-06-28",
   "updateLeadMinutes": 10,
   "source": "site-scrape",
@@ -9,9 +9,9 @@
   "raceCount": 36,
   "readyRaceIds": [],
   "configuredSiteCount": 10,
-  "fetchedSiteCount": 6,
+  "fetchedSiteCount": 7,
   "matchedSiteCount": 5,
-  "fetchedRaceCount": 204,
+  "fetchedRaceCount": 205,
   "matchedRaceCount": 159,
   "siteSources": [
     {
@@ -2788,11 +2788,11 @@
       "site": "日刊AI",
       "raceId": "hakodate-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
+      "matched": 8,
       "complete": false,
-      "error": "日刊AI無料公開対象外"
+      "error": ""
     },
     {
       "site": "SIVA",
