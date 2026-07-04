@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T18:09:54+09:00",
+  "generatedAt": "2026-07-04T20:58:25+09:00",
   "targetDate": "2026-07-05",
   "updateLeadMinutes": 10,
   "source": "site-scrape",
@@ -9,9 +9,9 @@
   "raceCount": 36,
   "readyRaceIds": [],
   "configuredSiteCount": 10,
-  "fetchedSiteCount": 6,
+  "fetchedSiteCount": 7,
   "matchedSiteCount": 5,
-  "fetchedRaceCount": 204,
+  "fetchedRaceCount": 205,
   "matchedRaceCount": 159,
   "siteSources": [
     {
@@ -1588,11 +1588,11 @@
       "site": "日刊AI",
       "raceId": "kokura-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
+      "matched": 8,
       "complete": false,
-      "error": "日刊AI無料公開対象外"
+      "error": ""
     },
     {
       "site": "SIVA",
