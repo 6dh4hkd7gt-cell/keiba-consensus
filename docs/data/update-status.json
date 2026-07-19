@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T12:24:47+09:00",
+  "generatedAt": "2026-07-19T15:13:49+09:00",
   "targetDate": "2026-07-19",
   "updateLeadMinutes": 10,
   "source": "site-scrape",
@@ -8,13 +8,13 @@
   "consensusReady": true,
   "raceCount": 36,
   "readyRaceIds": [
-    "kokura-5"
+    "hakodate-11"
   ],
   "configuredSiteCount": 10,
   "fetchedSiteCount": 7,
   "matchedSiteCount": 5,
   "fetchedRaceCount": 205,
-  "matchedRaceCount": 138,
+  "matchedRaceCount": 112,
   "siteSources": [
     {
       "site": "SPAIA",
@@ -542,8 +542,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -642,8 +642,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 15,
-      "matched": 15,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -652,8 +652,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 15,
-      "matched": 15,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -742,8 +742,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -752,8 +752,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -842,8 +842,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -852,8 +852,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -942,8 +942,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 12,
-      "matched": 12,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -952,8 +952,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 12,
-      "matched": 12,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1642,8 +1642,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 8,
-      "matched": 8,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1742,8 +1742,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1842,8 +1842,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 17,
-      "matched": 17,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1862,8 +1862,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 17,
-      "matched": 17,
-      "complete": true,
+      "matched": 16,
+      "complete": false,
       "error": ""
     },
     {
@@ -1942,8 +1942,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2042,8 +2042,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 8,
-      "matched": 8,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2142,8 +2142,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2942,8 +2942,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2952,8 +2952,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3042,8 +3042,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3052,8 +3052,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3142,8 +3142,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3152,8 +3152,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3242,8 +3242,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 13,
-      "matched": 13,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3252,8 +3252,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 13,
-      "matched": 13,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3342,8 +3342,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3352,8 +3352,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {

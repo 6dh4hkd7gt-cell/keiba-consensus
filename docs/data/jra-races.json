@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T12:24:47+09:00",
+  "generatedAt": "2026-07-19T15:13:49+09:00",
   "targetDate": "2026-07-19",
   "updateLeadMinutes": 10,
   "source": "site-scrape",
@@ -531,8 +531,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -631,8 +631,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 15,
-      "matched": 15,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -641,8 +641,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 15,
-      "matched": 15,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -731,8 +731,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -741,8 +741,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -831,8 +831,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -841,8 +841,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -931,8 +931,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 12,
-      "matched": 12,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -941,8 +941,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 12,
-      "matched": 12,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1631,8 +1631,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 8,
-      "matched": 8,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1731,8 +1731,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1831,8 +1831,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 17,
-      "matched": 17,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1851,8 +1851,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 17,
-      "matched": 17,
-      "complete": true,
+      "matched": 16,
+      "complete": false,
       "error": ""
     },
     {
@@ -1931,8 +1931,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2031,8 +2031,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 8,
-      "matched": 8,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2131,8 +2131,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2931,8 +2931,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2941,8 +2941,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3031,8 +3031,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3041,8 +3041,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3131,8 +3131,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3141,8 +3141,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3231,8 +3231,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 13,
-      "matched": 13,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3241,8 +3241,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 13,
-      "matched": 13,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3331,8 +3331,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3341,8 +3341,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -5091,6 +5091,7 @@
       "missingSites": [
         "SPAIA",
         "競馬ブック",
+        "競馬ラボ",
         "ウマークス",
         "AiBA",
         "日刊AI",
@@ -5100,10 +5101,6 @@
       "horses": [
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 20
-            },
             "ATHENA": {
               "mark": "△",
               "index": 52
@@ -5120,10 +5117,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 52
-            },
             "ATHENA": {
               "mark": "△",
               "index": 58
@@ -5140,10 +5133,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 33
-            },
             "ATHENA": {
               "mark": "△",
               "index": 57
@@ -5160,10 +5149,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 28
-            },
             "ATHENA": {
               "mark": "△",
               "index": 53
@@ -5180,10 +5165,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 30
-            },
             "ATHENA": {
               "mark": "△",
               "index": 56
@@ -5200,10 +5181,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 99
-            },
             "ATHENA": {
               "mark": "△",
               "index": 63
@@ -5220,10 +5197,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 44
-            },
             "ATHENA": {
               "mark": "△",
               "index": 53
@@ -5240,10 +5213,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 10
-            },
             "ATHENA": {
               "mark": "△",
               "index": 55
@@ -5260,10 +5229,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 28
-            },
             "ATHENA": {
               "mark": "△",
               "index": 54
@@ -5280,10 +5245,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 36
-            },
             "ATHENA": {
               "mark": "△",
               "index": 54
@@ -5300,10 +5261,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 55
-            },
             "ATHENA": {
               "mark": "△",
               "index": 61
@@ -5320,10 +5277,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 97
-            },
             "ATHENA": {
               "mark": "△",
               "index": 61
@@ -5340,10 +5293,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 44
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 65
@@ -5360,10 +5309,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 27
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 69
@@ -5380,10 +5325,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 48
-            },
             "ATHENA": {
               "mark": "△",
               "index": 60
@@ -5400,10 +5341,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 63
-            },
             "ATHENA": {
               "mark": "△",
               "index": 54
@@ -5432,6 +5369,8 @@
       "updatedAt": "13:10:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
+        "ウマークス",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -5443,14 +5382,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 74
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 83
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
             },
             "ATHENA": {
               "mark": "☆",
@@ -5472,14 +5403,6 @@
               "mark": "▲",
               "index": 74
             },
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 49
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 72
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 20
@@ -5499,14 +5422,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 77
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "▲",
@@ -5528,14 +5443,6 @@
               "mark": "◎",
               "index": 94
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 98
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "○",
               "index": 80
@@ -5555,14 +5462,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 95
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 84
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -5584,14 +5483,6 @@
               "mark": "▲",
               "index": 73
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 68
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 43
@@ -5611,14 +5502,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 80
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 82
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -5640,14 +5523,6 @@
               "mark": "☆",
               "index": -2
             },
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 49
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 41
@@ -5667,14 +5542,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 78
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 85
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "△",
@@ -5696,14 +5563,6 @@
               "mark": "○",
               "index": 88
             },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 61
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 49
@@ -5723,14 +5582,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 81
-            },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 56
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
             },
             "ATHENA": {
               "mark": "☆",
@@ -5752,14 +5603,6 @@
               "mark": "▲",
               "index": 75
             },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 61
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "△",
               "index": 57
@@ -5779,14 +5622,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 90
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 77
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -5808,14 +5643,6 @@
               "mark": "☆",
               "index": -2
             },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 55
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 48
@@ -5835,14 +5662,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 34
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -5872,6 +5691,8 @@
       "updatedAt": "13:40:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
+        "ウマークス",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -5883,14 +5704,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 66
-            },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 52
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 72
             },
             "ATHENA": {
               "mark": "☆",
@@ -5912,14 +5725,6 @@
               "mark": "▲",
               "index": 71
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 94
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "△",
               "index": 62
@@ -5939,14 +5744,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 95
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 87
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "△",
@@ -5968,14 +5765,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 87
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "△",
               "index": 61
@@ -5995,14 +5784,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 95
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 86
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
             },
             "ATHENA": {
               "mark": "△",
@@ -6024,14 +5805,6 @@
               "mark": "◎",
               "index": 91
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 97
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 68
@@ -6051,14 +5824,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 88
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 93
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -6080,14 +5845,6 @@
               "mark": "◎",
               "index": 95
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 98
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 77
@@ -6107,14 +5864,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 99
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 86
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "☆",
@@ -6136,14 +5885,6 @@
               "mark": "△",
               "index": 50
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 81
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 72
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 3
@@ -6163,14 +5904,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 82
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 82
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
             },
             "ATHENA": {
               "mark": "☆",
@@ -6192,14 +5925,6 @@
               "mark": "○",
               "index": 85
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 75
@@ -6219,14 +5944,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 93
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 80
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -6248,14 +5965,6 @@
               "mark": "▲",
               "index": 77
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 89
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
-            },
             "ATHENA": {
               "mark": "△",
               "index": 57
@@ -6276,14 +5985,6 @@
               "mark": "◎",
               "index": 96
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 88
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "△",
               "index": 60
@@ -6303,14 +6004,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 95
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 90
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "▲",
@@ -6340,6 +6033,8 @@
       "updatedAt": "14:10:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
+        "ウマークス",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -6351,14 +6046,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 82
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 91
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "▲",
@@ -6380,14 +6067,6 @@
               "mark": "◎",
               "index": 91
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 84
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 49
@@ -6407,14 +6086,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 98
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 98
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -6436,14 +6107,6 @@
               "mark": "▲",
               "index": 70
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 82
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
-            },
             "ATHENA": {
               "mark": "△",
               "index": 58
@@ -6463,14 +6126,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 88
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 89
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 72
             },
             "ATHENA": {
               "mark": "☆",
@@ -6492,14 +6147,6 @@
               "mark": "◎",
               "index": 96
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 86
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 69
@@ -6519,14 +6166,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 79
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 80
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
             },
             "ATHENA": {
               "mark": "△",
@@ -6548,14 +6187,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 86
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "△",
               "index": 64
@@ -6575,14 +6206,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 95
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 78
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -6604,14 +6227,6 @@
               "mark": "△",
               "index": 57
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 87
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
-            },
             "ATHENA": {
               "mark": "△",
               "index": 59
@@ -6631,14 +6246,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 79
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 81
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -6660,14 +6267,6 @@
               "mark": "▲",
               "index": 77
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 89
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 68
@@ -6687,14 +6286,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 79
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 93
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "▲",
@@ -6716,14 +6307,6 @@
               "mark": "△",
               "index": 52
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 77
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 45
@@ -6744,14 +6327,6 @@
               "mark": "○",
               "index": 89
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 79
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 71
@@ -6771,14 +6346,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 94
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 72
             },
             "ATHENA": {
               "mark": "☆",
@@ -6808,6 +6375,8 @@
       "updatedAt": "14:45:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
+        "ウマークス",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -6819,14 +6388,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 83
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 97
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -6848,14 +6409,6 @@
               "mark": "△",
               "index": 62
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 69
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 24
@@ -6875,14 +6428,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 63
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 69
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
             },
             "ATHENA": {
               "mark": "☆",
@@ -6904,14 +6449,6 @@
               "mark": "◎",
               "index": 93
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 95
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 79
@@ -6931,14 +6468,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 73
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 80
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -6960,14 +6489,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 94
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 70
@@ -6987,14 +6508,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 89
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "▲",
@@ -7016,14 +6529,6 @@
               "mark": "○",
               "index": 89
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 86
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 46
@@ -7043,14 +6548,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 84
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 97
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -7072,14 +6569,6 @@
               "mark": "○",
               "index": 87
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 82
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "△",
               "index": 59
@@ -7100,14 +6589,6 @@
               "mark": "△",
               "index": 50
             },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 52
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 7
@@ -7127,14 +6608,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 93
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 89
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -7210,7 +6683,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 71
+              "index": 70
             },
             "ATHENA": {
               "mark": "△",
@@ -7266,7 +6739,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 72
+              "index": 71
             },
             "ATHENA": {
               "mark": "☆",
@@ -7322,7 +6795,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 71
+              "index": 72
             },
             "ATHENA": {
               "mark": "☆",
@@ -7490,7 +6963,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 71
             },
             "ATHENA": {
               "mark": "△",
@@ -7678,7 +7151,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 71
+              "index": 70
             },
             "ATHENA": {
               "mark": "△",
@@ -7706,7 +7179,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -7762,7 +7235,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 71
             },
             "ATHENA": {
               "mark": "☆",
@@ -7874,7 +7347,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 71
+              "index": 72
             },
             "ATHENA": {
               "mark": "☆",
@@ -7902,7 +7375,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 68
+              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -7930,7 +7403,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 68
+              "index": 67
             },
             "ATHENA": {
               "mark": "▲",
@@ -7958,7 +7431,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 72
+              "index": 71
             },
             "ATHENA": {
               "mark": "☆",
@@ -8042,7 +7515,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 67
+              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -9302,10 +8775,11 @@
       "name": "2歳新馬",
       "date": "2026-07-19",
       "startAt": "12:30",
-      "updatedAt": "12:24:47",
+      "updatedAt": "12:20:00",
       "missingSites": [
         "SPAIA",
         "競馬ブック",
+        "競馬ラボ",
         "ウマークス",
         "AiBA",
         "日刊AI",
@@ -9315,10 +8789,6 @@
       "horses": [
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 61
-            },
             "ATHENA": {
               "mark": "△",
               "index": 57
@@ -9335,10 +8805,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 44
@@ -9355,10 +8821,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 53
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 44
@@ -9375,10 +8837,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "△",
               "index": 57
@@ -9395,10 +8853,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 38
-            },
             "ATHENA": {
               "mark": "△",
               "index": 51
@@ -9415,10 +8869,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 36
-            },
             "ATHENA": {
               "mark": "△",
               "index": 52
@@ -9435,10 +8885,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 99
-            },
             "ATHENA": {
               "mark": "△",
               "index": 58
@@ -9455,10 +8901,6 @@
         },
         {
           "predictions": {
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 54
-            },
             "ATHENA": {
               "mark": "△",
               "index": 56
@@ -9487,6 +8929,7 @@
       "updatedAt": "12:51:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
         "ウマークス",
         "AiBA",
         "日刊AI",
@@ -9499,10 +8942,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 60
-            },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 62
             },
             "ATHENA": {
               "mark": "☆",
@@ -9524,10 +8963,6 @@
               "mark": "▲",
               "index": 72
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 91
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 22
@@ -9547,10 +8982,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 87
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 76
             },
             "ATHENA": {
               "mark": "☆",
@@ -9572,10 +9003,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 97
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 75
@@ -9595,10 +9022,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 54
             },
             "ATHENA": {
               "mark": "☆",
@@ -9620,10 +9043,6 @@
               "mark": "◎",
               "index": 93
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 89
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 66
@@ -9643,10 +9062,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 59
             },
             "ATHENA": {
               "mark": "☆",
@@ -9668,10 +9083,6 @@
               "mark": "○",
               "index": 87
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 78
@@ -9691,10 +9102,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 90
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 76
             },
             "ATHENA": {
               "mark": "△",
@@ -9716,10 +9123,6 @@
               "mark": "☆",
               "index": -59
             },
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 35
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 40
@@ -9739,10 +9142,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 90
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 85
             },
             "ATHENA": {
               "mark": "☆",
@@ -9764,10 +9163,6 @@
               "mark": "○",
               "index": 83
             },
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 46
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 15
@@ -9788,10 +9183,6 @@
               "mark": "○",
               "index": 89
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 83
-            },
             "ATHENA": {
               "mark": "△",
               "index": 63
@@ -9811,10 +9202,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 89
-            },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 61
             },
             "ATHENA": {
               "mark": "☆",
@@ -9844,7 +9231,9 @@
       "updatedAt": "13:20:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
         "ウマークス",
+        "ATHENA",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -9856,10 +9245,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 88
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 90
             },
             "ATHENA": {
               "mark": "▲",
@@ -9881,10 +9266,6 @@
               "mark": "○",
               "index": 86
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 89
-            },
             "ATHENA": {
               "mark": "△",
               "index": 53
@@ -9904,10 +9285,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 75
-            },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 58
             },
             "ATHENA": {
               "mark": "☆",
@@ -9929,10 +9306,6 @@
               "mark": "▲",
               "index": 79
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 80
-            },
             "ATHENA": {
               "mark": "△",
               "index": 62
@@ -9952,10 +9325,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 80
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 78
             },
             "ATHENA": {
               "mark": "☆",
@@ -9977,10 +9346,6 @@
               "mark": "▲",
               "index": 77
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 72
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 49
@@ -10000,10 +9365,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 95
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 87
             },
             "ATHENA": {
               "mark": "△",
@@ -10025,14 +9386,6 @@
               "mark": "○",
               "index": 82
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 88
-            },
-            "ATHENA": {
-              "mark": "△",
-              "index": 53
-            },
             "無料競馬AI": {
               "mark": "△",
               "index": 54
@@ -10048,10 +9401,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 89
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 85
             },
             "ATHENA": {
               "mark": "△",
@@ -10073,10 +9422,6 @@
               "mark": "◎",
               "index": 91
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 81
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 69
@@ -10096,10 +9441,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 96
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 97
             },
             "ATHENA": {
               "mark": "△",
@@ -10121,10 +9462,6 @@
               "mark": "○",
               "index": 82
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 72
-            },
             "ATHENA": {
               "mark": "△",
               "index": 55
@@ -10144,10 +9481,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 71
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 83
             },
             "ATHENA": {
               "mark": "△",
@@ -10169,10 +9502,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 83
-            },
             "ATHENA": {
               "mark": "△",
               "index": 50
@@ -10192,10 +9521,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 77
             },
             "ATHENA": {
               "mark": "☆",
@@ -10217,10 +9542,6 @@
               "mark": "▲",
               "index": 71
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 79
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 40
@@ -10240,10 +9561,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 79
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 77
             },
             "ATHENA": {
               "mark": "☆",
@@ -10269,10 +9586,11 @@
       "number": "8R",
       "name": "3歳以上1勝クラス",
       "date": "2026-07-19",
-      "startAt": "14:00",
-      "updatedAt": "13:50:00",
+      "startAt": "14:05",
+      "updatedAt": "13:55:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
         "ウマークス",
         "AiBA",
         "日刊AI",
@@ -10285,10 +9603,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 97
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 91
             },
             "ATHENA": {
               "mark": "▲",
@@ -10310,10 +9624,6 @@
               "mark": "○",
               "index": 84
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 73
-            },
             "ATHENA": {
               "mark": "△",
               "index": 58
@@ -10333,10 +9643,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 88
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
             },
             "ATHENA": {
               "mark": "▲",
@@ -10358,10 +9664,6 @@
               "mark": "△",
               "index": 62
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 81
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 69
@@ -10381,10 +9683,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 81
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 94
             },
             "ATHENA": {
               "mark": "△",
@@ -10406,10 +9704,6 @@
               "mark": "◎",
               "index": 90
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 71
-            },
             "ATHENA": {
               "mark": "△",
               "index": 63
@@ -10429,10 +9723,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 84
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 75
             },
             "ATHENA": {
               "mark": "△",
@@ -10454,10 +9744,6 @@
               "mark": "▲",
               "index": 72
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 83
-            },
             "ATHENA": {
               "mark": "△",
               "index": 55
@@ -10477,10 +9763,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 95
             },
             "ATHENA": {
               "mark": "△",
@@ -10502,10 +9784,6 @@
               "mark": "○",
               "index": 88
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 90
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 72
@@ -10525,10 +9803,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 79
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 85
             },
             "ATHENA": {
               "mark": "△",
@@ -10550,10 +9824,6 @@
               "mark": "△",
               "index": 50
             },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 60
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 36
@@ -10574,10 +9844,6 @@
               "mark": "○",
               "index": 83
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 82
-            },
             "ATHENA": {
               "mark": "△",
               "index": 64
@@ -10597,10 +9863,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 66
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 80
             },
             "ATHENA": {
               "mark": "△",
@@ -10630,6 +9892,7 @@
       "updatedAt": "14:25:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
         "ウマークス",
         "AiBA",
         "日刊AI",
@@ -10642,10 +9905,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 87
             },
             "ATHENA": {
               "mark": "☆",
@@ -10667,10 +9926,6 @@
               "mark": "▲",
               "index": 69
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 88
-            },
             "ATHENA": {
               "mark": "△",
               "index": 51
@@ -10690,10 +9945,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 91
             },
             "ATHENA": {
               "mark": "▲",
@@ -10715,10 +9966,6 @@
               "mark": "▲",
               "index": 66
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 93
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 48
@@ -10738,10 +9985,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 59
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
             },
             "ATHENA": {
               "mark": "☆",
@@ -10763,10 +10006,6 @@
               "mark": "△",
               "index": 63
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 97
-            },
             "ATHENA": {
               "mark": "△",
               "index": 54
@@ -10787,10 +10026,6 @@
               "mark": "▲",
               "index": 75
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 41
@@ -10810,10 +10045,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 59
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 94
             },
             "ATHENA": {
               "mark": "☆",
@@ -10843,6 +10074,7 @@
       "updatedAt": "15:00:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
         "ウマークス",
         "AiBA",
         "日刊AI",
@@ -10855,10 +10087,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 92
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 97
             },
             "ATHENA": {
               "mark": "△",
@@ -10880,10 +10108,6 @@
               "mark": "◎",
               "index": 92
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 89
-            },
             "ATHENA": {
               "mark": "△",
               "index": 57
@@ -10903,10 +10127,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 55
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 82
             },
             "ATHENA": {
               "mark": "☆",
@@ -10928,10 +10148,6 @@
               "mark": "○",
               "index": 82
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 79
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 42
@@ -10951,10 +10167,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 79
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 83
             },
             "ATHENA": {
               "mark": "△",
@@ -10976,10 +10188,6 @@
               "mark": "○",
               "index": 87
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
-            },
             "ATHENA": {
               "mark": "△",
               "index": 52
@@ -10999,10 +10207,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 76
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 89
             },
             "ATHENA": {
               "mark": "☆",
@@ -11024,10 +10228,6 @@
               "mark": "○",
               "index": 84
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 45
@@ -11047,10 +10247,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 87
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
             },
             "ATHENA": {
               "mark": "☆",
@@ -11072,10 +10268,6 @@
               "mark": "○",
               "index": 84
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 95
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 48
@@ -11095,10 +10287,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 84
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 83
             },
             "ATHENA": {
               "mark": "☆",
@@ -11120,10 +10308,6 @@
               "mark": "▲",
               "index": 68
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 88
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 66
@@ -11143,10 +10327,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 79
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
             },
             "ATHENA": {
               "mark": "▲",
@@ -11168,10 +10348,6 @@
               "mark": "▲",
               "index": 76
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 95
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 68
@@ -11192,10 +10368,6 @@
               "mark": "△",
               "index": 50
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 90
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 43
@@ -11215,10 +10387,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 93
             },
             "ATHENA": {
               "mark": "△",
@@ -13217,6 +12385,8 @@
       "updatedAt": "12:30:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
+        "ウマークス",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -13228,14 +12398,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 96
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "▲",
@@ -13257,14 +12419,6 @@
               "mark": "▲",
               "index": 76
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 88
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "△",
               "index": 52
@@ -13284,14 +12438,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 69
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 69
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "☆",
@@ -13313,14 +12459,6 @@
               "mark": "○",
               "index": 85
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 92
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 72
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 40
@@ -13340,14 +12478,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 90
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 74
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "△",
@@ -13369,14 +12499,6 @@
               "mark": "○",
               "index": 81
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 89
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "△",
               "index": 51
@@ -13396,14 +12518,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 95
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 80
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 72
             },
             "ATHENA": {
               "mark": "☆",
@@ -13425,14 +12539,6 @@
               "mark": "○",
               "index": 88
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 90
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 45
@@ -13452,14 +12558,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 92
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 94
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "▲",
@@ -13481,14 +12579,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 77
@@ -13508,14 +12598,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 70
-            },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 60
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -13537,14 +12619,6 @@
               "mark": "◎",
               "index": 91
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 88
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "△",
               "index": 59
@@ -13564,14 +12638,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 79
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
             },
             "ATHENA": {
               "mark": "☆",
@@ -13593,14 +12659,6 @@
               "mark": "▲",
               "index": 73
             },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 53
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 39
@@ -13621,14 +12679,6 @@
               "mark": "☆",
               "index": -20
             },
-            "競馬ラボ": {
-              "mark": "☆",
-              "index": 31
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 44
@@ -13648,14 +12698,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 94
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
             },
             "ATHENA": {
               "mark": "△",
@@ -13685,6 +12727,8 @@
       "updatedAt": "13:00:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
+        "ウマークス",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -13696,14 +12740,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 64
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 84
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
             },
             "ATHENA": {
               "mark": "☆",
@@ -13725,14 +12761,6 @@
               "mark": "▲",
               "index": 69
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 77
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
-            },
             "ATHENA": {
               "mark": "△",
               "index": 51
@@ -13752,14 +12780,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 95
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 93
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -13781,14 +12801,6 @@
               "mark": "○",
               "index": 86
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 99
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 75
@@ -13808,14 +12820,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 69
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 83
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "△",
@@ -13837,14 +12841,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 84
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "△",
               "index": 64
@@ -13864,14 +12860,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 62
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 89
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -13893,14 +12881,6 @@
               "mark": "△",
               "index": 64
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 82
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "△",
               "index": 50
@@ -13920,14 +12900,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 83
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -13949,14 +12921,6 @@
               "mark": "○",
               "index": 88
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 87
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "△",
               "index": 56
@@ -13976,14 +12940,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 90
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 85
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "△",
@@ -14005,14 +12961,6 @@
               "mark": "▲",
               "index": 79
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 90
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "△",
               "index": 50
@@ -14033,14 +12981,6 @@
               "mark": "△",
               "index": 55
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 76
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 29
@@ -14060,14 +13000,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 95
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 89
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "△",
@@ -14097,6 +13029,8 @@
       "updatedAt": "13:30:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
+        "ウマークス",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -14108,14 +13042,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 79
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 77
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -14137,14 +13063,6 @@
               "mark": "△",
               "index": 50
             },
-            "競馬ラボ": {
-              "mark": "△",
-              "index": 52
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 36
@@ -14164,14 +13082,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 80
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 86
-            },
-            "ウマークス": {
-              "mark": "☆",
-              "index": 40
             },
             "ATHENA": {
               "mark": "△",
@@ -14193,14 +13103,6 @@
               "mark": "◎",
               "index": 90
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 95
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 75
@@ -14220,14 +13122,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 70
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 99
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -14249,14 +13143,6 @@
               "mark": "○",
               "index": 80
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 92
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 74
@@ -14276,14 +13162,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 83
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "△",
@@ -14305,14 +13183,6 @@
               "mark": "○",
               "index": 86
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 83
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 66
@@ -14333,14 +13203,6 @@
               "mark": "△",
               "index": 57
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 71
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "△",
               "index": 64
@@ -14360,14 +13222,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 77
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 65
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "△",
@@ -14397,6 +13251,8 @@
       "updatedAt": "14:00:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
+        "ウマークス",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -14408,14 +13264,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 61
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 87
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -14437,14 +13285,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 88
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "△",
               "index": 60
@@ -14464,14 +13304,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 89
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 91
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -14493,14 +13325,6 @@
               "mark": "○",
               "index": 82
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 91
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 67
@@ -14520,14 +13344,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 87
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
             },
             "ATHENA": {
               "mark": "☆",
@@ -14549,14 +13365,6 @@
               "mark": "▲",
               "index": 75
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 87
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "△",
               "index": 50
@@ -14576,14 +13384,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 96
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 94
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "△",
@@ -14605,14 +13405,6 @@
               "mark": "○",
               "index": 82
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 92
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "△",
               "index": 55
@@ -14632,14 +13424,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 61
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 100
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "▲",
@@ -14661,14 +13445,6 @@
               "mark": "○",
               "index": 89
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 88
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "△",
               "index": 63
@@ -14688,14 +13464,6 @@
             "SPAIA": {
               "mark": "△",
               "index": 54
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 76
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -14717,14 +13485,6 @@
               "mark": "○",
               "index": 86
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 78
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 31
@@ -14744,14 +13504,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 93
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 88
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "△",
@@ -14781,6 +13533,8 @@
       "updatedAt": "14:35:00",
       "missingSites": [
         "競馬ブック",
+        "競馬ラボ",
+        "ウマークス",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -14792,14 +13546,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 91
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -14821,14 +13567,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 80
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 35
@@ -14848,14 +13586,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 69
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 78
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "△",
@@ -14877,14 +13607,6 @@
               "mark": "○",
               "index": 80
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 73
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 47
@@ -14904,14 +13626,6 @@
             "SPAIA": {
               "mark": "◎",
               "index": 98
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 78
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "☆",
@@ -14933,14 +13647,6 @@
               "mark": "▲",
               "index": 72
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 77
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 40
@@ -14960,14 +13666,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 85
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 86
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "△",
@@ -14989,14 +13687,6 @@
               "mark": "○",
               "index": 80
             },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 86
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "△",
               "index": 60
@@ -15016,14 +13706,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 85
-            },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "▲",
@@ -15045,14 +13727,6 @@
               "mark": "◎",
               "index": 91
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 96
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
-            },
             "ATHENA": {
               "mark": "△",
               "index": 52
@@ -15072,14 +13746,6 @@
             "SPAIA": {
               "mark": "▲",
               "index": 76
-            },
-            "競馬ラボ": {
-              "mark": "○",
-              "index": 89
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "△",
@@ -15101,14 +13767,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ラボ": {
-              "mark": "◎",
-              "index": 90
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 73
@@ -15129,14 +13787,6 @@
               "mark": "△",
               "index": 50
             },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 66
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 26
@@ -15156,14 +13806,6 @@
             "SPAIA": {
               "mark": "○",
               "index": 81
-            },
-            "競馬ラボ": {
-              "mark": "▲",
-              "index": 73
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -15190,7 +13832,7 @@
       "name": "函館２歳ステークス",
       "date": "2026-07-19",
       "startAt": "15:20",
-      "updatedAt": "15:10:00",
+      "updatedAt": "15:13:49",
       "missingSites": [
         "競馬ブック",
         "AiBA",
@@ -15547,7 +14189,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 68
+              "index": 67
             },
             "ATHENA": {
               "mark": "△",
