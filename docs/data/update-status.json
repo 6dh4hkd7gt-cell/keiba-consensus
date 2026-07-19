@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T17:37:51+09:00",
+  "generatedAt": "2026-07-19T18:49:07+09:00",
   "targetDate": "2026-07-19",
   "updateLeadMinutes": 10,
   "source": "insufficient-site-scrape",
@@ -9,10 +9,10 @@
   "raceCount": 36,
   "readyRaceIds": [],
   "configuredSiteCount": 10,
-  "fetchedSiteCount": 6,
-  "matchedSiteCount": 2,
-  "fetchedRaceCount": 169,
-  "matchedRaceCount": 66,
+  "fetchedSiteCount": 7,
+  "matchedSiteCount": 3,
+  "fetchedRaceCount": 205,
+  "matchedRaceCount": 98,
   "siteSources": [
     {
       "site": "SPAIA",
@@ -68,11 +68,11 @@
       "site": "無料競馬AI",
       "raceId": "fukushima-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -168,11 +168,11 @@
       "site": "無料競馬AI",
       "raceId": "fukushima-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -268,11 +268,11 @@
       "site": "無料競馬AI",
       "raceId": "fukushima-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -368,11 +368,11 @@
       "site": "無料競馬AI",
       "raceId": "fukushima-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -468,11 +468,11 @@
       "site": "無料競馬AI",
       "raceId": "fukushima-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 13,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -568,11 +568,11 @@
       "site": "無料競馬AI",
       "raceId": "fukushima-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -668,11 +668,11 @@
       "site": "無料競馬AI",
       "raceId": "fukushima-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
+      "matched": 14,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -768,11 +768,11 @@
       "site": "無料競馬AI",
       "raceId": "fukushima-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -868,11 +868,11 @@
       "site": "無料競馬AI",
       "raceId": "fukushima-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -968,11 +968,11 @@
       "site": "無料競馬AI",
       "raceId": "fukushima-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -1068,11 +1068,11 @@
       "site": "無料競馬AI",
       "raceId": "fukushima-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -1168,11 +1168,11 @@
       "site": "無料競馬AI",
       "raceId": "fukushima-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -1268,11 +1268,11 @@
       "site": "無料競馬AI",
       "raceId": "kokura-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -1368,11 +1368,11 @@
       "site": "無料競馬AI",
       "raceId": "kokura-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -1468,11 +1468,11 @@
       "site": "無料競馬AI",
       "raceId": "kokura-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -1568,11 +1568,11 @@
       "site": "無料競馬AI",
       "raceId": "kokura-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
+      "matched": 13,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -1668,11 +1668,11 @@
       "site": "無料競馬AI",
       "raceId": "kokura-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 8,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -1768,11 +1768,11 @@
       "site": "無料競馬AI",
       "raceId": "kokura-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -1868,11 +1868,11 @@
       "site": "無料競馬AI",
       "raceId": "kokura-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 17,
-      "matched": 0,
+      "matched": 16,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -1968,11 +1968,11 @@
       "site": "無料競馬AI",
       "raceId": "kokura-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -2068,11 +2068,11 @@
       "site": "無料競馬AI",
       "raceId": "kokura-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 8,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -2168,11 +2168,11 @@
       "site": "無料競馬AI",
       "raceId": "kokura-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -2268,11 +2268,11 @@
       "site": "無料競馬AI",
       "raceId": "kokura-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
+      "matched": 17,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -2368,11 +2368,11 @@
       "site": "無料競馬AI",
       "raceId": "kokura-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -2468,11 +2468,11 @@
       "site": "無料競馬AI",
       "raceId": "hakodate-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 8,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -2568,11 +2568,11 @@
       "site": "無料競馬AI",
       "raceId": "hakodate-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -2668,11 +2668,11 @@
       "site": "無料競馬AI",
       "raceId": "hakodate-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -2768,11 +2768,11 @@
       "site": "無料競馬AI",
       "raceId": "hakodate-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 13,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -2868,11 +2868,11 @@
       "site": "無料競馬AI",
       "raceId": "hakodate-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -2968,11 +2968,11 @@
       "site": "無料競馬AI",
       "raceId": "hakodate-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -3068,11 +3068,11 @@
       "site": "無料競馬AI",
       "raceId": "hakodate-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -3168,11 +3168,11 @@
       "site": "無料競馬AI",
       "raceId": "hakodate-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -3268,11 +3268,11 @@
       "site": "無料競馬AI",
       "raceId": "hakodate-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 13,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -3368,11 +3368,11 @@
       "site": "無料競馬AI",
       "raceId": "hakodate-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -3468,11 +3468,11 @@
       "site": "無料競馬AI",
       "raceId": "hakodate-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 13,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -3568,11 +3568,11 @@
       "site": "無料競馬AI",
       "raceId": "hakodate-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
