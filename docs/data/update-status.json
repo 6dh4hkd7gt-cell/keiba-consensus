@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T20:31:19+09:00",
+  "generatedAt": "2026-07-19T12:24:47+09:00",
   "targetDate": "2026-07-19",
   "updateLeadMinutes": 10,
   "source": "site-scrape",
@@ -7,12 +7,14 @@
   "requiredConsensusSiteCount": 4,
   "consensusReady": true,
   "raceCount": 36,
-  "readyRaceIds": [],
+  "readyRaceIds": [
+    "kokura-5"
+  ],
   "configuredSiteCount": 10,
-  "fetchedSiteCount": 6,
+  "fetchedSiteCount": 7,
   "matchedSiteCount": 5,
-  "fetchedRaceCount": 169,
-  "matchedRaceCount": 160,
+  "fetchedRaceCount": 205,
+  "matchedRaceCount": 138,
   "siteSources": [
     {
       "site": "SPAIA",
@@ -28,11 +30,11 @@
       "site": "競馬ブック",
       "raceId": "fukushima-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
+      "matched": 3,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -40,8 +42,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -50,8 +52,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -128,11 +130,11 @@
       "site": "競馬ブック",
       "raceId": "fukushima-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -140,8 +142,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -150,8 +152,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -228,11 +230,11 @@
       "site": "競馬ブック",
       "raceId": "fukushima-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -240,8 +242,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -250,8 +252,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -328,11 +330,11 @@
       "site": "競馬ブック",
       "raceId": "fukushima-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -340,8 +342,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 15,
-      "matched": 15,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -350,8 +352,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 15,
-      "matched": 15,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -428,11 +430,11 @@
       "site": "競馬ブック",
       "raceId": "fukushima-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -440,8 +442,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 13,
-      "matched": 13,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -528,11 +530,11 @@
       "site": "競馬ブック",
       "raceId": "fukushima-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -628,11 +630,11 @@
       "site": "競馬ブック",
       "raceId": "fukushima-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -728,11 +730,11 @@
       "site": "競馬ブック",
       "raceId": "fukushima-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -828,11 +830,11 @@
       "site": "競馬ブック",
       "raceId": "fukushima-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -928,11 +930,11 @@
       "site": "競馬ブック",
       "raceId": "fukushima-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1028,11 +1030,11 @@
       "site": "競馬ブック",
       "raceId": "fukushima-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1128,11 +1130,11 @@
       "site": "競馬ブック",
       "raceId": "fukushima-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1228,14 +1230,44 @@
       "site": "競馬ブック",
       "raceId": "kokura-1",
       "configured": true,
+      "fetched": true,
+      "horseCount": 11,
+      "matched": 2,
+      "complete": false,
+      "error": ""
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "kokura-1",
+      "configured": true,
+      "fetched": true,
+      "horseCount": 11,
+      "matched": 0,
+      "complete": false,
+      "error": ""
+    },
+    {
+      "site": "ウマークス",
+      "raceId": "kokura-1",
+      "configured": true,
       "fetched": false,
       "horseCount": 11,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": "ウマークス raceId未取得"
     },
     {
-      "site": "競馬ラボ",
+      "site": "ATHENA",
+      "raceId": "kokura-1",
+      "configured": true,
+      "fetched": true,
+      "horseCount": 11,
+      "matched": 0,
+      "complete": false,
+      "error": ""
+    },
+    {
+      "site": "無料競馬AI",
       "raceId": "kokura-1",
       "configured": true,
       "fetched": true,
@@ -1245,36 +1277,6 @@
       "error": ""
     },
     {
-      "site": "ウマークス",
-      "raceId": "kokura-1",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "ウマークス raceId未取得"
-    },
-    {
-      "site": "ATHENA",
-      "raceId": "kokura-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": ""
-    },
-    {
-      "site": "無料競馬AI",
-      "raceId": "kokura-1",
-      "configured": true,
-      "fetched": true,
-      "horseCount": 11,
-      "matched": 11,
-      "complete": true,
-      "error": ""
-    },
-    {
       "site": "AiBA",
       "raceId": "kokura-1",
       "configured": true,
@@ -1328,11 +1330,11 @@
       "site": "競馬ブック",
       "raceId": "kokura-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1340,8 +1342,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 18,
-      "matched": 18,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1428,11 +1430,11 @@
       "site": "競馬ブック",
       "raceId": "kokura-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1440,8 +1442,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1528,11 +1530,11 @@
       "site": "競馬ブック",
       "raceId": "kokura-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1540,8 +1542,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1628,11 +1630,11 @@
       "site": "競馬ブック",
       "raceId": "kokura-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 8,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1728,11 +1730,11 @@
       "site": "競馬ブック",
       "raceId": "kokura-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1828,11 +1830,11 @@
       "site": "競馬ブック",
       "raceId": "kokura-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 17,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1928,11 +1930,11 @@
       "site": "競馬ブック",
       "raceId": "kokura-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2028,11 +2030,11 @@
       "site": "競馬ブック",
       "raceId": "kokura-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 8,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2128,11 +2130,11 @@
       "site": "競馬ブック",
       "raceId": "kokura-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2228,11 +2230,11 @@
       "site": "競馬ブック",
       "raceId": "kokura-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2328,11 +2330,11 @@
       "site": "競馬ブック",
       "raceId": "kokura-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2428,11 +2430,11 @@
       "site": "競馬ブック",
       "raceId": "hakodate-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 8,
-      "matched": 0,
+      "matched": 3,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2440,8 +2442,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 8,
-      "matched": 8,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2450,8 +2452,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 8,
-      "matched": 8,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2528,11 +2530,11 @@
       "site": "競馬ブック",
       "raceId": "hakodate-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2540,8 +2542,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2550,8 +2552,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2628,11 +2630,11 @@
       "site": "競馬ブック",
       "raceId": "hakodate-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2640,8 +2642,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2650,8 +2652,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2728,11 +2730,11 @@
       "site": "競馬ブック",
       "raceId": "hakodate-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2740,8 +2742,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 13,
-      "matched": 13,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2750,8 +2752,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 13,
-      "matched": 13,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2828,11 +2830,11 @@
       "site": "競馬ブック",
       "raceId": "hakodate-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2840,8 +2842,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2928,11 +2930,11 @@
       "site": "競馬ブック",
       "raceId": "hakodate-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3028,11 +3030,11 @@
       "site": "競馬ブック",
       "raceId": "hakodate-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3128,11 +3130,11 @@
       "site": "競馬ブック",
       "raceId": "hakodate-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3228,11 +3230,11 @@
       "site": "競馬ブック",
       "raceId": "hakodate-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3328,11 +3330,11 @@
       "site": "競馬ブック",
       "raceId": "hakodate-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3428,11 +3430,11 @@
       "site": "競馬ブック",
       "raceId": "hakodate-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3528,11 +3530,11 @@
       "site": "競馬ブック",
       "raceId": "hakodate-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
