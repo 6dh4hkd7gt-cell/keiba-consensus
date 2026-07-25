@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-25T17:20:05+09:00",
+  "generatedAt": "2026-07-25T18:43:19+09:00",
   "targetDate": "2026-07-26",
   "updateLeadMinutes": 10,
-  "source": "insufficient-site-scrape",
+  "source": "site-scrape",
   "raceSource": "spaia-race-list",
   "requiredConsensusSiteCount": 4,
-  "consensusReady": false,
+  "consensusReady": true,
   "raceCount": 36,
   "readyRaceIds": [],
   "configuredSiteCount": 10,
-  "fetchedSiteCount": 4,
-  "matchedSiteCount": 3,
-  "fetchedRaceCount": 113,
-  "matchedRaceCount": 71,
+  "fetchedSiteCount": 6,
+  "matchedSiteCount": 5,
+  "fetchedRaceCount": 185,
+  "matchedRaceCount": 142,
   "siteSources": [
     {
       "site": "SPAIA",
@@ -38,11 +38,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -58,11 +58,11 @@
       "site": "ATHENA",
       "raceId": "niigata-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -138,11 +138,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -158,11 +158,11 @@
       "site": "ATHENA",
       "raceId": "niigata-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -238,11 +238,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -258,11 +258,11 @@
       "site": "ATHENA",
       "raceId": "niigata-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -338,11 +338,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -358,11 +358,11 @@
       "site": "ATHENA",
       "raceId": "niigata-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -438,11 +438,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -458,11 +458,11 @@
       "site": "ATHENA",
       "raceId": "niigata-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -538,11 +538,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -558,11 +558,11 @@
       "site": "ATHENA",
       "raceId": "niigata-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -638,11 +638,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -658,11 +658,11 @@
       "site": "ATHENA",
       "raceId": "niigata-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -738,11 +738,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -758,11 +758,11 @@
       "site": "ATHENA",
       "raceId": "niigata-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -838,11 +838,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -858,11 +858,11 @@
       "site": "ATHENA",
       "raceId": "niigata-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -938,11 +938,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -958,11 +958,11 @@
       "site": "ATHENA",
       "raceId": "niigata-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1038,11 +1038,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1058,11 +1058,11 @@
       "site": "ATHENA",
       "raceId": "niigata-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1138,11 +1138,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1158,11 +1158,11 @@
       "site": "ATHENA",
       "raceId": "niigata-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1238,11 +1238,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1258,11 +1258,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1338,11 +1338,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 6,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 6,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1358,11 +1358,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 6,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 6,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1438,11 +1438,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1458,11 +1458,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1538,11 +1538,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1558,11 +1558,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1638,11 +1638,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1658,11 +1658,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1738,11 +1738,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1758,11 +1758,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1838,11 +1838,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1858,11 +1858,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1938,11 +1938,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1958,11 +1958,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2038,11 +2038,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2058,11 +2058,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2138,11 +2138,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2158,11 +2158,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2238,11 +2238,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2258,11 +2258,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2338,11 +2338,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2358,11 +2358,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2438,11 +2438,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2458,11 +2458,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2538,11 +2538,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2558,11 +2558,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2638,11 +2638,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2658,11 +2658,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2738,11 +2738,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2758,11 +2758,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2838,11 +2838,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2858,11 +2858,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2938,11 +2938,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2958,11 +2958,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3038,11 +3038,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 7,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 7,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3058,11 +3058,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 7,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 7,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3138,11 +3138,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3158,11 +3158,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3238,11 +3238,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 8,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3258,11 +3258,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 8,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3338,11 +3338,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3358,11 +3358,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3438,11 +3438,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 13,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3458,11 +3458,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 13,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3538,11 +3538,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3558,11 +3558,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
