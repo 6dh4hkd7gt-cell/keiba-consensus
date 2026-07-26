@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T15:23:14+09:00",
+  "generatedAt": "2026-07-26T17:58:34+09:00",
   "targetDate": "2026-07-26",
   "updateLeadMinutes": 10,
   "source": "site-scrape",
@@ -8,13 +8,13 @@
   "consensusReady": true,
   "raceCount": 36,
   "readyRaceIds": [
-    "sapporo-11"
+    "niigata-11"
   ],
   "configuredSiteCount": 10,
-  "fetchedSiteCount": 6,
+  "fetchedSiteCount": 7,
   "matchedSiteCount": 5,
-  "fetchedRaceCount": 150,
-  "matchedRaceCount": 99,
+  "fetchedRaceCount": 186,
+  "matchedRaceCount": 78,
   "siteSources": [
     {
       "site": "SPAIA",
@@ -30,11 +30,11 @@
       "site": "競馬ブック",
       "raceId": "niigata-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
+      "matched": 3,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -130,11 +130,11 @@
       "site": "競馬ブック",
       "raceId": "niigata-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -230,11 +230,11 @@
       "site": "競馬ブック",
       "raceId": "niigata-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -330,11 +330,11 @@
       "site": "競馬ブック",
       "raceId": "niigata-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -430,11 +430,11 @@
       "site": "競馬ブック",
       "raceId": "niigata-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -530,11 +530,11 @@
       "site": "競馬ブック",
       "raceId": "niigata-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -630,11 +630,11 @@
       "site": "競馬ブック",
       "raceId": "niigata-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -642,8 +642,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -652,8 +652,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -730,11 +730,11 @@
       "site": "競馬ブック",
       "raceId": "niigata-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -742,8 +742,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 15,
-      "matched": 15,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -752,8 +752,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 15,
-      "matched": 15,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -830,11 +830,11 @@
       "site": "競馬ブック",
       "raceId": "niigata-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -842,8 +842,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -852,8 +852,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -930,11 +930,11 @@
       "site": "競馬ブック",
       "raceId": "niigata-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -942,8 +942,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -952,8 +952,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1030,11 +1030,11 @@
       "site": "競馬ブック",
       "raceId": "niigata-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1130,11 +1130,11 @@
       "site": "競馬ブック",
       "raceId": "niigata-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1230,11 +1230,11 @@
       "site": "競馬ブック",
       "raceId": "chukyo-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
+      "matched": 3,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1330,11 +1330,11 @@
       "site": "競馬ブック",
       "raceId": "chukyo-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 6,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1430,11 +1430,11 @@
       "site": "競馬ブック",
       "raceId": "chukyo-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1530,11 +1530,11 @@
       "site": "競馬ブック",
       "raceId": "chukyo-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1630,11 +1630,11 @@
       "site": "競馬ブック",
       "raceId": "chukyo-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1730,11 +1730,11 @@
       "site": "競馬ブック",
       "raceId": "chukyo-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1830,11 +1830,11 @@
       "site": "競馬ブック",
       "raceId": "chukyo-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1842,8 +1842,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1852,8 +1852,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1930,11 +1930,11 @@
       "site": "競馬ブック",
       "raceId": "chukyo-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -1942,8 +1942,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 12,
-      "matched": 12,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1952,8 +1952,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 12,
-      "matched": 12,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2030,11 +2030,11 @@
       "site": "競馬ブック",
       "raceId": "chukyo-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2042,8 +2042,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2052,8 +2052,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2130,11 +2130,11 @@
       "site": "競馬ブック",
       "raceId": "chukyo-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2142,8 +2142,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2152,8 +2152,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2230,11 +2230,11 @@
       "site": "競馬ブック",
       "raceId": "chukyo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2242,8 +2242,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2330,11 +2330,11 @@
       "site": "競馬ブック",
       "raceId": "chukyo-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2430,11 +2430,11 @@
       "site": "競馬ブック",
       "raceId": "sapporo-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
+      "matched": 3,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2530,11 +2530,11 @@
       "site": "競馬ブック",
       "raceId": "sapporo-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2630,11 +2630,11 @@
       "site": "競馬ブック",
       "raceId": "sapporo-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2730,11 +2730,11 @@
       "site": "競馬ブック",
       "raceId": "sapporo-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2830,11 +2830,11 @@
       "site": "競馬ブック",
       "raceId": "sapporo-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -2930,11 +2930,11 @@
       "site": "競馬ブック",
       "raceId": "sapporo-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3030,11 +3030,11 @@
       "site": "競馬ブック",
       "raceId": "sapporo-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 7,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3130,11 +3130,11 @@
       "site": "競馬ブック",
       "raceId": "sapporo-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3230,11 +3230,11 @@
       "site": "競馬ブック",
       "raceId": "sapporo-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 8,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3330,11 +3330,11 @@
       "site": "競馬ブック",
       "raceId": "sapporo-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3430,11 +3430,11 @@
       "site": "競馬ブック",
       "raceId": "sapporo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3452,8 +3452,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 13,
-      "matched": 13,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3472,8 +3472,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 13,
-      "matched": 13,
-      "complete": true,
+      "matched": 12,
+      "complete": false,
       "error": ""
     },
     {
@@ -3530,11 +3530,11 @@
       "site": "競馬ブック",
       "raceId": "sapporo-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
       "matched": 0,
       "complete": false,
-      "error": "HTTP 403"
+      "error": ""
     },
     {
       "site": "競馬ラボ",
@@ -3542,8 +3542,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 9,
-      "matched": 9,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3552,8 +3552,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 9,
-      "matched": 9,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
