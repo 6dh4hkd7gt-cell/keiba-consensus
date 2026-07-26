@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T12:30:31+09:00",
+  "generatedAt": "2026-07-26T15:23:14+09:00",
   "targetDate": "2026-07-26",
   "updateLeadMinutes": 10,
   "source": "site-scrape",
@@ -19,21 +19,21 @@
       "site": "競馬ブック",
       "raceId": "niigata-1",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 11,
-      "matched": 3,
+      "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "niigata-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -119,21 +119,21 @@
       "site": "競馬ブック",
       "raceId": "niigata-2",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 9,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "niigata-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -219,21 +219,21 @@
       "site": "競馬ブック",
       "raceId": "niigata-3",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "niigata-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -319,21 +319,21 @@
       "site": "競馬ブック",
       "raceId": "niigata-4",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 18,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "niigata-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -419,21 +419,21 @@
       "site": "競馬ブック",
       "raceId": "niigata-5",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "niigata-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -519,6 +519,16 @@
       "site": "競馬ブック",
       "raceId": "niigata-6",
       "configured": true,
+      "fetched": false,
+      "horseCount": 11,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 403"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "niigata-6",
+      "configured": true,
       "fetched": true,
       "horseCount": 11,
       "matched": 0,
@@ -526,23 +536,13 @@
       "error": ""
     },
     {
-      "site": "競馬ラボ",
-      "raceId": "niigata-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
-    },
-    {
       "site": "ウマークス",
       "raceId": "niigata-6",
       "configured": true,
       "fetched": true,
       "horseCount": 11,
-      "matched": 11,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -619,21 +619,21 @@
       "site": "競馬ブック",
       "raceId": "niigata-7",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "niigata-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -719,21 +719,21 @@
       "site": "競馬ブック",
       "raceId": "niigata-8",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "niigata-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -819,21 +819,21 @@
       "site": "競馬ブック",
       "raceId": "niigata-9",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "niigata-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -919,21 +919,21 @@
       "site": "競馬ブック",
       "raceId": "niigata-10",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "niigata-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1019,21 +1019,21 @@
       "site": "競馬ブック",
       "raceId": "niigata-11",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "niigata-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1119,21 +1119,21 @@
       "site": "競馬ブック",
       "raceId": "niigata-12",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "niigata-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1219,21 +1219,21 @@
       "site": "競馬ブック",
       "raceId": "chukyo-1",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 9,
-      "matched": 3,
+      "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "chukyo-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1319,21 +1319,21 @@
       "site": "競馬ブック",
       "raceId": "chukyo-2",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 6,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "chukyo-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 6,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1419,21 +1419,21 @@
       "site": "競馬ブック",
       "raceId": "chukyo-3",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "chukyo-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1519,21 +1519,21 @@
       "site": "競馬ブック",
       "raceId": "chukyo-4",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "chukyo-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1619,21 +1619,21 @@
       "site": "競馬ブック",
       "raceId": "chukyo-5",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "chukyo-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1719,6 +1719,16 @@
       "site": "競馬ブック",
       "raceId": "chukyo-6",
       "configured": true,
+      "fetched": false,
+      "horseCount": 10,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 403"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "chukyo-6",
+      "configured": true,
       "fetched": true,
       "horseCount": 10,
       "matched": 0,
@@ -1726,23 +1736,13 @@
       "error": ""
     },
     {
-      "site": "競馬ラボ",
-      "raceId": "chukyo-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
-    },
-    {
       "site": "ウマークス",
       "raceId": "chukyo-6",
       "configured": true,
       "fetched": true,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1819,21 +1819,21 @@
       "site": "競馬ブック",
       "raceId": "chukyo-7",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "chukyo-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1919,21 +1919,21 @@
       "site": "競馬ブック",
       "raceId": "chukyo-8",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 12,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "chukyo-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2019,21 +2019,21 @@
       "site": "競馬ブック",
       "raceId": "chukyo-9",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "chukyo-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2119,21 +2119,21 @@
       "site": "競馬ブック",
       "raceId": "chukyo-10",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "chukyo-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2219,21 +2219,21 @@
       "site": "競馬ブック",
       "raceId": "chukyo-11",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "chukyo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2319,21 +2319,21 @@
       "site": "競馬ブック",
       "raceId": "chukyo-12",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "chukyo-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2419,21 +2419,21 @@
       "site": "競馬ブック",
       "raceId": "sapporo-1",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 12,
-      "matched": 3,
+      "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "sapporo-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2519,21 +2519,21 @@
       "site": "競馬ブック",
       "raceId": "sapporo-2",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "sapporo-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2619,21 +2619,21 @@
       "site": "競馬ブック",
       "raceId": "sapporo-3",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "sapporo-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2719,21 +2719,21 @@
       "site": "競馬ブック",
       "raceId": "sapporo-4",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 11,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "sapporo-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2819,21 +2819,21 @@
       "site": "競馬ブック",
       "raceId": "sapporo-5",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "sapporo-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2919,6 +2919,16 @@
       "site": "競馬ブック",
       "raceId": "sapporo-6",
       "configured": true,
+      "fetched": false,
+      "horseCount": 12,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 403"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "sapporo-6",
+      "configured": true,
       "fetched": true,
       "horseCount": 12,
       "matched": 0,
@@ -2926,23 +2936,13 @@
       "error": ""
     },
     {
-      "site": "競馬ラボ",
-      "raceId": "sapporo-6",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
-    },
-    {
       "site": "ウマークス",
       "raceId": "sapporo-6",
       "configured": true,
       "fetched": true,
       "horseCount": 12,
-      "matched": 12,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3019,6 +3019,16 @@
       "site": "競馬ブック",
       "raceId": "sapporo-7",
       "configured": true,
+      "fetched": false,
+      "horseCount": 7,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 403"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "sapporo-7",
+      "configured": true,
       "fetched": true,
       "horseCount": 7,
       "matched": 0,
@@ -3026,23 +3036,13 @@
       "error": ""
     },
     {
-      "site": "競馬ラボ",
-      "raceId": "sapporo-7",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 7,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
-    },
-    {
       "site": "ウマークス",
       "raceId": "sapporo-7",
       "configured": true,
       "fetched": true,
       "horseCount": 7,
-      "matched": 7,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3119,6 +3119,16 @@
       "site": "競馬ブック",
       "raceId": "sapporo-8",
       "configured": true,
+      "fetched": false,
+      "horseCount": 12,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 403"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "sapporo-8",
+      "configured": true,
       "fetched": true,
       "horseCount": 12,
       "matched": 0,
@@ -3126,23 +3136,13 @@
       "error": ""
     },
     {
-      "site": "競馬ラボ",
-      "raceId": "sapporo-8",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
-    },
-    {
       "site": "ウマークス",
       "raceId": "sapporo-8",
       "configured": true,
       "fetched": true,
       "horseCount": 12,
-      "matched": 12,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3219,6 +3219,16 @@
       "site": "競馬ブック",
       "raceId": "sapporo-9",
       "configured": true,
+      "fetched": false,
+      "horseCount": 8,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 403"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "sapporo-9",
+      "configured": true,
       "fetched": true,
       "horseCount": 8,
       "matched": 0,
@@ -3226,23 +3236,13 @@
       "error": ""
     },
     {
-      "site": "競馬ラボ",
-      "raceId": "sapporo-9",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
-    },
-    {
       "site": "ウマークス",
       "raceId": "sapporo-9",
       "configured": true,
       "fetched": true,
       "horseCount": 8,
-      "matched": 8,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3319,6 +3319,16 @@
       "site": "競馬ブック",
       "raceId": "sapporo-10",
       "configured": true,
+      "fetched": false,
+      "horseCount": 10,
+      "matched": 0,
+      "complete": false,
+      "error": "HTTP 403"
+    },
+    {
+      "site": "競馬ラボ",
+      "raceId": "sapporo-10",
+      "configured": true,
       "fetched": true,
       "horseCount": 10,
       "matched": 0,
@@ -3326,23 +3336,13 @@
       "error": ""
     },
     {
-      "site": "競馬ラボ",
-      "raceId": "sapporo-10",
-      "configured": true,
-      "fetched": false,
-      "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
-    },
-    {
       "site": "ウマークス",
       "raceId": "sapporo-10",
       "configured": true,
       "fetched": true,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -3351,8 +3351,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
+      "matched": 9,
+      "complete": false,
       "error": ""
     },
     {
@@ -3419,21 +3419,21 @@
       "site": "競馬ブック",
       "raceId": "sapporo-11",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "sapporo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3519,21 +3519,21 @@
       "site": "競馬ブック",
       "raceId": "sapporo-12",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 9,
       "matched": 0,
       "complete": false,
-      "error": ""
+      "error": "HTTP 403"
     },
     {
       "site": "競馬ラボ",
       "raceId": "sapporo-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3634,10 +3634,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ブック": {
-              "mark": "▲",
-              "index": 42
-            },
             "ATHENA": {
               "mark": "△",
               "index": 60
@@ -3646,17 +3642,13 @@
           "number": 1,
           "name": "ドルチェテソーロ",
           "sourceHorseId": 2024101281,
-          "odds": 4
+          "odds": 15.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 61
-            },
-            "競馬ブック": {
-              "mark": "☆",
-              "index": 16
             },
             "ATHENA": {
               "mark": "☆",
@@ -3666,17 +3658,13 @@
           "number": 2,
           "name": "ハルガスミ",
           "sourceHorseId": 2024102004,
-          "odds": 11
+          "odds": 252.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "競馬ブック": {
-              "mark": "△",
-              "index": 16
             },
             "ATHENA": {
               "mark": "☆",
@@ -3686,7 +3674,7 @@
           "number": 3,
           "name": "マルガリート",
           "sourceHorseId": 2024105550,
-          "odds": 8
+          "odds": 336.3
         },
         {
           "predictions": {
@@ -4800,6 +4788,7 @@
       "missingSites": [
         "競馬ブック",
         "競馬ラボ",
+        "ウマークス",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -4813,10 +4802,6 @@
               "mark": "◎",
               "index": 100
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 73
@@ -4825,7 +4810,7 @@
           "number": 1,
           "name": "モリノセピア",
           "sourceHorseId": 2021106307,
-          "odds": 6.3
+          "odds": 6.6
         },
         {
           "predictions": {
@@ -4833,19 +4818,15 @@
               "mark": "▲",
               "index": 73
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "△",
-              "index": 61
+              "index": 62
             }
           },
           "number": 2,
           "name": "サマースイートピー",
           "sourceHorseId": 2022107359,
-          "odds": 9.9
+          "odds": 14.7
         },
         {
           "predictions": {
@@ -4853,19 +4834,15 @@
               "mark": "○",
               "index": 81
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "▲",
-              "index": 68
+              "index": 69
             }
           },
           "number": 3,
           "name": "カワキタマナレア",
           "sourceHorseId": 2022106169,
-          "odds": 7.4
+          "odds": 9.8
         },
         {
           "predictions": {
@@ -4873,19 +4850,15 @@
               "mark": "○",
               "index": 88
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
-              "mark": "△",
-              "index": 64
+              "mark": "▲",
+              "index": 65
             }
           },
           "number": 4,
           "name": "フィーチャリング",
           "sourceHorseId": 2022105824,
-          "odds": 16.7
+          "odds": 32.9
         },
         {
           "predictions": {
@@ -4893,29 +4866,21 @@
               "mark": "○",
               "index": 81
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
-              "index": 41
+              "index": 43
             }
           },
           "number": 5,
           "name": "マイネルラッシュ",
           "sourceHorseId": 2020105803,
-          "odds": 32.5
+          "odds": 62.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 98
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -4925,7 +4890,7 @@
           "number": 6,
           "name": "リッキースタイル",
           "sourceHorseId": 2022103577,
-          "odds": 6
+          "odds": 5.8
         },
         {
           "predictions": {
@@ -4933,29 +4898,21 @@
               "mark": "◎",
               "index": 94
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "△",
-              "index": 59
+              "index": 60
             }
           },
           "number": 7,
           "name": "ソウルオンファイア",
           "sourceHorseId": 2023105899,
-          "odds": 3.5
+          "odds": 2.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 88
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "▲",
@@ -4965,7 +4922,7 @@
           "number": 8,
           "name": "ラヴオントップ",
           "sourceHorseId": 2021104399,
-          "odds": 4.9
+          "odds": 4.4
         },
         {
           "predictions": {
@@ -4973,19 +4930,15 @@
               "mark": "○",
               "index": 88
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "△",
-              "index": 54
+              "index": 55
             }
           },
           "number": 9,
           "name": "オカメノコイ",
           "sourceHorseId": 2022106698,
-          "odds": 17.5
+          "odds": 24.4
         },
         {
           "predictions": {
@@ -4993,19 +4946,15 @@
               "mark": "△",
               "index": 50
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
-              "index": 40
+              "index": 41
             }
           },
           "number": 10,
           "name": "ロッカバイベイビー",
           "sourceHorseId": 2022103725,
-          "odds": 24.9
+          "odds": 39.7
         },
         {
           "predictions": {
@@ -5013,19 +4962,15 @@
               "mark": "▲",
               "index": 75
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
-              "index": 30
+              "index": 32
             }
           },
           "number": 11,
           "name": "レッドセニョール",
           "sourceHorseId": 2021105779,
-          "odds": 50.2
+          "odds": 89.4
         }
       ]
     },
@@ -5041,7 +4986,6 @@
       "updatedAt": "15:35:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -5054,13 +4998,17 @@
               "mark": "△",
               "index": 58
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
             },
             "ATHENA": {
-              "mark": "▲",
-              "index": 65
+              "mark": "△",
+              "index": 64
             },
             "無料競馬AI": {
               "mark": "△",
@@ -5077,6 +5025,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 71
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
             },
             "ウマークス": {
               "mark": "▲",
@@ -5102,13 +5054,17 @@
               "mark": "△",
               "index": 53
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 100
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 67
             },
             "ATHENA": {
               "mark": "▲",
-              "index": 71
+              "index": 70
             },
             "無料競馬AI": {
               "mark": "◎",
@@ -5126,13 +5082,17 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 42
+              "index": 43
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5150,13 +5110,17 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 43
+              "index": 44
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5174,9 +5138,13 @@
               "mark": "▲",
               "index": 76
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -5197,6 +5165,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 61
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
             },
             "ウマークス": {
               "mark": "▲",
@@ -5222,6 +5194,10 @@
               "mark": "▲",
               "index": 71
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 67
@@ -5246,13 +5222,17 @@
               "mark": "▲",
               "index": 76
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 68
+              "index": 69
             },
             "ATHENA": {
               "mark": "△",
-              "index": 61
+              "index": 60
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5270,13 +5250,17 @@
               "mark": "◎",
               "index": 97
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 69
             },
             "ATHENA": {
-              "mark": "☆",
-              "index": 49
+              "mark": "△",
+              "index": 50
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5294,13 +5278,17 @@
               "mark": "▲",
               "index": 68
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 79
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 47
+              "index": 48
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5317,6 +5305,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 61
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
             },
             "ウマークス": {
               "mark": "▲",
@@ -5342,6 +5334,10 @@
               "mark": "△",
               "index": 53
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -5365,6 +5361,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 58
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
             },
             "ウマークス": {
               "mark": "▲",
@@ -5398,7 +5398,6 @@
       "updatedAt": "16:10:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -5412,6 +5411,10 @@
               "mark": "○",
               "index": 81
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
@@ -5424,13 +5427,17 @@
           "number": 1,
           "name": "コンアフェット",
           "sourceHorseId": 2022105787,
-          "odds": 8.2
+          "odds": 8.7
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 78
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 100
             },
             "ウマークス": {
               "mark": "▲",
@@ -5444,7 +5451,7 @@
           "number": 2,
           "name": "ステアハート",
           "sourceHorseId": 2022105385,
-          "odds": 8.1
+          "odds": 7.5
         },
         {
           "predictions": {
@@ -5452,19 +5459,23 @@
               "mark": "○",
               "index": 88
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 69
             },
             "ATHENA": {
               "mark": "▲",
-              "index": 70
+              "index": 71
             }
           },
           "number": 3,
           "name": "ヴァンアグレアブル",
           "sourceHorseId": 2022105058,
-          "odds": 14.3
+          "odds": 15
         },
         {
           "predictions": {
@@ -5472,19 +5483,23 @@
               "mark": "▲",
               "index": 72
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
             },
             "ATHENA": {
-              "mark": "☆",
-              "index": 49
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 4,
           "name": "ベルイストワール",
           "sourceHorseId": 2021100606,
-          "odds": 29
+          "odds": 34
         },
         {
           "predictions": {
@@ -5492,25 +5507,33 @@
               "mark": "▲",
               "index": 74
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 68
             },
             "ATHENA": {
               "mark": "△",
-              "index": 61
+              "index": 62
             }
           },
           "number": 5,
           "name": "カーラデマドレ",
           "sourceHorseId": 2022104912,
-          "odds": 9
+          "odds": 8.9
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 69
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "▲",
@@ -5524,13 +5547,17 @@
           "number": 6,
           "name": "パースウェイド",
           "sourceHorseId": 2022105803,
-          "odds": 8.9
+          "odds": 8.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 76
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
             },
             "ウマークス": {
               "mark": "▲",
@@ -5544,13 +5571,17 @@
           "number": 7,
           "name": "ケイツーリーブル",
           "sourceHorseId": 2023103628,
-          "odds": 6.1
+          "odds": 5.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 71
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
             },
             "ウマークス": {
               "mark": "▲",
@@ -5558,19 +5589,23 @@
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 43
+              "index": 45
             }
           },
           "number": 8,
           "name": "アンドリーナ",
           "sourceHorseId": 2022101457,
-          "odds": 30.5
+          "odds": 35.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 71
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
             },
             "ウマークス": {
               "mark": "▲",
@@ -5578,19 +5613,23 @@
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 47
+              "index": 48
             }
           },
           "number": 9,
           "name": "レーヴドレフォン",
           "sourceHorseId": 2021105895,
-          "odds": 18.5
+          "odds": 22.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 55
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "▲",
@@ -5604,13 +5643,17 @@
           "number": 10,
           "name": "ヴァズレーヌ",
           "sourceHorseId": 2021106707,
-          "odds": 18.5
+          "odds": 19.1
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 76
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "▲",
@@ -5624,7 +5667,7 @@
           "number": 11,
           "name": "パイシャオピン",
           "sourceHorseId": 2022103371,
-          "odds": 6.4
+          "odds": 5.8
         },
         {
           "predictions": {
@@ -5632,25 +5675,33 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 47
+              "index": 48
             }
           },
           "number": 12,
           "name": "ルトゥール",
           "sourceHorseId": 2021104929,
-          "odds": 35.4
+          "odds": 40.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 91
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
             },
             "ウマークス": {
               "mark": "▲",
@@ -5664,7 +5715,7 @@
           "number": 13,
           "name": "スルーザナイト",
           "sourceHorseId": 2022105053,
-          "odds": 12.3
+          "odds": 14.7
         },
         {
           "predictions": {
@@ -5672,19 +5723,23 @@
               "mark": "△",
               "index": 59
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 73
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 42
+              "index": 44
             }
           },
           "number": 14,
           "name": "エターナルプロミス",
           "sourceHorseId": 2022104917,
-          "odds": 24.9
+          "odds": 26.9
         },
         {
           "predictions": {
@@ -5692,19 +5747,23 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 70
             },
             "ATHENA": {
-              "mark": "☆",
-              "index": 49
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 15,
           "name": "モモンウールー",
           "sourceHorseId": 2021105984,
-          "odds": 13.8
+          "odds": 15.3
         }
       ]
     },
@@ -5720,7 +5779,6 @@
       "updatedAt": "16:45:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -5735,6 +5793,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 66
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -5743,13 +5805,17 @@
           "number": 1,
           "name": "ジュリアスローズ",
           "sourceHorseId": 2021103506,
-          "odds": 28.7
+          "odds": 31
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 62
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 73
             },
             "ウマークス": {
               "mark": "▲",
@@ -5759,13 +5825,17 @@
           "number": 2,
           "name": "スマートフランキー",
           "sourceHorseId": 2022101826,
-          "odds": 52.5
+          "odds": 58.1
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 76
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
             },
             "ウマークス": {
               "mark": "▲",
@@ -5775,13 +5845,17 @@
           "number": 3,
           "name": "コトブキヘスペラス",
           "sourceHorseId": 2020100209,
-          "odds": 66.4
+          "odds": 72.7
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 64
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
             },
             "ウマークス": {
               "mark": "▲",
@@ -5791,13 +5865,17 @@
           "number": 4,
           "name": "セイウンビッグバン",
           "sourceHorseId": 2022100737,
-          "odds": 18.4
+          "odds": 18.7
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 92
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
             },
             "ウマークス": {
               "mark": "▲",
@@ -5807,13 +5885,17 @@
           "number": 5,
           "name": "キャネル",
           "sourceHorseId": 2021105885,
-          "odds": 6.2
+          "odds": 5.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 99
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
             },
             "ウマークス": {
               "mark": "▲",
@@ -5823,13 +5905,17 @@
           "number": 6,
           "name": "グロッシェン",
           "sourceHorseId": 2021104844,
-          "odds": 7.5
+          "odds": 9.1
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 95
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
             },
             "ウマークス": {
               "mark": "▲",
@@ -5839,13 +5925,17 @@
           "number": 7,
           "name": "フェスティヴビーム",
           "sourceHorseId": 2020102452,
-          "odds": 23.1
+          "odds": 25.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 95
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
             },
             "ウマークス": {
               "mark": "▲",
@@ -5855,13 +5945,17 @@
           "number": 8,
           "name": "ノーブルクライ",
           "sourceHorseId": 2020102976,
-          "odds": 4.1
+          "odds": 3.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 80
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
             },
             "ウマークス": {
               "mark": "▲",
@@ -5871,13 +5965,17 @@
           "number": 9,
           "name": "タイキエクセロン",
           "sourceHorseId": 2019103996,
-          "odds": 45.2
+          "odds": 44.7
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 60
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
             },
             "ウマークス": {
               "mark": "▲",
@@ -5887,13 +5985,17 @@
           "number": 10,
           "name": "ノブダブルホワイト",
           "sourceHorseId": 2022101614,
-          "odds": 10.6
+          "odds": 12
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 93
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
             },
             "ウマークス": {
               "mark": "▲",
@@ -5903,7 +6005,7 @@
           "number": 11,
           "name": "バンデルオーラ",
           "sourceHorseId": 2019104915,
-          "odds": 11.5
+          "odds": 10
         },
         {
           "predictions": {
@@ -5911,21 +6013,29 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 67
+              "index": 68
             }
           },
           "number": 12,
           "name": "バラジ",
           "sourceHorseId": 2019106698,
-          "odds": 6.2
+          "odds": 6.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 90
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
             },
             "ウマークス": {
               "mark": "▲",
@@ -5935,13 +6045,17 @@
           "number": 13,
           "name": "ニシノブレイゼスト",
           "sourceHorseId": 2022107011,
-          "odds": 22.3
+          "odds": 27.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 98
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
             },
             "ウマークス": {
               "mark": "▲",
@@ -5951,7 +6065,7 @@
           "number": 14,
           "name": "オーサムストローク",
           "sourceHorseId": 2021100557,
-          "odds": 6.9
+          "odds": 7.3
         }
       ]
     },
@@ -5967,7 +6081,6 @@
       "updatedAt": "17:20:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -5981,25 +6094,33 @@
               "mark": "▲",
               "index": 72
             },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 31
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 25
+              "index": 26
             }
           },
           "number": 1,
           "name": "ショービット",
           "sourceHorseId": 2023101451,
-          "odds": 67.1
+          "odds": 67.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 99
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
             },
             "ウマークス": {
               "mark": "▲",
@@ -6007,13 +6128,13 @@
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 47
+              "index": 49
             }
           },
           "number": 2,
           "name": "ネクストドア",
           "sourceHorseId": 2023106685,
-          "odds": 12
+          "odds": 11.9
         },
         {
           "predictions": {
@@ -6021,19 +6142,23 @@
               "mark": "◎",
               "index": 99
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 68
+              "index": 69
             },
             "ATHENA": {
-              "mark": "☆",
-              "index": 49
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 3,
           "name": "ブルーリファール",
           "sourceHorseId": 2023106180,
-          "odds": 9
+          "odds": 9.6
         },
         {
           "predictions": {
@@ -6041,6 +6166,106 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            },
+            "ウマークス": {
+              "mark": "▲",
+              "index": 68
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 50
+            }
+          },
+          "number": 4,
+          "name": "パーシヴァル",
+          "sourceHorseId": 2023103290,
+          "odds": 6.6
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "◎",
+              "index": 91
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
+            "ウマークス": {
+              "mark": "▲",
+              "index": 67
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 65
+            }
+          },
+          "number": 5,
+          "name": "ゴットタレント",
+          "sourceHorseId": 2023100377,
+          "odds": 5.5
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "○",
+              "index": 86
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
+            "ウマークス": {
+              "mark": "▲",
+              "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
+            }
+          },
+          "number": 6,
+          "name": "マーゴットライズ",
+          "sourceHorseId": 2023106889,
+          "odds": 23.2
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "◎",
+              "index": 98
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 71
+            },
+            "ウマークス": {
+              "mark": "▲",
+              "index": 69
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 52
+            }
+          },
+          "number": 7,
+          "name": "ロジキセキ",
+          "sourceHorseId": 2023100578,
+          "odds": 11.8
+        },
+        {
+          "predictions": {
+            "SPAIA": {
+              "mark": "☆",
+              "index": -24
+            },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 44
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
@@ -6050,14 +6275,18 @@
               "index": 49
             }
           },
-          "number": 4,
-          "name": "パーシヴァル",
-          "sourceHorseId": 2023103290,
-          "odds": 6.1
+          "number": 8,
+          "name": "エーデルクラフト",
+          "sourceHorseId": 2023103756,
+          "odds": 6.9
         },
         {
           "predictions": {
             "SPAIA": {
+              "mark": "○",
+              "index": 88
+            },
+            "競馬ラボ": {
               "mark": "◎",
               "index": 91
             },
@@ -6066,94 +6295,14 @@
               "index": 67
             },
             "ATHENA": {
-              "mark": "△",
-              "index": 64
-            }
-          },
-          "number": 5,
-          "name": "ゴットタレント",
-          "sourceHorseId": 2023100377,
-          "odds": 5.2
-        },
-        {
-          "predictions": {
-            "SPAIA": {
-              "mark": "○",
-              "index": 86
-            },
-            "ウマークス": {
               "mark": "▲",
-              "index": 70
-            },
-            "ATHENA": {
-              "mark": "☆",
-              "index": 45
-            }
-          },
-          "number": 6,
-          "name": "マーゴットライズ",
-          "sourceHorseId": 2023106889,
-          "odds": 26.2
-        },
-        {
-          "predictions": {
-            "SPAIA": {
-              "mark": "◎",
-              "index": 98
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
-            "ATHENA": {
-              "mark": "△",
-              "index": 50
-            }
-          },
-          "number": 7,
-          "name": "ロジキセキ",
-          "sourceHorseId": 2023100578,
-          "odds": 12.1
-        },
-        {
-          "predictions": {
-            "SPAIA": {
-              "mark": "☆",
-              "index": -24
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
-            "ATHENA": {
-              "mark": "☆",
-              "index": 48
-            }
-          },
-          "number": 8,
-          "name": "エーデルクラフト",
-          "sourceHorseId": 2023103756,
-          "odds": 7.5
-        },
-        {
-          "predictions": {
-            "SPAIA": {
-              "mark": "○",
-              "index": 88
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
-            "ATHENA": {
-              "mark": "△",
-              "index": 64
+              "index": 65
             }
           },
           "number": 9,
           "name": "トップデュオ",
           "sourceHorseId": 2023103801,
-          "odds": 4.1
+          "odds": 3.8
         },
         {
           "predictions": {
@@ -6161,19 +6310,23 @@
               "mark": "○",
               "index": 81
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 60
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 17
+              "index": 18
             }
           },
           "number": 10,
           "name": "カンフーヒーロー",
           "sourceHorseId": 2023101482,
-          "odds": 76.8
+          "odds": 82.5
         },
         {
           "predictions": {
@@ -6181,19 +6334,23 @@
               "mark": "○",
               "index": 82
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 68
             },
             "ATHENA": {
               "mark": "△",
-              "index": 59
+              "index": 61
             }
           },
           "number": 11,
           "name": "エルアン",
           "sourceHorseId": 2023100787,
-          "odds": 9.5
+          "odds": 10
         },
         {
           "predictions": {
@@ -6201,19 +6358,23 @@
               "mark": "○",
               "index": 86
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 73
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
             },
             "ATHENA": {
-              "mark": "☆",
-              "index": 48
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 12,
           "name": "トウシンライオット",
           "sourceHorseId": 2023103088,
-          "odds": 32.4
+          "odds": 28.1
         },
         {
           "predictions": {
@@ -6221,25 +6382,33 @@
               "mark": "▲",
               "index": 75
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 29
+              "index": 31
             }
           },
           "number": 13,
           "name": "パワポケウォーズ",
           "sourceHorseId": 2023107440,
-          "odds": 70
+          "odds": 74.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 56
             },
             "ウマークス": {
               "mark": "▲",
@@ -6253,7 +6422,7 @@
           "number": 14,
           "name": "コスモメイウェザー",
           "sourceHorseId": 2023105330,
-          "odds": 34
+          "odds": 35.1
         }
       ]
     },
@@ -6269,7 +6438,6 @@
       "updatedAt": "17:50:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -6282,13 +6450,17 @@
               "mark": "▲",
               "index": 70
             },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 43
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 17
+              "index": 18
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -6306,13 +6478,17 @@
               "mark": "○",
               "index": 81
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 55
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 24
+              "index": 25
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -6329,6 +6505,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 75
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
             },
             "ウマークス": {
               "mark": "▲",
@@ -6354,13 +6534,17 @@
               "mark": "▲",
               "index": 73
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 71
             },
             "ATHENA": {
               "mark": "△",
-              "index": 50
+              "index": 51
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -6377,6 +6561,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 96
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -6402,6 +6590,10 @@
               "mark": "▲",
               "index": 77
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 60
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -6426,13 +6618,17 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 55
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 18
+              "index": 19
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -6449,6 +6645,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 83
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "▲",
@@ -6474,13 +6674,17 @@
               "mark": "▲",
               "index": 76
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 46
+              "index": 47
             },
             "無料競馬AI": {
               "mark": "△",
@@ -6497,6 +6701,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 93
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
             },
             "ウマークス": {
               "mark": "▲",
@@ -6522,6 +6730,10 @@
               "mark": "△",
               "index": 63
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 59
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 69
@@ -6546,13 +6758,17 @@
               "mark": "▲",
               "index": 76
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
             },
             "ATHENA": {
               "mark": "△",
-              "index": 56
+              "index": 57
             },
             "無料競馬AI": {
               "mark": "△",
@@ -6569,6 +6785,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 97
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
             },
             "ウマークス": {
               "mark": "▲",
@@ -6594,13 +6814,17 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
             },
             "ATHENA": {
               "mark": "△",
-              "index": 51
+              "index": 53
             },
             "無料競馬AI": {
               "mark": "△",
@@ -6618,13 +6842,17 @@
               "mark": "◎",
               "index": 92
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 67
             },
             "ATHENA": {
               "mark": "△",
-              "index": 61
+              "index": 62
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -6650,7 +6878,6 @@
       "updatedAt": "18:20:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -6664,19 +6891,23 @@
               "mark": "○",
               "index": 82
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
             },
             "ATHENA": {
               "mark": "△",
-              "index": 57
+              "index": 56
             }
           },
           "number": 1,
           "name": "コールリッジ",
           "sourceHorseId": 2023106338,
-          "odds": 6.6
+          "odds": 6.9
         },
         {
           "predictions": {
@@ -6684,25 +6915,33 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
             },
             "ATHENA": {
               "mark": "▲",
-              "index": 68
+              "index": 67
             }
           },
           "number": 2,
           "name": "ミナヅキ",
           "sourceHorseId": 2023105449,
-          "odds": 5.4
+          "odds": 5.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 56
             },
             "ウマークス": {
               "mark": "▲",
@@ -6716,7 +6955,7 @@
           "number": 3,
           "name": "ピコブロッサム",
           "sourceHorseId": 2023107510,
-          "odds": 46.9
+          "odds": 49.7
         },
         {
           "predictions": {
@@ -6724,25 +6963,33 @@
               "mark": "▲",
               "index": 65
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
             },
             "ATHENA": {
-              "mark": "☆",
-              "index": 49
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 4,
           "name": "シルバープレミア",
           "sourceHorseId": 2023105576,
-          "odds": 57
+          "odds": 51.9
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 88
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
             },
             "ウマークス": {
               "mark": "▲",
@@ -6756,7 +7003,7 @@
           "number": 5,
           "name": "ミサダメキメル",
           "sourceHorseId": 2023106612,
-          "odds": 29.3
+          "odds": 32.1
         },
         {
           "predictions": {
@@ -6764,25 +7011,33 @@
               "mark": "◎",
               "index": 95
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 66
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 43
+              "index": 45
             }
           },
           "number": 6,
           "name": "フォーエバーラブ",
           "sourceHorseId": 2023102941,
-          "odds": 24.3
+          "odds": 23.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 85
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
             },
             "ウマークス": {
               "mark": "▲",
@@ -6796,13 +7051,17 @@
           "number": 7,
           "name": "ハナコトバ",
           "sourceHorseId": 2023102984,
-          "odds": 5
+          "odds": 4.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 60
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
             },
             "ウマークス": {
               "mark": "▲",
@@ -6816,7 +7075,7 @@
           "number": 8,
           "name": "ダゴベルト",
           "sourceHorseId": 2023106946,
-          "odds": 31.1
+          "odds": 28.4
         },
         {
           "predictions": {
@@ -6824,19 +7083,23 @@
               "mark": "○",
               "index": 88
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 40
+              "index": 42
             }
           },
           "number": 9,
           "name": "チャチャット",
           "sourceHorseId": 2023105572,
-          "odds": 48
+          "odds": 53.5
         },
         {
           "predictions": {
@@ -6844,25 +7107,33 @@
               "mark": "◎",
               "index": 92
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 68
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
             },
             "ATHENA": {
               "mark": "☆",
-              "index": 27
+              "index": 28
             }
           },
           "number": 10,
           "name": "アロハオエ",
           "sourceHorseId": 2023104261,
-          "odds": 97
+          "odds": 92.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 70
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 66
             },
             "ウマークス": {
               "mark": "▲",
@@ -6876,7 +7147,7 @@
           "number": 11,
           "name": "レスター",
           "sourceHorseId": 2023106379,
-          "odds": 10.5
+          "odds": 11.2
         },
         {
           "predictions": {
@@ -6884,9 +7155,13 @@
               "mark": "▲",
               "index": 65
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 70
             },
             "ATHENA": {
               "mark": "△",
@@ -6896,13 +7171,17 @@
           "number": 12,
           "name": "ヴォンサクレ",
           "sourceHorseId": 2023100651,
-          "odds": 20.3
+          "odds": 23.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 92
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
             },
             "ウマークス": {
               "mark": "▲",
@@ -6916,13 +7195,17 @@
           "number": 13,
           "name": "ファランギーナ",
           "sourceHorseId": 2023105686,
-          "odds": 5.1
+          "odds": 4.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 72
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
             },
             "ウマークス": {
               "mark": "▲",
@@ -6936,11 +7219,15 @@
           "number": 14,
           "name": "エラガバリウム",
           "sourceHorseId": 2023107335,
-          "odds": 6.8
+          "odds": 6.4
         },
         {
           "predictions": {
             "SPAIA": {
+              "mark": "◎",
+              "index": 93
+            },
+            "競馬ラボ": {
               "mark": "◎",
               "index": 93
             },
@@ -6950,13 +7237,13 @@
             },
             "ATHENA": {
               "mark": "△",
-              "index": 54
+              "index": 55
             }
           },
           "number": 15,
           "name": "クライングナウ",
           "sourceHorseId": 2023103697,
-          "odds": 17.9
+          "odds": 19.2
         }
       ]
     },
@@ -6987,10 +7274,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ブック": {
-              "mark": "◎",
-              "index": 100
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 77
@@ -6999,17 +7282,13 @@
           "number": 1,
           "name": "メアグローリア",
           "sourceHorseId": 2024106969,
-          "odds": 3
+          "odds": 1.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 83
-            },
-            "競馬ブック": {
-              "mark": "▲",
-              "index": 44
             },
             "ATHENA": {
               "mark": "☆",
@@ -7019,17 +7298,13 @@
           "number": 2,
           "name": "クールタロウ",
           "sourceHorseId": 2024105496,
-          "odds": 5
+          "odds": 6.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "競馬ブック": {
-              "mark": "△",
-              "index": 17
             },
             "ATHENA": {
               "mark": "☆",
@@ -7039,7 +7314,7 @@
           "number": 3,
           "name": "ララララブソング",
           "sourceHorseId": 2024101083,
-          "odds": 9
+          "odds": 266.6
         },
         {
           "predictions": {
@@ -8005,6 +8280,7 @@
       "missingSites": [
         "競馬ブック",
         "競馬ラボ",
+        "ウマークス",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -8018,10 +8294,6 @@
               "mark": "◎",
               "index": 100
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "○",
               "index": 81
@@ -8030,17 +8302,13 @@
           "number": 1,
           "name": "サヴォアフェール",
           "sourceHorseId": 2023105645,
-          "odds": 1.7
+          "odds": 2.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 95
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -8050,17 +8318,13 @@
           "number": 2,
           "name": "レッドラージャ",
           "sourceHorseId": 2023107227,
-          "odds": 6.2
+          "odds": 4.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 66
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -8070,17 +8334,13 @@
           "number": 3,
           "name": "ツーエムクロノス",
           "sourceHorseId": 2022103651,
-          "odds": 37.2
+          "odds": 68.9
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -8090,17 +8350,13 @@
           "number": 4,
           "name": "ハッピーダンチャン",
           "sourceHorseId": 2022100529,
-          "odds": 104.5
+          "odds": 212.7
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 74
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -8110,17 +8366,13 @@
           "number": 5,
           "name": "ホウオウタイタン",
           "sourceHorseId": 2022103278,
-          "odds": 9.3
+          "odds": 6.7
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 92
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "○",
@@ -8130,17 +8382,13 @@
           "number": 6,
           "name": "マディソンガール",
           "sourceHorseId": 2022105098,
-          "odds": 4.9
+          "odds": 4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 77
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -8150,17 +8398,13 @@
           "number": 7,
           "name": "コンフェルマ",
           "sourceHorseId": 2021105970,
-          "odds": 19.8
+          "odds": 17.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 60
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -8170,17 +8414,13 @@
           "number": 8,
           "name": "オデット",
           "sourceHorseId": 2022101925,
-          "odds": 44.8
+          "odds": 59.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 73
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -8190,17 +8430,13 @@
           "number": 9,
           "name": "コリカンチャ",
           "sourceHorseId": 2022104623,
-          "odds": 32.9
+          "odds": 59.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 82
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -8210,7 +8446,7 @@
           "number": 10,
           "name": "エアビッグマム",
           "sourceHorseId": 2022105250,
-          "odds": 14.5
+          "odds": 13.2
         }
       ]
     },
@@ -8226,7 +8462,6 @@
       "updatedAt": "15:25:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -8238,6 +8473,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 87
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
             },
             "ウマークス": {
               "mark": "▲",
@@ -8263,6 +8502,10 @@
               "mark": "▲",
               "index": 76
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -8286,6 +8529,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 78
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
             },
             "ウマークス": {
               "mark": "▲",
@@ -8311,6 +8558,10 @@
               "mark": "▲",
               "index": 75
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -8334,6 +8585,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 87
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
             },
             "ウマークス": {
               "mark": "▲",
@@ -8359,6 +8614,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -8382,6 +8641,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "▲",
@@ -8407,6 +8670,10 @@
               "mark": "◎",
               "index": 91
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
@@ -8430,6 +8697,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 87
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
             },
             "ウマークス": {
               "mark": "▲",
@@ -8455,6 +8726,10 @@
               "mark": "△",
               "index": 60
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 77
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -8478,6 +8753,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 81
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "▲",
@@ -8503,6 +8782,10 @@
               "mark": "▲",
               "index": 74
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 69
@@ -8527,6 +8810,10 @@
               "mark": "○",
               "index": 87
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
@@ -8550,6 +8837,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 75
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
             },
             "ウマークス": {
               "mark": "▲",
@@ -8583,7 +8874,6 @@
       "updatedAt": "16:00:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -8597,6 +8887,10 @@
               "mark": "○",
               "index": 87
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 73
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 69
@@ -8609,13 +8903,17 @@
           "number": 1,
           "name": "ジェシーテソーロ",
           "sourceHorseId": 2022102260,
-          "odds": 15.2
+          "odds": 16.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 87
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "▲",
@@ -8629,13 +8927,17 @@
           "number": 2,
           "name": "ダンツシタン",
           "sourceHorseId": 2023104848,
-          "odds": 3.9
+          "odds": 3.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 76
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
             },
             "ウマークス": {
               "mark": "▲",
@@ -8649,13 +8951,17 @@
           "number": 3,
           "name": "アイブリンク",
           "sourceHorseId": 2022100358,
-          "odds": 7.8
+          "odds": 7.7
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 87
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "▲",
@@ -8669,13 +8975,17 @@
           "number": 4,
           "name": "ジョータルマエ",
           "sourceHorseId": 2020100771,
-          "odds": 5.3
+          "odds": 5.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 68
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
             },
             "ウマークス": {
               "mark": "▲",
@@ -8697,6 +9007,10 @@
               "mark": "△",
               "index": 63
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -8709,13 +9023,17 @@
           "number": 6,
           "name": "ナチュラルリバー",
           "sourceHorseId": 2020102559,
-          "odds": 75.2
+          "odds": 85.9
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 79
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -8729,13 +9047,17 @@
           "number": 7,
           "name": "ハギノコラソン",
           "sourceHorseId": 2022100439,
-          "odds": 6
+          "odds": 6.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 66
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
             },
             "ウマークス": {
               "mark": "▲",
@@ -8749,13 +9071,17 @@
           "number": 8,
           "name": "マハートマーベル",
           "sourceHorseId": 2022104413,
-          "odds": 18.1
+          "odds": 19.7
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "▲",
@@ -8769,13 +9095,17 @@
           "number": 9,
           "name": "テイエムパイロット",
           "sourceHorseId": 2022103775,
-          "odds": 9
+          "odds": 9.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 71
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
             },
             "ウマークス": {
               "mark": "▲",
@@ -8789,13 +9119,17 @@
           "number": 10,
           "name": "ノボリクレバー",
           "sourceHorseId": 2020106393,
-          "odds": 12.1
+          "odds": 9.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 66
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "▲",
@@ -8809,13 +9143,17 @@
           "number": 11,
           "name": "キングオブフジ",
           "sourceHorseId": 2021106164,
-          "odds": 19.4
+          "odds": 19.9
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 80
             },
             "ウマークス": {
               "mark": "▲",
@@ -8829,7 +9167,7 @@
           "number": 12,
           "name": "メイショウジェンマ",
           "sourceHorseId": 2020106491,
-          "odds": 40.7
+          "odds": 45.5
         }
       ]
     },
@@ -8845,7 +9183,6 @@
       "updatedAt": "16:35:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -8859,6 +9196,10 @@
               "mark": "◎",
               "index": 94
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
@@ -8871,13 +9212,17 @@
           "number": 1,
           "name": "ナルキッソス",
           "sourceHorseId": 2023110085,
-          "odds": 5.8
+          "odds": 5.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 63
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
             },
             "ウマークス": {
               "mark": "▲",
@@ -8891,13 +9236,17 @@
           "number": 2,
           "name": "チリーゴールド",
           "sourceHorseId": 2022104905,
-          "odds": 58.2
+          "odds": 66.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 89
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
             },
             "ウマークス": {
               "mark": "▲",
@@ -8911,13 +9260,17 @@
           "number": 3,
           "name": "フルールジェンヌ",
           "sourceHorseId": 2023103247,
-          "odds": 4.1
+          "odds": 4.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 81
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "▲",
@@ -8931,13 +9284,17 @@
           "number": 4,
           "name": "ルージュバロン",
           "sourceHorseId": 2023107105,
-          "odds": 9.6
+          "odds": 9.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
             },
             "ウマークス": {
               "mark": "▲",
@@ -8951,13 +9308,17 @@
           "number": 5,
           "name": "リアライズブラーヴ",
           "sourceHorseId": 2023103678,
-          "odds": 27.3
+          "odds": 30.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
             },
             "ウマークス": {
               "mark": "▲",
@@ -8971,13 +9332,17 @@
           "number": 6,
           "name": "スウィッチインラヴ",
           "sourceHorseId": 2023105300,
-          "odds": 4.7
+          "odds": 4.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 74
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
             },
             "ウマークス": {
               "mark": "▲",
@@ -8991,13 +9356,17 @@
           "number": 7,
           "name": "ベルフラム",
           "sourceHorseId": 2023106107,
-          "odds": 68.8
+          "odds": 73.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 71
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
             },
             "ウマークス": {
               "mark": "▲",
@@ -9011,13 +9380,17 @@
           "number": 8,
           "name": "メイクワンズデイ",
           "sourceHorseId": 2023103160,
-          "odds": 8.7
+          "odds": 8.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 79
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
             },
             "ウマークス": {
               "mark": "▲",
@@ -9031,13 +9404,17 @@
           "number": 9,
           "name": "ルクスノア",
           "sourceHorseId": 2021105529,
-          "odds": 19.2
+          "odds": 20.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 71
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
             },
             "ウマークス": {
               "mark": "▲",
@@ -9051,13 +9428,17 @@
           "number": 10,
           "name": "ペアレンツギフト",
           "sourceHorseId": 2023103719,
-          "odds": 8.9
+          "odds": 8.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 84
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -9071,13 +9452,17 @@
           "number": 11,
           "name": "テルヴィセクス",
           "sourceHorseId": 2023104355,
-          "odds": 20.9
+          "odds": 20.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 61
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
             },
             "ウマークス": {
               "mark": "▲",
@@ -9091,13 +9476,17 @@
           "number": 12,
           "name": "ダノンフェルゼン",
           "sourceHorseId": 2022104892,
-          "odds": 82.2
+          "odds": 86
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
             },
             "ウマークス": {
               "mark": "▲",
@@ -9111,13 +9500,17 @@
           "number": 13,
           "name": "ゴージャス",
           "sourceHorseId": 2022106996,
-          "odds": 11
+          "odds": 11.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 66
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
             },
             "ウマークス": {
               "mark": "▲",
@@ -9131,7 +9524,7 @@
           "number": 14,
           "name": "インターポーザー",
           "sourceHorseId": 2022104649,
-          "odds": 42.1
+          "odds": 47.7
         }
       ]
     },
@@ -9147,7 +9540,6 @@
       "updatedAt": "17:10:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -9161,6 +9553,10 @@
               "mark": "△",
               "index": 64
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 67
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -9173,13 +9569,17 @@
           "number": 1,
           "name": "イーサンハンター",
           "sourceHorseId": 2021104362,
-          "odds": 75.5
+          "odds": 80
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 96
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "▲",
@@ -9193,13 +9593,17 @@
           "number": 2,
           "name": "ラブインアクション",
           "sourceHorseId": 2023110043,
-          "odds": 5.2
+          "odds": 5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 71
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "▲",
@@ -9213,13 +9617,17 @@
           "number": 3,
           "name": "ハードシングス",
           "sourceHorseId": 2023103151,
-          "odds": 20.3
+          "odds": 21.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 64
             },
             "ウマークス": {
               "mark": "▲",
@@ -9233,13 +9641,17 @@
           "number": 4,
           "name": "ワイルドブッター",
           "sourceHorseId": 2022105077,
-          "odds": 71.1
+          "odds": 65.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 83
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
             },
             "ウマークス": {
               "mark": "▲",
@@ -9253,13 +9665,17 @@
           "number": 5,
           "name": "ダディーズグーグー",
           "sourceHorseId": 2022105619,
-          "odds": 69
+          "odds": 64.7
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 80
             },
             "ウマークス": {
               "mark": "▲",
@@ -9273,13 +9689,17 @@
           "number": 6,
           "name": "ザングウィル",
           "sourceHorseId": 2020110051,
-          "odds": 11.5
+          "odds": 11.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 70
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "▲",
@@ -9293,13 +9713,17 @@
           "number": 7,
           "name": "シャープインサイト",
           "sourceHorseId": 2023106289,
-          "odds": 25.9
+          "odds": 29.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 67
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
             },
             "ウマークス": {
               "mark": "▲",
@@ -9313,13 +9737,17 @@
           "number": 8,
           "name": "フロンティエール",
           "sourceHorseId": 2022105012,
-          "odds": 34.7
+          "odds": 34.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 68
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 73
             },
             "ウマークス": {
               "mark": "▲",
@@ -9333,13 +9761,17 @@
           "number": 9,
           "name": "エシェックオロワ",
           "sourceHorseId": 2023103755,
-          "odds": 45.4
+          "odds": 53.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 86
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
             },
             "ウマークス": {
               "mark": "▲",
@@ -9353,13 +9785,17 @@
           "number": 10,
           "name": "ポッドリプル",
           "sourceHorseId": 2023105593,
-          "odds": 5
+          "odds": 4.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 76
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
             },
             "ウマークス": {
               "mark": "▲",
@@ -9373,7 +9809,7 @@
           "number": 11,
           "name": "アーガイルショア",
           "sourceHorseId": 2023103718,
-          "odds": 10
+          "odds": 10.6
         },
         {
           "predictions": {
@@ -9381,9 +9817,13 @@
               "mark": "○",
               "index": 83
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 69
             },
             "ATHENA": {
               "mark": "△",
@@ -9393,7 +9833,7 @@
           "number": 12,
           "name": "モンスエ",
           "sourceHorseId": 2023107536,
-          "odds": 17.4
+          "odds": 14.6
         },
         {
           "predictions": {
@@ -9401,9 +9841,13 @@
               "mark": "○",
               "index": 88
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 77
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 70
             },
             "ATHENA": {
               "mark": "△",
@@ -9413,13 +9857,17 @@
           "number": 13,
           "name": "レイム",
           "sourceHorseId": 2021106942,
-          "odds": 14.8
+          "odds": 18
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 92
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
             },
             "ウマークス": {
               "mark": "▲",
@@ -9433,13 +9881,17 @@
           "number": 14,
           "name": "ラトラース",
           "sourceHorseId": 2022105194,
-          "odds": 10.6
+          "odds": 11.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 93
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -9453,11 +9905,15 @@
           "number": 15,
           "name": "マイティキングダム",
           "sourceHorseId": 2023101501,
-          "odds": 5.5
+          "odds": 6.3
         },
         {
           "predictions": {
             "SPAIA": {
+              "mark": "○",
+              "index": 87
+            },
+            "競馬ラボ": {
               "mark": "○",
               "index": 87
             },
@@ -9473,7 +9929,7 @@
           "number": 16,
           "name": "キーンセンス",
           "sourceHorseId": 2023110036,
-          "odds": 10
+          "odds": 8.1
         }
       ]
     },
@@ -9489,7 +9945,6 @@
       "updatedAt": "17:40:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -9501,6 +9956,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 97
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
             },
             "ウマークス": {
               "mark": "▲",
@@ -9526,6 +9985,10 @@
               "mark": "▲",
               "index": 79
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
@@ -9550,9 +10013,13 @@
               "mark": "△",
               "index": 56
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 71
             },
             "ATHENA": {
               "mark": "△",
@@ -9574,9 +10041,13 @@
               "mark": "△",
               "index": 59
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 67
+              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -9597,6 +10068,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 91
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
             },
             "ウマークス": {
               "mark": "▲",
@@ -9622,6 +10097,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -9645,6 +10124,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
             },
             "ウマークス": {
               "mark": "▲",
@@ -9670,6 +10153,10 @@
               "mark": "◎",
               "index": 91
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -9693,6 +10180,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 59
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
             },
             "ウマークス": {
               "mark": "▲",
@@ -9718,9 +10209,13 @@
               "mark": "▲",
               "index": 68
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 69
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 71
+              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -9742,9 +10237,13 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 68
+              "index": 67
             },
             "ATHENA": {
               "mark": "▲",
@@ -9765,6 +10264,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 68
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
             },
             "ウマークス": {
               "mark": "▲",
@@ -9790,6 +10293,10 @@
               "mark": "△",
               "index": 62
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 69
@@ -9813,6 +10320,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 68
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 73
             },
             "ウマークス": {
               "mark": "▲",
@@ -9838,6 +10349,10 @@
               "mark": "▲",
               "index": 65
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 80
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -9861,6 +10376,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 56
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
             },
             "ウマークス": {
               "mark": "▲",
@@ -9894,7 +10413,6 @@
       "updatedAt": "18:10:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -9908,9 +10426,13 @@
               "mark": "○",
               "index": 89
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 67
+              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -9920,13 +10442,17 @@
           "number": 1,
           "name": "ルージュルガーノ",
           "sourceHorseId": 2023106618,
-          "odds": 5.4
+          "odds": 5.7
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 94
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
             },
             "ウマークス": {
               "mark": "▲",
@@ -9940,7 +10466,7 @@
           "number": 2,
           "name": "ベルセクレト",
           "sourceHorseId": 2023109072,
-          "odds": 16
+          "odds": 15.7
         },
         {
           "predictions": {
@@ -9948,9 +10474,13 @@
               "mark": "◎",
               "index": 99
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 68
+              "index": 67
             },
             "ATHENA": {
               "mark": "▲",
@@ -9960,13 +10490,17 @@
           "number": 3,
           "name": "コースタルロード",
           "sourceHorseId": 2023100973,
-          "odds": 5.4
+          "odds": 4.9
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 92
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
             },
             "ウマークス": {
               "mark": "▲",
@@ -9980,13 +10514,17 @@
           "number": 4,
           "name": "メイショウジーニー",
           "sourceHorseId": 2023106566,
-          "odds": 27.4
+          "odds": 29.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 87
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -10000,13 +10538,17 @@
           "number": 5,
           "name": "ダノンステート",
           "sourceHorseId": 2023105024,
-          "odds": 19.1
+          "odds": 17.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 88
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
             },
             "ウマークス": {
               "mark": "▲",
@@ -10020,13 +10562,17 @@
           "number": 6,
           "name": "アンリミテッド",
           "sourceHorseId": 2023104417,
-          "odds": 14.3
+          "odds": 13.9
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -10040,13 +10586,17 @@
           "number": 7,
           "name": "チュウワメロディー",
           "sourceHorseId": 2023106766,
-          "odds": 2.1
+          "odds": 2.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 78
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 50
             },
             "ウマークス": {
               "mark": "▲",
@@ -10060,13 +10610,17 @@
           "number": 8,
           "name": "ステキサプライズ",
           "sourceHorseId": 2023101910,
-          "odds": 29.1
+          "odds": 31.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 84
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 69
             },
             "ウマークス": {
               "mark": "▲",
@@ -10080,13 +10634,17 @@
           "number": 9,
           "name": "メイケイシャイン",
           "sourceHorseId": 2023101445,
-          "odds": 83.4
+          "odds": 79.7
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 91
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 66
             },
             "ウマークス": {
               "mark": "▲",
@@ -10100,13 +10658,17 @@
           "number": 10,
           "name": "ピンクパンサー",
           "sourceHorseId": 2023100490,
-          "odds": 40.9
+          "odds": 43.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 68
+            },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 48
             },
             "ウマークス": {
               "mark": "▲",
@@ -10120,13 +10682,17 @@
           "number": 11,
           "name": "テーオーエリーナ",
           "sourceHorseId": 2023106634,
-          "odds": 92.6
+          "odds": 91.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 88
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 70
             },
             "ウマークス": {
               "mark": "▲",
@@ -10140,13 +10706,17 @@
           "number": 12,
           "name": "ファーストアタック",
           "sourceHorseId": 2023109150,
-          "odds": 23.9
+          "odds": 24.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 91
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 80
             },
             "ウマークス": {
               "mark": "▲",
@@ -10160,13 +10730,17 @@
           "number": 13,
           "name": "アリディプラチノ",
           "sourceHorseId": 2023102063,
-          "odds": 76.3
+          "odds": 69.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 21
             },
             "ウマークス": {
               "mark": "▲",
@@ -10180,13 +10754,17 @@
           "number": 14,
           "name": "グランブリーゼ",
           "sourceHorseId": 2023101989,
-          "odds": 100
+          "odds": 96.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 86
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 73
             },
             "ウマークス": {
               "mark": "▲",
@@ -10200,7 +10778,7 @@
           "number": 15,
           "name": "ウイングサンライズ",
           "sourceHorseId": 2023100918,
-          "odds": 21.1
+          "odds": 19.3
         }
       ]
     },
@@ -10231,10 +10809,6 @@
               "mark": "◎",
               "index": 100
             },
-            "競馬ブック": {
-              "mark": "◎",
-              "index": 28
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 42
@@ -10243,17 +10817,13 @@
           "number": 1,
           "name": "シンゼンノト",
           "sourceHorseId": 2024102290,
-          "odds": 3
+          "odds": 18.9
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 98
-            },
-            "競馬ブック": {
-              "mark": "☆",
-              "index": 22
             },
             "ATHENA": {
               "mark": "☆",
@@ -10263,17 +10833,13 @@
           "number": 2,
           "name": "イリスロッソ",
           "sourceHorseId": 2024101054,
-          "odds": 2
+          "odds": 43.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 54
-            },
-            "競馬ブック": {
-              "mark": "△",
-              "index": 28
             },
             "ATHENA": {
               "mark": "△",
@@ -10283,7 +10849,7 @@
           "number": 3,
           "name": "サンクレセント",
           "sourceHorseId": 2024100329,
-          "odds": 8
+          "odds": 14.2
         },
         {
           "predictions": {
@@ -11249,6 +11815,7 @@
       "missingSites": [
         "競馬ブック",
         "競馬ラボ",
+        "ウマークス",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -11262,10 +11829,6 @@
               "mark": "▲",
               "index": 79
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "△",
               "index": 51
@@ -11274,17 +11837,13 @@
           "number": 1,
           "name": "デルマタカチホ",
           "sourceHorseId": 2023103385,
-          "odds": 27.5
+          "odds": 42.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 94
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "☆",
@@ -11294,17 +11853,13 @@
           "number": 2,
           "name": "ミッキーテネシー",
           "sourceHorseId": 2023102238,
-          "odds": 3.1
+          "odds": 2.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
             },
             "ATHENA": {
               "mark": "☆",
@@ -11314,17 +11869,13 @@
           "number": 3,
           "name": "カイユレ",
           "sourceHorseId": 2023104947,
-          "odds": 104.2
+          "odds": 193.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 78
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -11334,17 +11885,13 @@
           "number": 4,
           "name": "ダディーズソード",
           "sourceHorseId": 2023103655,
-          "odds": 76.5
+          "odds": 113.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 69
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -11354,17 +11901,13 @@
           "number": 5,
           "name": "ブリリアンブルーム",
           "sourceHorseId": 2023107233,
-          "odds": 47.1
+          "odds": 102.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 77
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -11382,10 +11925,6 @@
               "mark": "▲",
               "index": 77
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 39
@@ -11394,17 +11933,13 @@
           "number": 7,
           "name": "スチョウプリンセス",
           "sourceHorseId": 2023104789,
-          "odds": 37.3
+          "odds": 78.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 100
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -11414,17 +11949,13 @@
           "number": 8,
           "name": "ゴコウコイコイ",
           "sourceHorseId": 2023104486,
-          "odds": 9.2
+          "odds": 10.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 94
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "▲",
@@ -11434,17 +11965,13 @@
           "number": 9,
           "name": "ヘイジュード",
           "sourceHorseId": 2023105280,
-          "odds": 2.7
+          "odds": 2.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 65
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -11454,17 +11981,13 @@
           "number": 10,
           "name": "スノーエルヴァ",
           "sourceHorseId": 2023106145,
-          "odds": 31.4
+          "odds": 99.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 90
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -11474,17 +11997,13 @@
           "number": 11,
           "name": "ジングアップ",
           "sourceHorseId": 2023103461,
-          "odds": 12.2
+          "odds": 12.9
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 86
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -11494,7 +12013,7 @@
           "number": 12,
           "name": "ロッサコメータ",
           "sourceHorseId": 2023103607,
-          "odds": 6
+          "odds": 6.1
         }
       ]
     },
@@ -11511,6 +12030,7 @@
       "missingSites": [
         "競馬ブック",
         "競馬ラボ",
+        "ウマークス",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -11524,10 +12044,6 @@
               "mark": "△",
               "index": 58
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
-            },
             "ATHENA": {
               "mark": "☆",
               "index": 46
@@ -11536,17 +12052,13 @@
           "number": 1,
           "name": "キープライジング",
           "sourceHorseId": 2021103550,
-          "odds": 21.4
+          "odds": 41.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 75
-            },
-            "ウマークス": {
-              "mark": "△",
-              "index": 51
             },
             "ATHENA": {
               "mark": "☆",
@@ -11556,17 +12068,13 @@
           "number": 2,
           "name": "ランドスター",
           "sourceHorseId": 2023100398,
-          "odds": 6
+          "odds": 6.1
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 54
-            },
-            "ウマークス": {
-              "mark": "☆",
-              "index": 47
             },
             "ATHENA": {
               "mark": "☆",
@@ -11576,17 +12084,13 @@
           "number": 3,
           "name": "レネネト",
           "sourceHorseId": 2022110062,
-          "odds": 6.5
+          "odds": 5.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 96
-            },
-            "ウマークス": {
-              "mark": "☆",
-              "index": 43
             },
             "ATHENA": {
               "mark": "▲",
@@ -11604,10 +12108,6 @@
               "mark": "▲",
               "index": 69
             },
-            "ウマークス": {
-              "mark": "☆",
-              "index": 39
-            },
             "ATHENA": {
               "mark": "△",
               "index": 58
@@ -11616,17 +12116,13 @@
           "number": 5,
           "name": "ビタミンドロップ",
           "sourceHorseId": 2023105630,
-          "odds": 2.8
+          "odds": 3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 100
-            },
-            "ウマークス": {
-              "mark": "△",
-              "index": 54
             },
             "ATHENA": {
               "mark": "☆",
@@ -11636,17 +12132,13 @@
           "number": 6,
           "name": "ナムラモモ",
           "sourceHorseId": 2022103078,
-          "odds": 4.4
+          "odds": 3.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -11656,7 +12148,7 @@
           "number": 7,
           "name": "ラムールデュヴォン",
           "sourceHorseId": 2023109174,
-          "odds": 29
+          "odds": 91
         }
       ]
     },
@@ -11673,6 +12165,7 @@
       "missingSites": [
         "競馬ブック",
         "競馬ラボ",
+        "ウマークス",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -11686,10 +12179,6 @@
               "mark": "○",
               "index": 89
             },
-            "ウマークス": {
-              "mark": "☆",
-              "index": 40
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 73
@@ -11698,17 +12187,13 @@
           "number": 1,
           "name": "デイトナチャンプ",
           "sourceHorseId": 2023107204,
-          "odds": 1.9
+          "odds": 1.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 75
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -11718,17 +12203,13 @@
           "number": 2,
           "name": "ナハトナナレオン",
           "sourceHorseId": 2023102619,
-          "odds": 8.2
+          "odds": 5.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 79
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -11738,17 +12219,13 @@
           "number": 3,
           "name": "メイショウハッケイ",
           "sourceHorseId": 2023105035,
-          "odds": 9.6
+          "odds": 11.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -11758,17 +12235,13 @@
           "number": 4,
           "name": "マジカルシャイン",
           "sourceHorseId": 2022110012,
-          "odds": 42.7
+          "odds": 58.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 77
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "△",
@@ -11778,17 +12251,13 @@
           "number": 5,
           "name": "コスモレッド",
           "sourceHorseId": 2023102475,
-          "odds": 5.7
+          "odds": 13.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 79
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -11798,17 +12267,13 @@
           "number": 6,
           "name": "トップオンザヒル",
           "sourceHorseId": 2022106357,
-          "odds": 70.7
+          "odds": 91.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 82
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -11818,17 +12283,13 @@
           "number": 7,
           "name": "ルクスアドラー",
           "sourceHorseId": 2021101100,
-          "odds": 59.8
+          "odds": 148.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 95
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "△",
@@ -11838,17 +12299,13 @@
           "number": 8,
           "name": "ダノンフィオーレ",
           "sourceHorseId": 2022104894,
-          "odds": 19.4
+          "odds": 13.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 100
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "△",
@@ -11858,17 +12315,13 @@
           "number": 9,
           "name": "サンウリエル",
           "sourceHorseId": 2021101304,
-          "odds": 15.3
+          "odds": 21.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 84
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "△",
@@ -11878,17 +12331,13 @@
           "number": 10,
           "name": "クイーンズワーフ",
           "sourceHorseId": 2021105168,
-          "odds": 13
+          "odds": 9.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 64
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 71
             },
             "ATHENA": {
               "mark": "☆",
@@ -11898,17 +12347,13 @@
           "number": 11,
           "name": "フクシマコウヨウ",
           "sourceHorseId": 2022104870,
-          "odds": 115.7
+          "odds": 355
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 84
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -11918,7 +12363,7 @@
           "number": 12,
           "name": "トレヴィ",
           "sourceHorseId": 2022102988,
-          "odds": 13.9
+          "odds": 16.3
         }
       ]
     },
@@ -11935,6 +12380,7 @@
       "missingSites": [
         "競馬ブック",
         "競馬ラボ",
+        "ウマークス",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -11948,10 +12394,6 @@
               "mark": "○",
               "index": 88
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
-            },
             "ATHENA": {
               "mark": "▲",
               "index": 69
@@ -11960,17 +12402,13 @@
           "number": 1,
           "name": "ルージュビバーチェ",
           "sourceHorseId": 2023107337,
-          "odds": 9.3
+          "odds": 6.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 76
-            },
-            "ウマークス": {
-              "mark": "☆",
-              "index": 45
             },
             "ATHENA": {
               "mark": "△",
@@ -11980,17 +12418,13 @@
           "number": 2,
           "name": "サウンドルーチェ",
           "sourceHorseId": 2022105267,
-          "odds": 9.8
+          "odds": 15
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 58
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -12000,17 +12434,13 @@
           "number": 3,
           "name": "ナムラハリス",
           "sourceHorseId": 2023100463,
-          "odds": 31.5
+          "odds": 43.1
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -12020,17 +12450,13 @@
           "number": 4,
           "name": "マインセーラ",
           "sourceHorseId": 2023102305,
-          "odds": 53
+          "odds": 185.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 94
-            },
-            "ウマークス": {
-              "mark": "☆",
-              "index": 39
             },
             "ATHENA": {
               "mark": "▲",
@@ -12040,17 +12466,13 @@
           "number": 5,
           "name": "マーゴットサンズ",
           "sourceHorseId": 2023103696,
-          "odds": 1.7
+          "odds": 1.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 92
-            },
-            "ウマークス": {
-              "mark": "☆",
-              "index": 47
             },
             "ATHENA": {
               "mark": "△",
@@ -12060,17 +12482,13 @@
           "number": 6,
           "name": "カルミアクラウン",
           "sourceHorseId": 2022107317,
-          "odds": 8.3
+          "odds": 5.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 90
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -12080,17 +12498,13 @@
           "number": 7,
           "name": "ヴェールミューズ",
           "sourceHorseId": 2023104766,
-          "odds": 13.4
+          "odds": 14.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 100
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
             },
             "ATHENA": {
               "mark": "☆",
@@ -12100,7 +12514,7 @@
           "number": 8,
           "name": "ラウニウ",
           "sourceHorseId": 2022104399,
-          "odds": 4.5
+          "odds": 6.3
         }
       ]
     },
@@ -12117,6 +12531,8 @@
       "missingSites": [
         "競馬ブック",
         "競馬ラボ",
+        "ウマークス",
+        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -12130,10 +12546,6 @@
               "mark": "▲",
               "index": 73
             },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 67
-            },
             "ATHENA": {
               "mark": "△",
               "index": 54
@@ -12142,17 +12554,13 @@
           "number": 1,
           "name": "アルデトップガン",
           "sourceHorseId": 2023105106,
-          "odds": 5.7
+          "odds": 5.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -12162,17 +12570,13 @@
           "number": 2,
           "name": "レイユール",
           "sourceHorseId": 2022101464,
-          "odds": 14.1
+          "odds": 22.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 55
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -12182,17 +12586,13 @@
           "number": 3,
           "name": "シャイニースイフト",
           "sourceHorseId": 2020101184,
-          "odds": 13.4
+          "odds": 20.5
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 100
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
             },
             "ATHENA": {
               "mark": "☆",
@@ -12202,15 +12602,11 @@
           "number": 4,
           "name": "ヴェナートル",
           "sourceHorseId": 2022101469,
-          "odds": 34.3
+          "odds": 93.1
         },
         {
           "predictions": {
             "SPAIA": {
-              "mark": "▲",
-              "index": 68
-            },
-            "ウマークス": {
               "mark": "▲",
               "index": 68
             },
@@ -12222,17 +12618,13 @@
           "number": 5,
           "name": "マーゴットブロー",
           "sourceHorseId": 2023105356,
-          "odds": 7.6
+          "odds": 3.1
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "○",
               "index": 88
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "▲",
@@ -12242,37 +12634,25 @@
           "number": 6,
           "name": "ショウナンカリス",
           "sourceHorseId": 2023105347,
-          "odds": 6.7
+          "odds": 5.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 70
-            },
-            "ATHENA": {
-              "mark": "△",
-              "index": 56
             }
           },
           "number": 7,
           "name": "ブラックルビー",
           "sourceHorseId": 2022105981,
-          "odds": 22.7
+          "odds": 0
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 73
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 68
             },
             "ATHENA": {
               "mark": "☆",
@@ -12282,17 +12662,13 @@
           "number": 8,
           "name": "ワタシマツワ",
           "sourceHorseId": 2022101412,
-          "odds": 6.7
+          "odds": 9.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 73
-            },
-            "ウマークス": {
-              "mark": "▲",
-              "index": 69
             },
             "ATHENA": {
               "mark": "▲",
@@ -12302,17 +12678,13 @@
           "number": 9,
           "name": "ジャズ",
           "sourceHorseId": 2021103227,
-          "odds": 16.1
+          "odds": 12.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 90
-            },
-            "ウマークス": {
-              "mark": "☆",
-              "index": 40
             },
             "ATHENA": {
               "mark": "△",
@@ -12322,7 +12694,7 @@
           "number": 10,
           "name": "ヒズマスターピース",
           "sourceHorseId": 2023105714,
-          "odds": 2.7
+          "odds": 3.7
         }
       ]
     },
@@ -12335,7 +12707,7 @@
       "name": "札幌日経賞",
       "date": "2026-07-26",
       "startAt": "15:25",
-      "updatedAt": "15:15:00",
+      "updatedAt": "15:23:14",
       "missingSites": [
         "競馬ブック",
         "競馬ラボ",
@@ -12497,7 +12869,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -12641,7 +13013,7 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 70
             },
             "ATHENA": {
               "mark": "△",
@@ -12671,7 +13043,6 @@
       "updatedAt": "15:51:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -12685,6 +13056,10 @@
               "mark": "◎",
               "index": 98
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 100
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 39
@@ -12697,7 +13072,7 @@
           "number": 1,
           "name": "クリスレジーナ",
           "sourceHorseId": 2023102091,
-          "odds": 2.3
+          "odds": 2.5
         },
         {
           "predictions": {
@@ -12705,9 +13080,13 @@
               "mark": "○",
               "index": 89
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 68
+              "index": 69
             },
             "ATHENA": {
               "mark": "☆",
@@ -12717,13 +13096,17 @@
           "number": 2,
           "name": "ピティロディア",
           "sourceHorseId": 2022105400,
-          "odds": 10.1
+          "odds": 10.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 59
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 73
             },
             "ウマークス": {
               "mark": "▲",
@@ -12737,7 +13120,7 @@
           "number": 3,
           "name": "キセキノエンジェル",
           "sourceHorseId": 2019106416,
-          "odds": 48.4
+          "odds": 40.6
         },
         {
           "predictions": {
@@ -12745,9 +13128,13 @@
               "mark": "▲",
               "index": 78
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 77
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 68
             },
             "ATHENA": {
               "mark": "☆",
@@ -12757,13 +13144,17 @@
           "number": 4,
           "name": "デルマジュテーム",
           "sourceHorseId": 2022101969,
-          "odds": 12.7
+          "odds": 9.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "☆",
               "index": -239
+            },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 37
             },
             "ウマークス": {
               "mark": "▲",
@@ -12777,13 +13168,17 @@
           "number": 5,
           "name": "カイシンパジェント",
           "sourceHorseId": 2023102719,
-          "odds": 12.7
+          "odds": 13.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
             },
             "ウマークス": {
               "mark": "▲",
@@ -12797,13 +13192,17 @@
           "number": 6,
           "name": "カージオイド",
           "sourceHorseId": 2022104062,
-          "odds": 20.1
+          "odds": 15.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 70
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "▲",
@@ -12817,13 +13216,17 @@
           "number": 7,
           "name": "フリーガー",
           "sourceHorseId": 2023104389,
-          "odds": 10.1
+          "odds": 9.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "☆",
@@ -12845,6 +13248,10 @@
               "mark": "◎",
               "index": 93
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
@@ -12857,7 +13264,7 @@
           "number": 9,
           "name": "ドルチェリターン",
           "sourceHorseId": 2022104598,
-          "odds": 7.5
+          "odds": 7.6
         }
       ]
     }
