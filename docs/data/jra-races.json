@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T17:36:25+09:00",
+  "generatedAt": "2026-08-01T18:54:56+09:00",
   "targetDate": "2026-08-02",
   "updateLeadMinutes": 10,
   "source": "site-scrape",
@@ -49,11 +49,11 @@
       "site": "ATHENA",
       "raceId": "niigata-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -149,11 +149,11 @@
       "site": "ATHENA",
       "raceId": "niigata-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -249,11 +249,11 @@
       "site": "ATHENA",
       "raceId": "niigata-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 13,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -349,11 +349,11 @@
       "site": "ATHENA",
       "raceId": "niigata-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -449,11 +449,11 @@
       "site": "ATHENA",
       "raceId": "niigata-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -549,11 +549,11 @@
       "site": "ATHENA",
       "raceId": "niigata-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -649,11 +649,11 @@
       "site": "ATHENA",
       "raceId": "niigata-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 17,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 17,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -749,11 +749,11 @@
       "site": "ATHENA",
       "raceId": "niigata-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -849,11 +849,11 @@
       "site": "ATHENA",
       "raceId": "niigata-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -949,11 +949,11 @@
       "site": "ATHENA",
       "raceId": "niigata-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1049,11 +1049,11 @@
       "site": "ATHENA",
       "raceId": "niigata-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1149,11 +1149,11 @@
       "site": "ATHENA",
       "raceId": "niigata-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1249,11 +1249,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1349,11 +1349,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 8,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1449,11 +1449,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1549,11 +1549,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1649,11 +1649,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1749,11 +1749,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1849,11 +1849,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -1949,11 +1949,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2049,11 +2049,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2149,11 +2149,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2249,11 +2249,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 6,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 6,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2349,11 +2349,11 @@
       "site": "ATHENA",
       "raceId": "chukyo-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2449,11 +2449,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2549,11 +2549,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2649,11 +2649,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2749,11 +2749,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 13,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2849,11 +2849,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -2949,11 +2949,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3049,11 +3049,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3149,11 +3149,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3249,11 +3249,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3349,11 +3349,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3449,11 +3449,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3549,11 +3549,11 @@
       "site": "ATHENA",
       "raceId": "sapporo-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "ATHENA target article未公開"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "無料競馬AI",
@@ -3619,7 +3619,6 @@
       "updatedAt": "09:40:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -3644,6 +3643,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 23
             }
           },
           "number": 1,
@@ -3668,6 +3671,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 20
             }
           },
           "number": 2,
@@ -3692,6 +3699,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 33
             }
           },
           "number": 3,
@@ -3712,6 +3723,10 @@
             "ウマークス": {
               "mark": "◎",
               "index": 94
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 78
             }
           },
           "number": 4,
@@ -3732,6 +3747,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 84
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 68
             }
           },
           "number": 5,
@@ -3752,6 +3771,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 66
             }
           },
           "number": 6,
@@ -3772,6 +3795,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 57
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 27
             }
           },
           "number": 7,
@@ -3792,6 +3819,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 52
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 23
             }
           },
           "number": 8,
@@ -3812,6 +3843,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 64
             }
           },
           "number": 9,
@@ -3832,6 +3867,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 81
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 10,
@@ -3852,6 +3891,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 44
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 26
             }
           },
           "number": 11,
@@ -3872,6 +3915,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 18
             }
           },
           "number": 12,
@@ -3895,7 +3942,6 @@
         "SPAIA",
         "競馬ブック",
         "ウマークス",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -3908,6 +3954,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 36
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 1,
@@ -3920,6 +3970,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 35
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 65
             }
           },
           "number": 2,
@@ -3932,6 +3986,10 @@
             "競馬ラボ": {
               "mark": "◎",
               "index": 95
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 58
             }
           },
           "number": 3,
@@ -3944,6 +4002,10 @@
             "競馬ラボ": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 4,
@@ -3956,6 +4018,10 @@
             "競馬ラボ": {
               "mark": "○",
               "index": 81
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 5,
@@ -3968,6 +4034,10 @@
             "競馬ラボ": {
               "mark": "◎",
               "index": 99
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 57
             }
           },
           "number": 6,
@@ -3980,6 +4050,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 39
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 7,
@@ -3992,6 +4066,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 46
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 41
             }
           },
           "number": 8,
@@ -4004,6 +4082,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 32
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 46
             }
           },
           "number": 9,
@@ -4016,6 +4098,10 @@
             "競馬ラボ": {
               "mark": "△",
               "index": 56
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 57
             }
           },
           "number": 10,
@@ -4028,6 +4114,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 40
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 11,
@@ -4040,6 +4130,10 @@
             "競馬ラボ": {
               "mark": "△",
               "index": 52
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 12,
@@ -4063,7 +4157,6 @@
         "SPAIA",
         "競馬ブック",
         "ウマークス",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -4076,6 +4169,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 45
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 1,
@@ -4088,6 +4185,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 46
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 2,
@@ -4100,6 +4201,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 47
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 48
             }
           },
           "number": 3,
@@ -4112,6 +4217,10 @@
             "競馬ラボ": {
               "mark": "△",
               "index": 64
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 4,
@@ -4124,6 +4233,10 @@
             "競馬ラボ": {
               "mark": "◎",
               "index": 99
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 60
             }
           },
           "number": 5,
@@ -4136,6 +4249,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 25
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 46
             }
           },
           "number": 6,
@@ -4148,6 +4265,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 24
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 7,
@@ -4160,6 +4281,10 @@
             "競馬ラボ": {
               "mark": "▲",
               "index": 76
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 8,
@@ -4172,6 +4297,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 29
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 63
             }
           },
           "number": 9,
@@ -4184,6 +4313,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 32
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 10,
@@ -4196,6 +4329,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 31
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 63
             }
           },
           "number": 11,
@@ -4208,6 +4345,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 36
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 64
             }
           },
           "number": 12,
@@ -4220,6 +4361,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 27
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 13,
@@ -4241,7 +4386,6 @@
       "updatedAt": "11:10:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -4262,6 +4406,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 30
             }
           },
           "number": 1,
@@ -4282,6 +4430,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 41
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 26
             }
           },
           "number": 2,
@@ -4302,6 +4454,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 69
             }
           },
           "number": 3,
@@ -4322,6 +4478,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 37
             }
           },
           "number": 4,
@@ -4342,6 +4502,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 5,
@@ -4362,6 +4526,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 34
             }
           },
           "number": 6,
@@ -4382,6 +4550,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 7,
@@ -4402,6 +4574,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 84
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 71
             }
           },
           "number": 8,
@@ -4422,6 +4598,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 21
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 67
             }
           },
           "number": 9,
@@ -4442,6 +4622,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 83
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 68
             }
           },
           "number": 10,
@@ -4462,6 +4646,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 11,
@@ -4482,6 +4670,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 26
             }
           },
           "number": 12,
@@ -4502,6 +4694,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 81
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 13,
@@ -4522,6 +4718,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 39
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 15
             }
           },
           "number": 14,
@@ -4542,6 +4742,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 38
             }
           },
           "number": 15,
@@ -4563,7 +4767,6 @@
       "updatedAt": "11:40:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -4584,6 +4787,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 1,
@@ -4604,6 +4811,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 2,
@@ -4624,6 +4835,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 83
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 57
             }
           },
           "number": 3,
@@ -4644,6 +4859,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 38
             }
           },
           "number": 4,
@@ -4664,6 +4883,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 70
             }
           },
           "number": 5,
@@ -4684,6 +4907,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 60
             }
           },
           "number": 6,
@@ -4704,6 +4931,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "○",
+              "index": 82
             }
           },
           "number": 7,
@@ -4724,6 +4955,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 38
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 21
             }
           },
           "number": 8,
@@ -4744,6 +4979,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 9,
@@ -4764,6 +5003,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 10,
@@ -4784,6 +5027,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 11,
@@ -4804,6 +5051,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 12,
@@ -4824,6 +5075,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 13,
@@ -4844,6 +5099,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 39
             }
           },
           "number": 14,
@@ -4864,6 +5123,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 49
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 25
             }
           },
           "number": 15,
@@ -4884,6 +5147,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 16,
@@ -4904,6 +5171,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 73
             }
           },
           "number": 17,
@@ -4924,6 +5195,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 60
             }
           },
           "number": 18,
@@ -4945,7 +5220,6 @@
       "updatedAt": "15:00:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -4966,6 +5240,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 1,
@@ -4986,6 +5264,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 52
             }
           },
           "number": 2,
@@ -5006,6 +5288,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 68
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 35
             }
           },
           "number": 3,
@@ -5026,6 +5312,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 70
             }
           },
           "number": 4,
@@ -5046,6 +5336,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 16
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 68
             }
           },
           "number": 5,
@@ -5066,6 +5360,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 75
             }
           },
           "number": 6,
@@ -5086,6 +5384,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 45
             }
           },
           "number": 7,
@@ -5106,6 +5408,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 46
             }
           },
           "number": 8,
@@ -5126,6 +5432,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 39
             }
           },
           "number": 9,
@@ -5146,6 +5456,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 10,
@@ -5166,6 +5480,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 56
             }
           },
           "number": 11,
@@ -5186,6 +5504,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 38
             }
           },
           "number": 12,
@@ -5206,6 +5528,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 13,
@@ -5226,6 +5552,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 50
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 25
             }
           },
           "number": 14,
@@ -5246,6 +5576,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 15,
@@ -5267,7 +5601,6 @@
       "updatedAt": "15:35:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -5287,6 +5620,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 50
             },
             "無料競馬AI": {
               "mark": "△",
@@ -5312,6 +5649,10 @@
               "mark": "▲",
               "index": 72
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 43
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 39
@@ -5334,7 +5675,11 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 71
+              "index": 72
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 40
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5358,7 +5703,11 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 71
+              "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             },
             "無料競馬AI": {
               "mark": "△",
@@ -5384,6 +5733,10 @@
               "mark": "▲",
               "index": 70
             },
+            "ATHENA": {
+              "mark": "△",
+              "index": 52
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 43
@@ -5408,6 +5761,10 @@
               "mark": "▲",
               "index": 67
             },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 71
+            },
             "無料競馬AI": {
               "mark": "○",
               "index": 65
@@ -5430,7 +5787,11 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 72
+              "index": 71
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 36
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5456,6 +5817,10 @@
               "mark": "▲",
               "index": 69
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 48
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 47
@@ -5479,6 +5844,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5504,6 +5873,10 @@
               "mark": "▲",
               "index": 68
             },
+            "ATHENA": {
+              "mark": "△",
+              "index": 60
+            },
             "無料競馬AI": {
               "mark": "△",
               "index": 55
@@ -5527,6 +5900,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 53
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5552,6 +5929,10 @@
               "mark": "▲",
               "index": 69
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 40
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 47
@@ -5575,6 +5956,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 68
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 42
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5600,6 +5985,10 @@
               "mark": "▲",
               "index": 72
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 25
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 32
@@ -5623,6 +6012,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 51
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5648,6 +6041,10 @@
               "mark": "▲",
               "index": 67
             },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 74
+            },
             "無料競馬AI": {
               "mark": "◎",
               "index": 74
@@ -5671,6 +6068,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 68
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             },
             "無料競馬AI": {
               "mark": "▲",
@@ -5696,7 +6097,6 @@
       "updatedAt": "16:10:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -5717,6 +6117,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 71
             }
           },
           "number": 1,
@@ -5737,6 +6141,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 2,
@@ -5757,6 +6165,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 3,
@@ -5777,6 +6189,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 57
             }
           },
           "number": 4,
@@ -5797,6 +6213,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 65
             }
           },
           "number": 5,
@@ -5817,6 +6237,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 6,
@@ -5837,6 +6261,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 60
             }
           },
           "number": 7,
@@ -5857,6 +6285,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 86
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 77
             }
           },
           "number": 8,
@@ -5877,6 +6309,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 65
             }
           },
           "number": 9,
@@ -5897,6 +6333,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 56
             }
           },
           "number": 10,
@@ -5917,6 +6357,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 34
             }
           },
           "number": 11,
@@ -5937,6 +6381,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 48
             }
           },
           "number": 12,
@@ -5957,6 +6405,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 60
             }
           },
           "number": 13,
@@ -5977,6 +6429,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 48
             }
           },
           "number": 14,
@@ -5998,7 +6454,6 @@
       "updatedAt": "16:45:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -6019,6 +6474,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 38
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 22
             }
           },
           "number": 1,
@@ -6039,6 +6498,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 85
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 70
             }
           },
           "number": 2,
@@ -6059,6 +6522,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 37
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 21
             }
           },
           "number": 3,
@@ -6079,6 +6546,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 37
             }
           },
           "number": 4,
@@ -6099,6 +6570,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 18
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 5,
@@ -6119,6 +6594,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 40
             }
           },
           "number": 6,
@@ -6139,6 +6618,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 67
             }
           },
           "number": 7,
@@ -6159,6 +6642,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 8,
@@ -6179,6 +6666,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 9,
@@ -6199,6 +6690,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 55
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 10,
@@ -6219,6 +6714,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 11,
@@ -6239,6 +6738,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 51
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 38
             }
           },
           "number": 12,
@@ -6259,6 +6762,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 64
             }
           },
           "number": 13,
@@ -6279,6 +6786,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 52
             }
           },
           "number": 14,
@@ -6299,6 +6810,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 52
             }
           },
           "number": 15,
@@ -6320,7 +6835,6 @@
       "updatedAt": "17:20:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -6341,6 +6855,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 77
             }
           },
           "number": 1,
@@ -6361,6 +6879,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 38
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 52
             }
           },
           "number": 2,
@@ -6381,6 +6903,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 3,
@@ -6401,6 +6927,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 46
             }
           },
           "number": 4,
@@ -6421,6 +6951,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 63
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 43
             }
           },
           "number": 5,
@@ -6441,6 +6975,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 6,
@@ -6461,6 +6999,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 45
             }
           },
           "number": 7,
@@ -6481,6 +7023,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 56
             }
           },
           "number": 8,
@@ -6501,6 +7047,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 83
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 9,
@@ -6521,6 +7071,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 86
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 73
             }
           },
           "number": 10,
@@ -6541,6 +7095,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 44
             }
           },
           "number": 11,
@@ -6561,6 +7119,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 64
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 29
             }
           },
           "number": 12,
@@ -6581,6 +7143,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 40
             }
           },
           "number": 13,
@@ -6601,6 +7167,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 34
             }
           },
           "number": 14,
@@ -6622,7 +7192,6 @@
       "updatedAt": "17:50:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -6642,6 +7211,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 73
             },
             "無料競馬AI": {
               "mark": "▲",
@@ -6667,6 +7240,10 @@
               "mark": "△",
               "index": 55
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 44
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 45
@@ -6690,6 +7267,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 11
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -6715,6 +7296,10 @@
               "mark": "☆",
               "index": 38
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 45
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 41
@@ -6738,6 +7323,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 50
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             },
             "無料競馬AI": {
               "mark": "△",
@@ -6763,6 +7352,10 @@
               "mark": "▲",
               "index": 71
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 33
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 29
@@ -6786,6 +7379,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 68
             },
             "無料競馬AI": {
               "mark": "△",
@@ -6811,6 +7408,10 @@
               "mark": "○",
               "index": 82
             },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
+            },
             "無料競馬AI": {
               "mark": "△",
               "index": 58
@@ -6834,6 +7435,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 54
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 28
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -6859,6 +7464,10 @@
               "mark": "☆",
               "index": 38
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 19
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 17
@@ -6882,6 +7491,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -6907,6 +7520,10 @@
               "mark": "▲",
               "index": 74
             },
+            "ATHENA": {
+              "mark": "○",
+              "index": 83
+            },
             "無料競馬AI": {
               "mark": "◎",
               "index": 82
@@ -6930,6 +7547,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 83
+            },
+            "ATHENA": {
+              "mark": "○",
+              "index": 80
             },
             "無料競馬AI": {
               "mark": "○",
@@ -6955,6 +7576,10 @@
               "mark": "▲",
               "index": 73
             },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 68
+            },
             "無料競馬AI": {
               "mark": "△",
               "index": 59
@@ -6979,7 +7604,6 @@
       "updatedAt": "18:20:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -7000,6 +7624,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 57
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 46
             }
           },
           "number": 1,
@@ -7020,6 +7648,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 2,
@@ -7040,6 +7672,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 3,
@@ -7060,6 +7696,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 56
             }
           },
           "number": 4,
@@ -7080,6 +7720,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 55
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 40
             }
           },
           "number": 5,
@@ -7100,6 +7744,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 58
             }
           },
           "number": 6,
@@ -7120,6 +7768,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 8
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 43
             }
           },
           "number": 7,
@@ -7140,6 +7792,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 58
             }
           },
           "number": 8,
@@ -7160,6 +7816,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 9,
@@ -7180,6 +7840,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 41
             }
           },
           "number": 10,
@@ -7200,6 +7864,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 37
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 36
             }
           },
           "number": 11,
@@ -7220,6 +7888,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 12,
@@ -7240,6 +7912,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 13,
@@ -7260,6 +7936,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 78
             }
           },
           "number": 14,
@@ -7280,6 +7960,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 85
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 71
             }
           },
           "number": 15,
@@ -7300,6 +7984,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 56
             }
           },
           "number": 16,
@@ -7320,6 +8008,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 3
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 33
             }
           },
           "number": 17,
@@ -7340,6 +8032,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 27
             }
           },
           "number": 18,
@@ -7361,7 +8057,6 @@
       "updatedAt": "09:30:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -7386,6 +8081,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 54
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 28
             }
           },
           "number": 1,
@@ -7410,6 +8109,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 46
             }
           },
           "number": 2,
@@ -7434,6 +8137,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 63
             }
           },
           "number": 3,
@@ -7454,6 +8161,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 85
+            },
+            "ATHENA": {
+              "mark": "◎",
+              "index": 91
             }
           },
           "number": 4,
@@ -7474,6 +8185,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 58
             }
           },
           "number": 5,
@@ -7494,6 +8209,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 54
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 19
             }
           },
           "number": 6,
@@ -7514,6 +8233,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 7,
@@ -7534,6 +8257,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 75
             }
           },
           "number": 8,
@@ -7554,6 +8281,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 71
             }
           },
           "number": 9,
@@ -7574,6 +8305,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 43
             }
           },
           "number": 10,
@@ -7594,6 +8329,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 49
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 11,
@@ -7614,6 +8353,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 14
             }
           },
           "number": 12,
@@ -7634,6 +8377,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 30
             }
           },
           "number": 13,
@@ -7654,6 +8401,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 37
             }
           },
           "number": 14,
@@ -7674,6 +8425,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 46
             }
           },
           "number": 15,
@@ -7694,6 +8449,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 76
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 16,
@@ -7714,6 +8473,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 21
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 17,
@@ -7734,6 +8497,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 39
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 17
             }
           },
           "number": 18,
@@ -7757,7 +8524,6 @@
         "SPAIA",
         "競馬ブック",
         "ウマークス",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -7770,6 +8536,10 @@
             "競馬ラボ": {
               "mark": "△",
               "index": 62
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 60
             }
           },
           "number": 1,
@@ -7782,6 +8552,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 34
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 2,
@@ -7794,6 +8568,10 @@
             "競馬ラボ": {
               "mark": "△",
               "index": 54
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 52
             }
           },
           "number": 3,
@@ -7806,6 +8584,10 @@
             "競馬ラボ": {
               "mark": "◎",
               "index": 99
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 4,
@@ -7818,6 +8600,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 37
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 5,
@@ -7830,6 +8616,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 26
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 6,
@@ -7842,6 +8632,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 42
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 69
             }
           },
           "number": 7,
@@ -7854,6 +8648,10 @@
             "競馬ラボ": {
               "mark": "△",
               "index": 64
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 8,
@@ -7877,7 +8675,6 @@
         "SPAIA",
         "競馬ブック",
         "ウマークス",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -7890,6 +8687,10 @@
             "競馬ラボ": {
               "mark": "◎",
               "index": 99
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 1,
@@ -7902,6 +8703,10 @@
             "競馬ラボ": {
               "mark": "◎",
               "index": 95
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 67
             }
           },
           "number": 2,
@@ -7914,6 +8719,10 @@
             "競馬ラボ": {
               "mark": "○",
               "index": 82
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 63
             }
           },
           "number": 3,
@@ -7926,6 +8735,10 @@
             "競馬ラボ": {
               "mark": "◎",
               "index": 92
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 4,
@@ -7938,6 +8751,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 45
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 46
             }
           },
           "number": 5,
@@ -7950,6 +8767,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 41
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 71
             }
           },
           "number": 6,
@@ -7962,6 +8783,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 33
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 52
             }
           },
           "number": 7,
@@ -7974,6 +8799,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 30
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 48
             }
           },
           "number": 8,
@@ -7986,6 +8815,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 47
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 9,
@@ -7998,6 +8831,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 29
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 10,
@@ -8019,7 +8856,6 @@
       "updatedAt": "11:00:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -8040,6 +8876,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 9
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 74
             }
           },
           "number": 1,
@@ -8060,6 +8900,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 63
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 2,
@@ -8080,6 +8924,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 65
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 3,
@@ -8100,6 +8948,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 62
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 65
             }
           },
           "number": 4,
@@ -8120,6 +8972,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 73
             }
           },
           "number": 5,
@@ -8140,6 +8996,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 74
             }
           },
           "number": 6,
@@ -8160,6 +9020,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 63
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 48
             }
           },
           "number": 7,
@@ -8180,6 +9044,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 81
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 60
             }
           },
           "number": 8,
@@ -8200,6 +9068,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "○",
+              "index": 83
             }
           },
           "number": 9,
@@ -8220,6 +9092,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 65
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 66
             }
           },
           "number": 10,
@@ -8240,6 +9116,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 81
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 67
             }
           },
           "number": 11,
@@ -8258,6 +9138,10 @@
               "index": 85
             },
             "ウマークス": {
+              "mark": "▲",
+              "index": 79
+            },
+            "ATHENA": {
               "mark": "▲",
               "index": 79
             }
@@ -8280,6 +9164,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 85
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 76
             }
           },
           "number": 13,
@@ -8300,6 +9188,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 39
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 30
             }
           },
           "number": 14,
@@ -8320,6 +9212,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 81
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 79
             }
           },
           "number": 15,
@@ -8340,6 +9236,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 16,
@@ -8361,7 +9261,6 @@
       "updatedAt": "11:30:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -8382,6 +9281,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 44
             }
           },
           "number": 1,
@@ -8402,6 +9305,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 2,
@@ -8422,6 +9329,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 85
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 56
             }
           },
           "number": 3,
@@ -8442,6 +9353,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 4,
@@ -8462,6 +9377,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 5,
@@ -8482,6 +9401,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 88
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 60
             }
           },
           "number": 6,
@@ -8502,6 +9425,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 88
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 39
             }
           },
           "number": 7,
@@ -8522,6 +9449,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 40
             }
           },
           "number": 8,
@@ -8542,6 +9473,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 36
             }
           },
           "number": 9,
@@ -8563,7 +9498,6 @@
       "updatedAt": "14:50:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -8584,6 +9518,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 1,
@@ -8604,6 +9542,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 2,
@@ -8624,6 +9566,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 68
             }
           },
           "number": 3,
@@ -8644,6 +9590,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "○",
+              "index": 83
             }
           },
           "number": 4,
@@ -8664,6 +9614,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 76
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 71
             }
           },
           "number": 5,
@@ -8684,6 +9638,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 84
+            },
+            "ATHENA": {
+              "mark": "○",
+              "index": 83
             }
           },
           "number": 6,
@@ -8704,6 +9662,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 41
             }
           },
           "number": 7,
@@ -8724,6 +9686,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 85
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 64
             }
           },
           "number": 8,
@@ -8744,6 +9710,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 9,
@@ -8765,7 +9735,6 @@
       "updatedAt": "15:25:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -8786,6 +9755,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 82
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 1,
@@ -8806,6 +9779,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 40
             }
           },
           "number": 2,
@@ -8826,6 +9803,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 74
             }
           },
           "number": 3,
@@ -8846,6 +9827,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 57
             }
           },
           "number": 4,
@@ -8866,6 +9851,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 39
             }
           },
           "number": 5,
@@ -8886,6 +9875,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 63
             }
           },
           "number": 6,
@@ -8906,6 +9899,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 52
             }
           },
           "number": 7,
@@ -8926,6 +9923,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 58
             }
           },
           "number": 8,
@@ -8946,6 +9947,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 82
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 75
             }
           },
           "number": 9,
@@ -8967,7 +9972,6 @@
       "updatedAt": "16:00:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -8988,6 +9992,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 64
             }
           },
           "number": 1,
@@ -9008,6 +10016,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 67
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 2,
@@ -9028,6 +10040,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 3,
@@ -9048,6 +10064,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 4,
@@ -9068,6 +10088,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 72
             }
           },
           "number": 5,
@@ -9088,6 +10112,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 60
             }
           },
           "number": 6,
@@ -9108,6 +10136,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 7,
@@ -9128,6 +10160,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 33
             }
           },
           "number": 8,
@@ -9148,6 +10184,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 9,
@@ -9168,6 +10208,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 29
             }
           },
           "number": 10,
@@ -9188,6 +10232,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 44
             }
           },
           "number": 11,
@@ -9431,7 +10479,6 @@
       "updatedAt": "17:10:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -9450,6 +10497,10 @@
               "index": 83
             },
             "ウマークス": {
+              "mark": "△",
+              "index": 54
+            },
+            "ATHENA": {
               "mark": "△",
               "index": 54
             }
@@ -9472,6 +10523,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 2,
@@ -9492,6 +10547,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 65
             }
           },
           "number": 3,
@@ -9512,6 +10571,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 65
             }
           },
           "number": 4,
@@ -9532,6 +10595,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 40
             }
           },
           "number": 5,
@@ -9552,6 +10619,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 6,
@@ -9572,6 +10643,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 37
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 7,
@@ -9592,6 +10667,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 8,
@@ -9612,6 +10691,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 68
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 66
             }
           },
           "number": 9,
@@ -9632,6 +10715,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 69
             }
           },
           "number": 10,
@@ -9652,6 +10739,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 57
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 63
             }
           },
           "number": 11,
@@ -9672,6 +10763,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 12,
@@ -9692,6 +10787,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 55
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 13,
@@ -9712,6 +10811,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 14,
@@ -9733,7 +10836,6 @@
       "updatedAt": "17:40:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -9753,6 +10855,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 42
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -9778,6 +10884,10 @@
               "mark": "▲",
               "index": 72
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
+            },
             "無料競馬AI": {
               "mark": "△",
               "index": 43
@@ -9801,6 +10911,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 57
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 43
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -9826,6 +10940,10 @@
               "mark": "▲",
               "index": 79
             },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 68
+            },
             "無料競馬AI": {
               "mark": "◎",
               "index": 75
@@ -9849,6 +10967,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 83
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 66
             },
             "無料競馬AI": {
               "mark": "○",
@@ -9874,6 +10996,10 @@
               "mark": "○",
               "index": 80
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 41
+            },
             "無料競馬AI": {
               "mark": "▲",
               "index": 47
@@ -9898,7 +11024,6 @@
       "updatedAt": "18:10:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -9919,6 +11044,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 4
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 1,
@@ -9939,6 +11068,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 52
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 2,
@@ -9959,6 +11092,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 55
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 66
             }
           },
           "number": 3,
@@ -9979,6 +11116,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 42
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 27
             }
           },
           "number": 4,
@@ -9999,6 +11140,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 37
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 23
             }
           },
           "number": 5,
@@ -10019,6 +11164,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 34
             }
           },
           "number": 6,
@@ -10039,6 +11188,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 40
             }
           },
           "number": 7,
@@ -10059,6 +11212,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 8,
@@ -10079,6 +11236,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 55
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 36
             }
           },
           "number": 9,
@@ -10099,6 +11260,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 5
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 10,
@@ -10119,6 +11284,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 57
             }
           },
           "number": 11,
@@ -10139,6 +11308,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 84
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 76
             }
           },
           "number": 12,
@@ -10159,6 +11332,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 13,
@@ -10179,6 +11356,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 74
             }
           },
           "number": 14,
@@ -10199,6 +11380,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 4
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 38
             }
           },
           "number": 15,
@@ -10219,6 +11404,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 38
             }
           },
           "number": 16,
@@ -10239,6 +11428,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 17,
@@ -10259,6 +11452,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 86
+            },
+            "ATHENA": {
+              "mark": "○",
+              "index": 88
             }
           },
           "number": 18,
@@ -10280,7 +11477,6 @@
       "updatedAt": "09:50:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -10305,6 +11501,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 82
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 78
             }
           },
           "number": 1,
@@ -10329,6 +11529,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 22
             }
           },
           "number": 2,
@@ -10353,6 +11557,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 63
             }
           },
           "number": 3,
@@ -10373,6 +11581,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 16
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 43
             }
           },
           "number": 4,
@@ -10393,6 +11605,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 48
             }
           },
           "number": 5,
@@ -10413,6 +11629,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 74
             }
           },
           "number": 6,
@@ -10433,6 +11653,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 56
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 57
             }
           },
           "number": 7,
@@ -10453,6 +11677,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 76
             }
           },
           "number": 8,
@@ -10473,6 +11701,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 22
             }
           },
           "number": 9,
@@ -10493,6 +11725,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 33
             }
           },
           "number": 10,
@@ -10513,6 +11749,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 7
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 25
             }
           },
           "number": 11,
@@ -10533,6 +11773,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 25
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 24
             }
           },
           "number": 12,
@@ -10553,6 +11797,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 22
             }
           },
           "number": 13,
@@ -10573,6 +11821,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 14,
@@ -10594,7 +11846,6 @@
       "updatedAt": "10:20:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -10615,6 +11866,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 76
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 58
             }
           },
           "number": 1,
@@ -10635,6 +11890,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 64
             }
           },
           "number": 2,
@@ -10655,6 +11914,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 70
             }
           },
           "number": 3,
@@ -10675,6 +11938,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 41
             }
           },
           "number": 4,
@@ -10695,6 +11962,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 68
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 5,
@@ -10715,6 +11986,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 11
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 45
             }
           },
           "number": 6,
@@ -10735,6 +12010,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 51
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 7,
@@ -10755,6 +12034,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 84
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 67
             }
           },
           "number": 8,
@@ -10775,6 +12058,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 34
             }
           },
           "number": 9,
@@ -10795,6 +12082,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 67
             }
           },
           "number": 10,
@@ -10815,6 +12106,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 65
             }
           },
           "number": 11,
@@ -10835,6 +12130,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 64
             }
           },
           "number": 12,
@@ -10855,6 +12154,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 40
             }
           },
           "number": 13,
@@ -10875,6 +12178,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 52
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 43
             }
           },
           "number": 14,
@@ -10896,7 +12203,6 @@
       "updatedAt": "10:50:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -10917,6 +12223,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 18
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 1,
@@ -10937,6 +12247,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 37
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 2,
@@ -10957,6 +12271,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 84
+            },
+            "ATHENA": {
+              "mark": "○",
+              "index": 83
             }
           },
           "number": 3,
@@ -10977,6 +12295,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 39
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 32
             }
           },
           "number": 4,
@@ -10997,6 +12319,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 18
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 44
             }
           },
           "number": 5,
@@ -11017,6 +12343,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 54
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 20
             }
           },
           "number": 6,
@@ -11037,6 +12367,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 54
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 16
             }
           },
           "number": 7,
@@ -11057,6 +12391,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 85
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 77
             }
           },
           "number": 8,
@@ -11077,6 +12415,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 56
             }
           },
           "number": 9,
@@ -11097,6 +12439,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 52
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 19
             }
           },
           "number": 10,
@@ -11117,6 +12463,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 83
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 11,
@@ -11138,7 +12488,6 @@
       "updatedAt": "11:20:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -11159,6 +12508,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 27
             }
           },
           "number": 1,
@@ -11179,6 +12532,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 74
             }
           },
           "number": 2,
@@ -11199,6 +12556,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 33
             }
           },
           "number": 3,
@@ -11219,6 +12580,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 46
             }
           },
           "number": 4,
@@ -11239,6 +12604,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 82
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 5,
@@ -11259,6 +12628,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 56
             }
           },
           "number": 6,
@@ -11279,6 +12652,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 36
             }
           },
           "number": 7,
@@ -11299,6 +12676,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 32
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 26
             }
           },
           "number": 8,
@@ -11319,6 +12700,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 39
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 9,
@@ -11339,6 +12724,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 76
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 10,
@@ -11359,6 +12748,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 37
             }
           },
           "number": 11,
@@ -11379,6 +12772,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 12,
@@ -11399,6 +12796,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 45
             }
           },
           "number": 13,
@@ -11422,7 +12823,6 @@
         "SPAIA",
         "競馬ブック",
         "ウマークス",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -11435,6 +12835,10 @@
             "競馬ラボ": {
               "mark": "△",
               "index": 54
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 60
             }
           },
           "number": 1,
@@ -11447,6 +12851,10 @@
             "競馬ラボ": {
               "mark": "△",
               "index": 61
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 65
             }
           },
           "number": 2,
@@ -11459,6 +12867,10 @@
             "競馬ラボ": {
               "mark": "◎",
               "index": 96
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 58
             }
           },
           "number": 3,
@@ -11471,6 +12883,10 @@
             "競馬ラボ": {
               "mark": "◎",
               "index": 99
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 67
             }
           },
           "number": 4,
@@ -11483,6 +12899,10 @@
             "競馬ラボ": {
               "mark": "○",
               "index": 89
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 43
             }
           },
           "number": 5,
@@ -11495,6 +12915,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 25
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 58
             }
           },
           "number": 6,
@@ -11507,6 +12931,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 29
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 7,
@@ -11519,6 +12947,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 46
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 41
             }
           },
           "number": 8,
@@ -11531,6 +12963,10 @@
             "競馬ラボ": {
               "mark": "☆",
               "index": 15
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 9,
@@ -11543,6 +12979,10 @@
             "競馬ラボ": {
               "mark": "△",
               "index": 61
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 58
             }
           },
           "number": 10,
@@ -11564,7 +13004,6 @@
       "updatedAt": "12:40:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -11585,6 +13024,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 1,
@@ -11605,6 +13048,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 71
             }
           },
           "number": 2,
@@ -11625,6 +13072,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 75
             }
           },
           "number": 3,
@@ -11645,6 +13096,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 68
             }
           },
           "number": 4,
@@ -11665,6 +13120,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 65
             }
           },
           "number": 5,
@@ -11685,6 +13144,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 6,
@@ -11705,6 +13168,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 83
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 43
             }
           },
           "number": 7,
@@ -11725,6 +13192,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 66
             }
           },
           "number": 8,
@@ -11745,6 +13216,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 9,
@@ -11765,6 +13240,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 10,
@@ -11785,6 +13264,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 11,
@@ -11806,7 +13289,6 @@
       "updatedAt": "13:10:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -11827,6 +13309,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 83
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 63
             }
           },
           "number": 1,
@@ -11847,6 +13333,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 2,
@@ -11867,6 +13357,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 51
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 26
             }
           },
           "number": 3,
@@ -11887,6 +13381,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 29
             }
           },
           "number": 4,
@@ -11907,6 +13405,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 39
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 38
             }
           },
           "number": 5,
@@ -11927,6 +13429,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 11
             }
           },
           "number": 6,
@@ -11947,6 +13453,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 48
             }
           },
           "number": 7,
@@ -11967,6 +13477,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 48
             }
           },
           "number": 8,
@@ -11987,6 +13501,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 84
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 9,
@@ -12007,6 +13525,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 10,
@@ -12027,6 +13549,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 44
             }
           },
           "number": 11,
@@ -12047,6 +13573,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 46
             }
           },
           "number": 12,
@@ -12068,7 +13598,6 @@
       "updatedAt": "13:40:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -12089,6 +13618,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 64
             }
           },
           "number": 1,
@@ -12109,6 +13642,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 2,
@@ -12129,6 +13666,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 3,
@@ -12149,6 +13690,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 11
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 25
             }
           },
           "number": 4,
@@ -12169,6 +13714,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 66
             }
           },
           "number": 5,
@@ -12189,6 +13738,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 52
             }
           },
           "number": 6,
@@ -12209,6 +13762,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 37
             }
           },
           "number": 7,
@@ -12229,6 +13786,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 17
             }
           },
           "number": 8,
@@ -12249,6 +13810,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 41
             }
           },
           "number": 9,
@@ -12269,6 +13834,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 10,
@@ -12289,6 +13858,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 11,
@@ -12309,6 +13882,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 48
             }
           },
           "number": 12,
@@ -12329,6 +13906,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 82
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 13,
@@ -12349,6 +13930,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 73
             }
           },
           "number": 14,
@@ -12370,7 +13955,6 @@
       "updatedAt": "14:10:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -12391,6 +13975,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 64
             }
           },
           "number": 1,
@@ -12411,6 +13999,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 63
             }
           },
           "number": 2,
@@ -12431,6 +14023,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 3,
@@ -12451,6 +14047,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 24
             }
           },
           "number": 4,
@@ -12471,6 +14071,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 83
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 75
             }
           },
           "number": 5,
@@ -12491,6 +14095,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 54
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 14
             }
           },
           "number": 6,
@@ -12511,6 +14119,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 7,
@@ -12531,6 +14143,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 45
             }
           },
           "number": 8,
@@ -12551,6 +14167,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 33
             }
           },
           "number": 9,
@@ -12571,6 +14191,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 45
             }
           },
           "number": 10,
@@ -12591,6 +14215,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 11,
@@ -12611,6 +14239,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 68
             }
           },
           "number": 12,
@@ -12632,7 +14264,6 @@
       "updatedAt": "14:40:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -12653,6 +14284,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 86
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 72
             }
           },
           "number": 1,
@@ -12673,6 +14308,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 23
             }
           },
           "number": 2,
@@ -12693,6 +14332,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 44
             }
           },
           "number": 3,
@@ -12713,6 +14356,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 30
             }
           },
           "number": 4,
@@ -12733,6 +14380,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 80
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 77
             }
           },
           "number": 5,
@@ -12753,6 +14404,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 81
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 63
             }
           },
           "number": 6,
@@ -12773,6 +14428,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 56
             }
           },
           "number": 7,
@@ -12793,6 +14452,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 77
             }
           },
           "number": 8,
@@ -12813,6 +14476,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 63
             }
           },
           "number": 9,
@@ -12833,6 +14500,10 @@
             "ウマークス": {
               "mark": "☆",
               "index": 43
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 10,
@@ -12854,7 +14525,6 @@
       "updatedAt": "15:15:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -12874,6 +14544,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 46
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -12899,6 +14573,10 @@
               "mark": "▲",
               "index": 69
             },
+            "ATHENA": {
+              "mark": "△",
+              "index": 64
+            },
             "無料競馬AI": {
               "mark": "▲",
               "index": 62
@@ -12921,7 +14599,11 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 70
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             },
             "無料競馬AI": {
               "mark": "△",
@@ -12947,6 +14629,10 @@
               "mark": "▲",
               "index": 70
             },
+            "ATHENA": {
+              "mark": "△",
+              "index": 60
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 54
@@ -12970,6 +14656,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 52
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -12995,6 +14685,10 @@
               "mark": "▲",
               "index": 71
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 35
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 32
@@ -13018,6 +14712,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 67
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 70
             },
             "無料競馬AI": {
               "mark": "◎",
@@ -13043,6 +14741,10 @@
               "mark": "▲",
               "index": 71
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 45
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 34
@@ -13066,6 +14768,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 67
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 63
             },
             "無料競馬AI": {
               "mark": "△",
@@ -13091,6 +14797,10 @@
               "mark": "▲",
               "index": 68
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 49
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 38
@@ -13114,6 +14824,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 68
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 66
             },
             "無料競馬AI": {
               "mark": "○",
@@ -13139,6 +14853,10 @@
               "mark": "▲",
               "index": 68
             },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 45
+            },
             "無料競馬AI": {
               "mark": "△",
               "index": 54
@@ -13163,6 +14881,10 @@
               "mark": "▲",
               "index": 70
             },
+            "ATHENA": {
+              "mark": "△",
+              "index": 58
+            },
             "無料競馬AI": {
               "mark": "☆",
               "index": 46
@@ -13185,7 +14907,11 @@
             },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 69
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 43
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -13211,7 +14937,6 @@
       "updatedAt": "15:50:00",
       "missingSites": [
         "競馬ブック",
-        "ATHENA",
         "無料競馬AI",
         "AiBA",
         "日刊AI",
@@ -13232,6 +14957,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 1,
@@ -13252,6 +14981,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 66
             }
           },
           "number": 2,
@@ -13272,6 +15005,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 52
             }
           },
           "number": 3,
@@ -13292,6 +15029,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 81
+            },
+            "ATHENA": {
+              "mark": "▲",
+              "index": 68
             }
           },
           "number": 4,
@@ -13312,6 +15053,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 5,
@@ -13332,6 +15077,10 @@
             "ウマークス": {
               "mark": "△",
               "index": 52
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 54
             }
           },
           "number": 6,
@@ -13352,6 +15101,10 @@
             "ウマークス": {
               "mark": "○",
               "index": 83
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 7,
@@ -13372,6 +15125,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 8,
@@ -13392,6 +15149,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 9,
@@ -13412,6 +15173,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 10,
@@ -13432,6 +15197,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 36
             }
           },
           "number": 11,
@@ -13452,6 +15221,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 43
             }
           },
           "number": 12,
@@ -13472,6 +15245,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "ATHENA": {
+              "mark": "☆",
+              "index": 45
             }
           },
           "number": 13,
@@ -13492,6 +15269,10 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "ATHENA": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 14,
