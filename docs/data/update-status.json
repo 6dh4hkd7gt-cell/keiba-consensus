@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-08-01T12:28:32+09:00",
+  "generatedAt": "2026-08-01T15:16:30+09:00",
   "targetDate": "2026-08-02",
   "updateLeadMinutes": 10,
-  "source": "site-scrape",
+  "source": "insufficient-site-scrape",
   "raceSource": "spaia-race-list",
   "requiredConsensusSiteCount": 4,
-  "consensusReady": true,
+  "consensusReady": false,
   "raceCount": 36,
   "readyRaceIds": [],
   "configuredSiteCount": 10,
-  "fetchedSiteCount": 5,
-  "matchedSiteCount": 4,
-  "fetchedRaceCount": 148,
-  "matchedRaceCount": 102,
+  "fetchedSiteCount": 4,
+  "matchedSiteCount": 3,
+  "fetchedRaceCount": 112,
+  "matchedRaceCount": 66,
   "siteSources": [
     {
       "site": "SPAIA",
@@ -38,11 +38,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-1",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -138,11 +138,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-2",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -238,11 +238,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-3",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 13,
-      "matched": 13,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -338,11 +338,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-4",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 15,
-      "matched": 15,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -438,11 +438,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-5",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -538,11 +538,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-6",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 15,
-      "matched": 15,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -638,11 +638,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-7",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 17,
-      "matched": 17,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -738,11 +738,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-8",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -838,11 +838,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-9",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 15,
-      "matched": 15,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -938,11 +938,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-10",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -1038,11 +1038,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-11",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -1138,11 +1138,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-12",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -1238,11 +1238,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-1",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -1338,11 +1338,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-2",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 8,
-      "matched": 8,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -1438,11 +1438,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-3",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -1538,11 +1538,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-4",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 16,
-      "matched": 16,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -1638,11 +1638,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-5",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 9,
-      "matched": 9,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -1738,11 +1738,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-6",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 9,
-      "matched": 9,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -1838,11 +1838,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-7",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 9,
-      "matched": 9,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -1938,11 +1938,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-8",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 11,
-      "matched": 11,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -2038,11 +2038,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-9",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -2138,11 +2138,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-10",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -2238,11 +2238,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-11",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 6,
-      "matched": 6,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -2338,11 +2338,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-12",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 18,
-      "matched": 18,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -2438,11 +2438,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-1",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -2538,11 +2538,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-2",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -2638,11 +2638,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-3",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 11,
-      "matched": 11,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -2738,11 +2738,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-4",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 13,
-      "matched": 13,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -2838,11 +2838,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-5",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -2938,11 +2938,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-6",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 11,
-      "matched": 11,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -3038,11 +3038,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-7",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -3138,11 +3138,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-8",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -3238,11 +3238,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-9",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 12,
-      "matched": 12,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -3338,11 +3338,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-10",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 10,
-      "matched": 10,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -3438,11 +3438,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-11",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
@@ -3538,11 +3538,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-12",
       "configured": true,
-      "fetched": true,
+      "fetched": false,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
-      "error": ""
+      "matched": 0,
+      "complete": false,
+      "error": "fetch failed"
     },
     {
       "site": "ウマークス",
