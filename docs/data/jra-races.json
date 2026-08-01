@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T15:16:30+09:00",
+  "generatedAt": "2026-08-01T17:36:25+09:00",
   "targetDate": "2026-08-02",
   "updateLeadMinutes": 10,
   "source": "site-scrape",
@@ -29,11 +29,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -129,11 +129,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -229,11 +229,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 13,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -329,11 +329,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -429,11 +429,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -529,11 +529,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -629,11 +629,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 17,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 17,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -729,11 +729,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -829,11 +829,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 15,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 15,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -929,11 +929,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1029,11 +1029,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1129,11 +1129,11 @@
       "site": "競馬ラボ",
       "raceId": "niigata-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1229,11 +1229,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1329,11 +1329,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 8,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 8,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1429,11 +1429,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1529,11 +1529,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1629,11 +1629,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1729,11 +1729,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1829,11 +1829,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 9,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 9,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -1929,11 +1929,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2029,11 +2029,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2129,11 +2129,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2229,11 +2229,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 6,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 6,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2329,11 +2329,11 @@
       "site": "競馬ラボ",
       "raceId": "chukyo-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2429,11 +2429,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-1",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2529,11 +2529,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-2",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2629,11 +2629,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-3",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2729,11 +2729,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-4",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 13,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 13,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2829,11 +2829,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-5",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -2929,11 +2929,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-6",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 11,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 11,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3029,11 +3029,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3129,11 +3129,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-8",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3229,11 +3229,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-9",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3329,11 +3329,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-10",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 10,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 10,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3429,11 +3429,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3529,11 +3529,11 @@
       "site": "競馬ラボ",
       "raceId": "sapporo-12",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 14,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 14,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "ウマークス",
@@ -3619,7 +3619,6 @@
       "updatedAt": "09:40:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -3637,6 +3636,10 @@
             "競馬ブック": {
               "mark": "◎",
               "index": 22
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 67
             },
             "ウマークス": {
               "mark": "△",
@@ -3658,6 +3661,10 @@
               "mark": "☆",
               "index": 20
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
+            },
             "ウマークス": {
               "mark": "△",
               "index": 53
@@ -3678,6 +3685,10 @@
               "mark": "△",
               "index": 41
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
+            },
             "ウマークス": {
               "mark": "△",
               "index": 53
@@ -3693,6 +3704,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 98
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "◎",
@@ -3710,6 +3725,10 @@
               "mark": "◎",
               "index": 94
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "○",
               "index": 84
@@ -3725,6 +3744,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "○",
@@ -3742,6 +3765,10 @@
               "mark": "○",
               "index": 86
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 65
+            },
             "ウマークス": {
               "mark": "△",
               "index": 57
@@ -3757,6 +3784,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 90
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 72
             },
             "ウマークス": {
               "mark": "△",
@@ -3774,6 +3805,10 @@
               "mark": "◎",
               "index": 93
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 79
@@ -3789,6 +3824,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 89
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
             },
             "ウマークス": {
               "mark": "○",
@@ -3806,6 +3845,10 @@
               "mark": "○",
               "index": 87
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 50
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 44
@@ -3821,6 +3864,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 88
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 52
             },
             "ウマークス": {
               "mark": "△",
@@ -3847,7 +3894,6 @@
       "missingSites": [
         "SPAIA",
         "競馬ブック",
-        "競馬ラボ",
         "ウマークス",
         "ATHENA",
         "無料競馬AI",
@@ -3858,84 +3904,144 @@
       ],
       "horses": [
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 36
+            }
+          },
           "number": 1,
           "name": "ライングラウス",
           "sourceHorseId": 2024104199,
           "odds": 36.3
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 35
+            }
+          },
           "number": 2,
           "name": "ステラガーネット",
           "sourceHorseId": 2024106348,
           "odds": 4.6
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
+            }
+          },
           "number": 3,
           "name": "ゼノスフィア",
           "sourceHorseId": 2024105951,
           "odds": 7.6
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
+            }
+          },
           "number": 4,
           "name": "ヴィシーチェック",
           "sourceHorseId": 2024105829,
           "odds": 13.5
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
+            }
+          },
           "number": 5,
           "name": "リーチツモドライチ",
           "sourceHorseId": 2024108321,
           "odds": 3.3
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
+            }
+          },
           "number": 6,
           "name": "ラインホルト",
           "sourceHorseId": 2024106108,
           "odds": 18.1
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 39
+            }
+          },
           "number": 7,
           "name": "コウユーキミガイテ",
           "sourceHorseId": 2024100913,
           "odds": 16.2
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 46
+            }
+          },
           "number": 8,
           "name": "ヌンエリン",
           "sourceHorseId": 2024102023,
           "odds": 28.6
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 32
+            }
+          },
           "number": 9,
           "name": "イチザサンダー",
           "sourceHorseId": 2024104310,
           "odds": 58.4
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 56
+            }
+          },
           "number": 10,
           "name": "テンユメノオーロラ",
           "sourceHorseId": 2024106055,
           "odds": 12.3
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 40
+            }
+          },
           "number": 11,
           "name": "サスケソルトバーン",
           "sourceHorseId": 2024102123,
           "odds": 84.6
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 52
+            }
+          },
           "number": 12,
           "name": "グランシュレーム",
           "sourceHorseId": 2024106933,
@@ -3956,7 +4062,6 @@
       "missingSites": [
         "SPAIA",
         "競馬ブック",
-        "競馬ラボ",
         "ウマークス",
         "ATHENA",
         "無料競馬AI",
@@ -3967,91 +4072,156 @@
       ],
       "horses": [
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 45
+            }
+          },
           "number": 1,
           "name": "ベールダウン",
           "sourceHorseId": 2024105028,
           "odds": 21.4
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 46
+            }
+          },
           "number": 2,
           "name": "レーゲンシャウアー",
           "sourceHorseId": 2024104453,
           "odds": 115.9
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 47
+            }
+          },
           "number": 3,
           "name": "クラオルグジェシダ",
           "sourceHorseId": 2024100295,
           "odds": 10.4
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 64
+            }
+          },
           "number": 4,
           "name": "ペアレンツハート",
           "sourceHorseId": 2024106925,
           "odds": 4.1
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
+            }
+          },
           "number": 5,
           "name": "ファーストアライヴ",
           "sourceHorseId": 2024106697,
           "odds": 4.3
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 25
+            }
+          },
           "number": 6,
           "name": "ビスクヴィート",
           "sourceHorseId": 2024101728,
           "odds": 11.4
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 24
+            }
+          },
           "number": 7,
           "name": "マイネルリシャール",
           "sourceHorseId": 2024106419,
           "odds": 9.1
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 76
+            }
+          },
           "number": 8,
           "name": "コイゾラ",
           "sourceHorseId": 2024103350,
           "odds": 12.8
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 29
+            }
+          },
           "number": 9,
           "name": "スカーレットクラン",
           "sourceHorseId": 2024106408,
           "odds": 36.4
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 32
+            }
+          },
           "number": 10,
           "name": "アンドレイア",
           "sourceHorseId": 2024102705,
           "odds": 57.3
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 31
+            }
+          },
           "number": 11,
           "name": "ヴァルフォース",
           "sourceHorseId": 2024105987,
           "odds": 5
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 36
+            }
+          },
           "number": 12,
           "name": "コンフィアル",
           "sourceHorseId": 2024105763,
           "odds": 15.1
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 27
+            }
+          },
           "number": 13,
           "name": "ニシノトラノスケ",
           "sourceHorseId": 2024102993,
@@ -4071,7 +4241,6 @@
       "updatedAt": "11:10:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -4085,6 +4254,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 84
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 72
             },
             "ウマークス": {
               "mark": "▲",
@@ -4102,6 +4275,10 @@
               "mark": "▲",
               "index": 76
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 71
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 41
@@ -4117,6 +4294,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
             },
             "ウマークス": {
               "mark": "▲",
@@ -4134,6 +4315,10 @@
               "mark": "▲",
               "index": 69
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 53
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 79
@@ -4149,6 +4334,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 90
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 74
             },
             "ウマークス": {
               "mark": "▲",
@@ -4166,6 +4355,10 @@
               "mark": "▲",
               "index": 79
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 74
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 79
@@ -4181,6 +4374,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 99
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "○",
@@ -4198,6 +4395,10 @@
               "mark": "○",
               "index": 89
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "○",
               "index": 84
@@ -4213,6 +4414,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 99
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "☆",
@@ -4230,6 +4435,10 @@
               "mark": "○",
               "index": 86
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
+            },
             "ウマークス": {
               "mark": "○",
               "index": 83
@@ -4245,6 +4454,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 83
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
             },
             "ウマークス": {
               "mark": "▲",
@@ -4262,6 +4475,10 @@
               "mark": "○",
               "index": 84
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
+            },
             "ウマークス": {
               "mark": "○",
               "index": 80
@@ -4277,6 +4494,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 87
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "○",
@@ -4294,6 +4515,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 38
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 39
@@ -4309,6 +4534,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 84
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 67
             },
             "ウマークス": {
               "mark": "▲",
@@ -4334,7 +4563,6 @@
       "updatedAt": "11:40:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -4348,6 +4576,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 98
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "▲",
@@ -4365,6 +4597,10 @@
               "mark": "○",
               "index": 82
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -4378,6 +4614,10 @@
         {
           "predictions": {
             "SPAIA": {
+              "mark": "◎",
+              "index": 95
+            },
+            "競馬ラボ": {
               "mark": "◎",
               "index": 95
             },
@@ -4397,6 +4637,10 @@
               "mark": "◎",
               "index": 97
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 71
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -4412,6 +4656,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 88
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -4429,6 +4677,10 @@
               "mark": "◎",
               "index": 97
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 73
@@ -4444,6 +4696,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 97
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
             },
             "ウマークス": {
               "mark": "▲",
@@ -4461,6 +4717,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 46
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 38
@@ -4476,6 +4736,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 60
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
             },
             "ウマークス": {
               "mark": "○",
@@ -4493,6 +4757,10 @@
               "mark": "○",
               "index": 85
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -4508,6 +4776,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 93
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
             },
             "ウマークス": {
               "mark": "▲",
@@ -4525,6 +4797,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 75
@@ -4540,6 +4816,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 75
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "▲",
@@ -4557,6 +4837,10 @@
               "mark": "◎",
               "index": 95
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -4572,6 +4856,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 73
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 61
             },
             "ウマークス": {
               "mark": "☆",
@@ -4589,6 +4877,10 @@
               "mark": "○",
               "index": 83
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -4605,6 +4897,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 77
@@ -4620,6 +4916,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 90
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 79
             },
             "ウマークス": {
               "mark": "▲",
@@ -4645,7 +4945,6 @@
       "updatedAt": "15:00:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -4659,6 +4958,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 82
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "▲",
@@ -4676,6 +4979,10 @@
               "mark": "▲",
               "index": 78
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 74
@@ -4691,6 +4998,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 84
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 66
             },
             "ウマークス": {
               "mark": "▲",
@@ -4708,6 +5019,10 @@
               "mark": "○",
               "index": 82
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -4723,6 +5038,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 92
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
             },
             "ウマークス": {
               "mark": "☆",
@@ -4740,6 +5059,10 @@
               "mark": "○",
               "index": 80
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 79
@@ -4755,6 +5078,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 72
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 77
             },
             "ウマークス": {
               "mark": "▲",
@@ -4772,6 +5099,10 @@
               "mark": "▲",
               "index": 78
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 69
@@ -4787,6 +5118,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 70
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
             },
             "ウマークス": {
               "mark": "▲",
@@ -4804,6 +5139,10 @@
               "mark": "◎",
               "index": 97
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 78
@@ -4819,6 +5158,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 73
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
             },
             "ウマークス": {
               "mark": "▲",
@@ -4836,6 +5179,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 75
@@ -4851,6 +5198,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 65
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "▲",
@@ -4868,6 +5219,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 58
+            },
             "ウマークス": {
               "mark": "△",
               "index": 50
@@ -4883,6 +5238,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 74
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 79
             },
             "ウマークス": {
               "mark": "▲",
@@ -4908,7 +5267,6 @@
       "updatedAt": "15:35:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "AiBA",
         "日刊AI",
@@ -4922,6 +5280,10 @@
               "mark": "△",
               "index": 58
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 69
@@ -4934,7 +5296,7 @@
           "number": 1,
           "name": "ウイングレイテスト",
           "sourceHorseId": 2017101423,
-          "odds": 19.7
+          "odds": 22.5
         },
         {
           "predictions": {
@@ -4942,9 +5304,13 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 71
+              "index": 72
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -4954,7 +5320,7 @@
           "number": 2,
           "name": "デュガ",
           "sourceHorseId": 2019110102,
-          "odds": 43.7
+          "odds": 65.8
         },
         {
           "predictions": {
@@ -4962,9 +5328,13 @@
               "mark": "△",
               "index": 52
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 72
+              "index": 71
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -4974,7 +5344,7 @@
           "number": 3,
           "name": "ミカッテヨンデイイ",
           "sourceHorseId": 2020103049,
-          "odds": 62.3
+          "odds": 63
         },
         {
           "predictions": {
@@ -4982,9 +5352,13 @@
               "mark": "△",
               "index": 54
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 71
             },
             "無料競馬AI": {
               "mark": "△",
@@ -4994,7 +5368,7 @@
           "number": 4,
           "name": "カウスリップ",
           "sourceHorseId": 2022100627,
-          "odds": 30.8
+          "odds": 40.5
         },
         {
           "predictions": {
@@ -5002,9 +5376,13 @@
               "mark": "○",
               "index": 84
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 70
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5014,13 +5392,17 @@
           "number": 5,
           "name": "ベルギューン",
           "sourceHorseId": 2022100098,
-          "odds": 17.9
+          "odds": 30
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 70
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
             },
             "ウマークス": {
               "mark": "▲",
@@ -5034,13 +5416,17 @@
           "number": 6,
           "name": "ピューロマジック",
           "sourceHorseId": 2021107058,
-          "odds": 3.4
+          "odds": 2.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 56
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 70
             },
             "ウマークス": {
               "mark": "▲",
@@ -5054,7 +5440,7 @@
           "number": 7,
           "name": "バグラダス",
           "sourceHorseId": 2020106015,
-          "odds": 70.1
+          "odds": 70
         },
         {
           "predictions": {
@@ -5062,9 +5448,13 @@
               "mark": "▲",
               "index": 66
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 68
+              "index": 69
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5074,7 +5464,7 @@
           "number": 8,
           "name": "シュラフ",
           "sourceHorseId": 2022103324,
-          "odds": 14.7
+          "odds": 16.1
         },
         {
           "predictions": {
@@ -5082,9 +5472,13 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 71
+              "index": 70
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5094,7 +5488,7 @@
           "number": 9,
           "name": "カウンターセブン",
           "sourceHorseId": 2022104197,
-          "odds": 39.8
+          "odds": 33.5
         },
         {
           "predictions": {
@@ -5102,9 +5496,13 @@
               "mark": "○",
               "index": 86
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 67
+              "index": 68
             },
             "無料競馬AI": {
               "mark": "△",
@@ -5114,13 +5512,17 @@
           "number": 10,
           "name": "エコロレジーナ",
           "sourceHorseId": 2020101262,
-          "odds": 5.7
+          "odds": 6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 62
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
             },
             "ウマークス": {
               "mark": "▲",
@@ -5134,7 +5536,7 @@
           "number": 11,
           "name": "ロードトレイル",
           "sourceHorseId": 2021100157,
-          "odds": 53.5
+          "odds": 56.8
         },
         {
           "predictions": {
@@ -5142,9 +5544,13 @@
               "mark": "▲",
               "index": 70
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 69
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5154,7 +5560,7 @@
           "number": 12,
           "name": "クムシラコ",
           "sourceHorseId": 2018103205,
-          "odds": 21.2
+          "odds": 21.7
         },
         {
           "predictions": {
@@ -5162,9 +5568,13 @@
               "mark": "△",
               "index": 52
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 68
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -5174,13 +5584,17 @@
           "number": 13,
           "name": "テイエムスパーダ",
           "sourceHorseId": 2019103422,
-          "odds": 15.6
+          "odds": 15.8
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 74
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 66
             },
             "ウマークス": {
               "mark": "▲",
@@ -5194,13 +5608,17 @@
           "number": 14,
           "name": "ブーケファロス",
           "sourceHorseId": 2020101419,
-          "odds": 104.5
+          "odds": 108
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
             },
             "ウマークス": {
               "mark": "▲",
@@ -5214,7 +5632,7 @@
           "number": 15,
           "name": "アタリダイキチ",
           "sourceHorseId": 2022107138,
-          "odds": 27.7
+          "odds": 37.9
         },
         {
           "predictions": {
@@ -5222,9 +5640,13 @@
               "mark": "○",
               "index": 82
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 68
+              "index": 67
             },
             "無料競馬AI": {
               "mark": "◎",
@@ -5234,13 +5656,17 @@
           "number": 16,
           "name": "アメリカンステージ",
           "sourceHorseId": 2022110105,
-          "odds": 5.3
+          "odds": 4.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 66
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
             },
             "ウマークス": {
               "mark": "▲",
@@ -5254,7 +5680,7 @@
           "number": 17,
           "name": "ビッグシーザー",
           "sourceHorseId": 2020100896,
-          "odds": 7
+          "odds": 10.6
         }
       ]
     },
@@ -5270,7 +5696,6 @@
       "updatedAt": "16:10:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -5284,6 +5709,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 75
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
             },
             "ウマークス": {
               "mark": "▲",
@@ -5301,6 +5730,10 @@
               "mark": "▲",
               "index": 72
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -5316,6 +5749,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 80
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
             },
             "ウマークス": {
               "mark": "▲",
@@ -5333,6 +5770,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 69
@@ -5348,6 +5789,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 53
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
             },
             "ウマークス": {
               "mark": "▲",
@@ -5365,6 +5810,10 @@
               "mark": "△",
               "index": 62
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 69
@@ -5380,6 +5829,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 65
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "▲",
@@ -5397,6 +5850,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "○",
               "index": 86
@@ -5412,6 +5869,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 70
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
             },
             "ウマークス": {
               "mark": "▲",
@@ -5429,6 +5890,10 @@
               "mark": "▲",
               "index": 75
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -5444,6 +5909,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 58
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 77
             },
             "ウマークス": {
               "mark": "▲",
@@ -5461,6 +5930,10 @@
               "mark": "△",
               "index": 58
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 77
@@ -5477,6 +5950,10 @@
               "mark": "△",
               "index": 63
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -5492,6 +5969,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 63
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
             },
             "ウマークス": {
               "mark": "▲",
@@ -5517,7 +5998,6 @@
       "updatedAt": "16:45:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -5531,6 +6011,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 51
+            },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 29
             },
             "ウマークス": {
               "mark": "☆",
@@ -5548,6 +6032,10 @@
               "mark": "▲",
               "index": 76
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "○",
               "index": 85
@@ -5563,6 +6051,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 78
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 58
             },
             "ウマークス": {
               "mark": "☆",
@@ -5580,6 +6072,10 @@
               "mark": "△",
               "index": 60
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 77
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 73
@@ -5596,9 +6092,13 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "☆",
-              "index": 19
+              "index": 18
             }
           },
           "number": 5,
@@ -5611,6 +6111,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 68
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
             },
             "ウマークス": {
               "mark": "▲",
@@ -5628,6 +6132,10 @@
               "mark": "▲",
               "index": 74
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -5644,9 +6152,13 @@
               "mark": "△",
               "index": 60
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 72
+              "index": 73
             }
           },
           "number": 8,
@@ -5660,9 +6172,13 @@
               "mark": "▲",
               "index": 79
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 73
             }
           },
           "number": 9,
@@ -5675,6 +6191,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
             },
             "ウマークス": {
               "mark": "△",
@@ -5692,6 +6212,10 @@
               "mark": "△",
               "index": 64
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 75
@@ -5707,6 +6231,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 68
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 71
             },
             "ウマークス": {
               "mark": "△",
@@ -5724,6 +6252,10 @@
               "mark": "▲",
               "index": 72
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 79
@@ -5740,6 +6272,10 @@
               "mark": "▲",
               "index": 67
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 80
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 75
@@ -5755,6 +6291,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 60
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 79
             },
             "ウマークス": {
               "mark": "▲",
@@ -5780,7 +6320,6 @@
       "updatedAt": "17:20:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -5795,9 +6334,13 @@
               "mark": "◎",
               "index": 96
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 76
+              "index": 75
             }
           },
           "number": 1,
@@ -5810,6 +6353,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 69
             },
             "ウマークス": {
               "mark": "☆",
@@ -5827,9 +6374,13 @@
               "mark": "○",
               "index": 84
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 76
+              "index": 75
             }
           },
           "number": 3,
@@ -5843,9 +6394,13 @@
               "mark": "▲",
               "index": 71
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 61
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 74
+              "index": 75
             }
           },
           "number": 4,
@@ -5858,6 +6413,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 68
             },
             "ウマークス": {
               "mark": "△",
@@ -5875,9 +6434,13 @@
               "mark": "◎",
               "index": 93
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 80
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 71
+              "index": 73
             }
           },
           "number": 6,
@@ -5891,9 +6454,13 @@
               "mark": "○",
               "index": 81
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 66
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 75
+              "index": 74
             }
           },
           "number": 7,
@@ -5907,9 +6474,13 @@
               "mark": "▲",
               "index": 77
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 76
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 74
+              "index": 73
             }
           },
           "number": 8,
@@ -5923,9 +6494,13 @@
               "mark": "△",
               "index": 59
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
             "ウマークス": {
               "mark": "○",
-              "index": 85
+              "index": 83
             }
           },
           "number": 9,
@@ -5939,9 +6514,13 @@
               "mark": "◎",
               "index": 90
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "○",
-              "index": 85
+              "index": 86
             }
           },
           "number": 10,
@@ -5954,6 +6533,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 80
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
             },
             "ウマークス": {
               "mark": "▲",
@@ -5971,6 +6554,10 @@
               "mark": "◎",
               "index": 97
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
+            },
             "ウマークス": {
               "mark": "△",
               "index": 64
@@ -5987,9 +6574,13 @@
               "mark": "○",
               "index": 86
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 74
+              "index": 75
             }
           },
           "number": 13,
@@ -6002,6 +6593,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 73
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 56
             },
             "ウマークス": {
               "mark": "▲",
@@ -6027,7 +6622,6 @@
       "updatedAt": "17:50:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "AiBA",
         "日刊AI",
@@ -6040,6 +6634,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 97
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "▲",
@@ -6061,6 +6659,10 @@
               "mark": "▲",
               "index": 65
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "△",
               "index": 55
@@ -6080,6 +6682,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 49
             },
             "ウマークス": {
               "mark": "△",
@@ -6101,6 +6707,10 @@
               "mark": "△",
               "index": 57
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 76
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 38
@@ -6121,9 +6731,13 @@
               "mark": "▲",
               "index": 79
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
             "ウマークス": {
-              "mark": "☆",
-              "index": 48
+              "mark": "△",
+              "index": 50
             },
             "無料競馬AI": {
               "mark": "△",
@@ -6140,6 +6754,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 87
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 76
             },
             "ウマークス": {
               "mark": "▲",
@@ -6161,6 +6779,10 @@
               "mark": "▲",
               "index": 75
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 74
@@ -6180,6 +6802,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 78
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
             },
             "ウマークス": {
               "mark": "○",
@@ -6201,6 +6827,10 @@
               "mark": "△",
               "index": 63
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 79
+            },
             "ウマークス": {
               "mark": "△",
               "index": 54
@@ -6220,6 +6850,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 59
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 66
             },
             "ウマークス": {
               "mark": "☆",
@@ -6241,6 +6875,10 @@
               "mark": "○",
               "index": 81
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -6260,6 +6898,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 84
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 100
             },
             "ウマークス": {
               "mark": "▲",
@@ -6281,6 +6923,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
+            },
             "ウマークス": {
               "mark": "○",
               "index": 83
@@ -6300,6 +6946,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 91
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
             },
             "ウマークス": {
               "mark": "▲",
@@ -6329,7 +6979,6 @@
       "updatedAt": "18:20:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -6341,6 +6990,10 @@
         {
           "predictions": {
             "SPAIA": {
+              "mark": "▲",
+              "index": 74
+            },
+            "競馬ラボ": {
               "mark": "▲",
               "index": 74
             },
@@ -6360,6 +7013,10 @@
               "mark": "○",
               "index": 80
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -6376,9 +7033,13 @@
               "mark": "○",
               "index": 81
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 71
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 70
             }
           },
           "number": 3,
@@ -6391,6 +7052,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 88
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 70
             },
             "ウマークス": {
               "mark": "▲",
@@ -6408,6 +7073,10 @@
               "mark": "○",
               "index": 88
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "△",
               "index": 55
@@ -6423,6 +7092,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 83
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
             },
             "ウマークス": {
               "mark": "▲",
@@ -6440,6 +7113,10 @@
               "mark": "☆",
               "index": -37
             },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 46
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 8
@@ -6455,6 +7132,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 93
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
             },
             "ウマークス": {
               "mark": "▲",
@@ -6472,6 +7153,10 @@
               "mark": "▲",
               "index": 79
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 76
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -6487,6 +7172,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 71
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 69
             },
             "ウマークス": {
               "mark": "▲",
@@ -6504,6 +7193,10 @@
               "mark": "△",
               "index": 61
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 66
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 37
@@ -6519,6 +7212,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 87
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
             },
             "ウマークス": {
               "mark": "▲",
@@ -6536,6 +7233,10 @@
               "mark": "○",
               "index": 83
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 76
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 78
@@ -6551,6 +7252,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 85
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -6568,6 +7273,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "○",
               "index": 85
@@ -6583,6 +7292,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 88
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
             },
             "ウマークス": {
               "mark": "▲",
@@ -6600,6 +7313,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 56
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 3
@@ -6615,6 +7332,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 55
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 68
             },
             "ウマークス": {
               "mark": "△",
@@ -6640,7 +7361,6 @@
       "updatedAt": "09:30:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -6658,6 +7378,10 @@
             "競馬ブック": {
               "mark": "☆",
               "index": 19
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
             },
             "ウマークス": {
               "mark": "△",
@@ -6679,6 +7403,10 @@
               "mark": "△",
               "index": 27
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 74
@@ -6699,6 +7427,10 @@
               "mark": "△",
               "index": 51
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 73
@@ -6714,6 +7446,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 83
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "○",
@@ -6731,6 +7467,10 @@
               "mark": "▲",
               "index": 75
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 73
@@ -6746,6 +7486,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 46
             },
             "ウマークス": {
               "mark": "△",
@@ -6763,6 +7507,10 @@
               "mark": "▲",
               "index": 79
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -6778,6 +7526,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 86
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
             },
             "ウマークス": {
               "mark": "▲",
@@ -6795,6 +7547,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 75
@@ -6810,6 +7566,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 61
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 52
             },
             "ウマークス": {
               "mark": "▲",
@@ -6827,6 +7587,10 @@
               "mark": "△",
               "index": 63
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 73
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 49
@@ -6842,6 +7606,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 55
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 57
             },
             "ウマークス": {
               "mark": "△",
@@ -6859,6 +7627,10 @@
               "mark": "○",
               "index": 85
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -6874,6 +7646,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 79
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
             },
             "ウマークス": {
               "mark": "▲",
@@ -6891,6 +7667,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 69
@@ -6907,9 +7687,13 @@
               "mark": "○",
               "index": 83
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 77
+              "index": 76
             }
           },
           "number": 16,
@@ -6923,9 +7707,13 @@
               "mark": "☆",
               "index": -95
             },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 41
+            },
             "ウマークス": {
               "mark": "☆",
-              "index": 19
+              "index": 21
             }
           },
           "number": 17,
@@ -6938,6 +7726,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 76
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 51
             },
             "ウマークス": {
               "mark": "☆",
@@ -6964,7 +7756,6 @@
       "missingSites": [
         "SPAIA",
         "競馬ブック",
-        "競馬ラボ",
         "ウマークス",
         "ATHENA",
         "無料競馬AI",
@@ -6975,56 +7766,96 @@
       ],
       "horses": [
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 62
+            }
+          },
           "number": 1,
           "name": "サンライズエイト",
           "sourceHorseId": 2024105728,
           "odds": 3.9
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 34
+            }
+          },
           "number": 2,
           "name": "アントラヴァースト",
           "sourceHorseId": 2024101947,
           "odds": 32.4
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 54
+            }
+          },
           "number": 3,
           "name": "ラッキーハナコ",
           "sourceHorseId": 2024104655,
           "odds": 60.4
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
+            }
+          },
           "number": 4,
           "name": "ファンビッチャン",
           "sourceHorseId": 2024108230,
           "odds": 5.2
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 37
+            }
+          },
           "number": 5,
           "name": "オーリエイト",
           "sourceHorseId": 2024107041,
           "odds": 22.2
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 26
+            }
+          },
           "number": 6,
           "name": "イツマデモマツワ",
           "sourceHorseId": 2024100480,
           "odds": 167.4
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 42
+            }
+          },
           "number": 7,
           "name": "ハイウェイワン",
           "sourceHorseId": 2024106362,
           "odds": 6.1
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 64
+            }
+          },
           "number": 8,
           "name": "エコログレイス",
           "sourceHorseId": 2024108329,
@@ -7045,7 +7876,6 @@
       "missingSites": [
         "SPAIA",
         "競馬ブック",
-        "競馬ラボ",
         "ウマークス",
         "ATHENA",
         "無料競馬AI",
@@ -7056,70 +7886,120 @@
       ],
       "horses": [
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
+            }
+          },
           "number": 1,
           "name": "ムーンパッセ",
           "sourceHorseId": 2024100726,
           "odds": 6.8
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
+            }
+          },
           "number": 2,
           "name": "トゥーレジット",
           "sourceHorseId": 2024106741,
           "odds": 4.6
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
+            }
+          },
           "number": 3,
           "name": "アレオクール",
           "sourceHorseId": 2024106294,
           "odds": 4.9
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
+            }
+          },
           "number": 4,
           "name": "サウンドファイト",
           "sourceHorseId": 2024101071,
           "odds": 16
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 45
+            }
+          },
           "number": 5,
           "name": "ヤマトクオーレ",
           "sourceHorseId": 2024104824,
           "odds": 114.7
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 41
+            }
+          },
           "number": 6,
           "name": "ベルコート",
           "sourceHorseId": 2024106187,
           "odds": 4.6
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 33
+            }
+          },
           "number": 7,
           "name": "ミライノシャチョウ",
           "sourceHorseId": 2024108324,
           "odds": 3.9
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 30
+            }
+          },
           "number": 8,
           "name": "スーサンコルティナ",
           "sourceHorseId": 2024102040,
           "odds": 96.5
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 47
+            }
+          },
           "number": 9,
           "name": "リボンロゼッタ",
           "sourceHorseId": 2024101153,
           "odds": 40.4
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 29
+            }
+          },
           "number": 10,
           "name": "ジーティーマンフク",
           "sourceHorseId": 2024102891,
@@ -7139,7 +8019,6 @@
       "updatedAt": "11:00:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -7153,6 +8032,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "☆",
@@ -7170,6 +8053,10 @@
               "mark": "▲",
               "index": 69
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 63
+            },
             "ウマークス": {
               "mark": "△",
               "index": 63
@@ -7185,6 +8072,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 74
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 72
             },
             "ウマークス": {
               "mark": "▲",
@@ -7202,6 +8093,10 @@
               "mark": "△",
               "index": 64
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "△",
               "index": 62
@@ -7217,6 +8112,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 74
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
             },
             "ウマークス": {
               "mark": "○",
@@ -7234,6 +8133,10 @@
               "mark": "▲",
               "index": 70
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "○",
               "index": 80
@@ -7249,6 +8152,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 69
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 73
             },
             "ウマークス": {
               "mark": "△",
@@ -7266,6 +8173,10 @@
               "mark": "▲",
               "index": 69
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
+            },
             "ウマークス": {
               "mark": "○",
               "index": 81
@@ -7281,6 +8192,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 89
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -7298,6 +8213,10 @@
               "mark": "▲",
               "index": 66
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 65
@@ -7313,6 +8232,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 81
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "○",
@@ -7330,9 +8253,13 @@
               "mark": "○",
               "index": 89
             },
-            "ウマークス": {
+            "競馬ラボ": {
               "mark": "○",
-              "index": 82
+              "index": 85
+            },
+            "ウマークス": {
+              "mark": "▲",
+              "index": 79
             }
           },
           "number": 12,
@@ -7345,6 +8272,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 69
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 80
             },
             "ウマークス": {
               "mark": "○",
@@ -7362,6 +8293,10 @@
               "mark": "△",
               "index": 54
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 79
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 39
@@ -7378,6 +8313,10 @@
               "mark": "○",
               "index": 83
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
+            },
             "ウマークス": {
               "mark": "○",
               "index": 81
@@ -7393,6 +8332,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 57
             },
             "ウマークス": {
               "mark": "▲",
@@ -7418,7 +8361,6 @@
       "updatedAt": "11:30:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -7432,6 +8374,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 88
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
             },
             "ウマークス": {
               "mark": "▲",
@@ -7449,6 +8395,10 @@
               "mark": "◎",
               "index": 90
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 79
@@ -7464,6 +8414,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 75
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
             },
             "ウマークス": {
               "mark": "○",
@@ -7481,6 +8435,10 @@
               "mark": "○",
               "index": 88
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 73
@@ -7496,6 +8454,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "▲",
@@ -7513,6 +8475,10 @@
               "mark": "○",
               "index": 88
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "○",
               "index": 88
@@ -7528,6 +8494,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 63
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
             },
             "ウマークス": {
               "mark": "○",
@@ -7545,6 +8515,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 79
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 79
@@ -7560,6 +8534,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 85
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 72
             },
             "ウマークス": {
               "mark": "▲",
@@ -7585,7 +8563,6 @@
       "updatedAt": "14:50:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -7599,6 +8576,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 80
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
             },
             "ウマークス": {
               "mark": "▲",
@@ -7616,6 +8597,10 @@
               "mark": "△",
               "index": 64
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 77
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -7631,6 +8616,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 80
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
             },
             "ウマークス": {
               "mark": "▲",
@@ -7648,6 +8637,10 @@
               "mark": "◎",
               "index": 96
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 100
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 77
@@ -7663,6 +8656,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 80
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
             },
             "ウマークス": {
               "mark": "▲",
@@ -7680,6 +8677,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
+            },
             "ウマークス": {
               "mark": "○",
               "index": 84
@@ -7695,6 +8696,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
             },
             "ウマークス": {
               "mark": "▲",
@@ -7712,9 +8717,13 @@
               "mark": "▲",
               "index": 66
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "○",
-              "index": 81
+              "index": 85
             }
           },
           "number": 8,
@@ -7727,6 +8736,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 68
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
             },
             "ウマークス": {
               "mark": "▲",
@@ -7752,7 +8765,6 @@
       "updatedAt": "15:25:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -7767,9 +8779,13 @@
               "mark": "○",
               "index": 85
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
+            },
             "ウマークス": {
-              "mark": "▲",
-              "index": 79
+              "mark": "○",
+              "index": 82
             }
           },
           "number": 1,
@@ -7782,6 +8798,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 80
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "▲",
@@ -7799,6 +8819,10 @@
               "mark": "○",
               "index": 80
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 75
@@ -7815,9 +8839,13 @@
               "mark": "▲",
               "index": 74
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 76
+              "index": 75
             }
           },
           "number": 4,
@@ -7830,6 +8858,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 72
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
             },
             "ウマークス": {
               "mark": "▲",
@@ -7847,6 +8879,10 @@
               "mark": "◎",
               "index": 96
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -7862,6 +8898,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
             },
             "ウマークス": {
               "mark": "▲",
@@ -7879,6 +8919,10 @@
               "mark": "◎",
               "index": 98
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 74
@@ -7894,6 +8938,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
             },
             "ウマークス": {
               "mark": "○",
@@ -7919,7 +8967,6 @@
       "updatedAt": "16:00:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -7933,6 +8980,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 72
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
             },
             "ウマークス": {
               "mark": "▲",
@@ -7950,6 +9001,10 @@
               "mark": "▲",
               "index": 67
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 67
@@ -7965,6 +9020,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 72
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
             },
             "ウマークス": {
               "mark": "▲",
@@ -7982,6 +9041,10 @@
               "mark": "▲",
               "index": 67
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 73
@@ -7997,6 +9060,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 72
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "▲",
@@ -8014,6 +9081,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 77
@@ -8030,9 +9101,13 @@
               "mark": "◎",
               "index": 94
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 79
+              "index": 77
             }
           },
           "number": 7,
@@ -8045,6 +9120,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 65
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 76
             },
             "ウマークス": {
               "mark": "▲",
@@ -8062,6 +9141,10 @@
               "mark": "▲",
               "index": 76
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -8078,6 +9161,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 73
+            },
             "ウマークス": {
               "mark": "△",
               "index": 53
@@ -8093,6 +9180,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 85
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 72
             },
             "ウマークス": {
               "mark": "▲",
@@ -8118,7 +9209,6 @@
       "updatedAt": "16:35:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -8132,6 +9222,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 61
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
             },
             "ウマークス": {
               "mark": "☆",
@@ -8149,6 +9243,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 39
@@ -8164,6 +9262,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 67
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 66
             },
             "ウマークス": {
               "mark": "☆",
@@ -8181,6 +9283,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 11
@@ -8196,6 +9302,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 63
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "☆",
@@ -8213,6 +9323,10 @@
               "mark": "◎",
               "index": 93
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 31
@@ -8228,6 +9342,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 59
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
             },
             "ウマークス": {
               "mark": "☆",
@@ -8245,6 +9363,10 @@
               "mark": "○",
               "index": 85
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "△",
               "index": 53
@@ -8261,6 +9383,10 @@
               "mark": "○",
               "index": 89
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 43
@@ -8276,6 +9402,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
             },
             "ウマークス": {
               "mark": "△",
@@ -8301,7 +9431,6 @@
       "updatedAt": "17:10:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -8315,6 +9444,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 65
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
             },
             "ウマークス": {
               "mark": "△",
@@ -8332,6 +9465,10 @@
               "mark": "○",
               "index": 82
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -8348,9 +9485,13 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 72
             }
           },
           "number": 3,
@@ -8363,6 +9504,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "○",
@@ -8380,6 +9525,10 @@
               "mark": "▲",
               "index": 66
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -8395,6 +9544,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 74
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 80
             },
             "ウマークス": {
               "mark": "▲",
@@ -8412,6 +9565,10 @@
               "mark": "△",
               "index": 62
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 55
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 37
@@ -8427,6 +9584,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 69
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 79
             },
             "ウマークス": {
               "mark": "▲",
@@ -8444,6 +9605,10 @@
               "mark": "▲",
               "index": 69
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 68
@@ -8459,6 +9624,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 91
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
             },
             "ウマークス": {
               "mark": "▲",
@@ -8476,6 +9645,10 @@
               "mark": "▲",
               "index": 79
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
+            },
             "ウマークス": {
               "mark": "△",
               "index": 57
@@ -8491,6 +9664,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 88
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
             },
             "ウマークス": {
               "mark": "▲",
@@ -8508,6 +9685,10 @@
               "mark": "△",
               "index": 62
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
+            },
             "ウマークス": {
               "mark": "△",
               "index": 55
@@ -8524,9 +9705,13 @@
               "mark": "▲",
               "index": 65
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
+            },
             "ウマークス": {
               "mark": "△",
-              "index": 54
+              "index": 53
             }
           },
           "number": 14,
@@ -8548,7 +9733,6 @@
       "updatedAt": "17:40:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "AiBA",
         "日刊AI",
@@ -8562,9 +9746,13 @@
               "mark": "▲",
               "index": 77
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 73
+              "index": 74
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -8581,6 +9769,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 92
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
             },
             "ウマークス": {
               "mark": "▲",
@@ -8602,6 +9794,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "△",
               "index": 57
@@ -8621,6 +9817,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
             },
             "ウマークス": {
               "mark": "▲",
@@ -8642,6 +9842,10 @@
               "mark": "◎",
               "index": 92
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "○",
               "index": 83
@@ -8662,9 +9866,13 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "○",
-              "index": 82
+              "index": 80
             },
             "無料競馬AI": {
               "mark": "▲",
@@ -8690,7 +9898,6 @@
       "updatedAt": "18:10:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -8704,6 +9911,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 68
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 79
             },
             "ウマークス": {
               "mark": "☆",
@@ -8721,6 +9932,10 @@
               "mark": "◎",
               "index": 97
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 74
+            },
             "ウマークス": {
               "mark": "△",
               "index": 52
@@ -8736,6 +9951,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 76
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 80
             },
             "ウマークス": {
               "mark": "△",
@@ -8753,6 +9972,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 61
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 42
@@ -8768,6 +9991,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 72
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 54
             },
             "ウマークス": {
               "mark": "☆",
@@ -8785,6 +10012,10 @@
               "mark": "○",
               "index": 85
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 80
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -8800,6 +10031,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 83
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 67
             },
             "ウマークス": {
               "mark": "▲",
@@ -8817,6 +10052,10 @@
               "mark": "○",
               "index": 82
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -8832,6 +10071,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 85
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 72
             },
             "ウマークス": {
               "mark": "△",
@@ -8849,6 +10092,10 @@
               "mark": "○",
               "index": 80
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 5
@@ -8864,6 +10111,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 91
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 70
             },
             "ウマークス": {
               "mark": "▲",
@@ -8881,9 +10132,13 @@
               "mark": "◎",
               "index": 96
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            },
             "ウマークス": {
               "mark": "○",
-              "index": 85
+              "index": 84
             }
           },
           "number": 12,
@@ -8896,6 +10151,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 93
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 79
             },
             "ウマークス": {
               "mark": "▲",
@@ -8913,6 +10172,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 73
@@ -8928,6 +10191,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 71
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 60
             },
             "ウマークス": {
               "mark": "☆",
@@ -8945,6 +10212,10 @@
               "mark": "○",
               "index": 89
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 68
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -8961,6 +10232,10 @@
               "mark": "◎",
               "index": 94
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 73
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -8976,6 +10251,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 97
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "○",
@@ -9001,7 +10280,6 @@
       "updatedAt": "09:50:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -9019,6 +10297,10 @@
             "競馬ブック": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
             },
             "ウマークス": {
               "mark": "○",
@@ -9040,6 +10322,10 @@
               "mark": "△",
               "index": 16
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 64
+            },
             "ウマークス": {
               "mark": "△",
               "index": 53
@@ -9060,6 +10346,10 @@
               "mark": "△",
               "index": 39
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -9076,6 +10366,10 @@
               "mark": "○",
               "index": 82
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 16
@@ -9089,6 +10383,10 @@
         {
           "predictions": {
             "SPAIA": {
+              "mark": "▲",
+              "index": 76
+            },
+            "競馬ラボ": {
               "mark": "▲",
               "index": 76
             },
@@ -9108,9 +10406,13 @@
               "mark": "◎",
               "index": 95
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
+            },
             "ウマークス": {
               "mark": "○",
-              "index": 82
+              "index": 80
             }
           },
           "number": 6,
@@ -9123,6 +10425,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 70
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "△",
@@ -9140,6 +10446,10 @@
               "mark": "◎",
               "index": 93
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 74
@@ -9155,6 +10465,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 61
+            },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 60
             },
             "ウマークス": {
               "mark": "△",
@@ -9172,9 +10486,13 @@
               "mark": "▲",
               "index": 75
             },
-            "ウマークス": {
+            "競馬ラボ": {
               "mark": "▲",
-              "index": 79
+              "index": 69
+            },
+            "ウマークス": {
+              "mark": "○",
+              "index": 80
             }
           },
           "number": 10,
@@ -9188,9 +10506,13 @@
               "mark": "▲",
               "index": 68
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 69
+            },
             "ウマークス": {
               "mark": "☆",
-              "index": 12
+              "index": 7
             }
           },
           "number": 11,
@@ -9203,6 +10525,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 82
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
             },
             "ウマークス": {
               "mark": "☆",
@@ -9220,6 +10546,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 47
+            },
             "ウマークス": {
               "mark": "△",
               "index": 53
@@ -9235,6 +10565,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 78
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "△",
@@ -9260,7 +10594,6 @@
       "updatedAt": "10:20:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -9274,6 +10607,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 61
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 74
             },
             "ウマークス": {
               "mark": "▲",
@@ -9291,6 +10628,10 @@
               "mark": "▲",
               "index": 71
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 78
@@ -9306,6 +10647,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
             },
             "ウマークス": {
               "mark": "▲",
@@ -9323,6 +10668,10 @@
               "mark": "△",
               "index": 56
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 76
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 69
@@ -9338,6 +10687,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 57
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
             },
             "ウマークス": {
               "mark": "▲",
@@ -9355,6 +10708,10 @@
               "mark": "☆",
               "index": -99
             },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 22
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 11
@@ -9370,6 +10727,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 55
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
             },
             "ウマークス": {
               "mark": "△",
@@ -9387,6 +10748,10 @@
               "mark": "○",
               "index": 86
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
+            },
             "ウマークス": {
               "mark": "○",
               "index": 84
@@ -9402,6 +10767,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 63
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
             },
             "ウマークス": {
               "mark": "▲",
@@ -9419,6 +10788,10 @@
               "mark": "▲",
               "index": 67
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 72
@@ -9434,6 +10807,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 69
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
             },
             "ウマークス": {
               "mark": "▲",
@@ -9451,9 +10828,13 @@
               "mark": "▲",
               "index": 75
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 73
+              "index": 71
             }
           },
           "number": 12,
@@ -9466,6 +10847,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 62
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 77
             },
             "ウマークス": {
               "mark": "▲",
@@ -9482,6 +10867,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 79
             },
             "ウマークス": {
               "mark": "△",
@@ -9507,7 +10896,6 @@
       "updatedAt": "10:50:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -9521,6 +10909,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 99
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
             },
             "ウマークス": {
               "mark": "☆",
@@ -9538,6 +10930,10 @@
               "mark": "○",
               "index": 84
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 77
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 37
@@ -9551,6 +10947,10 @@
         {
           "predictions": {
             "SPAIA": {
+              "mark": "◎",
+              "index": 97
+            },
+            "競馬ラボ": {
               "mark": "◎",
               "index": 97
             },
@@ -9570,6 +10970,10 @@
               "mark": "○",
               "index": 86
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 63
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 39
@@ -9585,6 +10989,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 94
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
             },
             "ウマークス": {
               "mark": "☆",
@@ -9602,6 +11010,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 47
+            },
             "ウマークス": {
               "mark": "△",
               "index": 54
@@ -9617,6 +11029,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 64
+            },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 19
             },
             "ウマークス": {
               "mark": "△",
@@ -9634,6 +11050,10 @@
               "mark": "◎",
               "index": 94
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
+            },
             "ウマークス": {
               "mark": "○",
               "index": 85
@@ -9649,6 +11069,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 90
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
             },
             "ウマークス": {
               "mark": "○",
@@ -9666,6 +11090,10 @@
               "mark": "○",
               "index": 89
             },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 33
+            },
             "ウマークス": {
               "mark": "△",
               "index": 52
@@ -9681,6 +11109,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 76
             },
             "ウマークス": {
               "mark": "○",
@@ -9706,7 +11138,6 @@
       "updatedAt": "11:20:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -9720,6 +11151,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 57
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
             },
             "ウマークス": {
               "mark": "▲",
@@ -9737,9 +11172,13 @@
               "mark": "○",
               "index": 88
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 71
             }
           },
           "number": 2,
@@ -9752,6 +11191,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
             },
             "ウマークス": {
               "mark": "▲",
@@ -9769,6 +11212,10 @@
               "mark": "▲",
               "index": 74
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 73
@@ -9784,6 +11231,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 78
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
             },
             "ウマークス": {
               "mark": "○",
@@ -9801,6 +11252,10 @@
               "mark": "△",
               "index": 64
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -9816,6 +11271,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 68
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
             },
             "ウマークス": {
               "mark": "▲",
@@ -9833,9 +11292,13 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 65
+            },
             "ウマークス": {
               "mark": "☆",
-              "index": 30
+              "index": 32
             }
           },
           "number": 8,
@@ -9848,6 +11311,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 72
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
             },
             "ウマークス": {
               "mark": "☆",
@@ -9865,9 +11332,13 @@
               "mark": "△",
               "index": 61
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 77
+              "index": 76
             }
           },
           "number": 10,
@@ -9881,9 +11352,13 @@
               "mark": "▲",
               "index": 74
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 70
             }
           },
           "number": 11,
@@ -9897,9 +11372,13 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 71
+              "index": 72
             }
           },
           "number": 12,
@@ -9912,6 +11391,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 61
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
             },
             "ウマークス": {
               "mark": "▲",
@@ -9938,7 +11421,6 @@
       "missingSites": [
         "SPAIA",
         "競馬ブック",
-        "競馬ラボ",
         "ウマークス",
         "ATHENA",
         "無料競馬AI",
@@ -9949,70 +11431,120 @@
       ],
       "horses": [
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 54
+            }
+          },
           "number": 1,
           "name": "ジューンガレン",
           "sourceHorseId": 2024107200,
           "odds": 5.8
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 61
+            }
+          },
           "number": 2,
           "name": "ホウオウプレマ",
           "sourceHorseId": 2024106597,
           "odds": 4.3
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            }
+          },
           "number": 3,
           "name": "オンザボー",
           "sourceHorseId": 2024103472,
           "odds": 5
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
+            }
+          },
           "number": 4,
           "name": "スワッグウォーク",
           "sourceHorseId": 2024106558,
           "odds": 3.1
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
+            }
+          },
           "number": 5,
           "name": "サーギュスターヴ",
           "sourceHorseId": 2024106823,
           "odds": 57.6
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 25
+            }
+          },
           "number": 6,
           "name": "ボンジュールパリ",
           "sourceHorseId": 2024106074,
           "odds": 5.8
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 29
+            }
+          },
           "number": 7,
           "name": "ロゼプレミア",
           "sourceHorseId": 2024103201,
           "odds": 16.9
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 46
+            }
+          },
           "number": 8,
           "name": "チャームジュネーヴ",
           "sourceHorseId": 2024106864,
           "odds": 138.8
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 15
+            }
+          },
           "number": 9,
           "name": "デルマハッコウダ",
           "sourceHorseId": 2024106075,
           "odds": 74.4
         },
         {
-          "predictions": {},
+          "predictions": {
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 61
+            }
+          },
           "number": 10,
           "name": "グラブザクラウン",
           "sourceHorseId": 2024104957,
@@ -10032,7 +11564,6 @@
       "updatedAt": "12:40:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -10047,9 +11578,13 @@
               "mark": "▲",
               "index": 71
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
-              "mark": "○",
-              "index": 82
+              "mark": "▲",
+              "index": 79
             }
           },
           "number": 1,
@@ -10062,6 +11597,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -10079,6 +11618,10 @@
               "mark": "◎",
               "index": 92
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -10094,6 +11637,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 92
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "▲",
@@ -10111,6 +11658,10 @@
               "mark": "◎",
               "index": 97
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 75
@@ -10126,6 +11677,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 84
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "▲",
@@ -10143,6 +11698,10 @@
               "mark": "○",
               "index": 82
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
+            },
             "ウマークス": {
               "mark": "○",
               "index": 83
@@ -10158,6 +11717,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 84
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "▲",
@@ -10175,6 +11738,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -10191,6 +11758,10 @@
               "mark": "◎",
               "index": 95
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "△",
               "index": 53
@@ -10206,6 +11777,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 89
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
             },
             "ウマークス": {
               "mark": "▲",
@@ -10231,7 +11806,6 @@
       "updatedAt": "13:10:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -10245,6 +11819,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 87
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
             },
             "ウマークス": {
               "mark": "○",
@@ -10262,6 +11840,10 @@
               "mark": "△",
               "index": 64
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -10277,6 +11859,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 70
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 69
             },
             "ウマークス": {
               "mark": "△",
@@ -10294,6 +11880,10 @@
               "mark": "▲",
               "index": 67
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 71
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -10309,6 +11899,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 63
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
             },
             "ウマークス": {
               "mark": "☆",
@@ -10326,6 +11920,10 @@
               "mark": "▲",
               "index": 71
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 56
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -10341,6 +11939,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 80
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
             },
             "ウマークス": {
               "mark": "▲",
@@ -10358,6 +11960,10 @@
               "mark": "▲",
               "index": 71
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 77
@@ -10373,6 +11979,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "○",
@@ -10390,6 +12000,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
+            },
             "ウマークス": {
               "mark": "△",
               "index": 53
@@ -10406,9 +12020,13 @@
               "mark": "◎",
               "index": 93
             },
-            "ウマークス": {
+            "競馬ラボ": {
               "mark": "○",
-              "index": 82
+              "index": 83
+            },
+            "ウマークス": {
+              "mark": "▲",
+              "index": 79
             }
           },
           "number": 11,
@@ -10422,9 +12040,13 @@
               "mark": "△",
               "index": 61
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 72
+              "index": 70
             }
           },
           "number": 12,
@@ -10446,7 +12068,6 @@
       "updatedAt": "13:40:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -10460,6 +12081,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 89
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
             },
             "ウマークス": {
               "mark": "▲",
@@ -10477,6 +12102,10 @@
               "mark": "▲",
               "index": 78
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
+            },
             "ウマークス": {
               "mark": "○",
               "index": 80
@@ -10492,6 +12121,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 77
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
             },
             "ウマークス": {
               "mark": "▲",
@@ -10509,6 +12142,10 @@
               "mark": "☆",
               "index": -141
             },
+            "競馬ラボ": {
+              "mark": "△",
+              "index": 51
+            },
             "ウマークス": {
               "mark": "☆",
               "index": 11
@@ -10524,6 +12161,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 95
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -10541,6 +12182,10 @@
               "mark": "◎",
               "index": 95
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 75
@@ -10556,6 +12201,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 88
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
             },
             "ウマークス": {
               "mark": "▲",
@@ -10573,6 +12222,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 79
+            },
             "ウマークス": {
               "mark": "△",
               "index": 53
@@ -10586,6 +12239,10 @@
         {
           "predictions": {
             "SPAIA": {
+              "mark": "◎",
+              "index": 91
+            },
+            "競馬ラボ": {
               "mark": "◎",
               "index": 91
             },
@@ -10605,6 +12262,10 @@
               "mark": "◎",
               "index": 97
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 73
@@ -10620,6 +12281,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 81
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 83
             },
             "ウマークス": {
               "mark": "▲",
@@ -10637,6 +12302,10 @@
               "mark": "○",
               "index": 86
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 70
@@ -10653,6 +12322,10 @@
               "mark": "◎",
               "index": 92
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 87
+            },
             "ウマークス": {
               "mark": "○",
               "index": 82
@@ -10668,6 +12341,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
             },
             "ウマークス": {
               "mark": "▲",
@@ -10693,7 +12370,6 @@
       "updatedAt": "14:10:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -10707,6 +12383,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 82
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
             },
             "ウマークス": {
               "mark": "▲",
@@ -10724,6 +12404,10 @@
               "mark": "▲",
               "index": 68
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 78
@@ -10739,6 +12423,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 78
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
             },
             "ウマークス": {
               "mark": "▲",
@@ -10756,9 +12444,13 @@
               "mark": "▲",
               "index": 71
             },
+            "競馬ラボ": {
+              "mark": "☆",
+              "index": 46
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 71
             }
           },
           "number": 4,
@@ -10771,6 +12463,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 86
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
             },
             "ウマークス": {
               "mark": "○",
@@ -10788,6 +12484,10 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 65
+            },
             "ウマークス": {
               "mark": "△",
               "index": 54
@@ -10803,6 +12503,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 86
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
             },
             "ウマークス": {
               "mark": "▲",
@@ -10820,6 +12524,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 72
+            },
             "ウマークス": {
               "mark": "○",
               "index": 80
@@ -10835,6 +12543,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 65
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 78
             },
             "ウマークス": {
               "mark": "▲",
@@ -10852,6 +12564,10 @@
               "mark": "△",
               "index": 63
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 74
@@ -10868,9 +12584,13 @@
               "mark": "▲",
               "index": 71
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 78
+              "index": 77
             }
           },
           "number": 11,
@@ -10883,6 +12603,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 68
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "▲",
@@ -10908,7 +12632,6 @@
       "updatedAt": "14:40:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -10922,6 +12645,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
             },
             "ウマークス": {
               "mark": "○",
@@ -10939,6 +12666,10 @@
               "mark": "▲",
               "index": 71
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -10954,6 +12685,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 87
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
             },
             "ウマークス": {
               "mark": "▲",
@@ -10971,6 +12706,10 @@
               "mark": "▲",
               "index": 76
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 74
@@ -10986,6 +12725,10 @@
             "SPAIA": {
               "mark": "◎",
               "index": 92
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "○",
@@ -11003,6 +12746,10 @@
               "mark": "◎",
               "index": 93
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 99
+            },
             "ウマークス": {
               "mark": "○",
               "index": 81
@@ -11018,6 +12765,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 86
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 82
             },
             "ウマークス": {
               "mark": "▲",
@@ -11035,6 +12786,10 @@
               "mark": "○",
               "index": 87
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 79
@@ -11051,6 +12806,10 @@
               "mark": "○",
               "index": 82
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 77
@@ -11066,6 +12825,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
             },
             "ウマークス": {
               "mark": "☆",
@@ -11091,7 +12854,6 @@
       "updatedAt": "15:15:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "AiBA",
         "日刊AI",
@@ -11105,6 +12867,10 @@
               "mark": "△",
               "index": 62
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 71
@@ -11117,13 +12883,17 @@
           "number": 1,
           "name": "フレミングフープ",
           "sourceHorseId": 2021105581,
-          "odds": 42.8
+          "odds": 47.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 97
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 88
             },
             "ウマークス": {
               "mark": "▲",
@@ -11137,7 +12907,7 @@
           "number": 2,
           "name": "ケリフレッドアスク",
           "sourceHorseId": 2022102296,
-          "odds": 14.9
+          "odds": 14.8
         },
         {
           "predictions": {
@@ -11145,9 +12915,13 @@
               "mark": "▲",
               "index": 74
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 70
+              "index": 69
             },
             "無料競馬AI": {
               "mark": "△",
@@ -11157,13 +12931,17 @@
           "number": 3,
           "name": "カテリーナ",
           "sourceHorseId": 2021101485,
-          "odds": 23.2
+          "odds": 19.2
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 64
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
             },
             "ウマークス": {
               "mark": "▲",
@@ -11177,13 +12955,17 @@
           "number": 4,
           "name": "リラボニート",
           "sourceHorseId": 2021103519,
-          "odds": 32.1
+          "odds": 42.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 64
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 94
             },
             "ウマークス": {
               "mark": "▲",
@@ -11197,13 +12979,17 @@
           "number": 5,
           "name": "アンゴラブラック",
           "sourceHorseId": 2021105738,
-          "odds": 17.7
+          "odds": 15.1
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 81
             },
             "ウマークス": {
               "mark": "▲",
@@ -11217,13 +13003,17 @@
           "number": 6,
           "name": "クリノメイ",
           "sourceHorseId": 2022101250,
-          "odds": 67.3
+          "odds": 80.3
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 73
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -11237,13 +13027,17 @@
           "number": 7,
           "name": "ココナッツブラウン",
           "sourceHorseId": 2020101607,
-          "odds": 3.1
+          "odds": 3.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 69
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -11257,13 +13051,17 @@
           "number": 8,
           "name": "エラトー",
           "sourceHorseId": 2021105442,
-          "odds": 107.3
+          "odds": 114.1
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 73
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
             },
             "ウマークス": {
               "mark": "▲",
@@ -11277,13 +13075,17 @@
           "number": 9,
           "name": "エリカエクスプレス",
           "sourceHorseId": 2022103205,
-          "odds": 3.4
+          "odds": 2.6
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "△",
               "index": 60
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 96
             },
             "ウマークス": {
               "mark": "▲",
@@ -11297,13 +13099,17 @@
           "number": 10,
           "name": "フェスティバルヒル",
           "sourceHorseId": 2023107265,
-          "odds": 8.7
+          "odds": 12.1
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 79
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
             },
             "ウマークス": {
               "mark": "▲",
@@ -11317,13 +13123,17 @@
           "number": 11,
           "name": "コガネノソラ",
           "sourceHorseId": 2021106823,
-          "odds": 9
+          "odds": 9.9
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "▲",
               "index": 69
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
             },
             "ウマークス": {
               "mark": "▲",
@@ -11337,13 +13147,17 @@
           "number": 12,
           "name": "ボンドガール",
           "sourceHorseId": 2021107179,
-          "odds": 10.7
+          "odds": 13.4
         },
         {
           "predictions": {
             "SPAIA": {
               "mark": "◎",
               "index": 100
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
             },
             "ウマークス": {
               "mark": "▲",
@@ -11357,7 +13171,7 @@
           "number": 13,
           "name": "ルージュソリテール",
           "sourceHorseId": 2022105157,
-          "odds": 37.8
+          "odds": 33.1
         },
         {
           "predictions": {
@@ -11365,9 +13179,13 @@
               "mark": "○",
               "index": 88
             },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 80
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 69
+              "index": 70
             },
             "無料競馬AI": {
               "mark": "☆",
@@ -11377,7 +13195,7 @@
           "number": 14,
           "name": "ヴーレヴー",
           "sourceHorseId": 2022104617,
-          "odds": 19.3
+          "odds": 19.2
         }
       ]
     },
@@ -11393,7 +13211,6 @@
       "updatedAt": "15:50:00",
       "missingSites": [
         "競馬ブック",
-        "競馬ラボ",
         "ATHENA",
         "無料競馬AI",
         "AiBA",
@@ -11407,6 +13224,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 59
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 89
             },
             "ウマークス": {
               "mark": "▲",
@@ -11424,6 +13245,10 @@
               "mark": "◎",
               "index": 100
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 97
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 74
@@ -11439,6 +13264,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 52
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 90
             },
             "ウマークス": {
               "mark": "▲",
@@ -11456,6 +13285,10 @@
               "mark": "○",
               "index": 80
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 91
+            },
             "ウマークス": {
               "mark": "○",
               "index": 81
@@ -11471,6 +13304,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 50
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 85
             },
             "ウマークス": {
               "mark": "▲",
@@ -11488,6 +13325,10 @@
               "mark": "△",
               "index": 61
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 92
+            },
             "ウマークス": {
               "mark": "△",
               "index": 52
@@ -11503,6 +13344,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 61
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
             },
             "ウマークス": {
               "mark": "○",
@@ -11520,6 +13365,10 @@
               "mark": "▲",
               "index": 73
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 77
@@ -11535,6 +13384,10 @@
             "SPAIA": {
               "mark": "▲",
               "index": 68
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 84
             },
             "ウマークス": {
               "mark": "▲",
@@ -11552,6 +13405,10 @@
               "mark": "▲",
               "index": 75
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 93
+            },
             "ウマークス": {
               "mark": "▲",
               "index": 75
@@ -11567,6 +13424,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 57
+            },
+            "競馬ラボ": {
+              "mark": "○",
+              "index": 86
             },
             "ウマークス": {
               "mark": "▲",
@@ -11584,9 +13445,13 @@
               "mark": "△",
               "index": 50
             },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 95
+            },
             "ウマークス": {
               "mark": "▲",
-              "index": 76
+              "index": 75
             }
           },
           "number": 12,
@@ -11599,6 +13464,10 @@
             "SPAIA": {
               "mark": "△",
               "index": 52
+            },
+            "競馬ラボ": {
+              "mark": "◎",
+              "index": 98
             },
             "ウマークス": {
               "mark": "▲",
@@ -11615,6 +13484,10 @@
             "SPAIA": {
               "mark": "○",
               "index": 84
+            },
+            "競馬ラボ": {
+              "mark": "▲",
+              "index": 75
             },
             "ウマークス": {
               "mark": "▲",
