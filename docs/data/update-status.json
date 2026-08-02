@@ -1,20 +1,18 @@
 {
-  "generatedAt": "2026-08-02T17:41:36+09:00",
+  "generatedAt": "2026-08-02T18:53:08+09:00",
   "targetDate": "2026-08-02",
   "updateLeadMinutes": 10,
-  "source": "site-scrape",
+  "source": "insufficient-site-scrape",
   "raceSource": "spaia-race-list",
   "requiredConsensusSiteCount": 4,
-  "consensusReady": true,
+  "consensusReady": false,
   "raceCount": 36,
-  "readyRaceIds": [
-    "chukyo-11"
-  ],
+  "readyRaceIds": [],
   "configuredSiteCount": 10,
   "fetchedSiteCount": 7,
-  "matchedSiteCount": 5,
+  "matchedSiteCount": 3,
   "fetchedRaceCount": 185,
-  "matchedRaceCount": 78,
+  "matchedRaceCount": 68,
   "siteSources": [
     {
       "site": "SPAIA",
@@ -952,8 +950,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1042,8 +1040,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1052,8 +1050,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 14,
-      "matched": 14,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1142,8 +1140,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 18,
-      "matched": 18,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1152,8 +1150,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 18,
-      "matched": 18,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -1162,8 +1160,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 18,
-      "matched": 18,
-      "complete": true,
+      "matched": 17,
+      "complete": false,
       "error": ""
     },
     {
@@ -2242,8 +2240,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 6,
-      "matched": 6,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2252,8 +2250,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 6,
-      "matched": 6,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2342,8 +2340,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 18,
-      "matched": 18,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
@@ -2352,8 +2350,8 @@
       "configured": true,
       "fetched": true,
       "horseCount": 18,
-      "matched": 18,
-      "complete": true,
+      "matched": 0,
+      "complete": false,
       "error": ""
     },
     {
