@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T12:40:33+09:00",
+  "generatedAt": "2026-08-08T13:42:16+09:00",
   "targetDate": "2026-08-09",
   "updateLeadMinutes": 10,
   "source": "site-scrape",
@@ -53,7 +53,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -63,7 +63,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -153,7 +153,7 @@
       "horseCount": 11,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -163,7 +163,7 @@
       "horseCount": 11,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -253,7 +253,7 @@
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -263,7 +263,7 @@
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -353,7 +353,7 @@
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -363,7 +363,7 @@
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -453,7 +453,7 @@
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -463,7 +463,7 @@
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -553,7 +553,7 @@
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -563,7 +563,7 @@
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -653,17 +653,17 @@
       "horseCount": 12,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
       "raceId": "niigata-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 12,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 12,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -753,7 +753,7 @@
       "horseCount": 17,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -763,7 +763,7 @@
       "horseCount": 17,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -853,7 +853,7 @@
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -863,7 +863,7 @@
       "horseCount": 15,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -953,7 +953,7 @@
       "horseCount": 7,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -963,7 +963,7 @@
       "horseCount": 7,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -1053,17 +1053,17 @@
       "horseCount": 18,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
       "raceId": "niigata-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -1153,7 +1153,7 @@
       "horseCount": 18,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -1163,7 +1163,7 @@
       "horseCount": 18,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -1253,7 +1253,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -1263,7 +1263,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -1353,7 +1353,7 @@
       "horseCount": 9,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -1363,7 +1363,7 @@
       "horseCount": 9,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -1453,7 +1453,7 @@
       "horseCount": 8,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -1463,7 +1463,7 @@
       "horseCount": 8,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -1553,7 +1553,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -1563,7 +1563,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -1653,7 +1653,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -1663,7 +1663,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -1753,7 +1753,7 @@
       "horseCount": 7,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -1763,7 +1763,7 @@
       "horseCount": 7,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -1853,17 +1853,17 @@
       "horseCount": 18,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
       "raceId": "chukyo-7",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -1953,7 +1953,7 @@
       "horseCount": 11,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -1963,7 +1963,7 @@
       "horseCount": 11,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -2053,7 +2053,7 @@
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -2063,7 +2063,7 @@
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -2153,7 +2153,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -2163,7 +2163,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -2253,17 +2253,17 @@
       "horseCount": 18,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
       "raceId": "chukyo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 18,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 18,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -2353,7 +2353,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -2363,7 +2363,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -2453,7 +2453,7 @@
       "horseCount": 12,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -2463,7 +2463,7 @@
       "horseCount": 12,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -2553,7 +2553,7 @@
       "horseCount": 12,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -2563,7 +2563,7 @@
       "horseCount": 12,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -2653,7 +2653,7 @@
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -2663,7 +2663,7 @@
       "horseCount": 10,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -2753,7 +2753,7 @@
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -2763,7 +2763,7 @@
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -2853,7 +2853,7 @@
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -2863,7 +2863,7 @@
       "horseCount": 13,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -2953,7 +2953,7 @@
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -2963,7 +2963,7 @@
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -3053,7 +3053,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -3063,7 +3063,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -3153,7 +3153,7 @@
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -3163,7 +3163,7 @@
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -3253,7 +3253,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -3263,7 +3263,7 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -3353,7 +3353,7 @@
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -3363,7 +3363,7 @@
       "horseCount": 14,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -3453,17 +3453,17 @@
       "horseCount": 16,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
       "raceId": "sapporo-11",
       "configured": true,
-      "fetched": false,
+      "fetched": true,
       "horseCount": 16,
-      "matched": 0,
-      "complete": false,
-      "error": "fetch failed"
+      "matched": 16,
+      "complete": true,
+      "error": ""
     },
     {
       "site": "AiBA",
@@ -3553,7 +3553,7 @@
       "horseCount": 8,
       "matched": 0,
       "complete": false,
-      "error": "ATHENA target article未公開"
+      "error": "fetch failed"
     },
     {
       "site": "無料競馬AI",
@@ -3563,7 +3563,7 @@
       "horseCount": 8,
       "matched": 0,
       "complete": false,
-      "error": "fetch failed"
+      "error": "無料競馬AI raceId未取得"
     },
     {
       "site": "AiBA",
@@ -3717,7 +3717,7 @@
           "number": 4,
           "name": "モンサンアミュザン",
           "sourceHorseId": 2024101224,
-          "odds": 69.5
+          "odds": 44.4
         },
         {
           "predictions": {
@@ -3737,7 +3737,7 @@
           "number": 5,
           "name": "マイホームパパ",
           "sourceHorseId": 2024102852,
-          "odds": 47.4
+          "odds": 53.1
         },
         {
           "predictions": {
@@ -3757,7 +3757,7 @@
           "number": 6,
           "name": "アオイノリプー",
           "sourceHorseId": 2024100715,
-          "odds": 8
+          "odds": 7.4
         },
         {
           "predictions": {
@@ -3777,7 +3777,7 @@
           "number": 7,
           "name": "コスモフラムオット",
           "sourceHorseId": 2024103591,
-          "odds": 74.8
+          "odds": 82.3
         },
         {
           "predictions": {
@@ -3797,7 +3797,7 @@
           "number": 8,
           "name": "ラガリーガ",
           "sourceHorseId": 2024106670,
-          "odds": 4
+          "odds": 4.4
         },
         {
           "predictions": {
@@ -3817,7 +3817,7 @@
           "number": 9,
           "name": "セイウンオオゾラ",
           "sourceHorseId": 2024103837,
-          "odds": 50.4
+          "odds": 59.4
         },
         {
           "predictions": {
@@ -3837,7 +3837,7 @@
           "number": 10,
           "name": "ウィモウェ",
           "sourceHorseId": 2024107201,
-          "odds": 28.5
+          "odds": 19.4
         },
         {
           "predictions": {
@@ -3857,7 +3857,7 @@
           "number": 11,
           "name": "シアルナーレ",
           "sourceHorseId": 2024105911,
-          "odds": 6.7
+          "odds": 7.3
         },
         {
           "predictions": {
@@ -3877,7 +3877,7 @@
           "number": 12,
           "name": "マスターボリューム",
           "sourceHorseId": 2024103638,
-          "odds": 88.1
+          "odds": 100.4
         },
         {
           "predictions": {
@@ -3897,7 +3897,7 @@
           "number": 13,
           "name": "スーパーユタカ",
           "sourceHorseId": 2024107390,
-          "odds": 5.2
+          "odds": 5.9
         },
         {
           "predictions": {
@@ -3917,7 +3917,7 @@
           "number": 14,
           "name": "ツーハーツ",
           "sourceHorseId": 2024103368,
-          "odds": 5.5
+          "odds": 5.2
         },
         {
           "predictions": {
@@ -3937,7 +3937,7 @@
           "number": 15,
           "name": "マハロハ",
           "sourceHorseId": 2024102885,
-          "odds": 20.8
+          "odds": 12.2
         },
         {
           "predictions": {
@@ -3957,7 +3957,7 @@
           "number": 16,
           "name": "コスモモノポリー",
           "sourceHorseId": 2024103614,
-          "odds": 104.8
+          "odds": 159.2
         }
       ]
     },
@@ -3993,7 +3993,7 @@
           "number": 1,
           "name": "クリガーレ",
           "sourceHorseId": 2024102437,
-          "odds": 11
+          "odds": 14.7
         },
         {
           "predictions": {
@@ -4005,7 +4005,7 @@
           "number": 2,
           "name": "アーバンアート",
           "sourceHorseId": 2024103173,
-          "odds": 35.2
+          "odds": 53.3
         },
         {
           "predictions": {
@@ -4017,7 +4017,7 @@
           "number": 3,
           "name": "ルブラッシュノモー",
           "sourceHorseId": 2024100867,
-          "odds": 33
+          "odds": 57.8
         },
         {
           "predictions": {
@@ -4029,7 +4029,7 @@
           "number": 4,
           "name": "ワイズジュエル",
           "sourceHorseId": 2024100105,
-          "odds": 7.1
+          "odds": 5.6
         },
         {
           "predictions": {
@@ -4041,7 +4041,7 @@
           "number": 5,
           "name": "エスシークザン",
           "sourceHorseId": 2024100002,
-          "odds": 6.6
+          "odds": 4.4
         },
         {
           "predictions": {
@@ -4053,7 +4053,7 @@
           "number": 6,
           "name": "イスクメル",
           "sourceHorseId": 2024106236,
-          "odds": 6.5
+          "odds": 6.1
         },
         {
           "predictions": {
@@ -4065,7 +4065,7 @@
           "number": 7,
           "name": "メジェグレイス",
           "sourceHorseId": 2024103919,
-          "odds": 13.9
+          "odds": 7.5
         },
         {
           "predictions": {
@@ -4077,7 +4077,7 @@
           "number": 8,
           "name": "ゴータマ",
           "sourceHorseId": 2024102067,
-          "odds": 12.4
+          "odds": 18.8
         },
         {
           "predictions": {
@@ -4089,7 +4089,7 @@
           "number": 9,
           "name": "キンバリー",
           "sourceHorseId": 2024104006,
-          "odds": 32.7
+          "odds": 52
         },
         {
           "predictions": {
@@ -4101,7 +4101,7 @@
           "number": 10,
           "name": "シジマ",
           "sourceHorseId": 2024100678,
-          "odds": 2.4
+          "odds": 3
         },
         {
           "predictions": {
@@ -4113,7 +4113,7 @@
           "number": 11,
           "name": "ドッカイッチャッテ",
           "sourceHorseId": 2024100754,
-          "odds": 20
+          "odds": 24.5
         }
       ]
     },
@@ -4175,7 +4175,7 @@
           "number": 2,
           "name": "クツワエターナル",
           "sourceHorseId": 2023106293,
-          "odds": 65.9
+          "odds": 61.3
         },
         {
           "predictions": {
@@ -4195,7 +4195,7 @@
           "number": 3,
           "name": "ヨルヴィック",
           "sourceHorseId": 2023107242,
-          "odds": 10.6
+          "odds": 12.7
         },
         {
           "predictions": {
@@ -4215,7 +4215,7 @@
           "number": 4,
           "name": "エコロセレナ",
           "sourceHorseId": 2023107403,
-          "odds": 3.3
+          "odds": 2.9
         },
         {
           "predictions": {
@@ -4235,7 +4235,7 @@
           "number": 5,
           "name": "プティシラー",
           "sourceHorseId": 2023101141,
-          "odds": 17.6
+          "odds": 20.3
         },
         {
           "predictions": {
@@ -4255,7 +4255,7 @@
           "number": 6,
           "name": "エトワールフィーユ",
           "sourceHorseId": 2023102371,
-          "odds": 58
+          "odds": 67.2
         },
         {
           "predictions": {
@@ -4275,7 +4275,7 @@
           "number": 7,
           "name": "ロジザボード",
           "sourceHorseId": 2023104017,
-          "odds": 10.4
+          "odds": 12.3
         },
         {
           "predictions": {
@@ -4295,7 +4295,7 @@
           "number": 8,
           "name": "テリオスレイ",
           "sourceHorseId": 2023106854,
-          "odds": 12
+          "odds": 11.4
         },
         {
           "predictions": {
@@ -4315,7 +4315,7 @@
           "number": 9,
           "name": "ビューティドリーム",
           "sourceHorseId": 2023104585,
-          "odds": 94.3
+          "odds": 27
         },
         {
           "predictions": {
@@ -4335,7 +4335,7 @@
           "number": 10,
           "name": "カウガールハット",
           "sourceHorseId": 2023102328,
-          "odds": 152
+          "odds": 204.1
         },
         {
           "predictions": {
@@ -4355,7 +4355,7 @@
           "number": 11,
           "name": "アルペンローゼ",
           "sourceHorseId": 2023105243,
-          "odds": 22.9
+          "odds": 29.4
         },
         {
           "predictions": {
@@ -4375,7 +4375,7 @@
           "number": 12,
           "name": "ハングローズ",
           "sourceHorseId": 2023102122,
-          "odds": 3.3
+          "odds": 3.4
         },
         {
           "predictions": {
@@ -4395,7 +4395,7 @@
           "number": 13,
           "name": "キョウエイハル",
           "sourceHorseId": 2023105068,
-          "odds": 46.9
+          "odds": 56.9
         },
         {
           "predictions": {
@@ -4415,7 +4415,7 @@
           "number": 14,
           "name": "グランキンバリー",
           "sourceHorseId": 2023104568,
-          "odds": 55
+          "odds": 73.7
         },
         {
           "predictions": {
@@ -4435,7 +4435,7 @@
           "number": 15,
           "name": "セントリアン",
           "sourceHorseId": 2023100888,
-          "odds": 16.3
+          "odds": 19.9
         }
       ]
     },
@@ -4477,7 +4477,7 @@
           "number": 1,
           "name": "ダゴベルト",
           "sourceHorseId": 2023106946,
-          "odds": 106.3
+          "odds": 131.8
         },
         {
           "predictions": {
@@ -4497,7 +4497,7 @@
           "number": 2,
           "name": "オセアビシャイン",
           "sourceHorseId": 2023100052,
-          "odds": 100.9
+          "odds": 85.6
         },
         {
           "predictions": {
@@ -4537,7 +4537,7 @@
           "number": 4,
           "name": "キセログラフィカ",
           "sourceHorseId": 2023105682,
-          "odds": 13.8
+          "odds": 12.9
         },
         {
           "predictions": {
@@ -4557,7 +4557,7 @@
           "number": 5,
           "name": "ヌビアン",
           "sourceHorseId": 2023103299,
-          "odds": 169.1
+          "odds": 145.5
         },
         {
           "predictions": {
@@ -4577,7 +4577,7 @@
           "number": 6,
           "name": "ユイノスレチガイ",
           "sourceHorseId": 2023105973,
-          "odds": 24.3
+          "odds": 34.1
         },
         {
           "predictions": {
@@ -4597,7 +4597,7 @@
           "number": 7,
           "name": "ジュングロワール",
           "sourceHorseId": 2023107425,
-          "odds": 82.6
+          "odds": 79.1
         },
         {
           "predictions": {
@@ -4617,7 +4617,7 @@
           "number": 8,
           "name": "カシマライフウ",
           "sourceHorseId": 2023105439,
-          "odds": 8.8
+          "odds": 7.8
         },
         {
           "predictions": {
@@ -4637,7 +4637,7 @@
           "number": 9,
           "name": "ハリコミチュウ",
           "sourceHorseId": 2023104860,
-          "odds": 38.3
+          "odds": 17.4
         },
         {
           "predictions": {
@@ -4657,7 +4657,7 @@
           "number": 10,
           "name": "モンスターラッシュ",
           "sourceHorseId": 2023106976,
-          "odds": 4.1
+          "odds": 3.5
         },
         {
           "predictions": {
@@ -4677,7 +4677,7 @@
           "number": 11,
           "name": "ラスタリア",
           "sourceHorseId": 2023106151,
-          "odds": 52.9
+          "odds": 43.5
         },
         {
           "predictions": {
@@ -4697,7 +4697,7 @@
           "number": 12,
           "name": "クリムゾンリーフ",
           "sourceHorseId": 2023102967,
-          "odds": 1.9
+          "odds": 2.3
         },
         {
           "predictions": {
@@ -4717,7 +4717,7 @@
           "number": 13,
           "name": "クィーンズウィンク",
           "sourceHorseId": 2023106971,
-          "odds": 47.6
+          "odds": 54.7
         },
         {
           "predictions": {
@@ -4737,7 +4737,7 @@
           "number": 14,
           "name": "レッドリアライズ",
           "sourceHorseId": 2023105233,
-          "odds": 56.3
+          "odds": 70.5
         },
         {
           "predictions": {
@@ -4757,7 +4757,7 @@
           "number": 15,
           "name": "カノープス",
           "sourceHorseId": 2023104855,
-          "odds": 122.4
+          "odds": 165.1
         }
       ]
     },
@@ -4799,7 +4799,7 @@
           "number": 1,
           "name": "ブリングライト",
           "sourceHorseId": 2020100617,
-          "odds": 42.4
+          "odds": 40
         },
         {
           "predictions": {
@@ -4819,7 +4819,7 @@
           "number": 2,
           "name": "ベルゼビュート",
           "sourceHorseId": 2023105083,
-          "odds": 5.6
+          "odds": 5.9
         },
         {
           "predictions": {
@@ -4839,7 +4839,7 @@
           "number": 3,
           "name": "サトノエスケープ",
           "sourceHorseId": 2023106932,
-          "odds": 8.8
+          "odds": 8.6
         },
         {
           "predictions": {
@@ -4859,7 +4859,7 @@
           "number": 4,
           "name": "エコロバロン",
           "sourceHorseId": 2023104992,
-          "odds": 43.5
+          "odds": 46
         },
         {
           "predictions": {
@@ -4879,7 +4879,7 @@
           "number": 5,
           "name": "マジンタクシー",
           "sourceHorseId": 2023100949,
-          "odds": 44.4
+          "odds": 49.4
         },
         {
           "predictions": {
@@ -4899,7 +4899,7 @@
           "number": 6,
           "name": "ベアアッコチャン",
           "sourceHorseId": 2023101039,
-          "odds": 27.6
+          "odds": 31.4
         },
         {
           "predictions": {
@@ -4919,7 +4919,7 @@
           "number": 7,
           "name": "トキメキジニア",
           "sourceHorseId": 2022100323,
-          "odds": 349.7
+          "odds": 432.7
         },
         {
           "predictions": {
@@ -4939,7 +4939,7 @@
           "number": 8,
           "name": "プルシャプラ",
           "sourceHorseId": 2022100582,
-          "odds": 36.7
+          "odds": 42.5
         },
         {
           "predictions": {
@@ -4959,7 +4959,7 @@
           "number": 9,
           "name": "アンバサダネージュ",
           "sourceHorseId": 2023103216,
-          "odds": 4.8
+          "odds": 4.3
         },
         {
           "predictions": {
@@ -4979,7 +4979,7 @@
           "number": 10,
           "name": "スリーコーズ",
           "sourceHorseId": 2023106208,
-          "odds": 20.6
+          "odds": 20.7
         },
         {
           "predictions": {
@@ -4999,7 +4999,7 @@
           "number": 11,
           "name": "ゼファーテソーロ",
           "sourceHorseId": 2023102007,
-          "odds": 8.5
+          "odds": 8.1
         },
         {
           "predictions": {
@@ -5039,7 +5039,7 @@
           "number": 13,
           "name": "タイセイブルーム",
           "sourceHorseId": 2023100533,
-          "odds": 12
+          "odds": 12.3
         },
         {
           "predictions": {
@@ -5059,7 +5059,7 @@
           "number": 14,
           "name": "ソリッドベーシス",
           "sourceHorseId": 2022105697,
-          "odds": 223.4
+          "odds": 278.1
         },
         {
           "predictions": {
@@ -5079,7 +5079,7 @@
           "number": 15,
           "name": "ペッパーミル",
           "sourceHorseId": 2021102745,
-          "odds": 28.5
+          "odds": 32.3
         }
       ]
     },
@@ -5121,7 +5121,7 @@
           "number": 1,
           "name": "ライヒスアドラー",
           "sourceHorseId": 2023103687,
-          "odds": 3.5
+          "odds": 3.4
         },
         {
           "predictions": {
@@ -5141,7 +5141,7 @@
           "number": 2,
           "name": "コルレオニス",
           "sourceHorseId": 2021105704,
-          "odds": 8.4
+          "odds": 10
         },
         {
           "predictions": {
@@ -5161,7 +5161,7 @@
           "number": 3,
           "name": "カニキュル",
           "sourceHorseId": 2021104865,
-          "odds": 7.8
+          "odds": 6.4
         },
         {
           "predictions": {
@@ -5181,7 +5181,7 @@
           "number": 4,
           "name": "ガジュノリ",
           "sourceHorseId": 2021101724,
-          "odds": 13.6
+          "odds": 12.5
         },
         {
           "predictions": {
@@ -5201,7 +5201,7 @@
           "number": 5,
           "name": "ハギノアルデバラン",
           "sourceHorseId": 2020100976,
-          "odds": 22.6
+          "odds": 22.5
         },
         {
           "predictions": {
@@ -5221,7 +5221,7 @@
           "number": 6,
           "name": "マカナ",
           "sourceHorseId": 2022100019,
-          "odds": 5.4
+          "odds": 7.1
         },
         {
           "predictions": {
@@ -5241,7 +5241,7 @@
           "number": 7,
           "name": "モズロックンロール",
           "sourceHorseId": 2020106535,
-          "odds": 29.1
+          "odds": 28.6
         },
         {
           "predictions": {
@@ -5261,7 +5261,7 @@
           "number": 8,
           "name": "クリニクラウン",
           "sourceHorseId": 2020100934,
-          "odds": 35.6
+          "odds": 43.7
         },
         {
           "predictions": {
@@ -5281,7 +5281,7 @@
           "number": 9,
           "name": "サトノヴィレ",
           "sourceHorseId": 2020104753,
-          "odds": 53.9
+          "odds": 64.4
         },
         {
           "predictions": {
@@ -5301,7 +5301,7 @@
           "number": 10,
           "name": "エラン",
           "sourceHorseId": 2021105453,
-          "odds": 16.8
+          "odds": 18.9
         },
         {
           "predictions": {
@@ -5321,7 +5321,7 @@
           "number": 11,
           "name": "デルアヴァー",
           "sourceHorseId": 2022110054,
-          "odds": 6.9
+          "odds": 6.3
         },
         {
           "predictions": {
@@ -5341,7 +5341,7 @@
           "number": 12,
           "name": "エスコバル",
           "sourceHorseId": 2018106154,
-          "odds": 63.7
+          "odds": 54
         },
         {
           "predictions": {
@@ -5361,7 +5361,7 @@
           "number": 13,
           "name": "テンミラクルスター",
           "sourceHorseId": 2022101134,
-          "odds": 8.7
+          "odds": 7.5
         }
       ]
     },
@@ -5378,7 +5378,6 @@
       "missingSites": [
         "競馬ブック",
         "ATHENA",
-        "無料競馬AI",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -5398,12 +5397,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 40
             }
           },
           "number": 1,
           "name": "オオツカ",
           "sourceHorseId": 2023103919,
-          "odds": 15.3
+          "odds": 14.1
         },
         {
           "predictions": {
@@ -5418,12 +5421,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 36
             }
           },
           "number": 2,
           "name": "ファイアマン",
           "sourceHorseId": 2023101154,
-          "odds": 18.7
+          "odds": 16.4
         },
         {
           "predictions": {
@@ -5438,12 +5445,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 43
             }
           },
           "number": 3,
           "name": "ヒシアムルーズ",
           "sourceHorseId": 2023107091,
-          "odds": 24.5
+          "odds": 26.2
         },
         {
           "predictions": {
@@ -5458,12 +5469,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 45
             }
           },
           "number": 4,
           "name": "チェリヴェント",
           "sourceHorseId": 2023104387,
-          "odds": 19.7
+          "odds": 18.6
         },
         {
           "predictions": {
@@ -5478,12 +5493,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 68
+            },
+            "無料競馬AI": {
+              "mark": "◎",
+              "index": 66
             }
           },
           "number": 5,
           "name": "マクリール",
           "sourceHorseId": 2023106821,
-          "odds": 14.6
+          "odds": 14.4
         },
         {
           "predictions": {
@@ -5498,12 +5517,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 68
+            },
+            "無料競馬AI": {
+              "mark": "▲",
+              "index": 58
             }
           },
           "number": 6,
           "name": "ドンエレクトス",
           "sourceHorseId": 2023101269,
-          "odds": 6.7
+          "odds": 7.7
         },
         {
           "predictions": {
@@ -5518,12 +5541,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 37
             }
           },
           "number": 7,
           "name": "パラダイスフェイス",
           "sourceHorseId": 2023104103,
-          "odds": 67.5
+          "odds": 69.9
         },
         {
           "predictions": {
@@ -5538,12 +5565,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 8,
           "name": "テンカムテキ",
           "sourceHorseId": 2023104927,
-          "odds": 32.3
+          "odds": 29.8
         },
         {
           "predictions": {
@@ -5558,12 +5589,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 67
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 58
             }
           },
           "number": 9,
           "name": "ショウナンバンライ",
           "sourceHorseId": 2023107036,
-          "odds": 4
+          "odds": 4.1
         },
         {
           "predictions": {
@@ -5578,12 +5613,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 46
             }
           },
           "number": 10,
           "name": "タガノアバンドーネ",
           "sourceHorseId": 2023104733,
-          "odds": 14.6
+          "odds": 19.6
         },
         {
           "predictions": {
@@ -5598,12 +5637,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 68
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 52
             }
           },
           "number": 11,
           "name": "パイロマンサー",
           "sourceHorseId": 2023101134,
-          "odds": 4.8
+          "odds": 4.4
         },
         {
           "predictions": {
@@ -5618,12 +5661,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 67
+            },
+            "無料競馬AI": {
+              "mark": "○",
+              "index": 64
             }
           },
           "number": 12,
           "name": "メルカントゥール",
           "sourceHorseId": 2023105303,
-          "odds": 3.8
+          "odds": 3.7
         }
       ]
     },
@@ -5665,7 +5712,7 @@
           "number": 1,
           "name": "クォーツァイト",
           "sourceHorseId": 2021104777,
-          "odds": 27.9
+          "odds": 45.8
         },
         {
           "predictions": {
@@ -5685,7 +5732,7 @@
           "number": 2,
           "name": "ラヴェンデル",
           "sourceHorseId": 2022106637,
-          "odds": 8.7
+          "odds": 9.9
         },
         {
           "predictions": {
@@ -5705,7 +5752,7 @@
           "number": 3,
           "name": "リュウノタブーク",
           "sourceHorseId": 2021104365,
-          "odds": 72.2
+          "odds": 86.4
         },
         {
           "predictions": {
@@ -5725,7 +5772,7 @@
           "number": 4,
           "name": "ミスエル",
           "sourceHorseId": 2021106986,
-          "odds": 49
+          "odds": 65.7
         },
         {
           "predictions": {
@@ -5745,7 +5792,7 @@
           "number": 5,
           "name": "スペルキャスター",
           "sourceHorseId": 2020102674,
-          "odds": 85
+          "odds": 92.8
         },
         {
           "predictions": {
@@ -5765,7 +5812,7 @@
           "number": 6,
           "name": "ゼンダンタカ",
           "sourceHorseId": 2022106187,
-          "odds": 56.4
+          "odds": 70.3
         },
         {
           "predictions": {
@@ -5785,7 +5832,7 @@
           "number": 7,
           "name": "ラトルシェ",
           "sourceHorseId": 2022104190,
-          "odds": 19
+          "odds": 30.2
         },
         {
           "predictions": {
@@ -5805,7 +5852,7 @@
           "number": 8,
           "name": "カレンデュラ",
           "sourceHorseId": 2023106613,
-          "odds": 5.1
+          "odds": 6.8
         },
         {
           "predictions": {
@@ -5825,7 +5872,7 @@
           "number": 9,
           "name": "サトノアルペジオ",
           "sourceHorseId": 2020103477,
-          "odds": 57.8
+          "odds": 61.1
         },
         {
           "predictions": {
@@ -5845,7 +5892,7 @@
           "number": 10,
           "name": "ペイシャヴァルツー",
           "sourceHorseId": 2022104216,
-          "odds": 36.7
+          "odds": 36.8
         },
         {
           "predictions": {
@@ -5885,7 +5932,7 @@
           "number": 12,
           "name": "レジーナローズ",
           "sourceHorseId": 2020104174,
-          "odds": 12.6
+          "odds": 14.6
         },
         {
           "predictions": {
@@ -5905,7 +5952,7 @@
           "number": 13,
           "name": "ロードトレゾール",
           "sourceHorseId": 2021100144,
-          "odds": 7.4
+          "odds": 5.9
         },
         {
           "predictions": {
@@ -5925,7 +5972,7 @@
           "number": 14,
           "name": "ラブディーヴァ",
           "sourceHorseId": 2021104074,
-          "odds": 55.6
+          "odds": 42.1
         },
         {
           "predictions": {
@@ -5945,7 +5992,7 @@
           "number": 15,
           "name": "キントラダンサー",
           "sourceHorseId": 2022104387,
-          "odds": 17.7
+          "odds": 11.9
         },
         {
           "predictions": {
@@ -5965,7 +6012,7 @@
           "number": 16,
           "name": "メッエフアパラ",
           "sourceHorseId": 2021106066,
-          "odds": 65.3
+          "odds": 45.1
         },
         {
           "predictions": {
@@ -5985,7 +6032,7 @@
           "number": 17,
           "name": "クールベイビー",
           "sourceHorseId": 2021100356,
-          "odds": 10.6
+          "odds": 7.4
         }
       ]
     },
@@ -6027,7 +6074,7 @@
           "number": 1,
           "name": "タイセイピューマ",
           "sourceHorseId": 2021106119,
-          "odds": 74.9
+          "odds": 86.7
         },
         {
           "predictions": {
@@ -6047,7 +6094,7 @@
           "number": 2,
           "name": "プレアデスグループ",
           "sourceHorseId": 2021104839,
-          "odds": 24.3
+          "odds": 33.7
         },
         {
           "predictions": {
@@ -6067,7 +6114,7 @@
           "number": 3,
           "name": "フォンメイリー",
           "sourceHorseId": 2019105287,
-          "odds": 39.3
+          "odds": 42.1
         },
         {
           "predictions": {
@@ -6087,7 +6134,7 @@
           "number": 4,
           "name": "ダズリングダンス",
           "sourceHorseId": 2020105957,
-          "odds": 41.1
+          "odds": 32.7
         },
         {
           "predictions": {
@@ -6107,7 +6154,7 @@
           "number": 5,
           "name": "アスタールフナ",
           "sourceHorseId": 2022101557,
-          "odds": 6.2
+          "odds": 6.6
         },
         {
           "predictions": {
@@ -6127,7 +6174,7 @@
           "number": 6,
           "name": "ダノンモンテローザ",
           "sourceHorseId": 2021100158,
-          "odds": 15.9
+          "odds": 14.4
         },
         {
           "predictions": {
@@ -6147,7 +6194,7 @@
           "number": 7,
           "name": "シャンハイナイト",
           "sourceHorseId": 2022102347,
-          "odds": 10.8
+          "odds": 14.3
         },
         {
           "predictions": {
@@ -6167,7 +6214,7 @@
           "number": 8,
           "name": "キョウエイカンフ",
           "sourceHorseId": 2020100363,
-          "odds": 14.3
+          "odds": 17.3
         },
         {
           "predictions": {
@@ -6187,7 +6234,7 @@
           "number": 9,
           "name": "シュバルツガイスト",
           "sourceHorseId": 2020103575,
-          "odds": 87.5
+          "odds": 95.8
         },
         {
           "predictions": {
@@ -6207,7 +6254,7 @@
           "number": 10,
           "name": "フィーチャリング",
           "sourceHorseId": 2022105824,
-          "odds": 16.9
+          "odds": 17
         },
         {
           "predictions": {
@@ -6227,7 +6274,7 @@
           "number": 11,
           "name": "ハッピーウィズユー",
           "sourceHorseId": 2022106656,
-          "odds": 11.2
+          "odds": 10.9
         },
         {
           "predictions": {
@@ -6247,7 +6294,7 @@
           "number": 12,
           "name": "レッドセニョール",
           "sourceHorseId": 2021105779,
-          "odds": 25.3
+          "odds": 20.2
         },
         {
           "predictions": {
@@ -6267,7 +6314,7 @@
           "number": 13,
           "name": "アルジェンタージョ",
           "sourceHorseId": 2021103706,
-          "odds": 31.2
+          "odds": 39
         },
         {
           "predictions": {
@@ -6287,7 +6334,7 @@
           "number": 14,
           "name": "ピコテンダー",
           "sourceHorseId": 2022110132,
-          "odds": 2.1
+          "odds": 1.9
         },
         {
           "predictions": {
@@ -6307,7 +6354,7 @@
           "number": 15,
           "name": "マーゴットゲイン",
           "sourceHorseId": 2022105495,
-          "odds": 23.3
+          "odds": 26.5
         }
       ]
     },
@@ -6349,7 +6396,7 @@
           "number": 1,
           "name": "トラストモアリズム",
           "sourceHorseId": 2022101620,
-          "odds": 52.6
+          "odds": 76.3
         },
         {
           "predictions": {
@@ -6369,7 +6416,7 @@
           "number": 2,
           "name": "ミッドセンチュリー",
           "sourceHorseId": 2022103308,
-          "odds": 10.5
+          "odds": 11.3
         },
         {
           "predictions": {
@@ -6389,7 +6436,7 @@
           "number": 3,
           "name": "テイキットイージー",
           "sourceHorseId": 2021101088,
-          "odds": 30
+          "odds": 41.2
         },
         {
           "predictions": {
@@ -6409,7 +6456,7 @@
           "number": 4,
           "name": "イスキオス",
           "sourceHorseId": 2022105223,
-          "odds": 26.3
+          "odds": 14.9
         },
         {
           "predictions": {
@@ -6429,7 +6476,7 @@
           "number": 5,
           "name": "モートンアイランド",
           "sourceHorseId": 2023107277,
-          "odds": 3.6
+          "odds": 3.8
         },
         {
           "predictions": {
@@ -6449,7 +6496,7 @@
           "number": 6,
           "name": "オプレントジュエル",
           "sourceHorseId": 2022105365,
-          "odds": 11.6
+          "odds": 12.6
         },
         {
           "predictions": {
@@ -6486,7 +6533,6 @@
       "missingSites": [
         "競馬ブック",
         "ATHENA",
-        "無料競馬AI",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -6506,12 +6552,16 @@
             "ウマークス": {
               "mark": "○",
               "index": 83
+            },
+            "無料競馬AI": {
+              "mark": "○",
+              "index": 74
             }
           },
           "number": 1,
           "name": "ワイズファミリア",
           "sourceHorseId": 2023103550,
-          "odds": 7.9
+          "odds": 7.1
         },
         {
           "predictions": {
@@ -6526,12 +6576,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "無料競馬AI": {
+              "mark": "▲",
+              "index": 73
             }
           },
           "number": 2,
           "name": "ルシアージュ",
           "sourceHorseId": 2023106795,
-          "odds": 9.5
+          "odds": 11.4
         },
         {
           "predictions": {
@@ -6546,12 +6600,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "無料競馬AI": {
+              "mark": "◎",
+              "index": 88
             }
           },
           "number": 3,
           "name": "バンオンタイム",
           "sourceHorseId": 2023101120,
-          "odds": 2.3
+          "odds": 2.2
         },
         {
           "predictions": {
@@ -6566,12 +6624,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 56
             }
           },
           "number": 4,
           "name": "フジサン",
           "sourceHorseId": 2023105006,
-          "odds": 13.1
+          "odds": 13.8
         },
         {
           "predictions": {
@@ -6586,12 +6648,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 35
             }
           },
           "number": 5,
           "name": "フーディエラン",
           "sourceHorseId": 2023106286,
-          "odds": 93.9
+          "odds": 67.8
         },
         {
           "predictions": {
@@ -6606,12 +6672,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 48
             }
           },
           "number": 6,
           "name": "スカイドリーマー",
           "sourceHorseId": 2023104406,
-          "odds": 32.9
+          "odds": 25.6
         },
         {
           "predictions": {
@@ -6626,12 +6696,16 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 20
             }
           },
           "number": 7,
           "name": "ピコプリンセス",
           "sourceHorseId": 2023104544,
-          "odds": 164.4
+          "odds": 144.1
         },
         {
           "predictions": {
@@ -6646,12 +6720,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 62
             }
           },
           "number": 8,
           "name": "ガミーヌ",
           "sourceHorseId": 2023106468,
-          "odds": 26.2
+          "odds": 25.9
         },
         {
           "predictions": {
@@ -6666,12 +6744,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 76
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 63
             }
           },
           "number": 9,
           "name": "スチールギターラグ",
           "sourceHorseId": 2023102799,
-          "odds": 10.9
+          "odds": 10.5
         },
         {
           "predictions": {
@@ -6686,12 +6768,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 10,
           "name": "ダノンドナウ",
           "sourceHorseId": 2023106058,
-          "odds": 40.8
+          "odds": 40.1
         },
         {
           "predictions": {
@@ -6706,12 +6792,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 35
             }
           },
           "number": 11,
           "name": "オドラタス",
           "sourceHorseId": 2023103816,
-          "odds": 35.2
+          "odds": 36.3
         },
         {
           "predictions": {
@@ -6726,12 +6816,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 12,
           "name": "セルリア",
           "sourceHorseId": 2023103843,
-          "odds": 84.1
+          "odds": 58.8
         },
         {
           "predictions": {
@@ -6746,12 +6840,16 @@
             "ウマークス": {
               "mark": "☆",
               "index": 11
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 25
             }
           },
           "number": 13,
           "name": "リーゼントモニカ",
           "sourceHorseId": 2023103074,
-          "odds": 71.8
+          "odds": 85.9
         },
         {
           "predictions": {
@@ -6766,12 +6864,16 @@
             "ウマークス": {
               "mark": "☆",
               "index": 12
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 30
             }
           },
           "number": 14,
           "name": "ゲンパチロマン",
           "sourceHorseId": 2023100148,
-          "odds": 32.6
+          "odds": 39.7
         },
         {
           "predictions": {
@@ -6786,12 +6888,16 @@
             "ウマークス": {
               "mark": "△",
               "index": 59
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 34
             }
           },
           "number": 15,
           "name": "フルールロイヤル",
           "sourceHorseId": 2023107018,
-          "odds": 53.9
+          "odds": 49.7
         },
         {
           "predictions": {
@@ -6806,12 +6912,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 70
             }
           },
           "number": 16,
           "name": "ベルランコントル",
           "sourceHorseId": 2023106475,
-          "odds": 6.5
+          "odds": 6.8
         },
         {
           "predictions": {
@@ -6826,12 +6936,16 @@
             "ウマークス": {
               "mark": "△",
               "index": 53
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 42
             }
           },
           "number": 17,
           "name": "ジーティージェミル",
           "sourceHorseId": 2023106332,
-          "odds": 72.1
+          "odds": 103.4
         },
         {
           "predictions": {
@@ -6846,12 +6960,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 56
             }
           },
           "number": 18,
           "name": "レガリーノ",
           "sourceHorseId": 2023102231,
-          "odds": 37.2
+          "odds": 42.1
         }
       ]
     },
@@ -6893,7 +7011,7 @@
           "number": 1,
           "name": "インザライムライト",
           "sourceHorseId": 2023106441,
-          "odds": 57.7
+          "odds": 50.1
         },
         {
           "predictions": {
@@ -6913,7 +7031,7 @@
           "number": 2,
           "name": "ウィズアツインクル",
           "sourceHorseId": 2023102388,
-          "odds": 44
+          "odds": 48.4
         },
         {
           "predictions": {
@@ -6933,7 +7051,7 @@
           "number": 3,
           "name": "フレアリングベリー",
           "sourceHorseId": 2023107370,
-          "odds": 20.6
+          "odds": 26.6
         },
         {
           "predictions": {
@@ -6953,7 +7071,7 @@
           "number": 4,
           "name": "シエラモレーナ",
           "sourceHorseId": 2023105744,
-          "odds": 34.3
+          "odds": 36.3
         },
         {
           "predictions": {
@@ -6973,7 +7091,7 @@
           "number": 5,
           "name": "ロジシーザ",
           "sourceHorseId": 2023102319,
-          "odds": 104.7
+          "odds": 112.4
         },
         {
           "predictions": {
@@ -6993,7 +7111,7 @@
           "number": 6,
           "name": "セリエンクーニゲン",
           "sourceHorseId": 2023110025,
-          "odds": 6.5
+          "odds": 6.7
         },
         {
           "predictions": {
@@ -7013,7 +7131,7 @@
           "number": 7,
           "name": "ルナーファントム",
           "sourceHorseId": 2023107541,
-          "odds": 10.7
+          "odds": 9.5
         },
         {
           "predictions": {
@@ -7033,7 +7151,7 @@
           "number": 8,
           "name": "タイセイギガース",
           "sourceHorseId": 2023100703,
-          "odds": 237.3
+          "odds": 323.4
         },
         {
           "predictions": {
@@ -7053,7 +7171,7 @@
           "number": 9,
           "name": "サンロード",
           "sourceHorseId": 2023100960,
-          "odds": 172.2
+          "odds": 159
         },
         {
           "predictions": {
@@ -7073,7 +7191,7 @@
           "number": 10,
           "name": "オンナキュヌヴィ",
           "sourceHorseId": 2023105688,
-          "odds": 5.1
+          "odds": 4.8
         },
         {
           "predictions": {
@@ -7093,7 +7211,7 @@
           "number": 11,
           "name": "ハルカオル",
           "sourceHorseId": 2023105049,
-          "odds": 44.9
+          "odds": 59
         },
         {
           "predictions": {
@@ -7113,7 +7231,7 @@
           "number": 12,
           "name": "ミクロスギガース",
           "sourceHorseId": 2023102931,
-          "odds": 38.9
+          "odds": 36.5
         },
         {
           "predictions": {
@@ -7133,7 +7251,7 @@
           "number": 13,
           "name": "エンジェルサン",
           "sourceHorseId": 2023104484,
-          "odds": 14.6
+          "odds": 18.5
         },
         {
           "predictions": {
@@ -7153,7 +7271,7 @@
           "number": 14,
           "name": "ココソラーレ",
           "sourceHorseId": 2023109031,
-          "odds": 20.1
+          "odds": 22.4
         },
         {
           "predictions": {
@@ -7173,7 +7291,7 @@
           "number": 15,
           "name": "ルージュフィーリア",
           "sourceHorseId": 2023107342,
-          "odds": 6.5
+          "odds": 4.7
         },
         {
           "predictions": {
@@ -7193,7 +7311,7 @@
           "number": 16,
           "name": "ラルルジェンヌ",
           "sourceHorseId": 2023107019,
-          "odds": 5.3
+          "odds": 6.5
         },
         {
           "predictions": {
@@ -7213,7 +7331,7 @@
           "number": 17,
           "name": "ジェムシリカ",
           "sourceHorseId": 2023106130,
-          "odds": 17.6
+          "odds": 20.4
         },
         {
           "predictions": {
@@ -7347,7 +7465,7 @@
           "number": 4,
           "name": "マイコンプリート",
           "sourceHorseId": 2023107155,
-          "odds": 14.5
+          "odds": 8.9
         },
         {
           "predictions": {
@@ -7367,7 +7485,7 @@
           "number": 5,
           "name": "ストラドーネ",
           "sourceHorseId": 2023103586,
-          "odds": 90.3
+          "odds": 112.2
         },
         {
           "predictions": {
@@ -7387,7 +7505,7 @@
           "number": 6,
           "name": "バンブラボー",
           "sourceHorseId": 2023104922,
-          "odds": 152.4
+          "odds": 124.8
         },
         {
           "predictions": {
@@ -7407,7 +7525,7 @@
           "number": 7,
           "name": "カミノトップワン",
           "sourceHorseId": 2023109054,
-          "odds": 57.3
+          "odds": 70.7
         },
         {
           "predictions": {
@@ -7427,7 +7545,7 @@
           "number": 8,
           "name": "ゴナビーオーライト",
           "sourceHorseId": 2023100505,
-          "odds": 115.3
+          "odds": 137.1
         },
         {
           "predictions": {
@@ -7447,7 +7565,7 @@
           "number": 9,
           "name": "ワンダーリュクス",
           "sourceHorseId": 2023105075,
-          "odds": 14.4
+          "odds": 18.4
         },
         {
           "predictions": {
@@ -7467,7 +7585,7 @@
           "number": 10,
           "name": "ニテンイチリュウ",
           "sourceHorseId": 2023102190,
-          "odds": 234.2
+          "odds": 157.9
         },
         {
           "predictions": {
@@ -7487,7 +7605,7 @@
           "number": 11,
           "name": "キービート",
           "sourceHorseId": 2023104289,
-          "odds": 113.5
+          "odds": 149.3
         },
         {
           "predictions": {
@@ -7507,7 +7625,7 @@
           "number": 12,
           "name": "オレンジフィールド",
           "sourceHorseId": 2023102640,
-          "odds": 23.1
+          "odds": 17.3
         },
         {
           "predictions": {
@@ -7527,7 +7645,7 @@
           "number": 13,
           "name": "チュオンソン",
           "sourceHorseId": 2023104944,
-          "odds": 20.1
+          "odds": 31.3
         },
         {
           "predictions": {
@@ -7547,7 +7665,7 @@
           "number": 14,
           "name": "フィンガーレイクス",
           "sourceHorseId": 2023103387,
-          "odds": 3.8
+          "odds": 3.7
         },
         {
           "predictions": {
@@ -7567,7 +7685,7 @@
           "number": 15,
           "name": "ティタノマキア",
           "sourceHorseId": 2023107092,
-          "odds": 4.2
+          "odds": 4.3
         },
         {
           "predictions": {
@@ -7587,7 +7705,7 @@
           "number": 16,
           "name": "ディアーモルタル",
           "sourceHorseId": 2023107125,
-          "odds": 78.6
+          "odds": 85.2
         }
       ]
     },
@@ -7623,7 +7741,7 @@
           "number": 1,
           "name": "ガリアルダ",
           "sourceHorseId": 2024106661,
-          "odds": 3.9
+          "odds": 4.4
         },
         {
           "predictions": {
@@ -7635,7 +7753,7 @@
           "number": 2,
           "name": "レニュアージュ",
           "sourceHorseId": 2024106355,
-          "odds": 2.6
+          "odds": 3.3
         },
         {
           "predictions": {
@@ -7647,7 +7765,7 @@
           "number": 3,
           "name": "リアンフィニ",
           "sourceHorseId": 2024105976,
-          "odds": 4.2
+          "odds": 3.3
         },
         {
           "predictions": {
@@ -7659,7 +7777,7 @@
           "number": 4,
           "name": "ビップルーチェ",
           "sourceHorseId": 2024104028,
-          "odds": 20.8
+          "odds": 35.3
         },
         {
           "predictions": {
@@ -7671,7 +7789,7 @@
           "number": 5,
           "name": "ピュアノーブル",
           "sourceHorseId": 2024105997,
-          "odds": 17.9
+          "odds": 7.1
         },
         {
           "predictions": {
@@ -7683,7 +7801,7 @@
           "number": 6,
           "name": "ウィンザーローズ",
           "sourceHorseId": 2024107238,
-          "odds": 11.6
+          "odds": 11.1
         },
         {
           "predictions": {
@@ -7695,7 +7813,7 @@
           "number": 7,
           "name": "ミリオンカラー",
           "sourceHorseId": 2024104727,
-          "odds": 38.4
+          "odds": 27.8
         },
         {
           "predictions": {
@@ -7707,7 +7825,7 @@
           "number": 8,
           "name": "ジュエルシップ",
           "sourceHorseId": 2024104008,
-          "odds": 25.4
+          "odds": 22.2
         },
         {
           "predictions": {
@@ -7719,7 +7837,7 @@
           "number": 9,
           "name": "ノンヴェドローラ",
           "sourceHorseId": 2024103582,
-          "odds": 8.4
+          "odds": 15
         }
       ]
     },
@@ -7755,7 +7873,7 @@
           "number": 1,
           "name": "コパノマハロ",
           "sourceHorseId": 2024102103,
-          "odds": 7.4
+          "odds": 13.3
         },
         {
           "predictions": {
@@ -7767,7 +7885,7 @@
           "number": 2,
           "name": "ショウナンバトレニ",
           "sourceHorseId": 2024107009,
-          "odds": 2.9
+          "odds": 2.6
         },
         {
           "predictions": {
@@ -7779,7 +7897,7 @@
           "number": 3,
           "name": "ドリームオブコージ",
           "sourceHorseId": 2024100126,
-          "odds": 29.7
+          "odds": 40.4
         },
         {
           "predictions": {
@@ -7791,7 +7909,7 @@
           "number": 4,
           "name": "ダンスコマンド",
           "sourceHorseId": 2024105941,
-          "odds": 7.9
+          "odds": 11.3
         },
         {
           "predictions": {
@@ -7803,7 +7921,7 @@
           "number": 5,
           "name": "ディープナイト",
           "sourceHorseId": 2024100601,
-          "odds": 36.8
+          "odds": 62
         },
         {
           "predictions": {
@@ -7815,7 +7933,7 @@
           "number": 6,
           "name": "ドラゴンバルド",
           "sourceHorseId": 2024106649,
-          "odds": 2
+          "odds": 1.9
         },
         {
           "predictions": {
@@ -7827,7 +7945,7 @@
           "number": 7,
           "name": "ソウカイファンキー",
           "sourceHorseId": 2024105806,
-          "odds": 17.2
+          "odds": 11.8
         },
         {
           "predictions": {
@@ -7839,7 +7957,7 @@
           "number": 8,
           "name": "リリーギャラクシー",
           "sourceHorseId": 2024104835,
-          "odds": 59.4
+          "odds": 19.2
         }
       ]
     },
@@ -7881,7 +7999,7 @@
           "number": 1,
           "name": "レッドフレーザー",
           "sourceHorseId": 2023105340,
-          "odds": 15.9
+          "odds": 17.5
         },
         {
           "predictions": {
@@ -7901,7 +8019,7 @@
           "number": 2,
           "name": "アルヴァルディ",
           "sourceHorseId": 2023106908,
-          "odds": 114.4
+          "odds": 147.2
         },
         {
           "predictions": {
@@ -7921,7 +8039,7 @@
           "number": 3,
           "name": "タイセイゼスティ",
           "sourceHorseId": 2023100969,
-          "odds": 15.4
+          "odds": 12.4
         },
         {
           "predictions": {
@@ -7941,7 +8059,7 @@
           "number": 4,
           "name": "スパルタンエックス",
           "sourceHorseId": 2023100371,
-          "odds": 4.5
+          "odds": 4.1
         },
         {
           "predictions": {
@@ -7961,7 +8079,7 @@
           "number": 5,
           "name": "アイゼンハイム",
           "sourceHorseId": 2023100020,
-          "odds": 23.5
+          "odds": 21.3
         },
         {
           "predictions": {
@@ -7981,7 +8099,7 @@
           "number": 6,
           "name": "アラムシャピラス",
           "sourceHorseId": 2023105683,
-          "odds": 2.7
+          "odds": 3.1
         },
         {
           "predictions": {
@@ -8001,7 +8119,7 @@
           "number": 7,
           "name": "サンライズフリード",
           "sourceHorseId": 2023100902,
-          "odds": 37.8
+          "odds": 23.3
         },
         {
           "predictions": {
@@ -8021,7 +8139,7 @@
           "number": 8,
           "name": "ハオカノア",
           "sourceHorseId": 2023106078,
-          "odds": 52
+          "odds": 56.7
         },
         {
           "predictions": {
@@ -8041,7 +8159,7 @@
           "number": 9,
           "name": "グランセンチュリ",
           "sourceHorseId": 2023101990,
-          "odds": 159.8
+          "odds": 58
         },
         {
           "predictions": {
@@ -8061,7 +8179,7 @@
           "number": 10,
           "name": "ビーウィナー",
           "sourceHorseId": 2023106022,
-          "odds": 50.4
+          "odds": 68.5
         },
         {
           "predictions": {
@@ -8081,7 +8199,7 @@
           "number": 11,
           "name": "ジーティーピカソ",
           "sourceHorseId": 2023102092,
-          "odds": 16.2
+          "odds": 10.5
         },
         {
           "predictions": {
@@ -8101,7 +8219,7 @@
           "number": 12,
           "name": "メイショウヒタカミ",
           "sourceHorseId": 2023102245,
-          "odds": 11.1
+          "odds": 13.9
         },
         {
           "predictions": {
@@ -8121,7 +8239,7 @@
           "number": 13,
           "name": "エイシンリブウェル",
           "sourceHorseId": 2023105508,
-          "odds": 4.1
+          "odds": 4.7
         },
         {
           "predictions": {
@@ -8141,7 +8259,7 @@
           "number": 14,
           "name": "リリークリスタル",
           "sourceHorseId": 2023105699,
-          "odds": 216.2
+          "odds": 301.6
         },
         {
           "predictions": {
@@ -8161,7 +8279,7 @@
           "number": 15,
           "name": "ピースビート",
           "sourceHorseId": 2023103098,
-          "odds": 98.1
+          "odds": 70.9
         },
         {
           "predictions": {
@@ -8181,7 +8299,7 @@
           "number": 16,
           "name": "サクライロマウコロ",
           "sourceHorseId": 2023103406,
-          "odds": 272.5
+          "odds": 259.1
         }
       ]
     },
@@ -8223,7 +8341,7 @@
           "number": 1,
           "name": "ショウナンラウール",
           "sourceHorseId": 2021104242,
-          "odds": 22.2
+          "odds": 22.3
         },
         {
           "predictions": {
@@ -8243,7 +8361,7 @@
           "number": 2,
           "name": "ロイヤルテール",
           "sourceHorseId": 2022100027,
-          "odds": 108.8
+          "odds": 126.6
         },
         {
           "predictions": {
@@ -8263,7 +8381,7 @@
           "number": 3,
           "name": "ツァレヴナ",
           "sourceHorseId": 2023105677,
-          "odds": 12.6
+          "odds": 12.2
         },
         {
           "predictions": {
@@ -8283,7 +8401,7 @@
           "number": 4,
           "name": "ルクスポップスター",
           "sourceHorseId": 2023102767,
-          "odds": 18.5
+          "odds": 20.6
         },
         {
           "predictions": {
@@ -8303,7 +8421,7 @@
           "number": 5,
           "name": "カクウチ",
           "sourceHorseId": 2023101405,
-          "odds": 16
+          "odds": 16.4
         },
         {
           "predictions": {
@@ -8323,7 +8441,7 @@
           "number": 6,
           "name": "カレンパンピナップ",
           "sourceHorseId": 2020103314,
-          "odds": 15.2
+          "odds": 11.1
         },
         {
           "predictions": {
@@ -8343,7 +8461,7 @@
           "number": 7,
           "name": "ジャスティンルマン",
           "sourceHorseId": 2023106874,
-          "odds": 17.6
+          "odds": 16.7
         },
         {
           "predictions": {
@@ -8363,7 +8481,7 @@
           "number": 8,
           "name": "リアライズブライト",
           "sourceHorseId": 2023103325,
-          "odds": 12.9
+          "odds": 15.7
         },
         {
           "predictions": {
@@ -8383,7 +8501,7 @@
           "number": 9,
           "name": "サリカリーフォリア",
           "sourceHorseId": 2023105291,
-          "odds": 12.7
+          "odds": 18.3
         },
         {
           "predictions": {
@@ -8403,7 +8521,7 @@
           "number": 10,
           "name": "ルシャリオ",
           "sourceHorseId": 2022107248,
-          "odds": 43.1
+          "odds": 31.4
         },
         {
           "predictions": {
@@ -8423,7 +8541,7 @@
           "number": 11,
           "name": "ハイクライテリア",
           "sourceHorseId": 2020102910,
-          "odds": 90.7
+          "odds": 143.4
         },
         {
           "predictions": {
@@ -8443,7 +8561,7 @@
           "number": 12,
           "name": "バトルアックス",
           "sourceHorseId": 2023102045,
-          "odds": 2.6
+          "odds": 2.7
         },
         {
           "predictions": {
@@ -8463,7 +8581,7 @@
           "number": 13,
           "name": "オンザノアール",
           "sourceHorseId": 2023103399,
-          "odds": 14
+          "odds": 8.2
         },
         {
           "predictions": {
@@ -8483,7 +8601,7 @@
           "number": 14,
           "name": "ペプチドレオン",
           "sourceHorseId": 2023104876,
-          "odds": 5
+          "odds": 5.6
         },
         {
           "predictions": {
@@ -8503,7 +8621,7 @@
           "number": 15,
           "name": "ヴァリアントマーチ",
           "sourceHorseId": 2022105689,
-          "odds": 73.2
+          "odds": 80
         },
         {
           "predictions": {
@@ -8523,7 +8641,7 @@
           "number": 16,
           "name": "マテンロウミラクル",
           "sourceHorseId": 2021105993,
-          "odds": 48.2
+          "odds": 77.8
         }
       ]
     },
@@ -8585,7 +8703,7 @@
           "number": 2,
           "name": "サトノアイボリー",
           "sourceHorseId": 2023105380,
-          "odds": 4.7
+          "odds": 5.1
         },
         {
           "predictions": {
@@ -8625,7 +8743,7 @@
           "number": 4,
           "name": "ダイヤモンドハンズ",
           "sourceHorseId": 2020103647,
-          "odds": 11.8
+          "odds": 13
         },
         {
           "predictions": {
@@ -8665,7 +8783,7 @@
           "number": 6,
           "name": "ヤマニンループ",
           "sourceHorseId": 2019100606,
-          "odds": 13.3
+          "odds": 9.5
         },
         {
           "predictions": {
@@ -8685,7 +8803,7 @@
           "number": 7,
           "name": "ショウナンハウル",
           "sourceHorseId": 2021105867,
-          "odds": 60.3
+          "odds": 68.1
         }
       ]
     },
@@ -8702,7 +8820,6 @@
       "missingSites": [
         "競馬ブック",
         "ATHENA",
-        "無料競馬AI",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -8722,12 +8839,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 37
             }
           },
           "number": 1,
           "name": "イツモニコニコ",
           "sourceHorseId": 2021107063,
-          "odds": 20.3
+          "odds": 15.7
         },
         {
           "predictions": {
@@ -8742,12 +8863,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 30
             }
           },
           "number": 2,
           "name": "フロムダスク",
           "sourceHorseId": 2020110133,
-          "odds": 55.6
+          "odds": 49.4
         },
         {
           "predictions": {
@@ -8762,12 +8887,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 67
+            },
+            "無料競馬AI": {
+              "mark": "○",
+              "index": 73
             }
           },
           "number": 3,
           "name": "レイピア",
           "sourceHorseId": 2022103066,
-          "odds": 7
+          "odds": 6.3
         },
         {
           "predictions": {
@@ -8782,12 +8911,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 23
             }
           },
           "number": 4,
           "name": "プロトポロス",
           "sourceHorseId": 2020103325,
-          "odds": 71
+          "odds": 62.4
         },
         {
           "predictions": {
@@ -8802,12 +8935,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 68
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 5,
           "name": "ジェニファー",
           "sourceHorseId": 2021103932,
-          "odds": 9.5
+          "odds": 7.8
         },
         {
           "predictions": {
@@ -8822,12 +8959,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 68
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 62
             }
           },
           "number": 6,
           "name": "レッドエヴァンス",
           "sourceHorseId": 2021105880,
-          "odds": 10.3
+          "odds": 9.4
         },
         {
           "predictions": {
@@ -8842,12 +8983,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 67
+            },
+            "無料競馬AI": {
+              "mark": "◎",
+              "index": 74
             }
           },
           "number": 7,
           "name": "ディアナザール",
           "sourceHorseId": 2022104933,
-          "odds": 2.9
+          "odds": 4.8
         },
         {
           "predictions": {
@@ -8862,12 +9007,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 44
             }
           },
           "number": 8,
           "name": "フィオライア",
           "sourceHorseId": 2021101924,
-          "odds": 30.9
+          "odds": 24.6
         },
         {
           "predictions": {
@@ -8882,12 +9031,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 47
             }
           },
           "number": 9,
           "name": "クラスペディア",
           "sourceHorseId": 2022106394,
-          "odds": 45.8
+          "odds": 40
         },
         {
           "predictions": {
@@ -8902,12 +9055,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 49
             }
           },
           "number": 10,
           "name": "ナムラローズマリー",
           "sourceHorseId": 2021103092,
-          "odds": 31.9
+          "odds": 25.7
         },
         {
           "predictions": {
@@ -8922,12 +9079,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 38
             }
           },
           "number": 11,
           "name": "タマモブラックタイ",
           "sourceHorseId": 2020105400,
-          "odds": 54.9
+          "odds": 44.3
         },
         {
           "predictions": {
@@ -8942,12 +9103,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 43
             }
           },
           "number": 12,
           "name": "インビンシブルパパ",
           "sourceHorseId": 2021110164,
-          "odds": 14.1
+          "odds": 13.6
         },
         {
           "predictions": {
@@ -8962,12 +9127,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 63
             }
           },
           "number": 13,
           "name": "サンアントワーヌ",
           "sourceHorseId": 2023107020,
-          "odds": 15.9
+          "odds": 12.7
         },
         {
           "predictions": {
@@ -8982,12 +9151,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 60
             }
           },
           "number": 14,
           "name": "コウセキ",
           "sourceHorseId": 2022110026,
-          "odds": 12.8
+          "odds": 10.6
         },
         {
           "predictions": {
@@ -9002,12 +9175,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 68
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 15,
           "name": "アンクルクロス",
           "sourceHorseId": 2021101598,
-          "odds": 9.9
+          "odds": 10.1
         },
         {
           "predictions": {
@@ -9022,12 +9199,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 56
             }
           },
           "number": 16,
           "name": "アブキールベイ",
           "sourceHorseId": 2022101623,
-          "odds": 62.3
+          "odds": 64
         },
         {
           "predictions": {
@@ -9042,12 +9223,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "無料競馬AI": {
+              "mark": "▲",
+              "index": 64
             }
           },
           "number": 17,
           "name": "タマモイカロス",
           "sourceHorseId": 2023103162,
-          "odds": 18.8
+          "odds": 16.8
         },
         {
           "predictions": {
@@ -9062,12 +9247,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 29
             }
           },
           "number": 18,
           "name": "ペプチドヤマト",
           "sourceHorseId": 2019103605,
-          "odds": 193.6
+          "odds": 154.3
         }
       ]
     },
@@ -9109,7 +9298,7 @@
           "number": 1,
           "name": "メイショウジェンマ",
           "sourceHorseId": 2020106491,
-          "odds": 133.6
+          "odds": 190.2
         },
         {
           "predictions": {
@@ -9149,7 +9338,7 @@
           "number": 3,
           "name": "タイガースパーク",
           "sourceHorseId": 2020104561,
-          "odds": 19.3
+          "odds": 22.2
         },
         {
           "predictions": {
@@ -9169,7 +9358,7 @@
           "number": 4,
           "name": "ケイツーリーブル",
           "sourceHorseId": 2023103628,
-          "odds": 5.6
+          "odds": 5.7
         },
         {
           "predictions": {
@@ -9189,7 +9378,7 @@
           "number": 5,
           "name": "クロノスバレット",
           "sourceHorseId": 2022110123,
-          "odds": 3.7
+          "odds": 4.9
         },
         {
           "predictions": {
@@ -9209,7 +9398,7 @@
           "number": 6,
           "name": "ジェシーテソーロ",
           "sourceHorseId": 2022102260,
-          "odds": 36.9
+          "odds": 26.2
         },
         {
           "predictions": {
@@ -9229,7 +9418,7 @@
           "number": 7,
           "name": "トモジャザーン",
           "sourceHorseId": 2021104295,
-          "odds": 8.5
+          "odds": 8.2
         },
         {
           "predictions": {
@@ -9249,7 +9438,7 @@
           "number": 8,
           "name": "キングオブフジ",
           "sourceHorseId": 2021106164,
-          "odds": 26
+          "odds": 21
         },
         {
           "predictions": {
@@ -9269,7 +9458,7 @@
           "number": 9,
           "name": "ハイディージェン",
           "sourceHorseId": 2021103821,
-          "odds": 20.3
+          "odds": 18.1
         },
         {
           "predictions": {
@@ -9289,7 +9478,7 @@
           "number": 10,
           "name": "シュヴァルツリーベ",
           "sourceHorseId": 2020106101,
-          "odds": 36.4
+          "odds": 34.5
         },
         {
           "predictions": {
@@ -9309,7 +9498,7 @@
           "number": 11,
           "name": "リベッチオ",
           "sourceHorseId": 2023107082,
-          "odds": 2.9
+          "odds": 2.5
         }
       ]
     },
@@ -9351,7 +9540,7 @@
           "number": 1,
           "name": "ルクスマーベリック",
           "sourceHorseId": 2021104105,
-          "odds": 27.2
+          "odds": 24.4
         },
         {
           "predictions": {
@@ -9371,7 +9560,7 @@
           "number": 2,
           "name": "アップストローク",
           "sourceHorseId": 2019104675,
-          "odds": 7.5
+          "odds": 7.2
         },
         {
           "predictions": {
@@ -9391,7 +9580,7 @@
           "number": 3,
           "name": "ヴィーデ",
           "sourceHorseId": 2022100548,
-          "odds": 19
+          "odds": 19.8
         },
         {
           "predictions": {
@@ -9411,7 +9600,7 @@
           "number": 4,
           "name": "アレナリア",
           "sourceHorseId": 2019105824,
-          "odds": 5.5
+          "odds": 5.9
         },
         {
           "predictions": {
@@ -9431,7 +9620,7 @@
           "number": 5,
           "name": "メイショウソウセキ",
           "sourceHorseId": 2022103255,
-          "odds": 2.4
+          "odds": 2.3
         },
         {
           "predictions": {
@@ -9451,7 +9640,7 @@
           "number": 6,
           "name": "ナヴァラトゥナ",
           "sourceHorseId": 2022105072,
-          "odds": 14.9
+          "odds": 15.3
         },
         {
           "predictions": {
@@ -9471,7 +9660,7 @@
           "number": 7,
           "name": "スラッシュ",
           "sourceHorseId": 2023103189,
-          "odds": 76.9
+          "odds": 76.1
         },
         {
           "predictions": {
@@ -9491,7 +9680,7 @@
           "number": 8,
           "name": "ヴォンヌヴォー",
           "sourceHorseId": 2020106585,
-          "odds": 39.5
+          "odds": 37.9
         },
         {
           "predictions": {
@@ -9511,7 +9700,7 @@
           "number": 9,
           "name": "ナスノソナタ",
           "sourceHorseId": 2022106544,
-          "odds": 31.6
+          "odds": 39.6
         },
         {
           "predictions": {
@@ -9531,7 +9720,7 @@
           "number": 10,
           "name": "ヨシノヤッタルデー",
           "sourceHorseId": 2021102336,
-          "odds": 40.4
+          "odds": 34.6
         },
         {
           "predictions": {
@@ -9551,7 +9740,7 @@
           "number": 11,
           "name": "クリアクォーツ",
           "sourceHorseId": 2022101587,
-          "odds": 13
+          "odds": 14.9
         },
         {
           "predictions": {
@@ -9571,7 +9760,7 @@
           "number": 12,
           "name": "オリンポスカズマ",
           "sourceHorseId": 2020102013,
-          "odds": 14.9
+          "odds": 14.6
         },
         {
           "predictions": {
@@ -9591,7 +9780,7 @@
           "number": 13,
           "name": "アナザーエース",
           "sourceHorseId": 2020104005,
-          "odds": 8.5
+          "odds": 8.2
         }
       ]
     },
@@ -9633,7 +9822,7 @@
           "number": 1,
           "name": "プールナバドラ",
           "sourceHorseId": 2023110062,
-          "odds": 34.5
+          "odds": 23.7
         },
         {
           "predictions": {
@@ -9653,7 +9842,7 @@
           "number": 2,
           "name": "ラヴネヴァーダイズ",
           "sourceHorseId": 2023102131,
-          "odds": 2.7
+          "odds": 2.8
         },
         {
           "predictions": {
@@ -9673,7 +9862,7 @@
           "number": 3,
           "name": "メイプルギャング",
           "sourceHorseId": 2021110063,
-          "odds": 68.9
+          "odds": 55.4
         },
         {
           "predictions": {
@@ -9693,7 +9882,7 @@
           "number": 4,
           "name": "ワイルドブッター",
           "sourceHorseId": 2022105077,
-          "odds": 69.8
+          "odds": 77.5
         },
         {
           "predictions": {
@@ -9713,7 +9902,7 @@
           "number": 5,
           "name": "スレッドザニードル",
           "sourceHorseId": 2022102003,
-          "odds": 27.5
+          "odds": 31.2
         },
         {
           "predictions": {
@@ -9733,7 +9922,7 @@
           "number": 6,
           "name": "リードプリンシパル",
           "sourceHorseId": 2022105748,
-          "odds": 105.4
+          "odds": 104.2
         },
         {
           "predictions": {
@@ -9753,7 +9942,7 @@
           "number": 7,
           "name": "シュネーグロッケン",
           "sourceHorseId": 2022104944,
-          "odds": 48.3
+          "odds": 50.4
         },
         {
           "predictions": {
@@ -9773,7 +9962,7 @@
           "number": 8,
           "name": "ナウオアネヴァー",
           "sourceHorseId": 2023104408,
-          "odds": 11.5
+          "odds": 10.9
         },
         {
           "predictions": {
@@ -9793,7 +9982,7 @@
           "number": 9,
           "name": "ガビーズブラザー",
           "sourceHorseId": 2022104448,
-          "odds": 32.2
+          "odds": 35.8
         },
         {
           "predictions": {
@@ -9813,7 +10002,7 @@
           "number": 10,
           "name": "グランデスフィーダ",
           "sourceHorseId": 2020104913,
-          "odds": 7.6
+          "odds": 9.5
         },
         {
           "predictions": {
@@ -9833,7 +10022,7 @@
           "number": 11,
           "name": "アメリカンビヨンド",
           "sourceHorseId": 2022110104,
-          "odds": 8.4
+          "odds": 6.3
         },
         {
           "predictions": {
@@ -9853,7 +10042,7 @@
           "number": 12,
           "name": "アイファーモービル",
           "sourceHorseId": 2022101117,
-          "odds": 18.1
+          "odds": 25.4
         },
         {
           "predictions": {
@@ -9873,7 +10062,7 @@
           "number": 13,
           "name": "ヴォンドゥ",
           "sourceHorseId": 2023101810,
-          "odds": 6.3
+          "odds": 5.8
         },
         {
           "predictions": {
@@ -9893,7 +10082,7 @@
           "number": 14,
           "name": "リーグナイト",
           "sourceHorseId": 2023106284,
-          "odds": 8.4
+          "odds": 9.2
         },
         {
           "predictions": {
@@ -9913,7 +10102,7 @@
           "number": 15,
           "name": "サヨノパララックス",
           "sourceHorseId": 2023105140,
-          "odds": 35.9
+          "odds": 30.1
         },
         {
           "predictions": {
@@ -9933,7 +10122,7 @@
           "number": 16,
           "name": "シンギタイ",
           "sourceHorseId": 2022100458,
-          "odds": 42.7
+          "odds": 44
         }
       ]
     },
@@ -9950,7 +10139,6 @@
       "missingSites": [
         "競馬ブック",
         "ATHENA",
-        "無料競馬AI",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -9970,12 +10158,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "無料競馬AI": {
+              "mark": "○",
+              "index": 71
             }
           },
           "number": 1,
           "name": "フロムレイブン",
           "sourceHorseId": 2023103836,
-          "odds": 4.9
+          "odds": 4.3
         },
         {
           "predictions": {
@@ -9990,12 +10182,16 @@
             "ウマークス": {
               "mark": "☆",
               "index": 38
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 13
             }
           },
           "number": 2,
           "name": "パレットフレイバー",
           "sourceHorseId": 2023102479,
-          "odds": 204.8
+          "odds": 241.8
         },
         {
           "predictions": {
@@ -10010,12 +10206,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 3,
           "name": "モルティフレーバー",
           "sourceHorseId": 2022104901,
-          "odds": 8.3
+          "odds": 10.7
         },
         {
           "predictions": {
@@ -10030,12 +10230,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 4,
           "name": "フェリーニ",
           "sourceHorseId": 2021105862,
-          "odds": 33.5
+          "odds": 33.9
         },
         {
           "predictions": {
@@ -10050,12 +10254,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "無料競馬AI": {
+              "mark": "▲",
+              "index": 65
             }
           },
           "number": 5,
           "name": "マーシーラン",
           "sourceHorseId": 2021103901,
-          "odds": 18.8
+          "odds": 20.2
         },
         {
           "predictions": {
@@ -10070,12 +10278,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 6,
           "name": "アーリントンロウ",
           "sourceHorseId": 2022105921,
-          "odds": 9.7
+          "odds": 11.9
         },
         {
           "predictions": {
@@ -10090,12 +10302,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 62
             }
           },
           "number": 7,
           "name": "セクシーマージュ",
           "sourceHorseId": 2022103729,
-          "odds": 13.8
+          "odds": 17.1
         },
         {
           "predictions": {
@@ -10110,12 +10326,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 69
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 53
             }
           },
           "number": 8,
           "name": "スピリットライズ",
           "sourceHorseId": 2022103750,
-          "odds": 30
+          "odds": 21
         },
         {
           "predictions": {
@@ -10130,12 +10350,16 @@
             "ウマークス": {
               "mark": "△",
               "index": 54
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 9,
           "name": "カラクニダケ",
           "sourceHorseId": 2023109117,
-          "odds": 33.3
+          "odds": 36.3
         },
         {
           "predictions": {
@@ -10150,12 +10374,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 44
             }
           },
           "number": 10,
           "name": "アウクソー",
           "sourceHorseId": 2020103261,
-          "odds": 43.8
+          "odds": 49.8
         },
         {
           "predictions": {
@@ -10170,12 +10398,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 41
             }
           },
           "number": 11,
           "name": "パリコレジェンヌ",
           "sourceHorseId": 2022104501,
-          "odds": 60.6
+          "odds": 50.9
         },
         {
           "predictions": {
@@ -10190,12 +10422,16 @@
             "ウマークス": {
               "mark": "☆",
               "index": 8
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 14
             }
           },
           "number": 12,
           "name": "ドレドレ",
           "sourceHorseId": 2023103291,
-          "odds": 182.8
+          "odds": 221
         },
         {
           "predictions": {
@@ -10210,12 +10446,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 50
             }
           },
           "number": 13,
           "name": "ベランジェール",
           "sourceHorseId": 2021105484,
-          "odds": 12.6
+          "odds": 12.1
         },
         {
           "predictions": {
@@ -10230,12 +10470,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "無料競馬AI": {
+              "mark": "◎",
+              "index": 74
             }
           },
           "number": 14,
           "name": "マーゴットミスト",
           "sourceHorseId": 2023101632,
-          "odds": 5.3
+          "odds": 4.9
         },
         {
           "predictions": {
@@ -10250,12 +10494,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 64
             }
           },
           "number": 15,
           "name": "ウェルカムソング",
           "sourceHorseId": 2023107545,
-          "odds": 7
+          "odds": 6
         },
         {
           "predictions": {
@@ -10270,12 +10518,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 16,
           "name": "ヤマニンフェイエル",
           "sourceHorseId": 2023104358,
-          "odds": 11.8
+          "odds": 11.6
         },
         {
           "predictions": {
@@ -10290,12 +10542,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 33
             }
           },
           "number": 17,
           "name": "トウカイフルーレ",
           "sourceHorseId": 2022102445,
-          "odds": 99
+          "odds": 79.1
         },
         {
           "predictions": {
@@ -10310,12 +10566,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 43
             }
           },
           "number": 18,
           "name": "フランクスピード",
           "sourceHorseId": 2022104648,
-          "odds": 21.9
+          "odds": 34.4
         }
       ]
     },
@@ -10357,7 +10617,7 @@
           "number": 1,
           "name": "プリュスエクラ",
           "sourceHorseId": 2023103535,
-          "odds": 34.1
+          "odds": 35.3
         },
         {
           "predictions": {
@@ -10377,7 +10637,7 @@
           "number": 2,
           "name": "ローズラフィネ",
           "sourceHorseId": 2023100998,
-          "odds": 16
+          "odds": 17.5
         },
         {
           "predictions": {
@@ -10397,7 +10657,7 @@
           "number": 3,
           "name": "レインボーステート",
           "sourceHorseId": 2023106943,
-          "odds": 9.2
+          "odds": 9.3
         },
         {
           "predictions": {
@@ -10417,7 +10677,7 @@
           "number": 4,
           "name": "カステッロトゥーレ",
           "sourceHorseId": 2023103397,
-          "odds": 29.8
+          "odds": 29.4
         },
         {
           "predictions": {
@@ -10437,7 +10697,7 @@
           "number": 5,
           "name": "ウォータールスール",
           "sourceHorseId": 2023101866,
-          "odds": 45.1
+          "odds": 30.3
         },
         {
           "predictions": {
@@ -10457,7 +10717,7 @@
           "number": 6,
           "name": "ジーティーウタマロ",
           "sourceHorseId": 2023100823,
-          "odds": 33
+          "odds": 44.3
         },
         {
           "predictions": {
@@ -10477,7 +10737,7 @@
           "number": 7,
           "name": "ララディアーブル",
           "sourceHorseId": 2023101840,
-          "odds": 5.1
+          "odds": 4.7
         },
         {
           "predictions": {
@@ -10497,7 +10757,7 @@
           "number": 8,
           "name": "ヴェネラブル",
           "sourceHorseId": 2023102421,
-          "odds": 112.3
+          "odds": 141.5
         },
         {
           "predictions": {
@@ -10517,7 +10777,7 @@
           "number": 9,
           "name": "ネッカーズルム",
           "sourceHorseId": 2023103639,
-          "odds": 9
+          "odds": 10.4
         },
         {
           "predictions": {
@@ -10537,7 +10797,7 @@
           "number": 10,
           "name": "ブランチアウト",
           "sourceHorseId": 2023102357,
-          "odds": 6.8
+          "odds": 7.4
         },
         {
           "predictions": {
@@ -10557,7 +10817,7 @@
           "number": 11,
           "name": "スズノボンライミー",
           "sourceHorseId": 2023102137,
-          "odds": 192
+          "odds": 142.2
         },
         {
           "predictions": {
@@ -10577,7 +10837,7 @@
           "number": 12,
           "name": "リノルアナ",
           "sourceHorseId": 2023102878,
-          "odds": 54
+          "odds": 67.2
         },
         {
           "predictions": {
@@ -10597,7 +10857,7 @@
           "number": 13,
           "name": "ビッグヒーロー",
           "sourceHorseId": 2023106188,
-          "odds": 2.9
+          "odds": 2.6
         },
         {
           "predictions": {
@@ -10617,7 +10877,7 @@
           "number": 14,
           "name": "エングルマン",
           "sourceHorseId": 2023110077,
-          "odds": 53.6
+          "odds": 45.7
         },
         {
           "predictions": {
@@ -10637,7 +10897,7 @@
           "number": 15,
           "name": "ルージュソムニウム",
           "sourceHorseId": 2023103605,
-          "odds": 68.9
+          "odds": 59.2
         },
         {
           "predictions": {
@@ -10657,7 +10917,7 @@
           "number": 16,
           "name": "ビシェノ",
           "sourceHorseId": 2023107253,
-          "odds": 9.9
+          "odds": 12.6
         }
       ]
     },
@@ -10771,7 +11031,7 @@
           "number": 4,
           "name": "エコロヴァルド",
           "sourceHorseId": 2024107319,
-          "odds": 37.1
+          "odds": 59.3
         },
         {
           "predictions": {
@@ -10791,7 +11051,7 @@
           "number": 5,
           "name": "シャムスクッカ",
           "sourceHorseId": 2024100203,
-          "odds": 19.8
+          "odds": 20.5
         },
         {
           "predictions": {
@@ -10811,7 +11071,7 @@
           "number": 6,
           "name": "イチゴワタアメ",
           "sourceHorseId": 2024107000,
-          "odds": 35.9
+          "odds": 40.1
         },
         {
           "predictions": {
@@ -10831,7 +11091,7 @@
           "number": 7,
           "name": "カナデ",
           "sourceHorseId": 2024101610,
-          "odds": 13.4
+          "odds": 18.8
         },
         {
           "predictions": {
@@ -10851,7 +11111,7 @@
           "number": 8,
           "name": "ヴァイタリズム",
           "sourceHorseId": 2024103569,
-          "odds": 4
+          "odds": 5
         },
         {
           "predictions": {
@@ -10871,7 +11131,7 @@
           "number": 9,
           "name": "ハイビスカス",
           "sourceHorseId": 2024107403,
-          "odds": 12.6
+          "odds": 13.3
         },
         {
           "predictions": {
@@ -10891,7 +11151,7 @@
           "number": 10,
           "name": "テムファイア",
           "sourceHorseId": 2024100560,
-          "odds": 28
+          "odds": 30.5
         },
         {
           "predictions": {
@@ -10911,7 +11171,7 @@
           "number": 11,
           "name": "モーモーワン",
           "sourceHorseId": 2024103006,
-          "odds": 119.4
+          "odds": 111.8
         },
         {
           "predictions": {
@@ -10931,7 +11191,7 @@
           "number": 12,
           "name": "サルトヴェローチェ",
           "sourceHorseId": 2024106406,
-          "odds": 2.7
+          "odds": 2.3
         }
       ]
     },
@@ -10973,7 +11233,7 @@
           "number": 1,
           "name": "メイショウマドンナ",
           "sourceHorseId": 2023104999,
-          "odds": 7.3
+          "odds": 7.1
         },
         {
           "predictions": {
@@ -10993,7 +11253,7 @@
           "number": 2,
           "name": "フジコンフィデンス",
           "sourceHorseId": 2023101707,
-          "odds": 23.6
+          "odds": 16.5
         },
         {
           "predictions": {
@@ -11013,7 +11273,7 @@
           "number": 3,
           "name": "ケイベエ",
           "sourceHorseId": 2023102803,
-          "odds": 64.6
+          "odds": 71.5
         },
         {
           "predictions": {
@@ -11033,7 +11293,7 @@
           "number": 4,
           "name": "メイヨシュア",
           "sourceHorseId": 2023109076,
-          "odds": 135.9
+          "odds": 114.6
         },
         {
           "predictions": {
@@ -11053,7 +11313,7 @@
           "number": 5,
           "name": "スイーヴル",
           "sourceHorseId": 2023101660,
-          "odds": 2.7
+          "odds": 2.5
         },
         {
           "predictions": {
@@ -11073,7 +11333,7 @@
           "number": 6,
           "name": "カッサンドラ",
           "sourceHorseId": 2023103999,
-          "odds": 4
+          "odds": 4.5
         },
         {
           "predictions": {
@@ -11093,7 +11353,7 @@
           "number": 7,
           "name": "ラブデウザ",
           "sourceHorseId": 2023109094,
-          "odds": 35.7
+          "odds": 41.2
         },
         {
           "predictions": {
@@ -11113,7 +11373,7 @@
           "number": 8,
           "name": "ルクスドリーム",
           "sourceHorseId": 2023102763,
-          "odds": 11.2
+          "odds": 12.4
         },
         {
           "predictions": {
@@ -11133,7 +11393,7 @@
           "number": 9,
           "name": "マーゴットオネイロ",
           "sourceHorseId": 2023105310,
-          "odds": 5.2
+          "odds": 5.4
         },
         {
           "predictions": {
@@ -11153,7 +11413,7 @@
           "number": 10,
           "name": "ハクサンレイホウ",
           "sourceHorseId": 2023105694,
-          "odds": 148.9
+          "odds": 174.3
         },
         {
           "predictions": {
@@ -11173,7 +11433,7 @@
           "number": 11,
           "name": "ロングフルスペック",
           "sourceHorseId": 2023103167,
-          "odds": 11
+          "odds": 11.1
         },
         {
           "predictions": {
@@ -11193,7 +11453,7 @@
           "number": 12,
           "name": "テリオスルミ",
           "sourceHorseId": 2023104449,
-          "odds": 50.5
+          "odds": 65
         }
       ]
     },
@@ -11235,7 +11495,7 @@
           "number": 1,
           "name": "エオアリイ",
           "sourceHorseId": 2022103222,
-          "odds": 9.1
+          "odds": 9.2
         },
         {
           "predictions": {
@@ -11255,7 +11515,7 @@
           "number": 2,
           "name": "グランツローゼ",
           "sourceHorseId": 2022106824,
-          "odds": 29.6
+          "odds": 42.3
         },
         {
           "predictions": {
@@ -11275,7 +11535,7 @@
           "number": 3,
           "name": "マテンロウゼロ",
           "sourceHorseId": 2023104676,
-          "odds": 13
+          "odds": 14.9
         },
         {
           "predictions": {
@@ -11295,7 +11555,7 @@
           "number": 4,
           "name": "レジェンドシップ",
           "sourceHorseId": 2020103910,
-          "odds": 4.3
+          "odds": 4.6
         },
         {
           "predictions": {
@@ -11315,7 +11575,7 @@
           "number": 5,
           "name": "デルシエロ",
           "sourceHorseId": 2021103520,
-          "odds": 3.6
+          "odds": 3.5
         },
         {
           "predictions": {
@@ -11335,7 +11595,7 @@
           "number": 6,
           "name": "サウンドサンライズ",
           "sourceHorseId": 2022105060,
-          "odds": 5.6
+          "odds": 5.4
         },
         {
           "predictions": {
@@ -11355,7 +11615,7 @@
           "number": 7,
           "name": "ストラニエーロ",
           "sourceHorseId": 2022106613,
-          "odds": 38.1
+          "odds": 49.1
         },
         {
           "predictions": {
@@ -11375,7 +11635,7 @@
           "number": 8,
           "name": "ピティロディア",
           "sourceHorseId": 2022105400,
-          "odds": 12.4
+          "odds": 13.4
         },
         {
           "predictions": {
@@ -11395,7 +11655,7 @@
           "number": 9,
           "name": "エイカイコバチ",
           "sourceHorseId": 2023107144,
-          "odds": 11
+          "odds": 7.6
         },
         {
           "predictions": {
@@ -11415,7 +11675,7 @@
           "number": 10,
           "name": "メイショウテンク",
           "sourceHorseId": 2023105021,
-          "odds": 7
+          "odds": 7.2
         }
       ]
     },
@@ -11457,7 +11717,7 @@
           "number": 1,
           "name": "ロジクリスエス",
           "sourceHorseId": 2023104684,
-          "odds": 23.5
+          "odds": 25
         },
         {
           "predictions": {
@@ -11477,7 +11737,7 @@
           "number": 2,
           "name": "コサージュ",
           "sourceHorseId": 2023107147,
-          "odds": 37.6
+          "odds": 35.3
         },
         {
           "predictions": {
@@ -11497,7 +11757,7 @@
           "number": 3,
           "name": "オルビスケリー",
           "sourceHorseId": 2023101235,
-          "odds": 53.6
+          "odds": 76.3
         },
         {
           "predictions": {
@@ -11517,7 +11777,7 @@
           "number": 4,
           "name": "マイネルトレマーズ",
           "sourceHorseId": 2023105363,
-          "odds": 15.2
+          "odds": 13.7
         },
         {
           "predictions": {
@@ -11537,7 +11797,7 @@
           "number": 5,
           "name": "サクセスブルー",
           "sourceHorseId": 2023106106,
-          "odds": 11.6
+          "odds": 11.2
         },
         {
           "predictions": {
@@ -11557,7 +11817,7 @@
           "number": 6,
           "name": "メイショウセンドウ",
           "sourceHorseId": 2023101756,
-          "odds": 6.4
+          "odds": 6.8
         },
         {
           "predictions": {
@@ -11577,7 +11837,7 @@
           "number": 7,
           "name": "ブルーメンフェスト",
           "sourceHorseId": 2023102180,
-          "odds": 89.2
+          "odds": 101.1
         },
         {
           "predictions": {
@@ -11597,7 +11857,7 @@
           "number": 8,
           "name": "メイショウノヴァス",
           "sourceHorseId": 2023104936,
-          "odds": 7.6
+          "odds": 10.9
         },
         {
           "predictions": {
@@ -11617,7 +11877,7 @@
           "number": 9,
           "name": "ホウオウファラオ",
           "sourceHorseId": 2023105365,
-          "odds": 4.4
+          "odds": 3.7
         },
         {
           "predictions": {
@@ -11637,7 +11897,7 @@
           "number": 10,
           "name": "バンダムソレール",
           "sourceHorseId": 2023102317,
-          "odds": 3.5
+          "odds": 3.1
         },
         {
           "predictions": {
@@ -11657,7 +11917,7 @@
           "number": 11,
           "name": "サクセスゴールド",
           "sourceHorseId": 2023106691,
-          "odds": 7.7
+          "odds": 9.2
         },
         {
           "predictions": {
@@ -11677,7 +11937,7 @@
           "number": 12,
           "name": "シーンオブドリーム",
           "sourceHorseId": 2023105412,
-          "odds": 42
+          "odds": 49.4
         },
         {
           "predictions": {
@@ -11697,7 +11957,7 @@
           "number": 13,
           "name": "カプリースカラー",
           "sourceHorseId": 2023102282,
-          "odds": 26.4
+          "odds": 43.5
         },
         {
           "predictions": {
@@ -11717,7 +11977,7 @@
           "number": 14,
           "name": "スナークホクサイ",
           "sourceHorseId": 2023102903,
-          "odds": 112.2
+          "odds": 142.3
         }
       ]
     },
@@ -11753,7 +12013,7 @@
           "number": 1,
           "name": "ガザニア",
           "sourceHorseId": 2024106936,
-          "odds": 12.3
+          "odds": 5.4
         },
         {
           "predictions": {
@@ -11765,7 +12025,7 @@
           "number": 2,
           "name": "アブリコース",
           "sourceHorseId": 2024103284,
-          "odds": 26
+          "odds": 23.3
         },
         {
           "predictions": {
@@ -11777,7 +12037,7 @@
           "number": 3,
           "name": "アスコットペスカ",
           "sourceHorseId": 2024104987,
-          "odds": 36.1
+          "odds": 38.9
         },
         {
           "predictions": {
@@ -11789,7 +12049,7 @@
           "number": 4,
           "name": "ヌーベルフィズ",
           "sourceHorseId": 2024106357,
-          "odds": 6.5
+          "odds": 15.9
         },
         {
           "predictions": {
@@ -11801,7 +12061,7 @@
           "number": 5,
           "name": "チェッリーニ",
           "sourceHorseId": 2024100609,
-          "odds": 51.4
+          "odds": 78.4
         },
         {
           "predictions": {
@@ -11813,7 +12073,7 @@
           "number": 6,
           "name": "ソーハッピー",
           "sourceHorseId": 2024101900,
-          "odds": 25.3
+          "odds": 55.8
         },
         {
           "predictions": {
@@ -11825,7 +12085,7 @@
           "number": 7,
           "name": "ルイスイメル",
           "sourceHorseId": 2024105051,
-          "odds": 13.9
+          "odds": 10
         },
         {
           "predictions": {
@@ -11837,7 +12097,7 @@
           "number": 8,
           "name": "インサイドストーム",
           "sourceHorseId": 2024101556,
-          "odds": 28.8
+          "odds": 18.9
         },
         {
           "predictions": {
@@ -11849,7 +12109,7 @@
           "number": 9,
           "name": "バタフライ",
           "sourceHorseId": 2024107318,
-          "odds": 52.6
+          "odds": 50.1
         },
         {
           "predictions": {
@@ -11861,7 +12121,7 @@
           "number": 10,
           "name": "アヴレディール",
           "sourceHorseId": 2024105638,
-          "odds": 6.4
+          "odds": 17
         },
         {
           "predictions": {
@@ -11873,7 +12133,7 @@
           "number": 11,
           "name": "ウィエダンド",
           "sourceHorseId": 2024106606,
-          "odds": 5.7
+          "odds": 3.3
         },
         {
           "predictions": {
@@ -11885,7 +12145,7 @@
           "number": 12,
           "name": "セイレイカ",
           "sourceHorseId": 2024105494,
-          "odds": 4.9
+          "odds": 6.9
         },
         {
           "predictions": {
@@ -11897,7 +12157,7 @@
           "number": 13,
           "name": "フォルトゥナロッサ",
           "sourceHorseId": 2024105934,
-          "odds": 4.3
+          "odds": 4.5
         }
       ]
     },
@@ -11939,7 +12199,7 @@
           "number": 1,
           "name": "ダイナソーコー",
           "sourceHorseId": 2023103548,
-          "odds": 16.3
+          "odds": 17.5
         },
         {
           "predictions": {
@@ -11959,7 +12219,7 @@
           "number": 2,
           "name": "マジックファイヤー",
           "sourceHorseId": 2023100771,
-          "odds": 51.5
+          "odds": 34.9
         },
         {
           "predictions": {
@@ -11979,7 +12239,7 @@
           "number": 3,
           "name": "エコロゼルダ",
           "sourceHorseId": 2023103566,
-          "odds": 102.1
+          "odds": 113.3
         },
         {
           "predictions": {
@@ -11999,7 +12259,7 @@
           "number": 4,
           "name": "ブリックアブラック",
           "sourceHorseId": 2023102410,
-          "odds": 34.5
+          "odds": 28.8
         },
         {
           "predictions": {
@@ -12019,7 +12279,7 @@
           "number": 5,
           "name": "タビニュ",
           "sourceHorseId": 2023101168,
-          "odds": 11.2
+          "odds": 13
         },
         {
           "predictions": {
@@ -12039,7 +12299,7 @@
           "number": 6,
           "name": "ハバタクジユウニ",
           "sourceHorseId": 2023105065,
-          "odds": 156.3
+          "odds": 183.5
         },
         {
           "predictions": {
@@ -12059,7 +12319,7 @@
           "number": 7,
           "name": "ヘイジュード",
           "sourceHorseId": 2023105280,
-          "odds": 5.5
+          "odds": 4.3
         },
         {
           "predictions": {
@@ -12079,7 +12339,7 @@
           "number": 8,
           "name": "ミカレオス",
           "sourceHorseId": 2023103767,
-          "odds": 79.5
+          "odds": 81.2
         },
         {
           "predictions": {
@@ -12099,7 +12359,7 @@
           "number": 9,
           "name": "フォーチュンローズ",
           "sourceHorseId": 2023103522,
-          "odds": 9.6
+          "odds": 8.6
         },
         {
           "predictions": {
@@ -12119,7 +12379,7 @@
           "number": 10,
           "name": "シャンドラファール",
           "sourceHorseId": 2023107221,
-          "odds": 5
+          "odds": 5.1
         },
         {
           "predictions": {
@@ -12139,7 +12399,7 @@
           "number": 11,
           "name": "ドンテスタマスター",
           "sourceHorseId": 2023105789,
-          "odds": 4.4
+          "odds": 4.7
         },
         {
           "predictions": {
@@ -12159,7 +12419,7 @@
           "number": 12,
           "name": "ラッキーシグネチャ",
           "sourceHorseId": 2023105302,
-          "odds": 8.8
+          "odds": 9.7
         },
         {
           "predictions": {
@@ -12179,7 +12439,7 @@
           "number": 13,
           "name": "テイエムプレミラン",
           "sourceHorseId": 2023104905,
-          "odds": 17.7
+          "odds": 19.4
         },
         {
           "predictions": {
@@ -12199,7 +12459,7 @@
           "number": 14,
           "name": "ギオンバヤシ",
           "sourceHorseId": 2023102695,
-          "odds": 7.4
+          "odds": 8.8
         }
       ]
     },
@@ -12241,7 +12501,7 @@
           "number": 1,
           "name": "グランフルス",
           "sourceHorseId": 2023102434,
-          "odds": 23.3
+          "odds": 19.3
         },
         {
           "predictions": {
@@ -12261,7 +12521,7 @@
           "number": 2,
           "name": "オートカリテ",
           "sourceHorseId": 2023103555,
-          "odds": 24.4
+          "odds": 20.2
         },
         {
           "predictions": {
@@ -12281,7 +12541,7 @@
           "number": 3,
           "name": "デルマフジ",
           "sourceHorseId": 2023103481,
-          "odds": 8.4
+          "odds": 7.6
         },
         {
           "predictions": {
@@ -12301,7 +12561,7 @@
           "number": 4,
           "name": "トリニタリオ",
           "sourceHorseId": 2023106438,
-          "odds": 2.6
+          "odds": 2.8
         },
         {
           "predictions": {
@@ -12321,7 +12581,7 @@
           "number": 5,
           "name": "フローレンスフーガ",
           "sourceHorseId": 2023101000,
-          "odds": 17.8
+          "odds": 14.6
         },
         {
           "predictions": {
@@ -12341,7 +12601,7 @@
           "number": 6,
           "name": "ショウナンアワード",
           "sourceHorseId": 2023100604,
-          "odds": 37.4
+          "odds": 38.5
         },
         {
           "predictions": {
@@ -12361,7 +12621,7 @@
           "number": 7,
           "name": "メイショウローゼ",
           "sourceHorseId": 2023101938,
-          "odds": 4.6
+          "odds": 4.3
         },
         {
           "predictions": {
@@ -12381,7 +12641,7 @@
           "number": 8,
           "name": "シークレットシティ",
           "sourceHorseId": 2023105659,
-          "odds": 33
+          "odds": 31.5
         },
         {
           "predictions": {
@@ -12401,7 +12661,7 @@
           "number": 9,
           "name": "ウインアトム",
           "sourceHorseId": 2023105881,
-          "odds": 76.7
+          "odds": 77.5
         },
         {
           "predictions": {
@@ -12421,7 +12681,7 @@
           "number": 10,
           "name": "エイシンリーガル",
           "sourceHorseId": 2023105537,
-          "odds": 32.5
+          "odds": 40.3
         },
         {
           "predictions": {
@@ -12441,7 +12701,7 @@
           "number": 11,
           "name": "ウインブリザード",
           "sourceHorseId": 2023105874,
-          "odds": 61.7
+          "odds": 68.1
         },
         {
           "predictions": {
@@ -12461,7 +12721,7 @@
           "number": 12,
           "name": "ピースフルマインド",
           "sourceHorseId": 2023105298,
-          "odds": 7.7
+          "odds": 7.3
         },
         {
           "predictions": {
@@ -12481,7 +12741,7 @@
           "number": 13,
           "name": "ハートチャン",
           "sourceHorseId": 2023102112,
-          "odds": 122.9
+          "odds": 217.4
         },
         {
           "predictions": {
@@ -12501,7 +12761,7 @@
           "number": 14,
           "name": "メイショウハーブス",
           "sourceHorseId": 2023104940,
-          "odds": 15.5
+          "odds": 17.6
         },
         {
           "predictions": {
@@ -12521,7 +12781,7 @@
           "number": 15,
           "name": "レフィノス",
           "sourceHorseId": 2023103433,
-          "odds": 169.4
+          "odds": 246.8
         },
         {
           "predictions": {
@@ -12541,7 +12801,7 @@
           "number": 16,
           "name": "ミリオングローリー",
           "sourceHorseId": 2023102386,
-          "odds": 16.1
+          "odds": 20
         }
       ]
     },
@@ -12583,7 +12843,7 @@
           "number": 1,
           "name": "タイキフィアリーベ",
           "sourceHorseId": 2022103156,
-          "odds": 26.4
+          "odds": 32.8
         },
         {
           "predictions": {
@@ -12603,7 +12863,7 @@
           "number": 2,
           "name": "ファミーユウルーズ",
           "sourceHorseId": 2022107021,
-          "odds": 68
+          "odds": 82.2
         },
         {
           "predictions": {
@@ -12623,7 +12883,7 @@
           "number": 3,
           "name": "ノリノドラゴン",
           "sourceHorseId": 2023101721,
-          "odds": 52.8
+          "odds": 62.7
         },
         {
           "predictions": {
@@ -12643,7 +12903,7 @@
           "number": 4,
           "name": "ホノボノ",
           "sourceHorseId": 2023100581,
-          "odds": 60.4
+          "odds": 61.6
         },
         {
           "predictions": {
@@ -12663,7 +12923,7 @@
           "number": 5,
           "name": "メイショウコシュウ",
           "sourceHorseId": 2023105032,
-          "odds": 6.8
+          "odds": 6.6
         },
         {
           "predictions": {
@@ -12683,7 +12943,7 @@
           "number": 6,
           "name": "ポンピエ",
           "sourceHorseId": 2021104945,
-          "odds": 4.6
+          "odds": 4.7
         },
         {
           "predictions": {
@@ -12703,7 +12963,7 @@
           "number": 7,
           "name": "ピエナオルカ",
           "sourceHorseId": 2023100715,
-          "odds": 6.9
+          "odds": 6.5
         },
         {
           "predictions": {
@@ -12723,7 +12983,7 @@
           "number": 8,
           "name": "テイクオンミー",
           "sourceHorseId": 2023102019,
-          "odds": 3.9
+          "odds": 4
         },
         {
           "predictions": {
@@ -12743,7 +13003,7 @@
           "number": 9,
           "name": "クラウンアールシー",
           "sourceHorseId": 2022101286,
-          "odds": 57.1
+          "odds": 44.4
         },
         {
           "predictions": {
@@ -12763,7 +13023,7 @@
           "number": 10,
           "name": "サンデーパーティー",
           "sourceHorseId": 2023100433,
-          "odds": 9.5
+          "odds": 12.8
         },
         {
           "predictions": {
@@ -12783,7 +13043,7 @@
           "number": 11,
           "name": "ディアスポラ",
           "sourceHorseId": 2021102498,
-          "odds": 36.5
+          "odds": 29.7
         },
         {
           "predictions": {
@@ -12803,7 +13063,7 @@
           "number": 12,
           "name": "ローズマイスター",
           "sourceHorseId": 2022104419,
-          "odds": 5.9
+          "odds": 5
         },
         {
           "predictions": {
@@ -12823,7 +13083,7 @@
           "number": 13,
           "name": "ホウオウバローロ",
           "sourceHorseId": 2021105772,
-          "odds": 21.9
+          "odds": 24.9
         },
         {
           "predictions": {
@@ -12843,7 +13103,7 @@
           "number": 14,
           "name": "ブリオメンテ",
           "sourceHorseId": 2021100303,
-          "odds": 33.5
+          "odds": 31
         }
       ]
     },
@@ -12885,7 +13145,7 @@
           "number": 1,
           "name": "コスモファーブロス",
           "sourceHorseId": 2023106420,
-          "odds": 14.9
+          "odds": 18
         },
         {
           "predictions": {
@@ -12905,7 +13165,7 @@
           "number": 2,
           "name": "ニシノサリーナ",
           "sourceHorseId": 2023105141,
-          "odds": 3.8
+          "odds": 3.7
         },
         {
           "predictions": {
@@ -12925,7 +13185,7 @@
           "number": 3,
           "name": "アイアムステキ",
           "sourceHorseId": 2023102210,
-          "odds": 18.6
+          "odds": 22.9
         },
         {
           "predictions": {
@@ -12945,7 +13205,7 @@
           "number": 4,
           "name": "メラヴィリオーザ",
           "sourceHorseId": 2020101920,
-          "odds": 71.5
+          "odds": 109
         },
         {
           "predictions": {
@@ -12965,7 +13225,7 @@
           "number": 5,
           "name": "キタノクニカラ",
           "sourceHorseId": 2022103316,
-          "odds": 52.4
+          "odds": 52.5
         },
         {
           "predictions": {
@@ -12985,7 +13245,7 @@
           "number": 6,
           "name": "アトリウムチャペル",
           "sourceHorseId": 2021105078,
-          "odds": 25.9
+          "odds": 23.5
         },
         {
           "predictions": {
@@ -13005,7 +13265,7 @@
           "number": 7,
           "name": "スプリングデイ",
           "sourceHorseId": 2021103322,
-          "odds": 46.3
+          "odds": 57.9
         },
         {
           "predictions": {
@@ -13025,7 +13285,7 @@
           "number": 8,
           "name": "ハーモニーソング",
           "sourceHorseId": 2022104440,
-          "odds": 4.2
+          "odds": 4.4
         },
         {
           "predictions": {
@@ -13045,7 +13305,7 @@
           "number": 9,
           "name": "ラプランセス",
           "sourceHorseId": 2023103733,
-          "odds": 22.7
+          "odds": 18.7
         },
         {
           "predictions": {
@@ -13065,7 +13325,7 @@
           "number": 10,
           "name": "ルージュベルベット",
           "sourceHorseId": 2021105749,
-          "odds": 6.1
+          "odds": 8.4
         },
         {
           "predictions": {
@@ -13085,7 +13345,7 @@
           "number": 11,
           "name": "ウィングブルー",
           "sourceHorseId": 2023105317,
-          "odds": 5.4
+          "odds": 3.7
         },
         {
           "predictions": {
@@ -13105,7 +13365,7 @@
           "number": 12,
           "name": "マロンカラノテガミ",
           "sourceHorseId": 2022101005,
-          "odds": 72.7
+          "odds": 83
         },
         {
           "predictions": {
@@ -13125,7 +13385,7 @@
           "number": 13,
           "name": "アルマロクザン",
           "sourceHorseId": 2020100759,
-          "odds": 81.7
+          "odds": 126.8
         },
         {
           "predictions": {
@@ -13145,7 +13405,7 @@
           "number": 14,
           "name": "トレヴィ",
           "sourceHorseId": 2022102988,
-          "odds": 25.2
+          "odds": 36
         },
         {
           "predictions": {
@@ -13165,7 +13425,7 @@
           "number": 15,
           "name": "ノアールビーナス",
           "sourceHorseId": 2023104047,
-          "odds": 20.3
+          "odds": 19.8
         },
         {
           "predictions": {
@@ -13185,7 +13445,7 @@
           "number": 16,
           "name": "サトノカスターニャ",
           "sourceHorseId": 2023105290,
-          "odds": 34.3
+          "odds": 46.5
         }
       ]
     },
@@ -13227,7 +13487,7 @@
           "number": 1,
           "name": "マーゴットサンズ",
           "sourceHorseId": 2023103696,
-          "odds": 8.9
+          "odds": 8.4
         },
         {
           "predictions": {
@@ -13247,7 +13507,7 @@
           "number": 2,
           "name": "テイエムゴッホ",
           "sourceHorseId": 2023101704,
-          "odds": 6.4
+          "odds": 7.5
         },
         {
           "predictions": {
@@ -13267,7 +13527,7 @@
           "number": 3,
           "name": "プライベートアイズ",
           "sourceHorseId": 2022101572,
-          "odds": 7.5
+          "odds": 5.6
         },
         {
           "predictions": {
@@ -13287,7 +13547,7 @@
           "number": 4,
           "name": "テルアスワッド",
           "sourceHorseId": 2022105486,
-          "odds": 58.6
+          "odds": 62.4
         },
         {
           "predictions": {
@@ -13307,7 +13567,7 @@
           "number": 5,
           "name": "フォーワンセルフ",
           "sourceHorseId": 2019102163,
-          "odds": 202.7
+          "odds": 234.2
         },
         {
           "predictions": {
@@ -13327,7 +13587,7 @@
           "number": 6,
           "name": "ストラーダ",
           "sourceHorseId": 2023100937,
-          "odds": 33.6
+          "odds": 30.1
         },
         {
           "predictions": {
@@ -13347,7 +13607,7 @@
           "number": 7,
           "name": "マーウォルス",
           "sourceHorseId": 2022102394,
-          "odds": 15
+          "odds": 21.3
         },
         {
           "predictions": {
@@ -13367,7 +13627,7 @@
           "number": 8,
           "name": "ベラジオワールド",
           "sourceHorseId": 2022110130,
-          "odds": 4.5
+          "odds": 4.2
         },
         {
           "predictions": {
@@ -13387,7 +13647,7 @@
           "number": 9,
           "name": "レディゴディヴァ",
           "sourceHorseId": 2022106851,
-          "odds": 65.9
+          "odds": 81.6
         },
         {
           "predictions": {
@@ -13407,7 +13667,7 @@
           "number": 10,
           "name": "リメンバーヒム",
           "sourceHorseId": 2022100321,
-          "odds": 24.1
+          "odds": 28
         },
         {
           "predictions": {
@@ -13427,7 +13687,7 @@
           "number": 11,
           "name": "ウインハルモニア",
           "sourceHorseId": 2022105610,
-          "odds": 39.1
+          "odds": 33.2
         },
         {
           "predictions": {
@@ -13447,7 +13707,7 @@
           "number": 12,
           "name": "チザルピーノ",
           "sourceHorseId": 2021101928,
-          "odds": 16.2
+          "odds": 17.9
         },
         {
           "predictions": {
@@ -13467,7 +13727,7 @@
           "number": 13,
           "name": "タガノエルー",
           "sourceHorseId": 2023104324,
-          "odds": 2.9
+          "odds": 3
         },
         {
           "predictions": {
@@ -13487,7 +13747,7 @@
           "number": 14,
           "name": "ネクストダンサー",
           "sourceHorseId": 2022103753,
-          "odds": 68.2
+          "odds": 66.2
         }
       ]
     },
@@ -13504,7 +13764,6 @@
       "missingSites": [
         "競馬ブック",
         "ATHENA",
-        "無料競馬AI",
         "AiBA",
         "日刊AI",
         "SIVA",
@@ -13524,12 +13783,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 44
             }
           },
           "number": 1,
           "name": "クファシル",
           "sourceHorseId": 2020103356,
-          "odds": 41.3
+          "odds": 46.9
         },
         {
           "predictions": {
@@ -13544,12 +13807,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 59
             }
           },
           "number": 2,
           "name": "アスティスプマンテ",
           "sourceHorseId": 2021105358,
-          "odds": 15.4
+          "odds": 12
         },
         {
           "predictions": {
@@ -13564,12 +13831,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 75
+            },
+            "無料競馬AI": {
+              "mark": "◎",
+              "index": 66
             }
           },
           "number": 3,
           "name": "ブラックチャリス",
           "sourceHorseId": 2023107008,
-          "odds": 4.2
+          "odds": 5.7
         },
         {
           "predictions": {
@@ -13584,12 +13855,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 43
             }
           },
           "number": 4,
           "name": "ステークホルダー",
           "sourceHorseId": 2020103962,
-          "odds": 123.6
+          "odds": 108.9
         },
         {
           "predictions": {
@@ -13604,12 +13879,16 @@
             "ウマークス": {
               "mark": "○",
               "index": 83
+            },
+            "無料競馬AI": {
+              "mark": "▲",
+              "index": 61
             }
           },
           "number": 5,
           "name": "ダノンマッキンリー",
           "sourceHorseId": 2021105774,
-          "odds": 9.3
+          "odds": 8
         },
         {
           "predictions": {
@@ -13624,12 +13903,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 33
             }
           },
           "number": 6,
           "name": "シンバーシア",
           "sourceHorseId": 2021105599,
-          "odds": 58.1
+          "odds": 58.6
         },
         {
           "predictions": {
@@ -13644,12 +13927,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 61
             }
           },
           "number": 7,
           "name": "ジョーメッドヴィン",
           "sourceHorseId": 2021100522,
-          "odds": 22.5
+          "odds": 19.2
         },
         {
           "predictions": {
@@ -13664,12 +13951,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 74
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 51
             }
           },
           "number": 8,
           "name": "モズナナスター",
           "sourceHorseId": 2022100490,
-          "odds": 14.6
+          "odds": 15.6
         },
         {
           "predictions": {
@@ -13684,12 +13975,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 78
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 52
             }
           },
           "number": 9,
           "name": "カンティーユ",
           "sourceHorseId": 2018103515,
-          "odds": 25.3
+          "odds": 18
         },
         {
           "predictions": {
@@ -13704,12 +13999,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 77
+            },
+            "無料競馬AI": {
+              "mark": "○",
+              "index": 64
             }
           },
           "number": 10,
           "name": "ナムラクララ",
           "sourceHorseId": 2022102887,
-          "odds": 4.8
+          "odds": 5.4
         },
         {
           "predictions": {
@@ -13724,12 +14023,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 26
             }
           },
           "number": 11,
           "name": "ダンツエラン",
           "sourceHorseId": 2022103304,
-          "odds": 96.2
+          "odds": 148.3
         },
         {
           "predictions": {
@@ -13744,12 +14047,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 71
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 48
             }
           },
           "number": 12,
           "name": "サウザンサニー",
           "sourceHorseId": 2020109102,
-          "odds": 44.9
+          "odds": 47.4
         },
         {
           "predictions": {
@@ -13764,12 +14071,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 79
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 55
             }
           },
           "number": 13,
           "name": "ルシード",
           "sourceHorseId": 2022103592,
-          "odds": 7
+          "odds": 5.2
         },
         {
           "predictions": {
@@ -13784,12 +14095,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 73
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 61
             }
           },
           "number": 14,
           "name": "マーブルパレス",
           "sourceHorseId": 2023105203,
-          "odds": 6.3
+          "odds": 6
         },
         {
           "predictions": {
@@ -13804,12 +14119,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 70
+            },
+            "無料競馬AI": {
+              "mark": "☆",
+              "index": 30
             }
           },
           "number": 15,
           "name": "ウインアイオライト",
           "sourceHorseId": 2020105203,
-          "odds": 54.1
+          "odds": 62.8
         },
         {
           "predictions": {
@@ -13824,12 +14143,16 @@
             "ウマークス": {
               "mark": "▲",
               "index": 72
+            },
+            "無料競馬AI": {
+              "mark": "△",
+              "index": 60
             }
           },
           "number": 16,
           "name": "ロードフォアエース",
           "sourceHorseId": 2021100130,
-          "odds": 13.6
+          "odds": 17.3
         }
       ]
     },
@@ -13871,7 +14194,7 @@
           "number": 1,
           "name": "マイネルシンベリン",
           "sourceHorseId": 2023100207,
-          "odds": 4.1
+          "odds": 5.4
         },
         {
           "predictions": {
@@ -13891,7 +14214,7 @@
           "number": 2,
           "name": "ロングミックス",
           "sourceHorseId": 2023103451,
-          "odds": 8.9
+          "odds": 9
         },
         {
           "predictions": {
@@ -13911,7 +14234,7 @@
           "number": 3,
           "name": "ゴーゴータカシ",
           "sourceHorseId": 2022102135,
-          "odds": 14.3
+          "odds": 15.3
         },
         {
           "predictions": {
@@ -13931,7 +14254,7 @@
           "number": 4,
           "name": "グレーヌドジョワ",
           "sourceHorseId": 2023103351,
-          "odds": 5.4
+          "odds": 4.6
         },
         {
           "predictions": {
@@ -13951,7 +14274,7 @@
           "number": 5,
           "name": "グランセゾン",
           "sourceHorseId": 2022106645,
-          "odds": 5.4
+          "odds": 6
         },
         {
           "predictions": {
@@ -13971,7 +14294,7 @@
           "number": 6,
           "name": "ドーギッド",
           "sourceHorseId": 2022105766,
-          "odds": 45.4
+          "odds": 55.3
         },
         {
           "predictions": {
@@ -13991,7 +14314,7 @@
           "number": 7,
           "name": "ディーリライズ",
           "sourceHorseId": 2023100521,
-          "odds": 11.9
+          "odds": 14.7
         },
         {
           "predictions": {
@@ -14011,7 +14334,7 @@
           "number": 8,
           "name": "ヴァロアーク",
           "sourceHorseId": 2023106905,
-          "odds": 2.9
+          "odds": 2.4
         }
       ]
     }
